@@ -7,10 +7,10 @@ This repository is meant to be the main entry point to all materials related to 
 
 ### Table of Contents
 
-[ ] Slides
-[X] Glossary
-[X] Research & exercise descriptions
-[X] Description of all deliverables 
+* [ ] Slides
+* [X] Glossary
+* [X] Research & exercise descriptions
+* [X] Description of all deliverables 
 
 
 ### External resources
