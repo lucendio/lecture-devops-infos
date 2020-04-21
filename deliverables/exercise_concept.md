@@ -29,12 +29,12 @@ upcoming weeks.
 The following questions might help to get inspired. *(To be seen only as suggestions)*
 
 * Where is your infrastructure hosted?
-* How is your infrastructure provisioned and bootstrapped?
-* Why did you choose one technology over the other? 
+* How do you allocate the underlying resources hosting your environments?
+* How is everything provisioned?
+* Why did you choose one technology over the other?
 * How does CI/CD talk to the SCM and/or vice versa?
 * What are the names of your target environments?
-* How do you provision the underlying infrastructure hosting your environments?
 * How do you bootstrap all your components? Which of them do you actually need to bootstrap?
-  If some of them don't need to be bootstrapped, why?  
+  If some of them don't need to be bootstrapped, why?
 * What is the difference between your environments?
 * Would some graphic(s) better illustrate your architectural design?

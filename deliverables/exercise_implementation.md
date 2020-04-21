@@ -23,7 +23,7 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
 * cloud-, self- or locally hosted
 * all relevant components (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
 * CI is only triggered by a change in the VCS
-* CD to thea *production* environment must involve a manual approval/release process
+* CD to the *production* environment must involve a manual approval/release process
 * application must run 100% redundant (scaled horizontally with a replication factor of *2*)
 
 
@@ -31,7 +31,7 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
 
 * the application is put through at least 3 stages (build, test, deploy) by at least 1 pipeline (CI/CD)
 * at least one component (e.g. VCS, Monitoring) other than the application has to be bootstrapped by yourself
-* automate provisioning and bootstrapping of all required infrastructure resources and components
+* automate allocation and bootstrapping of all required infrastructure resources and components
 
 
 ### Tips
@@ -40,6 +40,7 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
 * FQDNs are typically provided through DNS
     * simulated locally: (a) by editing the `/etc/hosts` file or (b) by running a local DNS service (e.g. `dnsmasq`)
     * public: third-party DNS provider that runs *name servers* (requires to own a *domain*)
+    * service: [nip.io](https://nip.io/) (and alike) provide *wildcard DNS for any IP address*
 * even though the application requires a persistence player, it can considered *ephemeral*
 * to prevent side effects and increase reproducibility (necessary for fair evaluation/grading), it is recommended to not
   install any component to the local host system (e.g. your computer)

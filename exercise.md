@@ -3,7 +3,7 @@ Exercise
 
 
 __Task:__ Deploy and run the [given application](https://github.com/lucendio/lecture-devops-app) in a cloud or
-cloud-simulated environment. Provision the underlying infrastructure. Bootstrap components that are necessary 
+cloud-simulated environment. Allocate the underlying infrastructure. Bootstrap components that are necessary 
 to deploy and host the application in multiple environments. Automate these processes in a reasonable manner.
 
 __Deliverables:__ [concept](./deliverables/exercise_concept.md) & [implementation](./deliverables/exercise_implementation.md)
@@ -15,6 +15,13 @@ __Deliverables:__ [concept](./deliverables/exercise_concept.md) & [implementatio
 2. receive short-term feedback and sanity-check via email
 3. present your implementation in a review session at the end of the semester
 4. check in last commit by the end of the review day
+
+Eventually, you'll end up with two repositories:
+
+(1) the fork of the [application](https://github.com/lucendio/lecture-devops-app) you are going to deploy for this
+    exercise
+(2) the source code that defines your infrastructure, its documentation, and the
+    [concept](./deliverables/exercise_concept.md)
 
 *Please note, that it's not required to successfully completely finish the implementation in order to pass (grade: 4.0)
 the module.*
