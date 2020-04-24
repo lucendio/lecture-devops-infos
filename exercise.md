@@ -42,6 +42,8 @@ __Components (minimal requirement):__
 * Target environments
 * Monitoring
 
+Except for the given [application](https://github.com/lucendio/lecture-devops-app) and its dependencies, you are free to
+choose any available technology for the implementation, as long as the exercise requirements are being met.  
 
 *NOTE: for more details and specifications on the deliverable(s), please refer the corresponding document(s) 
 [here](./deliverables)*
