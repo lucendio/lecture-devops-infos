@@ -1,5 +1,5 @@
-Lecture: DevOps - content
-==========================
+Lecture: DevOps - materials
+===========================
 
 
 This repository is meant to be the main entry point for all the content related to the lecture: *DevOps*
@@ -16,4 +16,4 @@ This repository is meant to be the main entry point for all the content related 
 ### External resources
 
 * [to-be-deployed application](https://github.com/lucendio/lecture-devops-app)
-* [code examples](https://github.com/lucendio/lecture-devops-examples)
+* [code examples](https://github.com/lucendio/lecture-devops-code)
