@@ -23,7 +23,7 @@ Eventually, you'll end up with two repositories:
 (2) the source code that defines your infrastructure, its documentation, and the
     [concept](./deliverables/exercise_concept.md)
 
-*Please note, that it's not required to successfully completely finish the implementation in order to pass (grade: 4.0)
+*Please note, that it's not required to successfully & completely finish the implementation in order to pass (grade: 4.0)
 the module.*
 
 
@@ -34,12 +34,12 @@ the module.*
 
 #### Specifications
 
-__Components (minimal requirement):__
+__Components:__
 
-* Application
-* Source Code Management
+* Application (+ backing service)
+* Version control system
 * Automation system
-* Target environments
+* Target environments (test, production)
 * Monitoring
 
 Except for the given [application](https://github.com/lucendio/lecture-devops-app) and its dependencies, you are free to
@@ -53,7 +53,7 @@ choose any available technology for the implementation, as long as the exercise 
 
 * fork the [source code](https://github.com/lucendio/lecture-devops-app)
 * contribute at least one Pull-Request that adds another test (either for the frontend or the backend)
-* add what ever you feel necessary to the forked source code
+* add whatever you feel necessary to the forked source code
 * if you add sth. that might be worth sharing and could be useful for others, you are more than welcome to
 * `README` files are usual a good starting point to familiarize yourself with the code base
 

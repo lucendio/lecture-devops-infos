@@ -22,7 +22,7 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
 * follow the *Infrastructure-as-Code* paradigm
 * cloud-, self- or locally hosted
 * all relevant components (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
-* the application and all implemented components must be served via *HTTP__S__* (HTTP over TLS)
+* the application and all implemented components must be served via _HTTP**S**_ (HTTP over TLS)
 * CI is only triggered by a change in the VCS
 * CD to the *production* environment must involve a manual approval/release process
 * application must run 100% redundant (scaled horizontally with a replication factor of *2*)
@@ -31,7 +31,8 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
 #### Content
 
 * the application is put through at least 3 stages (build, test, deploy) by at least 1 pipeline (CI/CD)
-* at least one component (e.g. VCS, Monitoring) other than the application has to be bootstrapped by yourself
+* at least one component (e.g. VCS, Monitoring) other than the application has to be bootstrapped by yourself (no
+  third-party as-a-service solution)
 * automate allocation and bootstrapping of all required infrastructure resources and components
 
 
@@ -64,8 +65,8 @@ The subsequent collection of examples describes, in a very vague manner, possibl
 between some of them. It is just meant as an inspiration and starting point for research when designing and developing
 you individual exercise solution.
 
-*Please note, that no particular example setup is mutual exclusive one another. Certain items across these examples may
-yield reasonable and even more suitable combination(s).*
+*Please note, that non of the examples are mutual exclusive. Certain items across these examples may yield reasonable
+and even more suitable combination(s).*
 
 
 ##### 1a – local virtual machines
