@@ -12,6 +12,7 @@ This repository is meant to be the main entry point for all the content related 
 * [X] [Research](./research.md) & [exercise](./exercise.md) descriptions
 * [X] [Description of every deliverable](./deliverables) 
 * [X] [Grading](./grading.md)
+* [X] [Guidelines](./guidelines.md)
 
 
 ### External resources

@@ -109,3 +109,5 @@ __Elasticsearch+Fluentd+Kibana__ [EFK]: technology stack that provides Log Aggre
 __ingress__: incoming traffic (a.k.a. inbound)
 
 __egress:__ outgoing traffic (a.k.a. outbound)
+
+__Containerization__: isolate an application (a.k.a. app, service, process) with the help of container technologies

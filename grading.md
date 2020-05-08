@@ -69,6 +69,9 @@ _Weight: **100%**_
 * overall setup implements all environments
 * concept matches implementation
 * implementation meets all formal requirements
-* at least one component - aside from the *application* - was bootstrapped by yourself  
-* proper documentation
-* [3] quality and impression
+* at least one component - aside from the *application* - was bootstrapped by yourself
+* submitted a Pull Request, that adds another test to the application
+* [3] quality and impression, e.g.:
+  - reasonable documentation
+  - readable commit messages
+  - engagement
