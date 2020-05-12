@@ -7,7 +7,7 @@ This repository is meant to be the main entry point for all the content related 
 
 ### How to get started?
 
-Take a look into the [FAQ](./faq.md#1-where-do-i-even-start)?
+Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
 
 
 ### Table of Contents
