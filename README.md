@@ -5,6 +5,11 @@ Lecture: DevOps - materials
 This repository is meant to be the main entry point for all the content related to the lecture: *DevOps*
 
 
+### How to get started?
+
+Take a look into the [FAQ](./faq.md#1-where-do-i-even-start)?
+
+
 ### Table of Contents
 
 * [ ] Slides
@@ -13,6 +18,8 @@ This repository is meant to be the main entry point for all the content related 
 * [X] [Description of every deliverable](./deliverables) 
 * [X] [Grading](./grading.md)
 * [X] [Guidelines](./guidelines.md)
+* [X] [FAQ](./faq.md)
+* [X] [Links](./links.md)
 
 
 ### External resources
