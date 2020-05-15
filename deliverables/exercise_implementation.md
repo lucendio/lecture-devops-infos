@@ -45,7 +45,7 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
     * service: [nip.io](https://nip.io/) (and alike) provide *wildcard DNS for any IP address*
 * to access the same application deployed in different environments, they typically get assign distinct FQDNs, instead
   of, for example, different ports (e.g. `dev.myapp.tld`, `prod.myapp.tld`)
-* even though the application requires a persistence player, it can considered *ephemeral*
+* even though the application requires a persistence layer, it can considered *ephemeral*
 * to prevent side effects and increase reproducibility (necessary for fair evaluation/grading), it is recommended to not
   install any component to the local host system (e.g. your computer)
 * in order to distribute incoming traffic across multiple instances of an application a load balancer can be
