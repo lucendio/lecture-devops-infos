@@ -21,6 +21,9 @@ __SUBMISSION DEADLINE:__ before the end of that day when the work has been prese
 
 * follow the *Infrastructure-as-Code* paradigm
 * cloud-, self- or locally hosted
+* the host system for the application and any other component must be at least
+  [mostly POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
+  (e.g. Linux, BSD, macOS)
 * all relevant components (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
 * the application and all implemented components must be served via _HTTP**S**_ (HTTP over TLS)
 * CI is only triggered by a change in the VCS
