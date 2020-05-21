@@ -17,3 +17,31 @@ addition to a topic discussed during class.
 * [dastergon/awesome-sre](https://github.com/dastergon/awesome-sre)
 * [AcalephStorage/awesome-devops](https://github.com/AcalephStorage/awesome-devops)
 * [mikewootini/awesome-devops](https://github.com/mikewootini/awesome-devops)
+
+
+#### Container Orchestration
+
+##### Kubernetes
+
+###### As a service:
+
+* [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
+* [Play with Kubernetes](https://labs.play-with-k8s.com)
+
+###### Local:
+
+* [Minikube](https://github.com/kubernetes/minikube)
+* [kind](https://kind.sigs.k8s.io/)
+* [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
+
+
+##### OpenShift
+
+###### As a service:
+
+* [Katacoda](https://learn.openshift.com/playgrounds)
+
+###### Local
+
+* [Minishift (for v3.x)](https://github.com/minishift/minishift)
+* [CodeReady Containers (for v4.x)](https://github.com/code-ready/crc)
