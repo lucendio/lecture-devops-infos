@@ -33,8 +33,7 @@ __allocate*__: bring up/instantiate/configure infrastructure resources/component
 __bootstrap*__: configure infrastructure resources or install software on top to give purpose
 
 __provision*__: refers to allocation & bootstrapping altogether. While allocation is more related to (emulated) hardware
-    resource (e.g. virtual machines), bootstrapping is covering the software installation and configuration on top of
-    that  
+    resource (e.g. virtual machines), bootstrapping is covering the software installation and configuration on top of it  
 
 [__Infrastructure-as-Code__](https://en.wikipedia.org/wiki/Infrastructure_as_code) [IaC]: define the desired state of
     your infrastructure in source code. Common best practices in *Software Engineering* can, thereby, be applied.
@@ -55,9 +54,16 @@ __Source Control Management__ [SCM]: see *VCS*; not to be confused with *Softwar
     to the process of organizing and controlling software changes as part of the *SDLC*, e.g. prioritizing & ordering, 
     bug tracking, versioning, releasing & rollout, environment settings
 
-[__microservice__](): A design pattern for software architecture and the counterpart to a 
+__microservice__: A design pattern for software architecture and the counterpart to a 
     [monolithic approach](https://en.wikipedia.org/wiki/Monolithic_application). Following this, turns components of an
     application into services, in order to archive a loose coupling (e.g. communicate through web APIs) 
+
+__[service discovery](https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/)__: ephemeral
+    instances naturally result in network addresses become dynamically allocated. In a microservice architecture, a
+    client (e.g. *serviceA*) needs to know the address of the server (e.g. *serviceB*) in order to communicate.
+    Therefore, the system requires a way to discover/query such addresses. There are at least 2 patters for such a
+    process: (a) client-side discovery and (b) server-side discovery. In either of them, generally, some kind of
+    *load balancing* is involved.
 
 [__12-Factor-App__](https://12factor.net) [12-Factor]: a set of best practices to build software-as-a-service solutions
     for cloud-native environments, but also recognized as *good application design principles* in general
@@ -111,3 +117,8 @@ __ingress__: incoming traffic (a.k.a. inbound)
 __egress:__ outgoing traffic (a.k.a. outbound)
 
 __Containerization__: isolate an application (a.k.a. app, service, process) with the help of container technologies
+
+__[Multitenancy](https://en.wikipedia.org/wiki/Multitenancy)__: multiple users (e.g. customers) use & share the same
+    infrastructure and its resources (e.g. network) or the same hard- or software instance (e.g. shared workspace).
+    Those *tenants* neither can 'see' or may know about each other, nor access the *space / scope* from one another
+    
