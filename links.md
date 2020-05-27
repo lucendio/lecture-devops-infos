@@ -19,29 +19,47 @@ addition to a topic discussed during class.
 * [mikewootini/awesome-devops](https://github.com/mikewootini/awesome-devops)
 
 
-#### Container Orchestration
+### Container Orchestration
 
-##### Kubernetes
+#### Kubernetes
 
-###### As a service:
+##### As a service:
 
 * [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 * [Play with Kubernetes](https://labs.play-with-k8s.com)
 
-###### Local:
+##### Local:
 
 * [Minikube](https://github.com/kubernetes/minikube)
 * [kind](https://kind.sigs.k8s.io/)
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
 
 
-##### OpenShift
+#### OpenShift
 
-###### As a service:
+##### As a service:
 
 * [Katacoda](https://learn.openshift.com/playgrounds)
 
-###### Local
+##### Local
 
 * [Minishift (for v3.x)](https://github.com/minishift/minishift)
 * [CodeReady Containers (for v4.x)](https://github.com/code-ready/crc)
+
+
+### Infrastructure resources
+
+#### Local
+
+* [VirtualBox](https://www.virtualbox.org) + [Vagrant](https://www.vagrantup.com/docs/index.html)
+
+
+#### Cloud Provider
+
+* [GitHub Student Developer Pack](https://education.github.com/pack)
+    * Digital Ocean
+    * Amazon Web Services
+    * Microsoft Azure
+    * Heroku
+    * ...
+* [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
