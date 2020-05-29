@@ -26,7 +26,8 @@ Think of the audience for this concept as one of your fellow classmates who you 
 the implementation part. Or, your team lead, to whom you are trying to justify that you will work one sth. else for the
 upcoming weeks. 
 
-The following questions might help to get inspired. *(To be seen only as suggestions)*
+The following questions might trigger some inspiration. *(Only to be seen as an INCOMPLETE list of suggestions, and not
+as headlines)*
 
 * Where is your infrastructure hosted?
 * How do you allocate the underlying resources hosting your environments?
@@ -38,3 +39,4 @@ The following questions might help to get inspired. *(To be seen only as suggest
   If some of them don't need to be bootstrapped, why?
 * What is the difference between your environments?
 * Would some graphic(s) better illustrate your architectural design?
+* What about the persistence layer (database)?

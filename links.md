@@ -18,6 +18,10 @@ addition to a topic discussed during class.
 * [AcalephStorage/awesome-devops](https://github.com/AcalephStorage/awesome-devops)
 * [mikewootini/awesome-devops](https://github.com/mikewootini/awesome-devops)
 
+#### Kubernetes:
+
+* [ramitsurana/awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+
 
 ### Container Orchestration
 

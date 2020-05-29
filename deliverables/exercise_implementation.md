@@ -2,7 +2,7 @@ Deliverable: Exercise implementation
 ====================================
 
 
-__SUBMISSION DEADLINE:__ before the end of that day when the work has been presented during the 1:1 review session 
+__SUBMISSION DEADLINE:__ before the end of that day when the result is being presented during the 1:1 review session 
 
 
 ### Requirements

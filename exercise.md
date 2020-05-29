@@ -62,4 +62,5 @@ choose any available technology for the implementation, as long as the exercise 
 
 * it's going to be a 1:1 
 * demonstrate the entire deployment process for the [given application](https://github.com/lucendio/lecture-devops-app)
+  by introducing an actual change to the code base
 * verify the existence of every component

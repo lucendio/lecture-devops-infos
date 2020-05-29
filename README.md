@@ -25,4 +25,12 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
 ### External resources
 
 * [to-be-deployed application](https://github.com/lucendio/lecture-devops-app)
+    * singe-page web application
+    * server running on NodeJS
+    * backing service (database) using MongoDB
 * [code examples](https://github.com/lucendio/lecture-devops-code)
+    * Terraform + DigitalOcean
+    * Vagrant + VirtualBox
+    * Ansible
+    * Jenkins running in Containers (Server & Agent)
+ 

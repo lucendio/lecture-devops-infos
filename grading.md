@@ -70,7 +70,7 @@ _Weight: **100%**_
 * concept matches implementation
 * implementation meets all formal requirements
 * at least one component - aside from the *application* - was bootstrapped by yourself
-* submitted a Pull Request, that adds another test to the application
+* submitted a Pull Request, that adds another *meaningful* test to the application
 * [3] quality and impression, e.g.:
   - reasonable documentation
   - readable commit messages
