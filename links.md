@@ -21,6 +21,7 @@ addition to a topic discussed during class.
 #### Kubernetes:
 
 * [ramitsurana/awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+* [Kubetools - Curated List of Kubernetes Tools](https://dockerlabs.collabnix.com/kubernetes/kubetools/)
 
 
 ### Container Orchestration

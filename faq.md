@@ -8,9 +8,9 @@ The first step would be to get an overview of what [this repository](./README.md
 [external resources](./README.md#external-resources) contain. As a second step, you might want to grab a coffee
 and click your way through the [lists of link collections on the topic of *DevOps*](./links.md#devops). Most of
 them not only provide a comprehensive list of technologies but refer to books, blogs and other 
-knowledgeable resources, as well. Then, a next step could be for you to try and get
-[the application tha needs to be deployed](https://github.com/lucendio/lecture-devops-app) running on
-your local machine.
+knowledgeable resources, as well. Then, as a next step, you could try to get
+[the application](https://github.com/lucendio/lecture-devops-app), that is going to be deployed as part of the exercise
+implementation, to run on your local machine.
 
 You might also find [this roadmap](https://roadmap.sh/devops) useful to you. It shows you a possible learning path. 
 Towards the end, you may postpone the monitoring part until the end and instead have a look into cloud-related things

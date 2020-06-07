@@ -57,9 +57,12 @@ __SUBMISSION DEADLINE:__ before the end of that day when the result is being pre
   other services might need to have the certificate installed, when communication between each other)
 * [Let's Encrypt](https://letsencrypt.org/docs/) issues certificates free of charge for public domains (e.g. used by
   [*cert-manager*](https://github.com/jetstack/cert-manager) on K8s)
-* on public clouds, being able to allocate and bootstrap your infrastructure from scratch in a automated fashion on
+* on public clouds, being able to allocate and bootstrap your infrastructure from scratch in an automated fashion on
   demand, can help saving some credits (e.g. tear down everything after a day of development work and next day bringing
   everything back up)
+* the [application repository](https://github.com/lucendio/lecture-devops-app) defines all its dependencies. For more
+  details, please refer to the [README](https://github.com/lucendio/lecture-devops-app/blob/master/app/README.md)
+* infrastructure provisioning can be triggered manually and doesn't have to be integrated into the automation service
 
 
 ### Examples

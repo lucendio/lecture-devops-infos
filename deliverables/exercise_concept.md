@@ -17,7 +17,7 @@ __SUBMISSION DEADLINE:__ before the end of day at a given date
 
 #### Content
 
-* describe automation processes & application lifecycle
+* describe the life cycle of the application (e.g. automation steps)
 * outline architecture of the infrastructure
 * explain your decisions
 * briefly describe the technology stack you opted for

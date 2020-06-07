@@ -3,8 +3,8 @@ Exercise
 
 
 __Task:__ Deploy and run the [given application](https://github.com/lucendio/lecture-devops-app) in a cloud or
-cloud-simulated environment. Allocate the underlying infrastructure. Bootstrap components that are necessary 
-to deploy and host the application in multiple environments. Automate these processes in a reasonable manner.
+cloud-simulated environment. Allocate the underlying infrastructure. Bootstrap components that are necessary to
+deploy and host the application in multiple environments. Automate all these processes in a reasonable manner.
 
 __Deliverables:__ [concept](./deliverables/exercise_concept.md) & [implementation](./deliverables/exercise_implementation.md)
 
@@ -43,7 +43,7 @@ __Components:__
 * Monitoring
 
 Except for the given [application](https://github.com/lucendio/lecture-devops-app) and its dependencies, you are free to
-choose any available technology for the implementation, as long as the exercise requirements are being met.  
+choose any available technology to implement the exercise, as long as all requirements are being met.  
 
 *NOTE: for more details and specifications on the deliverable(s), please refer the corresponding document(s) 
 [here](./deliverables)*
@@ -52,10 +52,12 @@ choose any available technology for the implementation, as long as the exercise 
 #### The application
 
 * fork the [source code](https://github.com/lucendio/lecture-devops-app)
-* contribute at least one Pull-Request that adds another test (either for the frontend or the backend)
-* add whatever you feel necessary to the forked source code
-* if you add sth. that might be worth sharing and could be useful for others, you are more than welcome to
-* `README` files are usual a good starting point to familiarize yourself with the code base
+* contribute at least one Pull-Request that adds a new test (either for the frontend or the backend)
+* adjust the forked source code in any way you feel necessary to integrate with your implementation
+* if you add something that might be worth sharing and could be useful for others, you are more than welcome to create
+  a PullRequest on [upstream](https://github.com/lucendio/lecture-devops-app)
+* [`README`](https://github.com/lucendio/lecture-devops-app/blob/master/README.md) files are usually a good starting
+  point to familiarize yourself with the code base
 
 
 #### Review session

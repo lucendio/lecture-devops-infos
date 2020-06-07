@@ -60,7 +60,7 @@ _Weight: **100%**_
 * component bootstrapping is reproducible
 * every component exists and is operational
 * every component can be reached via HTTPS
-* FQDNs are configured for all components, resolve to each them and serve them properly 
+* FQDNs are configured for all components, resolve to each of them and serve them properly 
 * *application* runs with a replication factor of *2*
 * in each environment the *applications* uses a different instances of its backing service (database)
 * CI/CD pipeline functions properly

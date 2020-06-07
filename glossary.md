@@ -87,6 +87,12 @@ __idempotent__: repeated execution or application results in the same state. Typ
 __workload__: any kind of program, non-native of it surrounding context, but executed within it; referred to, e.g, the
     context of *Kubernetes*
 
+[__automation__](https://en.wikipedia.org/wiki/Automation): reduce human effort/interaction/involvement in a rather
+    complex procedure to an absolute minimum. Such procedure can be triggered in various ways, e.g. certain change in
+    sensor metrics, specific output of another automated procedure, or even manually by a human. The idea of
+    automation does not imply any specific way of how a procedure is being triggered nor does it make any assumption
+    about where its being executed.   
+
 __Automation tool/system__ [CI/CD]: helps to facility & automate certain steps in a *SDLC*, e.g. build, test, or deploy.
     It runs as a service that is usually accessing but also accessed by other component within an infrastructure setup.   
 
