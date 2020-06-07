@@ -6,22 +6,10 @@ This documents aims to be a comprehensive list of links that are either mentione
 addition to a topic discussed during class.
 
 
-### Curated link collections
+### DevOps
 
-*NOTE: descending order, starting with the most recommended one*
-
-#### DevOps:
-
-* [wmariuss/awesome-devops](https://github.com/wmariuss/awesome-devops)
-* [Lets-DevOps/awesome-learning](https://github.com/Lets-DevOps/awesome-learning)
-* [dastergon/awesome-sre](https://github.com/dastergon/awesome-sre)
-* [AcalephStorage/awesome-devops](https://github.com/AcalephStorage/awesome-devops)
-* [mikewootini/awesome-devops](https://github.com/mikewootini/awesome-devops)
-
-#### Kubernetes:
-
-* [ramitsurana/awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
-* [Kubetools - Curated List of Kubernetes Tools](https://dockerlabs.collabnix.com/kubernetes/kubetools/)
+* [DevOps-Guide](https://github.com/Tikam02/DevOps-Guide)
+* [roadmap](https://roadmap.sh/devops)
 
 
 ### Container Orchestration
@@ -68,3 +56,28 @@ addition to a topic discussed during class.
     * Heroku
     * ...
 * [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
+
+
+### Curated link collections
+
+*NOTE: descending order, starting with the most recommended one*
+
+#### DevOps:
+
+* [wmariuss/awesome-devops](https://github.com/wmariuss/awesome-devops)
+* [Lets-DevOps/awesome-learning](https://github.com/Lets-DevOps/awesome-learning)
+* [dastergon/awesome-sre](https://github.com/dastergon/awesome-sre)
+* [AcalephStorage/awesome-devops](https://github.com/AcalephStorage/awesome-devops)
+* [awesome-soft/awesome-devops](https://github.com/awesome-soft/awesome-devops)
+* [mikewootini/awesome-devops](https://github.com/mikewootini/awesome-devops)
+
+
+#### CI/CD:
+
+* [ligurio/awesome-ci](https://github.com/ligurio/awesome-ci)
+
+
+#### Kubernetes:
+
+* [ramitsurana/awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+* [Kubetools - Curated List of Kubernetes Tools](https://dockerlabs.collabnix.com/kubernetes/kubetools/)

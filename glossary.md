@@ -93,8 +93,9 @@ __workload__: any kind of program, non-native of it surrounding context, but exe
     automation does not imply any specific way of how a procedure is being triggered nor does it make any assumption
     about where its being executed.   
 
-__Automation tool/system__ [CI/CD]: helps to facility & automate certain steps in a *SDLC*, e.g. build, test, or deploy.
-    It runs as a service that is usually accessing but also accessed by other component within an infrastructure setup.   
+__Automation platform/system__ [CI/CD]: helps to manage & facilitate the automation of steps in a *SDLC*, e.g. build,
+    test, or deploy. It runs as a service that is usually accessing but also accessed by other component within an
+    infrastructure setup.   
 
 [__Continuous Integration__](https://en.wikipedia.org/wiki/Continuous_integration) [CI]: as part of an automation tool,
     it runs [integration tasks](https://en.wikipedia.org/wiki/Systems_integrator) unattended, e.g. merge, build, test  
