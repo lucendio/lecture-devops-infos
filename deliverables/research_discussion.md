@@ -2,7 +2,7 @@ Deliverable: Research & discussion nodes
 ========================================
 
 
-__SUBMISSION DEADLINE:__ before the end of the day when the class room discussion was held 
+__SUBMISSION DEADLINE:__ before the end of the day on which the class room discussion took place 
 
 
 ### Requirements
@@ -11,10 +11,11 @@ __SUBMISSION DEADLINE:__ before the end of the day when the class room discussio
 
 * language: German or English
 * file written in Markdown (or reStructuredText)
-* use given repository to store everything in a file named: `research-notes_$STUDENT_ID.md` 
-* use the given template `research-notes_template.md`, follow its structure, replace every
-  variable (marked with `${MY_VARIABLE}`) 
-* relevant links can either be added inline or in the provided sections
+* use given repository to store everything in a file named `notes_statement-${ITEM-NUMBER}_${STUDENT-ID}.md`
+  (`ITEM-NUMBER` format: two digits - add leading `0` if necessary, e.g. `7` --> `07`) 
+* use the given template `research-notes_template.md`, follow its structure, replace each
+  variable (e.g. `${MY_VARIABLE}`) 
+* relevant links can either be added inline or in the dedicated section
 * write bullet points (notes) not a novel
 
 
