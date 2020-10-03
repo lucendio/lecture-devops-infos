@@ -3,23 +3,24 @@ Exercise
 
 
 __Task:__ Deploy and run the [given application](https://github.com/lucendio/lecture-devops-app) in a cloud or
-cloud-simulated environment. Allocate the underlying infrastructure. Bootstrap components that are necessary to
-deploy and host the application in multiple environments. Automate all these processes in a reasonable manner.
+cloud-simulated environment. Allocate the underlying infrastructure resources. Bootstrap components that are
+necessary to deploy and host the application in multiple environments. Automate these processes in a reasonable
+manner.
 
 __Deliverables:__ [concept](./deliverables/exercise_concept.md) & [implementation](./deliverables/exercise_implementation.md)
 
 
 #### Process
 
-1. hand in the concept before the given deadline sometime within the first half of the semester
-2. receive short-term feedback and sanity-check via email
+1. hand in the concept before the given deadline has ended (sometime within the first half of the semester)
+2. receive initial feedback and sanity-check in written form via email
 3. present your implementation in a review session at the end of the semester
-4. check in last commit by the end of the review day
+4. check in last commit before the end of day on which the review took place
 
 Eventually, you'll end up with two repositories:
 
 (1) the fork of the [application](https://github.com/lucendio/lecture-devops-app) you are going to deploy for this
-    exercise
+    exercise (NOTE: __fork__, don't copy & paste code, and __rebase regularly__ to upstream)
 (2) the source code that defines your infrastructure, its documentation, and the
     [concept](./deliverables/exercise_concept.md)
 
