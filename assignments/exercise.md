@@ -67,3 +67,14 @@ choose any available technology to implement the exercise, as long as all requir
 * demonstrate the entire deployment process for the [given application](https://github.com/lucendio/lecture-devops-app)
   by introducing an actual change to the code base
 * verify the existence of every component
+
+
+#### Additional information
+
+The following links may provide some guidance on how to approach the exercise. They can be helpful to structure your
+work, or even lead to one or two useful hints. Whether you are new to this field or already have some experience, 
+chances are high you'll get something out of it.
+
+* [Approach and workflow](./../hints.md#approach-and-workflow)
+* [Technical tips](./../hints.md#technical-tips)
+* [Example stacks](./../hints.md#example-stacks)

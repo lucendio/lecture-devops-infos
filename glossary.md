@@ -17,7 +17,7 @@ __environment*__ [env]: a *single installation* (or instance) of an application/
     (Examples: production, staging, test, development, local) 
 
 __infrastructure*__ [infra]: (A) the physical/virtual resources (machines, network) one or more environments are running
-    on and, to some extend, (B) components/services that are necessary to facility environment(s), such as load balancer,
+    on and, to some extent, (B) components/services that are necessary to facility environment(s), such as load balancer,
     CI/CD, or VCS 
 
 __stack/toolchain*__: a set of technologies (software a/o hardware), that describes the composition/architecture of, for
@@ -28,12 +28,13 @@ __local environment*__: refers of a toolchain that facilitates developing softwa
     computer. The locally instantiated environment is called the same. For example, it consists of a virtual machine
     simulating (a portion of) the actual remote setup.
 
-__allocate*__: bring up/instantiate/configure infrastructure resources/components (e.g. machines, network)
+__allocate*__: bring up/instantiate/configure infrastructure resources (e.g. machines, network)
 
-__bootstrap*__: configure infrastructure resources or install software on top to give purpose
+__bootstrap*__: configure allocated resources or install software on top to give purpose; precedes allocation
 
-__provision*__: summarizes allocation & bootstrapping. While allocation is more related to (emulated) hardware resource
-    (e.g. virtual machines), bootstrapping is covering the software installation and configuration on top of it
+__provision*__: combines the processes of allocation & bootstrapping. While allocation is more related to (emulated)
+    hardware resource (e.g. virtual machines), bootstrapping is covering the software installation and configuration on
+    top of it
 
 ```
 |------------------------------------------ Infra-as-Code / Configuration Management ----------------------------------------------|
@@ -64,7 +65,7 @@ __Source Control Management__ [SCM]: see *VCS*; not to be confused with *Softwar
     bug tracking, versioning, releasing & rollout, environment settings
 
 __microservice__: A design pattern for software architecture and the counterpart to a 
-    [monolithic approach](https://en.wikipedia.org/wiki/Monolithic_application). Following this, turns components of an
+    [monolithic approach](https://en.wikipedia.org/wiki/Monolithic_application). Following this, it turns pieces of an
     application into services, in order to archive a loose coupling (e.g. communicate through web APIs) 
 
 __[service discovery](https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/)__: ephemeral
@@ -93,8 +94,8 @@ __persistent__: the state of a process/service/instance remains (outlives) its s
 __idempotent__: repeated execution or application results in the same state. Typically, referred to in the context of 
     *Configuration Management*
 
-__workload__: any kind of program, non-native of it surrounding context, but executed within it; referred to, e.g, the
-    context of *Kubernetes*
+__workload__: any kind of program that requires computation, terminating or non-termination, non-native to its
+     surrounding context, but executed within it; referred to, e.g, in the context of *Kubernetes*
 
 [__automation__](https://en.wikipedia.org/wiki/Automation): reduce human effort/interaction/involvement in a rather
     complex procedure to an absolute minimum. Such procedure can be triggered in various ways, e.g. certain change in
@@ -103,7 +104,7 @@ __workload__: any kind of program, non-native of it surrounding context, but exe
     about where its being executed.   
 
 __Automation platform/system__ [CI/CD]: helps to manage & facilitate the automation of steps in a *SDLC*, e.g. build,
-    test, or deploy. It runs as a service that is usually accessing but also accessed by other component within an
+    test, or deploy. It runs as a service that is usually accessing but also accessed by other services within an
     infrastructure setup.   
 
 [__Continuous Integration__](https://en.wikipedia.org/wiki/Continuous_integration) [CI]: as part of an automation tool,

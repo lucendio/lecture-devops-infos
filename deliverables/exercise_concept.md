@@ -33,7 +33,7 @@ as headlines)*
 * How do you allocate the underlying resources hosting your environments?
 * How is everything provisioned?
 * Why did you choose one technology over the other?
-* How does CI/CD talk to the SCM and/or vice versa?
+* How does CI/CD talk to the VCS and/or vice versa?
 * What are the names of your target environments?
 * How do you bootstrap all your components? Which of them do you actually need to bootstrap?
   If some of them don't need to be bootstrapped, why?
