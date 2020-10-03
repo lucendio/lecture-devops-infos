@@ -2,7 +2,7 @@ Deliverable: Exercise concept
 =============================
 
 
-__SUBMISSION DEADLINE:__ before the end of day at a given date
+__SUBMISSION DEADLINE:__ before the end of day on the predefined date
 
 
 ### Requirements

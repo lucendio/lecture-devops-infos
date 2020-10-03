@@ -11,7 +11,7 @@ In order to pass this module, one is required to obtain at least _**50%**_ of th
 
 _Weight: **0%**_
 
-*Purpose:* being permitted to hand in the [exercise](./exercise.md). 
+*Purpose:* be permitted to hand in the [exercise](./assignments/exercise.md). 
 
 *Criteria:*
 
@@ -23,9 +23,9 @@ _Weight: **0%**_
 
 _Weight: **0%**_
 
-*Purpose:* to receive a score for the implementation
+*Purpose:* be entitled to receive a score for the implementation
  
-*Notes:*  meant as a tool to ...
+*Notes:* meant as a tool to ...
 
 * help designing the architecture
 * lay down a roadmap
@@ -58,20 +58,27 @@ _Weight: **100%**_
 * resource allocation is reproducible
 * component bootstrapping is automated
 * component bootstrapping is reproducible
+* idempotent provisioning
 * every component exists and is operational
 * every component can be reached via HTTPS
 * FQDNs are configured for all components, resolve to each of them and serve them properly 
 * *application* runs with a replication factor of *2*
-* in each environment the *applications* uses a different instances of its backing service (database)
+* zero/minimal-downtime deployment
+* the *applications* in each environment use a different backing service (database) instance
 * CI/CD pipeline functions properly
 * CI/CD pipeline is triggered through VCS commit, or manually, in case of *production* environment  
 * CI/CD pipeline consists of at least 3 stages
 * overall setup implements all environments
 * concept matches implementation
-* implementation meets all formal requirements
+* all formal requirements ([concept](./deliverables/exercise_concept.md#formal) & 
+  [implementation](./deliverables/exercise_implementation.md#formal)) are met and the
+  [process](./assignments/exercise.md#process) has been followed
 * at least one component - aside from the *application* - was bootstrapped by yourself
-* submitted a Pull Request, that adds another *meaningful* test to the application
-* [3] quality and impression, e.g.:
+* a [Pull Request](https://github.com/lucendio/lecture-devops-app/pulls) was submitted, that adds another *meaningful*
+  test to the application
+* [3] overall quality and impression, e.g.:
+  - engagement
+  - gained knowledge has been applied
   - reasonable documentation
   - readable commit messages
-  - engagement
+  - ...

@@ -19,11 +19,11 @@ first.
 
 #### 2. I have no clue about DevOps. How am I supposed to write this concept?
 
-Don't worry. It's an initial step to get you to start digging into things related to DevOps. After handing in the
-concept you will receive individual feedback, that you can use to iterate on your design and implementation. So,
+Don't worry. It's an initial step to get you start digging into things related to DevOps. After handing in the
+concept you will receive individual feedback, that you can use to iterate over your design and implementation. So,
 nothing is set in store. You can change things along the way - after some consultation first.
 
 
 #### 3. Where do I get some infrastructure to play with or maybe even for the exercise?
 
-Have a look into the link section on [*Infrastructure resources*](./links.md#infrastructure-resources).
+Have a look at the link section on [*Infrastructure resources*](./links.md#infrastructure-resources).

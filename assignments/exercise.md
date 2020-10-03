@@ -7,7 +7,7 @@ cloud-simulated environment. Allocate the underlying infrastructure resources. B
 necessary to deploy and host the application in multiple environments. Automate these processes in a reasonable
 manner.
 
-__Deliverables:__ [concept](./deliverables/exercise_concept.md) & [implementation](./deliverables/exercise_implementation.md)
+__Deliverables:__ [concept](./../deliverables/exercise_concept.md) & [implementation](./../deliverables/exercise_implementation.md)
 
 
 #### Process
@@ -22,7 +22,7 @@ Eventually, you'll end up with two repositories:
 (1) the fork of the [application](https://github.com/lucendio/lecture-devops-app) you are going to deploy for this
     exercise (NOTE: __fork__, don't copy & paste code, and __rebase regularly__ to upstream)
 (2) the source code that defines your infrastructure, its documentation, and the
-    [concept](./deliverables/exercise_concept.md)
+    [concept](./../deliverables/exercise_concept.md)
 
 *Please note, that it's not required to successfully & completely finish the implementation in order to pass (grade: 4.0)
 the module.*
@@ -47,7 +47,7 @@ Except for the given [application](https://github.com/lucendio/lecture-devops-ap
 choose any available technology to implement the exercise, as long as all requirements are being met.  
 
 *NOTE: for more details and specifications on the deliverable(s), please refer the corresponding document(s) 
-[here](./deliverables)*
+[here](./../deliverables)*
 
 
 #### The application

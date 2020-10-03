@@ -65,7 +65,7 @@ addition to a topic discussed during class.
 
 #### Kubernetes
 
-##### As a service:
+##### Playground as a service:
 
 * [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 * [Play with Kubernetes](https://labs.play-with-k8s.com)
@@ -73,8 +73,15 @@ addition to a topic discussed during class.
 ##### Local:
 
 * [Minikube](https://github.com/kubernetes/minikube)
+* [MicroK8s](https://microk8s.io/)
 * [kind](https://kind.sigs.k8s.io/)
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
+
+##### Maybe not Kubernetes:
+
+* [Container technologies at Coinbase - Why Kubernetes is not part of our stack](https://blog.coinbase.com/container-technologies-at-coinbase-d4ae118dcb6c)
+* [Maybe You Don't Need Kubernetes](https://endler.dev/2019/maybe-you-dont-need-kubernetes/)
+* [This Week in Programming: Why NOT to Run Kubernetes](https://thenewstack.io/this-week-in-programming-why-not-to-run-kubernetes/)
 
 
 #### OpenShift
@@ -96,15 +103,16 @@ addition to a topic discussed during class.
 * [VirtualBox](https://www.virtualbox.org) + [Vagrant](https://www.vagrantup.com/docs/index.html)
 
 
-#### Cloud Provider
+#### Cloud Providers
 
 * [GitHub Student Developer Pack](https://education.github.com/pack)
-    * Digital Ocean
-    * Amazon Web Services
+    * DigitalOcean
     * Microsoft Azure
     * Heroku
     * ...
+* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/) (please get in touch to receive invite and credits)
 * [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
+* [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 
 
 ### Curated link collections

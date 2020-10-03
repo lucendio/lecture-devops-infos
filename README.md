@@ -14,7 +14,9 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
 
 * [ ] Slides
 * [X] [Glossary](./glossary.md)
-* [X] [Research](./research.md) & [exercise](./exercise.md) descriptions
+* [X] Assignments:
+    * [Research & Discussion](./assignments/research_and_discussion.md)
+    * [Exercise](./assignments/exercise.md) descriptions
 * [X] [Description of every deliverable](./deliverables) 
 * [X] [Grading](./grading.md)
 * [X] [Guidelines](./guidelines.md)
@@ -25,9 +27,9 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
 ### External resources
 
 * [to-be-deployed application](https://github.com/lucendio/lecture-devops-app)
-    * singe-page web application
-    * server running on NodeJS
-    * backing service (database) using MongoDB
+    * single-page web application
+    * server implementation: JavaScript (NodeJS)
+    * backing service (database): MongoDB
 * [code examples](https://github.com/lucendio/lecture-devops-code)
     * Terraform + DigitalOcean
     * Vagrant + VirtualBox

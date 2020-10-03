@@ -32,8 +32,17 @@ __allocate*__: bring up/instantiate/configure infrastructure resources/component
 
 __bootstrap*__: configure infrastructure resources or install software on top to give purpose
 
-__provision*__: refers to allocation & bootstrapping altogether. While allocation is more related to (emulated) hardware
-    resource (e.g. virtual machines), bootstrapping is covering the software installation and configuration on top of it  
+__provision*__: summarizes allocation & bootstrapping. While allocation is more related to (emulated) hardware resource
+    (e.g. virtual machines), bootstrapping is covering the software installation and configuration on top of it
+
+```
+|------------------------------------------ Infra-as-Code / Configuration Management ----------------------------------------------|
+|--------------------- Terraform ----------------------|--------------------------- e.g. Ansbible, Helm ---------------------------|
+|------- resources (machines, network, storage) -------|---- Software and OS configuration ----|---- application(s)/service(s) ----|
+|---------------------- allocate ----------------------|-------------- bootstrap --------------|-------------- deploy -------------|
+|------------------------------------------------- provision ----------------------------------|
+```
+*(Fig[1]: Vocabulary, scenarios & technologies set into relation)*
 
 [__Infrastructure-as-Code__](https://en.wikipedia.org/wiki/Infrastructure_as_code) [IaC]: define the desired state of
     your infrastructure in source code. Common best practices in *Software Engineering* can, thereby, be applied.
@@ -111,7 +120,10 @@ __collector__: place, where all monitoring data comes together. Consists of stor
     the *hostname* and one higher level (or top-level) domain (short: TLD) separated by a '.' (dot);
     e.g. `my-domain-name.tld`
 
-__virtual machine__ [VM]: emulation of a physical machine hosting a full-featured (own kernel) operating system 
+__virtual machine__ [VM]: emulation of a physical machine hosting a full-featured (own kernel) operating system
+
+__Cloud provider__: an entity that offers a variety of information technology resources on-demand for money. Examples
+     (unsorted): DigitalOcean (DO), Hetzner, Amazon Web Service (AWS), Google Cloud Platform (GCP), Microsoft Azure
 
 __Kubernetes__ [K8s]: open source container orchestration platform; managed versions are offered by public cloud provider,
     such as [DigitalOcean](https://www.digitalocean.com/products/kubernetes/), Google: [GKE](https://cloud.google.com/kubernetes-engine/),
@@ -128,4 +140,7 @@ __Containerization__: isolate an application (a.k.a. app, service, process) with
 __[Multitenancy](https://en.wikipedia.org/wiki/Multitenancy)__: multiple users (e.g. customers) use & share the same
     infrastructure and its resources (e.g. network) or the same hard- or software instance (e.g. shared workspace).
     Those *tenants* neither can 'see' or may know about each other, nor access the *space / scope* from one another
-    
+
+__atomic__: in the context of states and state transition, it is the *'smallest'* change possible to be applied w/o
+    ever causing the overall system ending up in an inconsistent state. The system is designed in a way that the atomic
+    transaction or the state before and after don't have an in-between- or sub-state.
