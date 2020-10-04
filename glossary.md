@@ -17,8 +17,8 @@ __environment*__ [env]: a *single installation* (or instance) of an application/
     (Examples: production, staging, test, development, local) 
 
 __infrastructure*__ [infra]: (A) the physical/virtual resources (machines, network) one or more environments are running
-    on and, to some extent, (B) components/services that are necessary to facility environment(s), such as load balancer,
-    CI/CD, or VCS 
+    on and, to some extent, (B) services that are necessary to facility environment(s), such as load balancer, CI/CD, or
+    VCS
 
 __stack/toolchain*__: a set of technologies (software a/o hardware), that describes the composition/architecture of, for
     example, the infrastructure (i.e. infrastructure stack) and maybe how it's set up. Each item represents a dependency

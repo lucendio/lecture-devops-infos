@@ -56,12 +56,12 @@ _Weight: **100%**_
 
 * resource allocation is automated
 * resource allocation is reproducible
-* component bootstrapping is automated
-* component bootstrapping is reproducible
+* service bootstrapping is automated
+* service bootstrapping is reproducible
 * idempotent provisioning
-* every component exists and is operational
-* every component can be reached via HTTPS
-* FQDNs are configured for all components, resolve to each of them and serve them properly 
+* every service exists and is operational
+* every service can be reached via HTTPS
+* FQDNs are configured for all services, resolve to each of them and serve them properly 
 * *application* runs with a replication factor of *2*
 * zero/minimal-downtime deployment
 * the *applications* in each environment use a different backing service (database) instance
@@ -73,7 +73,7 @@ _Weight: **100%**_
 * all formal requirements ([concept](./deliverables/exercise_concept.md#formal) & 
   [implementation](./deliverables/exercise_implementation.md#formal)) are met and the
   [process](./assignments/exercise.md#process) has been followed
-* at least one component - aside from the *application* - was bootstrapped by yourself
+* at least one service - aside from the *application* - was bootstrapped by yourself
 * a [Pull Request](https://github.com/lucendio/lecture-devops-app/pulls) was submitted, that adds another *meaningful*
   test to the application
 * [3] overall quality and impression, e.g.:

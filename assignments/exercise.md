@@ -3,8 +3,8 @@ Exercise
 
 
 __Task:__ Deploy and run the [given application](https://github.com/lucendio/lecture-devops-app) in a cloud or
-cloud-simulated environment. Allocate the underlying infrastructure resources. Bootstrap components that are
-necessary to deploy and host the application in multiple environments. Automate these processes in a reasonable
+cloud-simulated environment. Allocate the underlying infrastructure resources. Bootstrap the services that are
+necessary to deploy and back the application in multiple environments. Automate these processes in a reasonable
 manner.
 
 __Deliverables:__ [concept](./../deliverables/exercise_concept.md) & [implementation](./../deliverables/exercise_implementation.md)
@@ -66,7 +66,7 @@ choose any available technology to implement the exercise, as long as all requir
 * it's going to be a 1:1 
 * demonstrate the entire deployment process for the [given application](https://github.com/lucendio/lecture-devops-app)
   by introducing an actual change to the code base
-* verify the existence of every component
+* verify the existence of every service
 
 
 #### Additional information

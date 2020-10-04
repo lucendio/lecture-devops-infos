@@ -35,7 +35,7 @@ as headlines)*
 * Why did you choose one technology over the other?
 * How does CI/CD talk to the VCS and/or vice versa?
 * What are the names of your target environments?
-* How do you bootstrap all your components? Which of them do you actually need to bootstrap?
+* How do you bootstrap all your services? Which of them do you actually need to bootstrap?
   If some of them don't need to be bootstrapped, why?
 * What is the difference between your environments?
 * Would some graphic(s) better illustrate your architectural design?
