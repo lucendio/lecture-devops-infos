@@ -20,6 +20,7 @@ addition to a topic discussed during class.
 * [Learn UNIX](https://www.tutorialspoint.com/unix/index.htm)
 * [Beginner's guide for Linux](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
 * [The Linux Basics Course: Beginner to Sysadmin, Step by Step](https://www.youtube.com/playlist?list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) (video playlist)
+* [Makefile Tutorial](https://makefiletutorial.com/)
 
 #### Command-line
 

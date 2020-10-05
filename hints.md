@@ -62,101 +62,115 @@ you individual exercise solution.
 *Please note, that non of the examples are mutual exclusive. Certain items across these examples may yield reasonable
 and even more suitable combination(s).*
 
-
-##### 1a – local virtual machines
-
-* Virtualbox + Vagrant
-* Packer (+ Ansible)
-* Gitea
-* *application*
-* Jenkins
-* HAProxy
-* ELK
+__*Setup categories:*__
+a) *local* (your own computer)
+b) *remote* (any another computer; aka 'cloud')
+c) *hybrid* (local + remote)
 
 
-##### 1b – local Containers
+##### 1a – virtual machines *[local]*
 
-* (Virtualbox + Vagrant + Ansible)
-* Docker
-* *application*
-* Gitea
-* Concourse
-* Nginx
-* Monit
-
-
-##### 1c – local Orchestration
-
-* *application*
-* Virtualbox + Vagrant + Ansible/Kubespray
-* Kubernetes
-* Helm
-* Gitlab
-* Prometheus + Grafana
+* Virtualbox (+Vagrant) -> *application*    *[runtime environment]*
+* Packer (+Ansible)                         *[automation]*
+* Gitea                                     *[VCS]*
+* Jenkins                                   *[CI/CD]*
+* HAProxy                                   *[proxy/vhost/load-balancer]*
+* ELK                                       *[logging]*
 
 
-##### 2a.1 – Cloud + Application VM
+##### 1b – Containers *[local]*
 
-* Bitbucket
-* Heroku
-* Terraform + DigitalOcean -> *application*
-
-
-##### 2a.2 – Cloud + local Monitoring VM
-
-* *application*
-* Heroku
-* Virtualbox + Vagrant + Ansible -> Prometheus + Grafana
+* (Virtualbox + Vagrant)    
+* Ansible                   *[automation]*
+* Docker -> *application*   *[runtime environment]*
+* Gitea                     *[VCS]*
+* Concourse                 *[CI/CD]*
+* Nginx                     *[proxy/vhost/load-balancer]*
+* Monit                     *[metrics]*
 
 
-##### 2b – Multi-Cloud [managed]
+##### 1c – Orchestration *[local]*
 
-* Github
-* TravisCI
-* Terraform + AWS -> *application*
-* Splunk
-
-
-##### 2c – Local + Cloud [hybrid]
-
-* Github
-* (Virtualbox + Vagrant + Ansible) -> Jenkins
-* Terraform + DigitalOcean -> VMs
-* Ansible
-* *application*
-* HAProxy
-* ELK
+* (Virtualbox + Vagrant)
+* Ansible (+Kubespray)                      *[automation]*
+* Kubernetes (+Docker) -> *application*     *[runtime environment]*
+* Helm                                      *[automation]*
+* Gitlab                                    *[VCS,CI/CD]*
+* Prometheus + Grafana                      *[metrics]*
 
 
-##### 3a - Cloud Orchestration [managed]
+##### 2a.1 – Cloud services + Monitoring VM *[remote]*
 
-* Bitbucket
-* Terraform + GKE
-* Helm
-* Jenkins + K8s Plugin
-* *application*
-* Stackdriver
+* Bitbucket                             *[VCS]*
+* Heroku (+Terraform) -> *application*  *[CI/CD,runtime environment,automation,proxy,load balancer]*
 
 
-##### 3b - Cloud Orchestration [DIY]
+##### 2a.2 – Cloud services + Monitoring VM *[hybrid]*
 
-* Github
-* Terraform + DigitalOcean -> VMs
-* Ansible/Kubespray + Kubernetes
-* Helm
-* Jenkins + K8s Plugin
-* *application*
-* EFK
+* Heroku (+Terraform) -> *application*     *[VCS,CI/CD,runtime environment,automation,proxy,load balancer]*
+* EFK                                       *[logging]*
+  + DigitalOcean            
+  + Terraform
+  * Ansible
 
 
-##### 4 – All in One [local or cloud]
+##### 2b – Multi-Cloud: managed *[remote]*
 
-* *application*
-* OpenShift: HAProxy, Container Registry, Kubernetes, Jenkins, EFK, Prometheus + Grafana
+* Github                                *[VCS]*
+* TravisCI (or Github actions)          *[CI/CD]*
+* AWS (+Terraform) -> *application*     *[runtime environment,automation,proxy,load balancer]*
+* Splunk                                *[logging]*
 
 
-##### 5 – Jenkins X
+##### 2c – Local + Cloud *[hybrid]*
 
-* Github
-* *application*
-* AWS -> Jenkins X
+* Github                            *[VCS]*
+* Jenkins                           *[CI/CD]*
+  + Virtualbox + Vagrant or Docker
+  + Ansible
+* DigitalOcean                      *[runtime environment]*
+    * *application*
+    * HAProxy                       *[proxy/load-balancer]*
+    * ELK                           *[logging]*
++ Terraform                         *[automation]*
+* Ansible                           *[automation]*
+
+
+##### 3a - Cloud Orchestration: managed *[remote]*
+
+* Bitbucket                 *[VCS]*
+* Terraform                 *[automation]*
+* GKE -> *application*      *[runtime environment,proxy,load balancer]*
+* Helm                      *[automation]*
+* Jenkins + K8s Plugin      *[CI/CD]*
+* Stackdriver               *[logging]*
+
+
+##### 3b - Cloud Orchestration: DIY *[remote]*
+
+* Github                            *[VCS]*
+* Terraform                         *[automation]*
+* DigitalOcean
+    * Ansible (+Kubespray)          *[automation]*
+* Kubernetes -> *application*       *[runtime environment,proxy,load balancer]*
+* Helm                              *[automation]*
+* Jenkins + K8s Plugin              *[CI/CD]*
+* EFK                               *[logging]*
+
+
+##### 4 – All in One *[local or remote]*
+
+* OpenShift:
+    * HAProxy                   *[proxy,load balancer]*
+    * Container Registry
+    * Kubernetes                *[runtime environment]*
+      + Gitea                   *[VCS]*
+    * Jenkins                   *[CI/CD]*
+    * EFK                       *[logging]*
+    * Prometheus + Grafana      *[metrics]*
+
+
+##### 5 – Jenkins X 
+
+* Github                                *[VCS]*
+* AWS -> Jenkins X -> *application*     *[CI/CD,runtime environment,proxy,load balancer]*
