@@ -21,6 +21,8 @@ addition to a topic discussed during class.
 * [Beginner's guide for Linux](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
 * [The Linux Basics Course: Beginner to Sysadmin, Step by Step](https://www.youtube.com/playlist?list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) (video playlist)
 * [Makefile Tutorial](https://makefiletutorial.com/)
+* ["systemd" Tutorials](https://www.youtube.com/playlist?list=PL6IQ3nFZzWfpKKWfZMRxiuEBwqQBwjzS1) (video playlist)
+* [Introduction to systemd](https://thepracticalsysadmin.com/intro-to-systemd/)
 
 #### Command-line
 
@@ -111,7 +113,7 @@ addition to a topic discussed during class.
     * Microsoft Azure
     * Heroku
     * ...
-* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/) (please get in touch to receive invite and credits)
+* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/) (please get in touch to receive invite and credits; does not require credit card information)
 * [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
 * [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 

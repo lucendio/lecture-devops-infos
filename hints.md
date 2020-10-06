@@ -26,6 +26,64 @@ therefore may be subjective.
 
 
 
+### A guided path *(WIP)*
+
+*Please note, that the following outlines do not claim to be exhaustive.*
+
+#### (1) Preparation
+
+* if you have very little experience on UNIX basics a/o the terminal a/o, take a look at the 
+  [tutorial](./links.md#unixlinux-basics) and spent some time and make yourself familiar with these technologies
+
+* check out the application and get it to work locally
+
+* think about where you want to host your infrastructure (and thus the application) 
+  * is one of the [available cloud providers](./links.md#cloud-providers) an option?
+  * does your own computer have enough resources (to host one or more virtual machines)?
+  * if non of these options work for you, please get in touch
+  * (also, if you are uncertain about this whole part)
+
+* take a look at some of the core technologies you might be going to use
+  * runtime:
+    * hypervisors: VirtualBox, QEMU, VMware 
+    * container engines: Podman, Docker, LXC 
+  * automation: 
+    * allocate:
+      * Terraform, if you want to deploy to the cloud
+      * Vagrant, if you want to run stuff locally (verify that the available resources on your computer is sufficient)
+    * configure: Ansible, Chef, Salt
+  * CI/CD: Jenkins, Concourse, Gitlab, Github Actions
+  * Monitoring: Prometheus + Grafana, EFK
+
+
+#### (2) Writing the concept
+
+* necessary pieces: VCS, CI/CD, environments, monitory
+
+* make yourself familiar with e few *Internet standards & distributed concepts:* IP, DNS, HTTP(S), load balancing, proxying
+  
+* think about how the deployment process of the *"workload"* should look like
+* think about how you want to create the infrastructure and automate the process (entirely described in code) 
+
+* create a new Git repository and put a `concept.md`
+
+* visualize the overall setup that you have planned - maybe [draw a nice diagram](https://app.diagrams.net)
+
+* by the time you hand in the first version of your concept, you should have started to write some infrastructure code,
+  even it is just a few lines; maybe start with setting up an environment; usually, one needs a computer (e.g.
+  virtual machine) first to then configure the environment and deploy a service in it
+
+
+#### (3) Implementation
+
+* use the repository that already contains your concept and add all the infrastructure code that does not need to
+  sit next to the source code of the [application](https://github.com/lucendio/lecture-devops-app) you want to deploy  
+
+* (fork the [application](https://github.com/lucendio/lecture-devops-app) repository if you need to introduce changes
+  in order to make it work with your implementation
+
+
+
 ### Technical Tips
 
 * a change in VCS can be, for example, a modification of the code or a new tag
