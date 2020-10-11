@@ -56,8 +56,8 @@ _Weight: **100%**_
 
 * resource allocation is automated
 * resource allocation is reproducible
-* service bootstrapping is automated
-* service bootstrapping is reproducible
+* installation & configuration of all services is automated
+* installation & configuration of all services is reproducible
 * idempotent provisioning
 * every service exists and is operational
 * every service can be reached via HTTPS
@@ -73,12 +73,12 @@ _Weight: **100%**_
 * all formal requirements ([concept](./deliverables/exercise_concept.md#formal) & 
   [implementation](./deliverables/exercise_implementation.md#formal)) are met and the
   [process](./assignments/exercise.md#process) has been followed
-* at least one service - aside from the *application* - was bootstrapped by yourself
+* at least one service - aside from the *application* - was provisioned by yourself
 * a [Pull Request](https://github.com/lucendio/lecture-devops-app/pulls) was submitted, that adds another *meaningful*
   test to the application
 * [3] overall quality and impression, e.g.:
   - engagement
-  - gained knowledge has been applied
+  - applied new knowledge
   - reasonable documentation
   - readable commit messages
   - ...

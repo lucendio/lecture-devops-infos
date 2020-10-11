@@ -19,7 +19,7 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
     * [Exercise](./assignments/exercise.md) descriptions
 * [X] [Description of every deliverable](./deliverables) 
 * [X] [Grading](./grading.md)
-* [X] [Hints & Guidance](./hints.md)
+* [X] [Tips & Guidance](./tips.md)
 * [X] [FAQ](./faq.md)
 * [X] [Links](./links.md)
 

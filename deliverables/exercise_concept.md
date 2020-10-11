@@ -26,7 +26,7 @@ Think of the audience for this concept as one of your fellow classmates who you 
 the implementation part. Or, your team lead, to whom you are trying to justify that you will work one sth. else for the
 upcoming weeks. 
 
-The following questions might trigger some inspiration. *(Only to be seen as an INCOMPLETE list of suggestions, and not
+The following questions might give you some inspiration. *(Only to be seen as an INCOMPLETE list of suggestions, and not
 as headlines)*
 
 * Where is your infrastructure hosted?
@@ -35,8 +35,8 @@ as headlines)*
 * Why did you choose one technology over the other?
 * How does CI/CD talk to the VCS and/or vice versa?
 * What are the names of your target environments?
-* How do you bootstrap all your services? Which of them do you actually need to bootstrap?
-  If some of them don't need to be bootstrapped, why?
+* How do you set up all your services? Which of them do you actually need to set up?
+  If some of them don't need to be set up, why?
 * What is the difference between your environments?
 * Would some graphic(s) better illustrate your architectural design?
 * What about the persistence layer (database)?

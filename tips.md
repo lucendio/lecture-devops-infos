@@ -1,9 +1,9 @@
-Hints & Guidance
-================
+Tips & Guidance
+===============
 
-This documents gives some advice on how to approach the exercise and how to deal with certain problems. The content
-might only be applicable to a certain extent, depending on your approach. It is based on personal experience and
-therefore may be subjective.
+This document gives some advice on how to approach the exercise and how to deal with certain problems. The content
+might only be applicable to a certain extent, depending on the approach you chose. It is based on personal experience
+and thus somewhat opinionated. You are more than welcome to walk your own path.
 
 *NOTE: the content of this document is not finite but also not updated regularly*
 
@@ -11,15 +11,15 @@ therefore may be subjective.
 
 ### Approach and workflow
 
-* there is no universal best practise only the most reasonable and suitable solution for your specific problem that you
-  are trying to solve 
+* there is no universal best practise only the most reasonable and suitable solution for your specific use case that you
+  are trying to implement 
 * infrastructure code is subject to development just as it is with application code
-  - you may establish a development life cycle starting where you write code on your local computer, but instead of
-    building and running your application locally, you allocate and bootstrap either on your computer or just
-    triggered locally  
+  - you may establish a development life cycle starting with writing code on your local computer, but instead of
+    locally building and running your application, you *allocate* and *configure* either on your computer or just
+    trigger it locally  
 * tear down and recreate your infrastructure on a regular basis
   - shows reproducibility
-  - might safe some credits
+  - safes some credits
 * automate every step of the way right from the beginning
   - not necessarily by starting to write jobs for your automation tool, but rather by scripting those steps  
   - this can speed up your work and may serve as the foundation for the CI/CD integration happening later down the road
@@ -102,7 +102,7 @@ therefore may be subjective.
   other services might need to have the certificate installed, when communication between each other)
 * [Let's Encrypt](https://letsencrypt.org/docs/) issues certificates free of charge for public domains (e.g. used by
   [*cert-manager*](https://github.com/jetstack/cert-manager) on K8s)
-* on public clouds, being able to allocate and bootstrap your infrastructure from scratch in an automated fashion on
+* on public clouds, being able to *allocate* and *configure* your infrastructure from scratch in an automated fashion on
   demand, can help saving some credits (e.g. tear down everything after a day of development work and next day bringing
   everything back up)
 * the [application repository](https://github.com/lucendio/lecture-devops-app) defines all its dependencies. For more

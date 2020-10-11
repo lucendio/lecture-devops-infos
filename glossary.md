@@ -28,20 +28,21 @@ __local environment*__: refers of a toolchain that facilitates developing softwa
     computer. The locally instantiated environment is called the same. For example, it consists of a virtual machine
     simulating (a portion of) the actual remote setup.
 
-__allocate*__: bring up/instantiate/configure infrastructure resources (e.g. machines, network)
+__allocate*__: creates or instantiates infrastructure resources (e.g. machines, network, storage, managed services)
 
-__bootstrap*__: configure allocated resources or install software on top to give purpose; precedes allocation
+__configure*__: installs software and adjusts (system) configuration on resources in order to give purpose to them;
+    precedes allocation
 
-__provision*__: combines the processes of allocation & bootstrapping. While allocation is more related to (emulated)
-    hardware resource (e.g. virtual machines), bootstrapping is covering the software installation and configuration on
-    top of it
-
+__provision*__: combines the processes of allocating & configuring. While allocating is more related to (possibly
+    virtualized) hardware resource, e.g. virtual machines, and (managed) services, whereas configuring manages what's
+    being put on top of these resources
+    
 ```
-|------------------------------------------ Infra-as-Code / Configuration Management ----------------------------------------------|
-|--------------------- Terraform ----------------------|--------------------------- e.g. Ansbible, Helm ---------------------------|
-|------- resources (machines, network, storage) -------|---- Software and OS configuration ----|---- application(s)/service(s) ----|
-|---------------------- allocate ----------------------|-------------- bootstrap --------------|-------------- deploy -------------|
-|------------------------------------------------- provision ----------------------------------|
+|-------------------------------------- Infra-as-Code / Configuration Management --------------------------------------|
+|-------- e.g. Terraform, Vagrant ---------|--------------------------- e.g. Ansbible, Helm ---------------------------|
+|--- Resources (Hardware a/o Software) ----|---------- System, Software -----------|---- Application(s)/Service(s) ----|
+|--------------- allocate -----------------|-------------- configure --------------|-------------- deploy -------------|
+|------------------------------------- provision ----------------------------------|
 ```
 *(Fig[1]: Vocabulary, scenarios & technologies set into relation)*
 

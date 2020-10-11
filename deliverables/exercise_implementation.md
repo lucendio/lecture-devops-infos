@@ -37,6 +37,6 @@ __SUBMISSION DEADLINE:__ before the end of that day on which the result has been
 #### Content
 
 * the application is put through at least 3 stages (build, test, deploy) by at least 1 pipeline (CI/CD)
-* at least one service (e.g. VCS, Monitoring) other than the application has to be bootstrapped by yourself (no
+* at least one service (e.g. VCS, Monitoring) other than the application has to be provisioned by yourself (no
   third-party as-a-service solution)
-* automate allocation and bootstrapping of all required infrastructure resources and service
+* automate allocation and configuration of all required infrastructure resources and services
