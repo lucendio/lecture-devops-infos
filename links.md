@@ -11,6 +11,16 @@ addition to a topic discussed during class.
 * [DevOps-Guide](https://github.com/Tikam02/DevOps-Guide)
 * [roadmap](https://roadmap.sh/devops)
 
+#### *'Definition' (attempts)*
+
+* [Wikipedia: DevOps](https://en.wikipedia.org/wiki/DevOps)
+* [the agile admin on 'What is DevOps?'](https://theagileadmin.com/what-is-devops)
+* [Amazon on 'What is DevOps?'](https://aws.amazon.com/devops/what-is-devops)
+
+#### Tutorials
+
+* [DevOps Explained](https://www.youtube.com/playlist?list=PLOspHqNVtKAAm1dmyiR9WMmw1UBoOwZVj) (contains portion of IBM advertising) [video playlist]
+
 
 ### Unix/Linux basics
 
@@ -19,15 +29,15 @@ addition to a topic discussed during class.
 * [Collection of Online Tutorials for Beginners](https://www.guru99.com/unix-linux-tutorial.html)
 * [Learn UNIX](https://www.tutorialspoint.com/unix/index.htm)
 * [Beginner's guide for Linux](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
-* [The Linux Basics Course: Beginner to Sysadmin, Step by Step](https://www.youtube.com/playlist?list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) (video playlist)
+* [The Linux Basics Course: Beginner to Sysadmin, Step by Step](https://www.youtube.com/playlist?list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) [video playlist]
 * [Makefile Tutorial](https://makefiletutorial.com/)
-* ["systemd" Tutorials](https://www.youtube.com/playlist?list=PL6IQ3nFZzWfpKKWfZMRxiuEBwqQBwjzS1) (video playlist)
+* ["systemd" Tutorials](https://www.youtube.com/playlist?list=PL6IQ3nFZzWfpKKWfZMRxiuEBwqQBwjzS1) [video playlist]
 * [Introduction to systemd](https://thepracticalsysadmin.com/intro-to-systemd/)
 
 #### Command-line
 
-* [The Linux Command Line](https://deac-ams.dl.sourceforge.net/project/linuxcommand/TLCL/19.01/TLCL-19.01.pdf) (book)
-* [Command Line Crash Course](https://www.youtube.com/watch?v=yz7nYlnXLfE) (video)
+* [The Linux Command Line](https://deac-ams.dl.sourceforge.net/project/linuxcommand/TLCL/19.01/TLCL-19.01.pdf) [book]
+* [Command Line Crash Course](https://www.youtube.com/watch?v=yz7nYlnXLfE) [video]
 * [Basic Linux Commands for Beginners](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
 * [List of common commands](https://www.freecodecamp.org/news/the-best-linux-tutorials/#the-dreaded-terminal)
 
@@ -51,7 +61,7 @@ addition to a topic discussed during class.
 
 #### Tutorial
 
-* [Tutorial](https://www.youtube.com/playlist?list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG) (video playlist)
+* [Tutorial](https://www.youtube.com/playlist?list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG) [video playlist]
 
 #### Tools
 
@@ -60,13 +70,53 @@ addition to a topic discussed during class.
 
 ### Infrastructure-as-Code
 
-* [Ansible 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN) (video playlist)
-* [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) (video playlist)
+#### Tutorials
+
+* [Ansible 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN) [video playlist]
+* [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) [video playlist]
+
+
+### Cloud infrastructure
+
+#### Tutorials
+
+* [Cloud Fundamentals](https://www.youtube.com/watch?list=PLOspHqNVtKAC-_ZAGresP-i0okHe5FjcJ) (contains portion of IBM advertising) [video playlist]
+
+
+### Infrastructure resources
+
+#### Local
+
+* [VirtualBox](https://www.virtualbox.org) + [Vagrant](https://www.vagrantup.com/docs/index.html)
+
+
+#### Cloud Providers
+
+* [GitHub Student Developer Pack](https://education.github.com/pack)
+    * DigitalOcean
+    * Microsoft Azure
+    * Heroku
+    * ...
+* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/) (please get in touch to receive invite and credits; does not require credit card information)
+* [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
+* [Hetzner](https://www.hetzner.com/cloud) (no free tier)
+
+
+### Persistence Layer
+
+#### Tutorials
+
+* [What is Object Storage?](https://www.youtube.com/watch?v=FLp88DzvtUk) (contains portion of IBM advertising) [video]
+* [Block Storage vs. File Storage](https://www.youtube.com/watch?v=5EqAXnNm0FE) (contains portion of IBM advertising) [video]
 
 
 ### Container Orchestration
 
 #### Kubernetes
+
+##### Tutorials
+
+* [Kubernetes Essentials](https://www.youtube.com/playlist?list=PLOspHqNVtKABAVX4azqPIu6UfsPzSu2YN) (contains portion of IBM advertising) [video playlist]
 
 ##### Playground as a service:
 
@@ -97,25 +147,6 @@ addition to a topic discussed during class.
 
 * [Minishift (for v3.x)](https://github.com/minishift/minishift)
 * [CodeReady Containers (for v4.x)](https://github.com/code-ready/crc)
-
-
-### Infrastructure resources
-
-#### Local
-
-* [VirtualBox](https://www.virtualbox.org) + [Vagrant](https://www.vagrantup.com/docs/index.html)
-
-
-#### Cloud Providers
-
-* [GitHub Student Developer Pack](https://education.github.com/pack)
-    * DigitalOcean
-    * Microsoft Azure
-    * Heroku
-    * ...
-* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/) (please get in touch to receive invite and credits; does not require credit card information)
-* [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
-* [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 
 
 ### Curated link collections
