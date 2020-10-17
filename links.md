@@ -54,7 +54,16 @@ addition to a topic discussed during class.
 
 ### Git
 
+* [Git Cheat Sheet by Github](https://education.github.com/git-cheat-sheet-education.pdf) [PDF]
 * [`git-hooks`](https://wilsonmar.github.io/git-hooks/) ([cheat sheet](https://www.analysisandsolutions.com/code/git-hooks-summary-cheat-sheet.htm))
+
+#### Tutorials
+
+* [Introduction to Git](https://www.vogella.com/tutorials/Git/article.html)
+* [Learn Git Branching](https://learngitbranching.js.org) [interactive]
+* [Git & GitHub Tutorial for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR) [video playlist]
+* [Git Tutorial for Beginners: Learn Git in 1 Hour](https://www.youtube.com/watch?v=8JJ101D3knE)
+* [Git Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx) (requires a beginners tutorial first) [video playlist]
 
 
 ### Jenkins
