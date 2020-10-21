@@ -55,15 +55,42 @@ addition to a topic discussed during class.
 ### Git
 
 * [Git Cheat Sheet by Github](https://education.github.com/git-cheat-sheet-education.pdf) [PDF]
+* [devhints:git*](https://devhints.io/?q=git)
 * [`git-hooks`](https://wilsonmar.github.io/git-hooks/) ([cheat sheet](https://www.analysisandsolutions.com/code/git-hooks-summary-cheat-sheet.htm))
+* [Oh Shit, Git!?!](https://ohshitgit.com/) (getting out of typical dead-ends)
+* [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 
 #### Tutorials
 
 * [Introduction to Git](https://www.vogella.com/tutorials/Git/article.html)
 * [Learn Git Branching](https://learngitbranching.js.org) [interactive]
+* [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) [blog post]
+* [The Architecture of Open Source Applications - Chapter 6: Git](https://aosabook.org/en/git.html) [book chapter]
 * [Git & GitHub Tutorial for Beginners](https://www.youtube.com/playlist?list=PL4cUxeGkcC9goXbgTDQ0n_4TBzOO0ocPR) [video playlist]
 * [Git Tutorial for Beginners: Learn Git in 1 Hour](https://www.youtube.com/watch?v=8JJ101D3knE)
 * [Git Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx) (requires a beginners tutorial first) [video playlist]
+
+
+### Dev-Security-Ops
+
+#### Tools
+
+* [SOPS](https://github.com/mozilla/sops) (VCS-compatible en- & decryption for arbitrary text files)
+* [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) (built-in en- & decryption for *Configuration Management* input)
+* [SSL Configuration Generator](https://ssl-config.mozilla.org/)
+* Keepass-compatible implementations (password manager): [KeePassXC](https://keepassxc.org/), [MacPass](https://macpassapp.org/)
+
+#### Secret Management as a Service
+
+* [Vault by Hashicorp](https://www.vaultproject.io/)
+* [GCP Secret Manager](https://cloud.google.com/secret-manager/)
+* [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
+
+
+### Dependency Management
+
+* [Version pinning: Advanced Range Syntax](https://docs.npmjs.com/misc/semver#advanced-range-syntax)
+* [Do not walk away from Complexity, Run](https://www.youtube.com/watch?v=nZcLHkORdHE) [video]
 
 
 ### Jenkins
