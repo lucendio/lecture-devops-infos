@@ -27,3 +27,5 @@ __SUBMISSION DEADLINE:__ before the end of the day on which the class room discu
 * Give the statement some context
 * Assess the statement and state your own opinion
 * Is it a good or a bad idea? Why? Or, maybe both?
+* Make your conclusions transparent and traceable
+* Are your conclusions plausible?
