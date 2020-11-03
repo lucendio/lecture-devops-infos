@@ -13,7 +13,7 @@ __SUBMISSION DEADLINE:__ before the end of the day on which the class room discu
 * format: Markdown (or reStructuredText)
 * for each statement create a separate file named `notes_statement-${ITEM-NUMBER}_${STUDENT-ID}.md`
   (`ITEM-NUMBER` format: two digits - add leading `0` if necessary, e.g. `7` --> `07`) 
-* use the given template `research-notes_template.md`, follow its structure, replace each
+* copy the given template `research-notes_template.md`, follow its structure, replace each
   variable (e.g. `${MY_VARIABLE}`) 
 * relevant links can either be added inline or in the dedicated section
 * write bullet points (notes) not a novel

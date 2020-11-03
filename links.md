@@ -93,6 +93,13 @@ addition to a topic discussed during class.
 * [Do not walk away from Complexity, Run](https://www.youtube.com/watch?v=nZcLHkORdHE) [video]
 
 
+## Twelve Factor App
+
+* [The Twelve-Factor App](https://12factor.net/)
+* [The Twelve Factor app: Best Practices for Java Deployment](https://www.youtube.com/watch?v=94PxlbuizCU) [video]
+* [Building Microservices with the 12 Factor App Pattern](https://www.youtube.com/watch?v=2SxKKDXKrXQ) [video]
+
+
 ### Jenkins
 
 #### Tutorial
