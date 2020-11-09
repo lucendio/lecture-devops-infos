@@ -20,6 +20,7 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
 * [X] [Description of every deliverable](./deliverables) 
 * [X] [Grading](./grading.md)
 * [X] [Tips & Guidance](./tips.md)
+* [X] [Tutorials](./tutorials)
 * [X] [FAQ](./faq.md)
 * [X] [Links](./links.md)
 
@@ -31,6 +32,7 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
     * server implementation: JavaScript (NodeJS)
     * backing service (database): MongoDB
 * [code examples](https://github.com/lucendio/lecture-devops-code)
+    * tutorials solutions
     * Terraform + DigitalOcean
     * Vagrant + VirtualBox
     * Ansible
