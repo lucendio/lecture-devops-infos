@@ -46,12 +46,6 @@ addition to a topic discussed during class.
 * [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
 
 
-### Local development environment
-
-* [Vagrant](https://www.vagrantup.com/docs) (virtual machines)
-* [garden.io](https://docs.garden.io/) (Kubernetes)
-
-
 ### Git
 
 * [Git Cheat Sheet by Github](https://education.github.com/git-cheat-sheet-education.pdf) [PDF]
@@ -100,6 +94,29 @@ addition to a topic discussed during class.
 * [Building Microservices with the 12 Factor App Pattern](https://www.youtube.com/watch?v=2SxKKDXKrXQ) [video]
 
 
+### Virtualization & Containerization
+
+* [LXC vs. Docker](https://archives.flockport.com/lxc-vs-docker/)
+* [Running containers without root](https://www.redhat.com/en/blog/preview-running-containers-without-root-rhel-76)
+
+#### Tools
+
+* Virtual Machine
+    * [Vagrant](https://www.vagrantup.com/docs)
+    * [Packer](http://packer.io/docs/index.html)    
+    * [VirtualBox](https://www.virtualbox.org) (hypervisor)
+    * [QEMU](https://www.qemu.org/) (emulator)
+* Container
+    * [Podman](https://github.com/containers/podman)
+    * [Buildah](https://github.com/containers/buildah/blob/master/docs/tutorials/01-intro.md) (tutorial)
+    * [Docker](https://docs.docker.com/engine/reference/commandline/docker/)
+
+
+### Configuration-as-Code
+
+* [cloud-init](https://cloudinit.readthedocs.io/en/latest/) / [ignition](https://github.com/coreos/ignition) (initial machine setup during first boot)
+
+
 ### Jenkins
 
 #### Tutorial
@@ -119,21 +136,13 @@ addition to a topic discussed during class.
 * [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) [video playlist]
 
 
-### Cloud infrastructure
+### Cloud
 
 #### Tutorials
 
 * [Cloud Fundamentals](https://www.youtube.com/watch?list=PLOspHqNVtKAC-_ZAGresP-i0okHe5FjcJ) (contains portion of IBM advertising) [video playlist]
 
-
-### Infrastructure resources
-
-#### Local
-
-* [VirtualBox](https://www.virtualbox.org) + [Vagrant](https://www.vagrantup.com/docs/index.html)
-
-
-#### Cloud Providers
+#### Providers
 
 * [GitHub Student Developer Pack](https://education.github.com/pack)
     * DigitalOcean
@@ -172,6 +181,10 @@ addition to a topic discussed during class.
 * [MicroK8s](https://microk8s.io/)
 * [kind](https://kind.sigs.k8s.io/)
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
+
+##### Development and testing
+
+* [garden.io](https://docs.garden.io/)
 
 ##### Maybe not Kubernetes:
 
