@@ -4,7 +4,7 @@
 
 ### Goal(s)
 
-* successfully connect to tha virtual machine via SSH
+* successfully launch a container
 * verify that your credentials from your AWS Educate account work
 
 
