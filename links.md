@@ -117,13 +117,20 @@ addition to a topic discussed during class.
 * [cloud-init](https://cloudinit.readthedocs.io/en/latest/) / [ignition](https://github.com/coreos/ignition) (initial machine setup during first boot)
 
 
-### Jenkins
+### CI/CD
 
-#### Tutorial
+* [Redhat: What is CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
+* [Martin Fowler: Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
+* [Martin Fowler: Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
+
+
+#### Jenkins
+
+##### Tutorial
 
 * [Tutorial](https://www.youtube.com/playlist?list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG) [video playlist]
 
-#### Tools
+##### Tools
 
 * [Jenkins Configuration as Code (JCaC)](https://github.com/jenkinsci/configuration-as-code-plugin)
 
