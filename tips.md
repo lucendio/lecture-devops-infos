@@ -30,6 +30,35 @@ and thus somewhat opinionated. You are more than welcome to walk your own path.
 
 *Please note, that the following outlines do not claim to be exhaustive.*
 
+## (0) Thinking out loud
+
+1. What do you already know about app deployment, automation and infrastructure (from your
+   previous courses & projects a/o from you work place)?
+
+2. What is the application, that you are supposed to deploy, made of? What tool chain is
+   used to create it? Which dependencies does it have?
+
+3. What would be the simplest architecture (if the software development life cycle would
+   be completely automated)?
+
+*Imagine, you follow the app from its written source all the way down to starting it so
+that others can access it on the internet.*
+```
+  Source code            Automation                    Deployment
+  -----------    ===>    ------------------    ===>    ----------------
+  (app code)             (test + build app)            (host / run app) 
+                                                      
+                          * Who?                        * Where?
+                          * Where?                      * How is it getting there?
+                          * Tool chain?               
+                          * Dependencies?             
+```
+Which steps would the app need to go through?
+
+4. Which components (services) would be needed? How to set them up in a reproducible way?
+   Which of them will be provisioned by myself and which ones can be managed services?
+
+
 #### (1) Preparation
 
 * if you have very little experience on UNIX basics a/o the terminal a/o, take a look at the 
@@ -53,7 +82,10 @@ and thus somewhat opinionated. You are more than welcome to walk your own path.
       * Vagrant, if you want to run stuff locally (verify that the available resources on your computer is sufficient)
     * configure: Ansible, Chef, Salt
   * CI/CD: Jenkins, Concourse, Gitlab, Github Actions
-  * Monitoring: Prometheus + Grafana, EFK
+  * Monitoring: Prometheus + Grafana, EFK Stack
+
+* all the fundamental technologies should be taught before the initial [concept](./deliverables/exercise_concept.md)
+  is due
 
 
 #### (2) Writing the concept
@@ -81,6 +113,47 @@ and thus somewhat opinionated. You are more than welcome to walk your own path.
 
 * (fork the [application](https://github.com/lucendio/lecture-devops-app) repository if you need to introduce changes
   in order to make it work with your implementation
+
+
+#### (0) Timeline
+
+*__DISCLAIMER__: This is no one-size-fits-all but merely an incomplete suggestion. It may or may not be helpful 
+on your journey through the course, and it's probably not (fully) in sync with the course road map.*
+
+Based on 20 weeks (starting with *onboarding* and concluding with *review*)
+
+01  Go through the provided materials and note down questions
+02  Familiarize yourself with the [scope](./links.md#devops) of this course and its topics 
+03  Refresh [linux](./links.md#unixlinux-basics) and [git](./links.md#git) skills
+04  Fork the [app](https://github.com/lucendio/lecture-devops-app), that will be used as *deployable workload*
+    and get it to run locally
+05  Revisit the 12-Factor-App; install a container runtime on your system start some containers and try to build
+    container images as well 
+06  Install a hypervisor locally; start a virtual machine; connect to a shell inside the machine; find out which
+    process manager is being used and try to stop and start some of the processes there
+07  Revisit the agile-based software development life cycle; start to note down your first thoughts about
+    your implementation; allocate some cloud resources (e.g. virtual machines, networks, storage, managed services)
+08  Automate the resource allocation so that it becomes reproducible; destroy and re-create your setup 
+09  Use a Configuration Management Tool to install and configure some software/services on one or more machines
+10  Learn about CI/CD and think about its role in your architecture; write a pipeline and configure a trigger
+11  Finish the initial version of your concept; add a diagram (or some other visualization) to show off your
+    architecture design
+12  Transform the application source code into a deployable artifact; integrate the process into the CI/CD platform
+    (that's the CI part) and set up a trigger; this requires a CI/CD platform to begin with, so make sure you have
+    one - either deploy (automate!) one yourself (remember poll vs. push) or use a managed one (SaaS)  
+13  Set up an environment founded on the knowledge and technologies you gained over the past weeks; deploy the
+    application and automate the process; implement some deployment strategy to prevent any down time 
+14  Evaluate Container Orchestration to see whether it would be useful for your setup 
+15  Integrate the application deployment into your CI/CD platform (that's the CD part) to reflect a complete 
+    software development life cycle 
+16  Define and provision a second target environment; configure another trigger; ensure that the application
+    successfully deploys to that environment, too
+17  Evaluate monitoring solutions and go through their documentation to understand how it's being deployed and
+    configured; maybe do a test deployment - by hand - for easier debugging; take notes
+18  use the notes to automate the provisioning of the monitoring; integrate and document
+19  Ensure complete reproducibility by destroying the whole setup and re-create it from scratch; make sure 
+    everything still works
+20  Double-check the grading criteria and see if they are met; plan and trial run the review presentation 
 
 
 
