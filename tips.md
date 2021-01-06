@@ -120,7 +120,7 @@ Which steps would the app need to go through?
 *__DISCLAIMER__: This is no one-size-fits-all but merely an incomplete suggestion. It may or may not be helpful 
 on your journey through the course, and it's probably not (fully) in sync with the course road map.*
 
-Based on 20 weeks (starting with *onboarding* and concluding with *review*)
+Based on an average of 20 weeks (starting with *onboarding* and concluding with *review*)
 
 01  Go through the provided materials and note down questions
 02  Familiarize yourself with the [scope](./links.md#devops) of this course and its topics 

@@ -130,9 +130,18 @@ addition to a topic discussed during class.
 
 * [Tutorial](https://www.youtube.com/playlist?list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG) [video playlist]
 
+##### Documentation
+
+* [Best Practices](https://wiki.jenkins.io/display/JENKINS/Jenkins+Best+Practices)
+* [Pipelines](https://jenkins.io/doc/book/pipeline)
+  * [Jenkinsfile](https://jenkins.io/doc/book/pipeline/jenkinsfile/)
+  * [Groovy](http://docs.groovy-lang.org/next/html/documentation/)  
+  * [Docker](https://jenkins.io/doc/book/pipeline/docker/)
+
 ##### Tools
 
 * [Jenkins Configuration as Code (JCaC)](https://github.com/jenkinsci/configuration-as-code-plugin)
+* [Kubernetes Plugin](https://github.com/jenkinsci/kubernetes-plugin#pipeline-support)
 
 
 ### Infrastructure-as-Code
@@ -141,6 +150,16 @@ addition to a topic discussed during class.
 
 * [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) [video playlist]
 * [Ansible 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN) [video playlist]
+
+
+### Deployment
+
+#### Strategies
+
+* [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/) ([Matrix](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/9e09392d-k8s_deployment_strategies.png))
+* [Deployment Strategies & Release Best Practices](https://medium.com/@cgrant/deployment-strategies-release-best-practices-6e557c3f39b4)
+* [Kubernetes Deployment Strategies](https://www.weave.works/blog/kubernetes-deployment-strategies)
+* [4 deployment strategies for resilient microservices](https://www.infoworld.com/article/3565750/4-deployment-strategies-for-resilient-microservices.html)
 
 
 ### Cloud
