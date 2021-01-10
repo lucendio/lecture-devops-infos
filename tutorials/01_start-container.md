@@ -2,7 +2,7 @@
 =========================
 
 
-### Goal(s)
+### Objective(s)
 
 * successfully launch a container
 * verify that your credentials from your AWS Educate account work

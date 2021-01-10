@@ -2,7 +2,7 @@
 ==============================================
 
 
-### Goal(s)
+### Objective(s)
 
 * at least 3 instances of the service are running
 * the instance group is proxied by a load balancer
@@ -20,6 +20,7 @@ __Approach A - everything in one machine, containers as instances:__
 
 __Approach B - machines as instances:__
 * 3-4 running machines (min. 512B MB memory, 0.5 CPU), accessible via SSH
+
 
 ### Task(s)
 

@@ -2,7 +2,7 @@
 =====================================================================
 
 
-### Goal(s)
+### Objective(s)
 
 * install and configure Nginx on a virtual machine in an automated fashion
 * tell Nginx to serve a custom landing page

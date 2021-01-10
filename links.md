@@ -195,6 +195,13 @@ addition to a topic discussed during class.
 ##### Tutorials
 
 * [Kubernetes Essentials](https://www.youtube.com/playlist?list=PLOspHqNVtKABAVX4azqPIu6UfsPzSu2YN) (contains portion of IBM advertising) [video playlist]
+* [Official Tutorials: how to accomplish a larger goal](https://kubernetes.io/docs/tutorials/)
+* [A Guide to the Kubernetes Networking Model](https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/)
+* [etcd: distributed consensus algorithm - raft](http://thesecretlivesofdata.com/raft/) (interactive)
+
+##### Documentation
+
+* [Istio: Control and Data flow through Envoy](https://github.com/istio/istio/wiki/Control-and-Data-flow-through-Envoy)
 
 ##### Playground as a service:
 
@@ -212,7 +219,7 @@ addition to a topic discussed during class.
 
 * [garden.io](https://docs.garden.io/)
 
-##### Maybe not Kubernetes:
+##### Maybe don't use Kubernetes
 
 * [Container technologies at Coinbase - Why Kubernetes is not part of our stack](https://blog.coinbase.com/container-technologies-at-coinbase-d4ae118dcb6c)
 * [Maybe You Don't Need Kubernetes](https://endler.dev/2019/maybe-you-dont-need-kubernetes/)

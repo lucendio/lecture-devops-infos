@@ -2,7 +2,7 @@
 ======================================
 
 
-### Goal(s)
+### Objective(s)
 
 * successfully launch a virtual machine on your local system
 * connect to the virtual machine via SSH

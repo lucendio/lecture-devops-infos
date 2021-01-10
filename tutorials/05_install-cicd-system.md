@@ -2,7 +2,7 @@
 ======================================
 
 
-### Goal(s)
+### Objective(s)
 
 * install Jenkins server in an automated fashion
 * Set up and configure Jenkins as needed

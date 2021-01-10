@@ -2,7 +2,7 @@
 ============================================
 
 
-### Goal(s)
+### Objective(s)
 
 * allocate a virtual machine in the *cloud*
 * successfully connect to tha virtual machine via SSH 
@@ -16,7 +16,7 @@
 * (Optional) additional requirements depending on the chosen *cloud provider* 
 
 
-### Steps
+### Task(s)
 
 1. Create an account for a cloud provider of your choice
 2. Configure the credentials locally (different depending on the provider)
