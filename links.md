@@ -215,9 +215,12 @@ addition to a topic discussed during class.
 * [kind](https://kind.sigs.k8s.io/)
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
 
-##### Development and testing
+##### Tooling 
 
-* [garden.io](https://docs.garden.io/)
+* [garden.io](https://docs.garden.io/) (development and testing)
+* dashboards
+    * [official](https://github.com/kubernetes/dashboard)
+    * [Weave Scope](https://github.com/weaveworks/scope)
 
 ##### Maybe don't use Kubernetes
 
