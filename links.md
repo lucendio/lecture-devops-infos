@@ -258,6 +258,7 @@ addition to a topic discussed during class.
 #### CI/CD:
 
 * [ligurio/awesome-ci](https://github.com/ligurio/awesome-ci)
+* [Fulfilling the promise of CI/CD](https://stackoverflow.blog/2021/01/19/fulfilling-the-promise-of-ci-cd/)
 
 
 #### Kubernetes:

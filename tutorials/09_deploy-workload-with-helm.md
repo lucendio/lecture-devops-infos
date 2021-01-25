@@ -30,11 +30,10 @@
 
     * meta files such as `Chart.yaml`
     * `./templates` based on static Kubernetes object files
-    * `./templates/_helpers.tpl` id needed
+    * `./templates/_helpers.tpl` (functions, available in templates)
     * `values.yaml` and `secrets.yaml`
     
-__NOTE:__ [The Chart Template Developer's Guide](https://helm.sh/docs/chart_template_guide/) 
-
+    __NOTE:__ [The Chart Template Developer's Guide](https://helm.sh/docs/chart_template_guide/) 
 
 2. Use Sops to encrypt sensitive values and re-deploy using Helm to verify that the decryption during runtime works 
 
