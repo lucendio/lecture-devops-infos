@@ -214,6 +214,7 @@ addition to a topic discussed during class.
 * [MicroK8s](https://microk8s.io/)
 * [kind](https://kind.sigs.k8s.io/)
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
+* [KD3](https://k3d.io/)
 
 ##### Tooling 
 
@@ -241,6 +242,22 @@ addition to a topic discussed during class.
 * [CodeReady Containers (for v4.x)](https://github.com/code-ready/crc)
 
 
+### Monitoring & Observability
+
+#### Knowledge
+
+* [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/)
+* [Monitoring and Observability](https://medium.com/@copyconstruct/monitoring-and-observability-8417d1952e1c), by Cindy Sridharan &
+  corresponding [Learning Notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/distributed-systems-observability.md)
+* Prometheus Docs: [Pull](https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/) vs. [Push](https://prometheus.io/docs/practices/pushing/)
+
+#### Tools
+
+* [CNCF members](https://landscape.cncf.io/category=observability-and-analysis&format=card-mode&grouping=category)
+* [Comparison of network monitoring systems](https://en.wikipedia.org/wiki/Comparison_of_network_monitoring_systems)
+* [Monit](https://mmonit.com/monit/)
+
+
 ### Curated link collections
 
 *NOTE: descending order, starting with the most recommended one*
@@ -265,3 +282,8 @@ addition to a topic discussed during class.
 
 * [ramitsurana/awesome-kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
 * [Kubetools - Curated List of Kubernetes Tools](https://dockerlabs.collabnix.com/kubernetes/kubetools/)
+
+
+#### Monitoring
+
+* [crazy-canux/awesome-monitoring](https://github.com/crazy-canux/awesome-monitoring)
