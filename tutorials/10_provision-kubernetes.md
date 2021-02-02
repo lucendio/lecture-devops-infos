@@ -11,12 +11,9 @@
 
 ### Prerequisite(s)
 
-* a reachable Kubernetes cluster
-* working credentials to authenticate against the cluster
+* [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) is installed locally
+* a Configuration Management Tool is installed locally
 * `kubectl` is installed on your workstation to interact with the cluster
-* `helm` is installed on your workstation
-* `sops` is installed on your workstation (and optionally [GPG](https://www.gnupg.org/download/))
-* [Sops/Helm plugin](https://github.com/jkroepke/helm-secrets) is installed 
 
 
 ### Task(s)
