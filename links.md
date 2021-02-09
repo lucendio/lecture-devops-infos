@@ -186,6 +186,11 @@ addition to a topic discussed during class.
 
 * [What is Object Storage?](https://www.youtube.com/watch?v=FLp88DzvtUk) (contains portion of IBM advertising) [video]
 * [Block Storage vs. File Storage](https://www.youtube.com/watch?v=5EqAXnNm0FE) (contains portion of IBM advertising) [video]
+* [File storage, block storage, or object storage?](https://www.redhat.com/en/topics/data-storage/file-block-object-storage) [article]
+
+#### Documentation
+
+* [Database Definition](https://wiki.c2.com/?DatabaseDefinition)
 
 
 ### Container Orchestration
@@ -287,3 +292,10 @@ addition to a topic discussed during class.
 #### Monitoring
 
 * [crazy-canux/awesome-monitoring](https://github.com/crazy-canux/awesome-monitoring)
+
+
+#### Persistence
+
+* [okhosting/awesome-storage](https://github.com/okhosting/awesome-storage)
+* [agarcialeon/awesome-database](https://github.com/agarcialeon/awesome-database)
+* [CNCF members: Cloud Native Storage](https://landscape.cncf.io/card-mode?category=cloud-native-storage&grouping=category)

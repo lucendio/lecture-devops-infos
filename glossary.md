@@ -122,7 +122,9 @@ __collector__: place, where all monitoring data comes together. Consists of stor
     the *hostname* and one higher level (or top-level) domain (short: TLD) separated by a '.' (dot);
     e.g. `my-domain-name.tld`
 
-__virtual machine__ [VM]: emulation of a physical machine hosting a full-featured (own kernel) operating system
+__machine__: physical (aka. bare-metal) or virtual computer running a full-featured (own kernel) operating system
+
+__virtual machine__ [VM]: emulation (software-defined) or virtualization of a machine and the hardware "underneath" 
 
 __Cloud provider__: an entity that offers a variety of information technology resources on-demand for money. Examples
      (unsorted): DigitalOcean (DO), Hetzner, Amazon Web Service (AWS), Google Cloud Platform (GCP), Microsoft Azure
