@@ -45,3 +45,24 @@ you can unveil your CI credentials by clicking on *Show*.
 
 Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in order
 to configure the CLI accordingly. 
+
+
+#### 5. How do I get access to AWS and unlock [AWS Educate](https://aws.amazon.com/education/awseducate/) credits?
+
+1. add your mail address to the provided list
+2. when receiving the invitation email (subject: *Your AWS Educate Application*), follow the link to complete the AWS
+   Educate application process
+3. receive an approval notification via email and log in to the [AWS Educate platform](https://www.awseducate.com/signin/SiteLogin)
+4. once you logged the first time, choose *AWS Educate Starter Account* and click *Get Started* --> click button to
+   create the account
+5. to obtain your AWS credentials, go to *AWS Account* (top right) --> *AWS Educate Starter Account* button --> 
+   *Account Details* button --> AWS CLI: *Show* button. As an alternative, you may want to use the 
+   [`refresh-aws-session.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/hack/refresh-aws-session.sh)
+   and run it every 3 hours since a session only lasts so long.
+
+
+#### 6. Which AWS services are supported with the AWS Educate program?
+
+Please refer to [this document](https://s3.amazonaws.com/awseducate-starter-account-services/AWS_Educate_Starter_Accounts_and_AWS_Services.pdf)
+for details about available services. Furthermore, please be aware that all services are located in the `us-east-1`
+region, hence hosted outside of european jurisdiction (GDPR etc.).

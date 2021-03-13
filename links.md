@@ -3,28 +3,38 @@ Links
 
 
 This documents aims to be a comprehensive list of links that are either mentioned somewhere in the slides or an
-addition to a topic discussed during class.
+addition to topic discussed during class.
 
 
-### DevOps
+## DevOps
 
 * [DevOps-Guide](https://github.com/Tikam02/DevOps-Guide)
 * [roadmap](https://roadmap.sh/devops)
 
-#### *'Definition' (attempts)*
+__*'Definition' (attempts):*__
 
 * [Wikipedia: DevOps](https://en.wikipedia.org/wiki/DevOps)
 * [the agile admin on 'What is DevOps?'](https://theagileadmin.com/what-is-devops)
 * [Amazon on 'What is DevOps?'](https://aws.amazon.com/devops/what-is-devops)
 
-#### Tutorials
+__*Tutorials:*__
 
 * [DevOps Explained](https://www.youtube.com/playlist?list=PLOspHqNVtKAAm1dmyiR9WMmw1UBoOwZVj) (contains portion of IBM advertising) [video playlist]
 
+#### Real-world stories, learnings & best practices
 
-### Unix/Linux basics
+* [DevOps Disasters 3.1](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1) [video]
 
-#### Tutorials
+
+## Basic knowledge 
+
+### Classes / Modules / Lectures
+
+* [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) [set of lectures]
+
+### Unix/Linux fundamentals
+
+__*Tutorials:*__
 
 * [Collection of Online Tutorials for Beginners](https://www.guru99.com/unix-linux-tutorial.html)
 * [Learn UNIX](https://www.tutorialspoint.com/unix/index.htm)
@@ -34,14 +44,14 @@ addition to a topic discussed during class.
 * ["systemd" Tutorials](https://www.youtube.com/playlist?list=PL6IQ3nFZzWfpKKWfZMRxiuEBwqQBwjzS1) [video playlist]
 * [Introduction to systemd](https://thepracticalsysadmin.com/intro-to-systemd/)
 
-#### Command-line
+__*Command-line:*__
 
 * [The Linux Command Line](https://deac-ams.dl.sourceforge.net/project/linuxcommand/TLCL/19.01/TLCL-19.01.pdf) [book]
 * [Command Line Crash Course](https://www.youtube.com/watch?v=yz7nYlnXLfE) [video]
 * [Basic Linux Commands for Beginners](https://maker.pro/linux/tutorial/basic-linux-commands-for-beginners)
 * [List of common commands](https://www.freecodecamp.org/news/the-best-linux-tutorials/#the-dreaded-terminal)
 
-#### Docs
+__*Documentation:*__
 
 * [Filesystem Hierarchy Standard](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html)
 
@@ -54,7 +64,7 @@ addition to a topic discussed during class.
 * [Oh Shit, Git!?!](https://ohshitgit.com/) (getting out of typical dead-ends)
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 
-#### Tutorials
+__*Tutorials:*__
 
 * [Introduction to Git](https://www.vogella.com/tutorials/Git/article.html)
 * [Learn Git Branching](https://learngitbranching.js.org) [interactive]
@@ -65,28 +75,6 @@ addition to a topic discussed during class.
 * [Git Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx) (requires a beginners tutorial first) [video playlist]
 
 
-### Dev-Security-Ops
-
-#### Tools
-
-* [SOPS](https://github.com/mozilla/sops) (VCS-compatible en- & decryption for arbitrary text files)
-* [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) (built-in en- & decryption for *Configuration Management* input)
-* [SSL Configuration Generator](https://ssl-config.mozilla.org/)
-* Keepass-compatible implementations (password manager): [KeePassXC](https://keepassxc.org/), [MacPass](https://macpassapp.org/)
-
-#### Secret Management as a Service
-
-* [Vault by Hashicorp](https://www.vaultproject.io/)
-* [GCP Secret Manager](https://cloud.google.com/secret-manager/)
-* [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
-
-
-### Dependency Management
-
-* [Version pinning: Advanced Range Syntax](https://docs.npmjs.com/misc/semver#advanced-range-syntax)
-* [Do not walk away from Complexity, Run](https://www.youtube.com/watch?v=nZcLHkORdHE) [video]
-
-
 ## Twelve Factor App
 
 * [The Twelve-Factor App](https://12factor.net/)
@@ -94,12 +82,57 @@ addition to a topic discussed during class.
 * [Building Microservices with the 12 Factor App Pattern](https://www.youtube.com/watch?v=2SxKKDXKrXQ) [video]
 
 
-### Virtualization & Containerization
+## Dependency Management
+
+* [Version pinning: Advanced Range Syntax](https://docs.npmjs.com/misc/semver#advanced-range-syntax)
+* [Do not walk away from Complexity, Run](https://www.youtube.com/watch?v=nZcLHkORdHE) [video]
+
+
+## Configuration-as-Code
+
+* [cloud-init](https://cloudinit.readthedocs.io/en/latest/) / [ignition](https://github.com/coreos/ignition) (initial machine setup during first boot)
+
+
+## Infrastructure-as-Code
+
+__*Tutorials:*__
+
+* [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) [video playlist]
+* [Ansible 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN) [video playlist]
+
+
+## Deployment
+
+__*Strategies:*__
+
+* [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/) ([Matrix](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/9e09392d-k8s_deployment_strategies.png))
+* [Deployment Strategies & Release Best Practices](https://medium.com/@cgrant/deployment-strategies-release-best-practices-6e557c3f39b4)
+* [Kubernetes Deployment Strategies](https://www.weave.works/blog/kubernetes-deployment-strategies)
+* [4 deployment strategies for resilient microservices](https://www.infoworld.com/article/3565750/4-deployment-strategies-for-resilient-microservices.html)
+
+
+## Dev-Security-Ops
+
+__*Tools:*__
+
+* [SOPS](https://github.com/mozilla/sops) (VCS-compatible en- & decryption for arbitrary text files)
+* [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) (built-in en- & decryption for *Configuration Management* input)
+* [SSL Configuration Generator](https://ssl-config.mozilla.org/)
+* Keepass-compatible implementations (password manager): [KeePassXC](https://keepassxc.org/), [MacPass](https://macpassapp.org/)
+
+### Secret Management as a Service
+
+* [Vault by Hashicorp](https://www.vaultproject.io/)
+* [GCP Secret Manager](https://cloud.google.com/secret-manager/)
+* [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)
+
+
+## Virtualization & Containerization
 
 * [LXC vs. Docker](https://archives.flockport.com/lxc-vs-docker/)
 * [Running containers without root](https://www.redhat.com/en/blog/preview-running-containers-without-root-rhel-76)
 
-#### Tools
+__*Tools:*__
 
 * Virtual Machine
     * [Vagrant](https://www.vagrantup.com/docs)
@@ -112,25 +145,20 @@ addition to a topic discussed during class.
     * [Docker](https://docs.docker.com/engine/reference/commandline/docker/)
 
 
-### Configuration-as-Code
-
-* [cloud-init](https://cloudinit.readthedocs.io/en/latest/) / [ignition](https://github.com/coreos/ignition) (initial machine setup during first boot)
-
-
-### CI/CD
+## CI/CD
 
 * [Redhat: What is CI/CD](https://www.redhat.com/en/topics/devops/what-is-ci-cd)
 * [Martin Fowler: Continuous Integration](https://martinfowler.com/articles/continuousIntegration.html)
 * [Martin Fowler: Continuous Delivery](https://martinfowler.com/bliki/ContinuousDelivery.html)
 
 
-#### Jenkins
+### Jenkins
 
-##### Tutorial
+__*Tutorials:*__
 
 * [Tutorial](https://www.youtube.com/playlist?list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG) [video playlist]
 
-##### Documentation
+__*Documentation:*__
 
 * [Best Practices](https://wiki.jenkins.io/display/JENKINS/Jenkins+Best+Practices)
 * [Pipelines](https://jenkins.io/doc/book/pipeline)
@@ -138,82 +166,65 @@ addition to a topic discussed during class.
   * [Groovy](http://docs.groovy-lang.org/next/html/documentation/)  
   * [Docker](https://jenkins.io/doc/book/pipeline/docker/)
 
-##### Tools
+__*Tools:*__
 
 * [Jenkins Configuration as Code (JCaC)](https://github.com/jenkinsci/configuration-as-code-plugin)
 * [Kubernetes Plugin](https://github.com/jenkinsci/kubernetes-plugin#pipeline-support)
 
 
-### Infrastructure-as-Code
+## Cloud
 
-#### Tutorials
-
-* [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) [video playlist]
-* [Ansible 101](https://www.youtube.com/playlist?list=PL2_OBreMn7FqZkvMYt6ATmgC0KAGGJNAN) [video playlist]
-
-
-### Deployment
-
-#### Strategies
-
-* [Six Strategies for Application Deployment](https://thenewstack.io/deployment-strategies/) ([Matrix](https://storage.googleapis.com/cdn.thenewstack.io/media/2017/11/9e09392d-k8s_deployment_strategies.png))
-* [Deployment Strategies & Release Best Practices](https://medium.com/@cgrant/deployment-strategies-release-best-practices-6e557c3f39b4)
-* [Kubernetes Deployment Strategies](https://www.weave.works/blog/kubernetes-deployment-strategies)
-* [4 deployment strategies for resilient microservices](https://www.infoworld.com/article/3565750/4-deployment-strategies-for-resilient-microservices.html)
-
-
-### Cloud
-
-#### Tutorials
+__*Tutorials:*__
 
 * [Cloud Fundamentals](https://www.youtube.com/watch?list=PLOspHqNVtKAC-_ZAGresP-i0okHe5FjcJ) (contains portion of IBM advertising) [video playlist]
 
-#### Providers
+### Providers
 
 * [GitHub Student Developer Pack](https://education.github.com/pack)
     * DigitalOcean
     * Microsoft Azure
     * Heroku
     * ...
-* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/) (please get in touch to receive invite and credits; credit card information not require)
-* [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)
+* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/)*
+* [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)*
 * [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 
+_* Please get in touch to receive invite and credits; credit card information are not required_
 
-### Persistence Layer
+## Persistence Layer
 
-#### Tutorials
+__*Tutorials:*__
 
 * [What is Object Storage?](https://www.youtube.com/watch?v=FLp88DzvtUk) (contains portion of IBM advertising) [video]
 * [Block Storage vs. File Storage](https://www.youtube.com/watch?v=5EqAXnNm0FE) (contains portion of IBM advertising) [video]
 * [File storage, block storage, or object storage?](https://www.redhat.com/en/topics/data-storage/file-block-object-storage) [article]
 
-#### Documentation
+__*Documentation:*__
 
 * [Database Definition](https://wiki.c2.com/?DatabaseDefinition)
 
 
-### Container Orchestration
+## Container Orchestration
 
-#### Kubernetes
+### Kubernetes
 
-##### Tutorials
+__*Tutorials:*__
 
 * [Kubernetes Essentials](https://www.youtube.com/playlist?list=PLOspHqNVtKABAVX4azqPIu6UfsPzSu2YN) (contains portion of IBM advertising) [video playlist]
 * [Official Tutorials: how to accomplish a larger goal](https://kubernetes.io/docs/tutorials/)
 * [A Guide to the Kubernetes Networking Model](https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/)
 * [etcd: distributed consensus algorithm - raft](http://thesecretlivesofdata.com/raft/) (interactive)
 
-##### Documentation
+__*Documentation:*__
 
 * [Istio: Control and Data flow through Envoy](https://github.com/istio/istio/wiki/Control-and-Data-flow-through-Envoy)
 
-##### Playground as a service:
+__*Playground as a service:*__
 
 * [Katacoda](https://www.katacoda.com/courses/kubernetes/playground)
 * [Play with Kubernetes](https://labs.play-with-k8s.com)
 
-##### Local:
+__*Local:*__
 
 * [Minikube](https://github.com/kubernetes/minikube)
 * [MicroK8s](https://microk8s.io/)
@@ -221,51 +232,51 @@ addition to a topic discussed during class.
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
 * [KD3](https://k3d.io/)
 
-##### Tooling 
+__*Tools:*__ 
 
 * [garden.io](https://docs.garden.io/) (development and testing)
 * dashboards
     * [official](https://github.com/kubernetes/dashboard)
     * [Weave Scope](https://github.com/weaveworks/scope)
 
-##### Maybe don't use Kubernetes
+#### Maybe don't use Kubernetes after all
 
 * [Container technologies at Coinbase - Why Kubernetes is not part of our stack](https://blog.coinbase.com/container-technologies-at-coinbase-d4ae118dcb6c)
 * [Maybe You Don't Need Kubernetes](https://endler.dev/2019/maybe-you-dont-need-kubernetes/)
 * [This Week in Programming: Why NOT to Run Kubernetes](https://thenewstack.io/this-week-in-programming-why-not-to-run-kubernetes/)
 
 
-#### OpenShift
+### OpenShift
 
-##### As a service:
+__*As a service:*__
 
 * [Katacoda](https://learn.openshift.com/playgrounds)
 
-##### Local
+__*Local:*__
 
 * [Minishift (for v3.x)](https://github.com/minishift/minishift)
 * [CodeReady Containers (for v4.x)](https://github.com/code-ready/crc)
 
 
-### Monitoring & Observability
+## Monitoring & Observability
 
-#### Knowledge
+__*Knowledge:*__
 
 * [Monitoring Distributed Systems](https://sre.google/sre-book/monitoring-distributed-systems/)
 * [Monitoring and Observability](https://medium.com/@copyconstruct/monitoring-and-observability-8417d1952e1c), by Cindy Sridharan &
   corresponding [Learning Notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/distributed-systems-observability.md)
 * Prometheus Docs: [Pull](https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/) vs. [Push](https://prometheus.io/docs/practices/pushing/)
 
-#### Tools
+__*Tools:*__
 
 * [CNCF members](https://landscape.cncf.io/category=observability-and-analysis&format=card-mode&grouping=category)
 * [Comparison of network monitoring systems](https://en.wikipedia.org/wiki/Comparison_of_network_monitoring_systems)
 * [Monit](https://mmonit.com/monit/)
 
 
-### Curated link collections
+## Curated link collections
 
-*NOTE: descending order, starting with the most recommended one*
+*In descending order of recommendation.*
 
 #### DevOps:
 
