@@ -1,5 +1,5 @@
-Deliverable: Exercise concept
-=============================
+Deliverable: Project Concept
+============================
 
 
 __SUBMISSION DEADLINE:__ before the end of day on the predefined date
@@ -18,13 +18,13 @@ __SUBMISSION DEADLINE:__ before the end of day on the predefined date
 #### Content
 
 * describe the life cycle of the application (e.g. automation steps)
-* outline architecture of the infrastructure
+* outline architecture of the infrastructure and how it's going to be provisioned
 * explain your decisions
 * briefly describe the technology stack you opted for
 
-Think of the audience for this concept as one of your fellow classmates who you are trying to convince to join you for
-the implementation part. Or, your team lead, to whom you are trying to justify that you will work one sth. else for the
-upcoming weeks. 
+Think of the audience for this concept as one of your fellow classmates who you are trying to convince to join you to
+help with the implementation part. Or, your team lead, who you are trying to convince to let you work one something else
+for the upcoming weeks. 
 
 The following questions might give you some inspiration. *(Only to be seen as an INCOMPLETE list of suggestions, and not
 as headlines)*

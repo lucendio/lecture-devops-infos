@@ -3,7 +3,7 @@ Links
 
 
 This documents aims to be a comprehensive list of links that are either mentioned somewhere in the slides or an
-addition to topic discussed during class.
+addition to a topic discussed during class.
 
 
 ## DevOps
@@ -28,7 +28,7 @@ __*Tutorials:*__
 
 ## Basic knowledge 
 
-### Classes / Modules / Lectures
+### Classes / Courses / Lectures
 
 * [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) [set of lectures]
 

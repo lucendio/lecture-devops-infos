@@ -1,9 +1,9 @@
-Deliverable: Exercise implementation
-====================================
+Deliverable: Project Implementation
+===================================
 
 
-__SUBMISSION DEADLINE:__ before the end of that day on which the result has been presented during the 1:1 review
-    session. 
+__SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled for the review session.
+    Default; may deviate and superseded by information stated in other lecture material.
 
 
 ### Requirements
@@ -13,9 +13,9 @@ __SUBMISSION DEADLINE:__ before the end of that day on which the result has been
 * language: German or English
 * every line of code and documentation is stored and tracked in an accessible Git repository
 * hand in (a) link(s) to the repository/repositories
-* every code base contains a `README.md` which includes an onboarding section
+* each code base contains a `README.md` which includes an onboarding section
 * every relevant (terminal) command has to be made transparent & verifiable, e.g. in script file(s) a/o documentation
-* implementation and execution of each step needs to be comprehensible (to ensure fair evaluation/grading)
+* each step taken towards the final setup must be comprehensible (to ensure fair evaluation/grading)
 
 
 #### Technical
@@ -23,15 +23,15 @@ __SUBMISSION DEADLINE:__ before the end of that day on which the result has been
 * follow the *Infrastructure-as-Code* paradigm
 * cloud-, self- or locally hosted
 * the host system for the application and any other service must be at least
-  [mostly POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
+  [POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
   (e.g. Linux, BSD, macOS)
 * all relevant services (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
-* the application and all implemented services must be served via _HTTP**S**_ (HTTP over TLS)
-* CI is only triggered by a change in the VCS
+* the application and each service provisioned by yourself must be served via _HTTP**S**_ (HTTP over TLS)
+* CI is only triggered through a change in the VCS
 * CD to the *production* environment must involve a manual approval/release process
-* application must run 100% redundant (scaled horizontally with a replication factor of *2*)
-* when deploying a new version, the app must continue to be reachable; this depends on the deployment strategy that has
-  been chosen
+* application must run 100% redundant (scaled horizontally with a replication factor of at least *2*)
+* when deploying a new version, the app must continue to be reachable; this depends on the deployment
+  strategy that has been chosen
 
 
 #### Content

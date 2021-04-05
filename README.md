@@ -1,13 +1,14 @@
-Lecture: DevOps - materials
+Lecture: DevOps - Materials
 ===========================
 
 
-This repository is meant to be the main entry point for all the content related to the lecture: *DevOps*
+This repository is the main entry point for the *DevOps* lecture and is supposed to help
+you discover all the content.
 
 
 ### How to get started?
 
-Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
+Please refer to the [FAQ](./faq.md#1-where-do-i-even-start).
 
 
 ### Table of Contents
@@ -15,12 +16,12 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
 * [ ] Slides
 * [X] [Glossary](./glossary.md)
 * [X] Assignments:
-    * [Research & Discussion](./assignments/research_and_discussion.md)
-    * [Exercise](./assignments/exercise.md) descriptions
-* [X] [Description of every deliverable](./deliverables) 
+    * [Research & Discussion](./assignments/research-and-discussion.md)
+    * [Project work](./assignments/project-work.md)
+* [X] [Description of each deliverable](./deliverables) 
 * [X] [Grading](./grading.md)
 * [X] [Tips & Guidance](./tips.md)
-* [X] [Tutorials](./tutorials)
+* [X] [Tutorials](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials)
 * [X] [FAQ](./faq.md)
 * [X] [Links](./links.md)
 
@@ -32,9 +33,13 @@ Please have a look at the [FAQ](./faq.md#1-where-do-i-even-start).
     * server implementation: JavaScript (NodeJS)
     * backing service (database): MongoDB
 * [code examples](https://github.com/lucendio/lecture-devops-code)
-    * tutorials solutions
-    * Terraform + DigitalOcean
-    * Vagrant + VirtualBox
-    * Ansible
-    * Jenkins running in Containers (Server & Agent)
- 
+    * Tutorials (descriptions & solutions)
+    * comprehensive examples
+      * Jenkins running in Containers (Server & Agent)
+      * ...
+    * snippets for different technologies, such as:
+      * Terraform + DigitalOcean
+      * Terraform + AWS
+      * Vagrant + VirtualBox
+      * Ansible
+      * ...

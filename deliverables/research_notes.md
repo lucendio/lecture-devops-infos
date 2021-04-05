@@ -2,7 +2,7 @@ Deliverable: Research & discussion nodes
 ========================================
 
 
-__SUBMISSION DEADLINE:__ before the end of the day on which the class room discussion took place 
+__SUBMISSION DEADLINE:__ before the end of the day at which the class room discussion takes place 
 
 
 ### Requirements
@@ -24,7 +24,7 @@ __SUBMISSION DEADLINE:__ before the end of the day on which the class room discu
 #### Content
 
 * What is the message/meaning/advice behind the statement?
-* Give the statement some context
+* Put the statement in some context
 * Assess the statement and state your own opinion
 * Is it a good or a bad idea? Why? Or, maybe both?
 * Make your conclusions transparent and traceable
