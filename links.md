@@ -118,6 +118,7 @@ __*Tools:*__
 * [SOPS](https://github.com/mozilla/sops) (VCS-compatible en- & decryption for arbitrary text files)
 * [Ansible Vault](https://docs.ansible.com/ansible/latest/user_guide/vault.html) (built-in en- & decryption for *Configuration Management* input)
 * [SSL Configuration Generator](https://ssl-config.mozilla.org/)
+* [Let's Encrypt (aka certbot)](https://letsencrypt.org/docs/) (free and automatable TLS certificates)
 * Keepass-compatible implementations (password manager): [KeePassXC](https://keepassxc.org/), [MacPass](https://macpassapp.org/)
 
 ### Secret Management as a Service
@@ -131,6 +132,7 @@ __*Tools:*__
 
 * [LXC vs. Docker](https://archives.flockport.com/lxc-vs-docker/)
 * [Running containers without root](https://www.redhat.com/en/blog/preview-running-containers-without-root-rhel-76)
+* [How to Docker on Windows 10 (w/o Docker Desktop - yes, you don't want the Desktop Edition)](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
 
 __*Tools:*__
 
@@ -214,6 +216,7 @@ __*Tutorials:*__
 * [Official Tutorials: how to accomplish a larger goal](https://kubernetes.io/docs/tutorials/)
 * [A Guide to the Kubernetes Networking Model](https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/)
 * [etcd: distributed consensus algorithm - raft](http://thesecretlivesofdata.com/raft/) (interactive)
+* [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) (provision K8s by hand, step-by-step)
 
 __*Documentation:*__
 

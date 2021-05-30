@@ -75,3 +75,8 @@ __*Example (AWS + Freenom):*__
 2. Create a *Hosted Zone* for that domain on AWS Route 53 with Terraform
 3. Set the name servers defined by the *Hosted Zone* as custom name servers of your domain via Freenom API
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with Terraform
+
+
+#### 7. Which software is installed on Github Action runners?
+
+Please refer to the [official documentation](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#preinstalled-software).

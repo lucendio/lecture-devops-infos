@@ -2,7 +2,7 @@ Deliverable: Research & discussion nodes
 ========================================
 
 
-__SUBMISSION DEADLINE:__ before the end of the day at which the class room discussion takes place 
+__SUBMISSION DEADLINE:__ before the end of the day at which the class room discussion takes place
 
 
 ### Requirements
