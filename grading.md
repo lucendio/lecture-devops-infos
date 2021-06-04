@@ -56,8 +56,8 @@ _Weight: **100%**_
 
 * resource allocation is automated
 * resource allocation is reproducible
-* installation & configuration of all services is automated
-* installation & configuration of all services is reproducible
+* installation & configuration of all services are automated
+* installation & configuration of all services are reproducible
 * idempotent provisioning
 * each service exists and is operational
 * every service can be reached via HTTPS
@@ -70,7 +70,7 @@ _Weight: **100%**_
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
   explicitly/controlled manner
 * overall setup implements all environments
-* concept matches implementation
+* concept/documentation matches implementation
 * all formal requirements ([concept](./deliverables/project_concept.md#formal) & 
   [implementation](./deliverables/project_implementation.md#formal)) are met and the
   [process](./assignments/project-work.md#process) has been followed

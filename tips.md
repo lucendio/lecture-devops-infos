@@ -183,7 +183,9 @@ Based on an average of 20 weeks (starting with the course *onboarding* and concl
   continuous delivery) 
 * FQDNs are typically provided through DNS
     * simulated locally: (a) by editing the `/etc/hosts` file or (b) by running a local DNS service (e.g. `dnsmasq`)
-    * public: third-party DNS provider (see [FAQ](./faq.md)) that runs *name servers* (requires to control a *domain*)
+    * public: third-party DNS provider
+      (see [FAQ](./faq.md#6-which-public-dns-provider-offers-free-domain-registration-and-allows-automated-record-creation))
+      that runs *name servers* (requires to control a *domain*)
     * service: [nip.io](https://nip.io/) provides *wildcard DNS for any IP address*
 * to access the same application but deployed in different environments, typically they get assign distinct FQDNs,
   instead of, for example, different ports (e.g. `dev.myapp.tld`, `prod.myapp.tld` instead of `myapp.tld:8080`, 
