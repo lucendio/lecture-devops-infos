@@ -138,7 +138,7 @@ Which steps would the app need to go through?
 on your journey through the course, and it's probably not (fully) in sync with the course road map.*
 
 Based on an average of 20 weeks (starting with the course *onboarding* and concluding with *review*).
-
+```
 01  Go through the provided materials and note down questions
 02  Familiarize yourself with the [scope](./links.md#devops) of this course and its topics 
 03  Refresh [linux](./links.md#unixlinux-basics) and [git](./links.md#git) skills
@@ -172,7 +172,7 @@ Based on an average of 20 weeks (starting with the course *onboarding* and concl
 19  Ensure complete reproducibility by destroying the whole setup and re-creating it from scratch; make sure 
     everything still works
 20  Double-check the grading criteria and see if they are met; plan and trial run the review presentation 
-
+```
 
 
 ### Technical Tips
