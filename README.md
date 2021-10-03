@@ -1,9 +1,18 @@
-Lecture: DevOps - Materials
-===========================
+Lecture: DevOps - Infos
+=======================
 
 
-This repository is the main entry point for the *DevOps* lecture and is supposed to help
-you discover all the content.
+This repository is the main entry point for the *DevOps* course. It's supposed to help
+you discover all the provided materials and explains how this course is organized.
+
+
+### Prerequisites
+
+* not afraid of the Terminal or command-line interfaces
+* basic knowledge[^1] of Unix-like operating systems (e.g. `$PATH`, file permissions)
+* some experience with Version Control Systems (e.g. git)
+
+[^1]: If you don't, take a look at the [link collection: basic knowledge](./links.md#basic-knowledge) 
 
 
 ### How to get started?
