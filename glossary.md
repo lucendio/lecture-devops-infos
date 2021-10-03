@@ -36,7 +36,7 @@ __configure*__: installs software and adjusts (system) configuration on resource
 __provision*__: combines the processes of allocating & configuring. While allocating is more related to (possibly
     virtualized) hardware resource, e.g. virtual machines, and (managed) services, whereas configuring manages what's
     being put on top of these resources
-    
+
 ```
 |-------------------------------------- Infra-as-Code / Configuration Management --------------------------------------|
 |-------- e.g. Terraform, Vagrant ---------|--------------------------- e.g. Ansbible, Helm ---------------------------|

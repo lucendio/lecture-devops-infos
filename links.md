@@ -2,14 +2,15 @@ Links
 =====
 
 
-This documents aims to be a comprehensive list of links that are either mentioned somewhere in the slides or an
-addition to a topic discussed during class.
+This document aims to be a comprehensive list of links that are either mentioned somewhere in the slides or an
+addition to a topics discussed during class. Furthermore, all video(s) (channels) referred to below may serve
+as a complete replacement for all lectures given throughout this course.
 
 
 ## DevOps
 
 * [DevOps-Guide](https://github.com/Tikam02/DevOps-Guide)
-* [roadmap](https://roadmap.sh/devops)
+* [roadmap](https://roadmap.sh/devops) ([video](https://www.youtube.com/watch?v=9pZ2xmsSDdo))
 
 __*'Definition' (attempts):*__
 
@@ -19,7 +20,9 @@ __*'Definition' (attempts):*__
 
 __*Tutorials:*__
 
+* [TechWorld with Nana](https://www.youtube.com/c/TechWorldwithNana) [channel]
 * [DevOps Explained](https://www.youtube.com/playlist?list=PLOspHqNVtKAAm1dmyiR9WMmw1UBoOwZVj) (contains portion of IBM advertising) [video playlist]
+* [KodeCloud](https://www.youtube.com/c/KodeKloud) [channel]
 
 #### Real-world stories, learnings & best practices
 
@@ -133,6 +136,7 @@ __*Tools:*__
 * [LXC vs. Docker](https://archives.flockport.com/lxc-vs-docker/)
 * [Running containers without root](https://www.redhat.com/en/blog/preview-running-containers-without-root-rhel-76)
 * [How to Docker on Windows 10 (w/o Docker Desktop - yes, you don't want the Desktop Edition)](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
+* [Docker anti-patterns](https://codefresh.io/containers/docker-anti-patterns/)
 
 __*Tools:*__
 
@@ -185,13 +189,12 @@ __*Tutorials:*__
 * [GitHub Student Developer Pack](https://education.github.com/pack)
     * DigitalOcean
     * Microsoft Azure
-    * Heroku
-    * ...
-* [AWS: Amazon Web Services](https://aws.amazon.com/education/awseducate/)*
-* [GCP: Google for Education](https://edu.google.com/programs/students/benefits/)*
+* [Google: GCP for Education](https://edu.google.com/programs/students/benefits/)
+* [Microsoft: Azure](https://azure.microsoft.com/en-us/free/students/)
+* [Amazon: Amazon Web Services](https://aws.amazon.com/education/awseducate/)
 * [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 
-_* Please get in touch to receive invite and credits; credit card information are not required_
+*NOTE: Please get in touch to receive invite and credits; credit card information are not required*
 
 ## Persistence Layer
 

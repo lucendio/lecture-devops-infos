@@ -12,32 +12,35 @@ you discover all the provided materials and explains how this course is organize
 * basic knowledge[^1] of Unix-like operating systems (e.g. `$PATH`, file permissions)
 * some experience with Version Control Systems (e.g. git)
 
-[^1]: If you don't, take a look at the [link collection: basic knowledge](./links.md#basic-knowledge) 
+*NOTE: experience from previous semester showed that working on a Windows machine might become tedious
+and can even result in [data loss](https://github.com/lucendio/lecture-devops-app#lecture-devops---application).
+For possible solutions, please refer to the [FAQ](./faq.md#3-my-workstation-runs-microsoft-windows-where-do-i-get-a-unix-like-context-from-to-work-in)*
+
+[^1]: there is a [link collection](./links.md#basic-knowledge) to get you up to speed, if you're missing some pieces
 
 
 ### How to get started?
 
-Please refer to the [FAQ](./faq.md#1-where-do-i-even-start).
+Please refer to the [FAQ section: Where do I even start?](./faq.md#1-where-do-i-even-start).
 
 
 ### Table of Contents
 
-* [ ] Slides
-* [X] [Glossary](./glossary.md)
-* [X] Assignments:
-    * [Research & Discussion](./assignments/research-and-discussion.md)
-    * [Project work](./assignments/project-work.md)
-* [X] [Description of each deliverable](./deliverables) 
+* [X] [Topics](./topics.md)
+* [X] [Assignments](./assignments)
+* [X] [Description of each deliverable](./assignments/deliverables) 
 * [X] [Grading](./grading.md)
-* [X] [Tips & Guidance](./tips.md)
+* [X] [A Guide](./guide)
 * [X] [Tutorials](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials)
 * [X] [FAQ](./faq.md)
 * [X] [Links](./links.md)
+* [X] [Glossary](./glossary.md)
+* [ ] Slides
 
 
-### External resources
+### External resources/repositories
 
-* [to-be-deployed application](https://github.com/lucendio/lecture-devops-app)
+* [to-be-deployed workload/application](https://github.com/lucendio/lecture-devops-app)
     * single-page web application
     * server implementation: JavaScript (NodeJS)
     * backing service (database): MongoDB
@@ -52,3 +55,4 @@ Please refer to the [FAQ](./faq.md#1-where-do-i-even-start).
       * Vagrant + VirtualBox
       * Ansible
       * ...
+* [showcase](https://gitlab.beuth-hochschule.de/gjahn/mmi-devops-showcase)

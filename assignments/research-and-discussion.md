@@ -6,7 +6,7 @@ __Description:__ Research a few chosen statements originating from
 [*'(A few) Ops Lessons We All Learn The Hard Way'*](https://www.netmeister.org/blog/ops-lessons.html) and take notes of
 your findings. Share and discuss your results during class.
 
-__Deliverable:__ [research notes](./../deliverables/research_notes.md)
+__Deliverable:__ [research notes](./deliverables/research_notes.md)
 
 
 #### Process
@@ -17,7 +17,7 @@ __Deliverable:__ [research notes](./../deliverables/research_notes.md)
 4. publish your notes 
 
 *Please note that the purpose of this work is merely to qualify yourself for being entitled to hand in the
-[project work](./project-work.md).*
+[project work](./project.md).*
 
 
 #### Rules
@@ -28,6 +28,6 @@ __Deliverable:__ [research notes](./../deliverables/research_notes.md)
 
 #### Specifications
 
-The closing date for choosing statements is being announced at the beginning of the semester. The repository that is
+The closing date for choosing statements is announced at the beginning of the semester. The repository that is
 used to publish everybody's choices as well as all the research nodes, is unique in each semester. Please refer to
 the respective course management platform in order to find the URL and request access.

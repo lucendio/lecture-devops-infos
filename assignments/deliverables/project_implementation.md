@@ -14,7 +14,7 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * every line of code and documentation is stored and tracked in an accessible Git repository
 * hand in (a) link(s) to the repository/repositories
 * each code base contains a `README.md` which includes an onboarding section
-* every relevant (terminal) command has to be made transparent & verifiable, e.g. in script file(s) a/o documentation
+* every relevant (terminal) command has to be made transparent & verifiable, e.g. in (script) file(s) a/o documentation
 * each step taken towards the final setup must be comprehensible (to ensure fair evaluation/grading)
 
 

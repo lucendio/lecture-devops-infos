@@ -7,22 +7,25 @@ cloud or cloud-simulated environment. Allocate the underlying infrastructure res
 required for the application to function properly and to deploy it as example workload in multiple environments.
 Automate these processes in a reasonable manner.
 
-__Deliverables:__ [concept](./../deliverables/project_concept.md) & [implementation](./../deliverables/project_implementation.md)
+__Deliverables:__ [concept](./deliverables/project_concept.md) & [implementation](./deliverables/project_implementation.md)
+
+__Requirements:__ successful participation in the [Research & Discussion](./research-and-discussion.md) assignment
 
 
 #### Process
 
-1. hand in the concept before the given deadline has ended (sometime within the first half of the semester)
+1. hand in a [concept](./deliverables/project_concept.md) before the given deadline has ended (sometime within
+   the first half of the semester)
 2. receive initial feedback and sanity-check in written form via email
-3. present your implementation in a review session at the end of the semester
-4. check in last commit before the end of day prior to the day when the review session took place
+3. check in last commit before the end of day at the date of _code freeze_
+4. present your implementation in a review session at the end of the semester
 
 Eventually, you'll end up with two repositories:
 
-(1) the fork of the [application](https://github.com/lucendio/lecture-devops-app) that you are going to deploy
-    in this assignment (NOTE: __fork__, don't copy & paste code, and __rebase regularly__ to upstream)
+(1) a fork of the [application](https://github.com/lucendio/lecture-devops-app) that you are going to deploy
+    in this assignment (NOTE: __clone or fork__, don't copy & paste code, and __rebase regularly__ to upstream)
 (2) the source code that defines your infrastructure, its documentation, and the
-    [concept](./../deliverables/project_concept.md)
+    [concept](./deliverables/project_concept.md)
 
 *Please note, that it's not required to successfully & completely finish the implementation in order to pass (grade: 4.0)
 the course.*
@@ -47,7 +50,7 @@ Except for the given [application](https://github.com/lucendio/lecture-devops-ap
 to choose any available technology to implement the project, as long as all requirements are being met.  
 
 *NOTE: for more details and specifications of the deliverable(s), please refer the corresponding document(s) 
-[here](./../deliverables)*
+[here](./deliverables)*
 
 
 #### The application
@@ -72,10 +75,11 @@ to choose any available technology to implement the project, as long as all requ
 #### Additional information
 
 The following links may provide some guidance on how to approach the assigment. They can be helpful to structure your
-work, or even lead to one or two useful hints for the [implementation](./../deliverables/project_implementation.md).
+work, or even lead to one or two useful hints for the [implementation](./deliverables/project_implementation.md).
 Whether you are new to this whole field of DevOps or already have some experience, chances are high you'll get something
 out of it.
 
-* [Approach and workflow](./../tips.md#approach-and-workflow)
-* [Technical tips](./../tips.md#technical-tips)
-* [Example stacks](./../tips.md#example-stacks)
+* [A guided path](./../guide/path.md)
+* [Making decisions](./../guide/decisions.md)
+* [Technical tips](./../guide/tips.md)
+* [Example stacks](./../guide/examples.md)
