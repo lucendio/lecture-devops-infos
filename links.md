@@ -77,6 +77,12 @@ __*Tutorials:*__
 * [Git Tutorial for Beginners: Learn Git in 1 Hour](https://www.youtube.com/watch?v=8JJ101D3knE)
 * [Git Tutorials](https://www.youtube.com/playlist?list=PL-osiE80TeTuRUfjRe54Eea17-YfnOOAx) (requires a beginners tutorial first) [video playlist]
 
+__*Branch & Release workflows:*__
+
+* [4 branching workflows for Git](https://medium.com/@patrickporto/4-branching-workflows-for-git-30d0aaee7bf)
+* [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+* [What is the best Git branch strategy?](https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy)
+
 
 ## Twelve Factor App
 
