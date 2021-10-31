@@ -58,20 +58,23 @@ While all of them provide similar concepts which are sometimes named differently
 * DigitalOcean: no known limitation, except the amount of credits
 
 
-#### 6. __[DEPRECATED]__ How do I get access to AWS and unlock [AWS Educate](https://aws.amazon.com/education/awseducate/) credits?
+#### 6. How do I get access to AWS and unlock [AWS Academy](https://aws.amazon.com/training/awsacademy/) credits?
 
-1. Add your mail address to the provided list
-2. When receiving the invitation email (subject: *Your AWS Educate Application*), follow the link to complete the AWS
-   Educate application process. In case you already have a normal AWS account and you wish to use it - it is possible
-   to *'connect'* them during the registration process.
-3. Receive an approval notification via email and log in to the [AWS Educate platform](https://www.awseducate.com/signin/SiteLogin)
-4. Once you logged the first time, choose *AWS Educate Starter Account* and click *Get Started* --> click button to
-   create the account
-5. To obtain your AWS credentials, go to *AWS Account* (top right) --> *AWS Educate Starter Account* button (opens a
-   new window served by *labs.vocareum.com*) --> *Account Details* button --> AWS CLI: *Show* button.
-   __[DEPRECATED]__ As an alternative, you may want to use the 
-   [`refresh-aws-session.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/hack/refresh-aws-session.sh)
-   and run it every 3 hours since a session only lasts so long.
+1. Add your email address to the provided list
+2. When receiving the invitation email (subject: *Course Invitation* from *instructure.com*), follow the link to join
+   the *Learner Lab - Foundation Services* on AWS Academy
+3. You'll need a *Canvas* account - please create one in case you don't have one already. Canvas is a 3rd-party platform
+   functioning as the intermediary providing and managing the access to the AWS API.
+4. Once you logged the first time on [AWS Academy Instructure](https://awsacademy.instructure.com/login/canvas),
+   navigate to *Courses* --> *AWS Academy Learner Lab - Foundation Services* --> *Modules* (in the course context) --> 
+   *Learner Lab - Foundational Services* to accept the Terms of Service and then press *Start Lab* (top right)
+5. Take a look at the *Readme* (top right) for further information, e.g. available Services or restrictions
+6. To access the AWS management console (GUI), click on *AWS* right next to the green status indicator (top left)
+7. To obtain your credentials, follow the same navigation path from (4.) followed by *AWS Details* (top right) --> AWS
+   CLI: *Show* button
+   As an alternative, you may want to use the 
+   [`aws-academy.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/hack/aws-academy.sh)
+   and run it every 4 hours since a session only lasts so long.
 
 Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in order
 to configure the CLI to use the credentials.
@@ -80,8 +83,9 @@ to configure the CLI to use the credentials.
 #### 7. Which AWS services are supported with the AWS Academy program?
 
 Please refer to [this document](./.assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) in order to find
-out which services are available in an AWS Academy account. Furthermore, please be aware that all services are located
-in the `us-east-1` or `us-west-2` regions, hence hosted outside of the european jurisdiction (no GDPR etc.).
+out which services are available in an AWS Academy account. Alternatively, you may find these information in mentioned
+in *6.8*. Furthermore, please be aware that all services are located in the `us-east-1` or `us-west-2` regions, hence
+hosted outside of the european jurisdiction (no GDPR etc.).
 
 
 #### 8. Which public DNS provider offers free domain registration and allows automated record creation?
