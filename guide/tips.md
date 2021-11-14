@@ -40,7 +40,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
 * FQDNs are typically provided through DNS
     * simulated locally: (a) by editing the `/etc/hosts` file or (b) by running a local DNS service (e.g. `dnsmasq`)
     * public: third-party DNS provider
-      (see [FAQ](./faq.md#6-which-public-dns-provider-offers-free-domain-registration-and-allows-automated-record-creation))
+      (see [FAQ](./../faq.md#9-which-public-dns-provider-offers-free-domain-registration-and-allows-automated-record-creation))
       that runs *name servers* (requires to control a *domain*)
     * service: [nip.io](https://nip.io/) provides *wildcard DNS for any IP address*
 * to access the same application but deployed in different environments, typically they get assign distinct FQDNs,

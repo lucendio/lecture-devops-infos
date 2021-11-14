@@ -24,7 +24,7 @@ Don't worry. It's just an initial step to get you start digging into things rela
 and implementation. So, nothing is set in store. You can change things along the way - after some consultation first.
 
 
-#### 3. My workstation runs Microsoft Windows. Where do I get a Unix-like context from to work in?
+#### 3. My workstation runs Microsoft Windows. From where do I get a Unix-like context to work in?
 
 You may either want to try the [*Windows Subsystem for Linux*](https://docs.microsoft.com/en-us/windows/wsl/install)
 or get yourself a virtual machine running Linux on your workstation. One way to archive this is to install
@@ -32,7 +32,15 @@ or get yourself a virtual machine running Linux on your workstation. One way to 
 (directly from their websites or through [Chocolatey](https://chocolatey.org/) - the Windows package manager).
 
 
-#### 4. Where do I get some infrastructure to play with, to do the tutorials with, or even for the assignment?
+#### 4. My workstation runs on RM architecture (e.g. Apple Silicon). So, Virtualbox is not supported. Which other hypervisors are supported?
+
+When looking at [providers](https://www.vagrantup.com/docs/providers) that are officially supported by Vagrant, then 
+there would only be one option: [VMware](https://www.vmware.com/products/fusion.html). But it's proprietary and not free
+of charge. Outside of Vagrant, another option would be [QEMU](https://formulae.brew.sh/formula/qemu), or the GUI-based
+app called [UTM](https://mac.getutm.app/).
+
+
+#### 5. Where do I get some infrastructure to play with, to do the tutorials with, or even for the assignment?
 
 Essentially, you have 3 different kind of options:
 
@@ -43,7 +51,7 @@ c) the university provides a Kubernetes cluster managed with Rancher (requires s
    are not on-site)
 
 
-#### 5. Which cloud provider should I use?
+#### 6. Which cloud provider should I use?
 
 As mentioned before, there is a variety of common [*cloud providers*](./links.md#providers) you can choose from.
 While all of them provide similar concepts which are sometimes named differently, they may have some limitations:
@@ -58,7 +66,7 @@ While all of them provide similar concepts which are sometimes named differently
 * DigitalOcean: no known limitation, except the amount of credits
 
 
-#### 6. How do I get access to AWS and unlock [AWS Academy](https://aws.amazon.com/training/awsacademy/) credits?
+#### 7. How do I get access to AWS and unlock [AWS Academy](https://aws.amazon.com/training/awsacademy/) credits?
 
 1. Add your email address to the provided list
 2. When receiving the invitation email (subject: *Course Invitation* from *instructure.com*), follow the link to join
@@ -80,7 +88,7 @@ Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userg
 to configure the CLI to use the credentials.
 
 
-#### 7. Which AWS services are supported with the AWS Academy program?
+#### 8. Which AWS services are supported with the AWS Academy program?
 
 Please refer to [this document](./.assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) in order to find
 out which services are available in an AWS Academy account. Alternatively, you may find these information in mentioned
@@ -88,7 +96,7 @@ in *6.8*. Furthermore, please be aware that all services are located in the `us-
 hosted outside of the european jurisdiction (no GDPR etc.).
 
 
-#### 8. Which public DNS provider offers free domain registration and allows automated record creation?
+#### 9. Which public DNS provider offers free domain registration and allows automated record creation?
 
 A non-exhaustive list of public DNS providers:
 
@@ -113,12 +121,12 @@ __*Example (AWS + Freenom):*__
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with Terraform
 
 
-#### 9. Which software is installed on Github Action runners?
+#### 10. Which software is installed on Github Action runners?
 
 Please refer to the [official documentation](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#preinstalled-software).
 
 
-#### 10. How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster?
+#### 11. How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster?
 
 *NOTE: did you already enter your university email address in the respective account list?*
 
