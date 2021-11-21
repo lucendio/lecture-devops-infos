@@ -43,9 +43,10 @@ __*Tutorials:*__
 * [Learn UNIX](https://www.tutorialspoint.com/unix/index.htm)
 * [Beginner's guide for Linux](https://www.tecmint.com/free-online-linux-learning-guide-for-beginners/)
 * [The Linux Basics Course: Beginner to Sysadmin, Step by Step](https://www.youtube.com/playlist?list=PLtK75qxsQaMLZSo7KL-PmiRarU7hrpnwK) [video playlist]
-* [Makefile Tutorial](https://makefiletutorial.com/)
+* [SSH Essentials](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
 * ["systemd" Tutorials](https://www.youtube.com/playlist?list=PL6IQ3nFZzWfpKKWfZMRxiuEBwqQBwjzS1) [video playlist]
 * [Introduction to systemd](https://thepracticalsysadmin.com/intro-to-systemd/)
+* [Makefile Tutorial](https://makefiletutorial.com/)
 
 __*Command-line:*__
 
@@ -61,8 +62,8 @@ __*Documentation:*__
 
 ### Git
 
-* [Git Cheat Sheet by Github](https://education.github.com/git-cheat-sheet-education.pdf) [PDF]
-* [devhints:git*](https://devhints.io/?q=git)
+* [Git Cheat Sheet by GitLab](https://about.gitlab.com/images/press/git-cheat-sheet.pdf) [PDF]
+* [50 Commands you should know](https://www.freecodecamp.org/news/git-cheat-sheet/)
 * [`git-hooks`](https://wilsonmar.github.io/git-hooks/) ([cheat sheet](https://www.analysisandsolutions.com/code/git-hooks-summary-cheat-sheet.htm))
 * [Oh Shit, Git!?!](https://ohshitgit.com/) (getting out of typical dead-ends)
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)

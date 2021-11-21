@@ -61,7 +61,8 @@ While all of them provide similar concepts which are sometimes named differently
   * limit the amount or size of machines (EC2 instances) that you are allowed to spin up
   * no IAM
   * no NAT gateway creation
-* Google Cloud Platform for Education: no known limitation, except the amount of credits
+* Google Cloud Platform for Education: no known limitation, except the amount of credits & a mandatory google
+  account (can be created with the university email address)
 * Azure for Students: no known limitation, except the amount of credits
 * DigitalOcean: no known limitation, except the amount of credits
 
