@@ -148,3 +148,7 @@ __[Multitenancy](https://en.wikipedia.org/wiki/Multitenancy)__: multiple users (
 __atomic__: in the context of states and state transition, it is the *'smallest'* change possible to be applied w/o
     ever causing the overall system ending up in an inconsistent state. The system is designed in a way that the atomic
     transaction or the state before and after don't have an in-between- or sub-state.
+
+__host__: a machine (physical or virtual) that hosts virtual machines and/or containers. 
+
+__guest__: a virtual machines and/or container running on top of a machine (a.k.a *host*).
