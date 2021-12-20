@@ -32,6 +32,8 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * application must run 100% redundant (scaled horizontally with a replication factor of at least *2*)
 * when deploying a new version, the app must continue to be reachable; this depends on the deployment
   strategy that has been chosen
+* for the sake of simplicity, the persistence layer of the application can be considered ephemeral, but
+  the backing services representing that layer still have to be taken into account
 
 
 #### Content
