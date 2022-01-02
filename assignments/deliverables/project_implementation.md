@@ -42,3 +42,9 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * at least one service (e.g. VCS, Monitoring) other than the application has to be provisioned by yourself (no
   third-party as-a-service solution)
 * automate allocation and configuration of all required infrastructure resources and services
+
+
+#### Additional notes
+
+* it's not necessary to implement any exporter logic into the application code in order to get some monitoring 
+  working; there are other aspects of your infrastructure to collect metrics on

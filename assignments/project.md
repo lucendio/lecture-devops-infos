@@ -24,6 +24,7 @@ Eventually, you'll end up with two repositories:
 
 (1) a fork of the [application](https://github.com/lucendio/lecture-devops-app) that you are going to deploy
     in this assignment (NOTE: __clone or fork__, don't copy & paste code, and __rebase regularly__ to upstream)
+
 (2) the source code that defines your infrastructure, its documentation, and the
     [concept](./deliverables/project_concept.md)
 
