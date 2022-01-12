@@ -44,6 +44,7 @@ Please refer to the [FAQ section: Where do I even start?](./faq.md#1-where-do-i-
     * single-page web application
     * server implementation: JavaScript (NodeJS)
     * backing service (database): MongoDB
+* [showcase](https://gitlab.beuth-hochschule.de/gjahn/mmi-devops-showcase)
 * [code examples](https://github.com/lucendio/lecture-devops-code)
     * Tutorials (descriptions & solutions)
     * comprehensive examples
@@ -55,4 +56,3 @@ Please refer to the [FAQ section: Where do I even start?](./faq.md#1-where-do-i-
       * Vagrant + VirtualBox
       * Ansible
       * ...
-* [showcase](https://gitlab.beuth-hochschule.de/gjahn/mmi-devops-showcase)

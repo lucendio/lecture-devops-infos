@@ -131,7 +131,7 @@ Please refer to the [official documentation](https://docs.github.com/en/actions/
 
 *NOTE: did you already enter your university email address in the respective account list?*
 
-1. [optional] login to the VPN
+1. *(optional)* [login to the VPN](https://doku.bht-berlin.de/zugang/vpn)
 2. log in to the [cluster management web console](https://rancher.ris.beuth-hochschule.de)
    with your university account 
 3. click on *edu-cluster* in the list of clusters
