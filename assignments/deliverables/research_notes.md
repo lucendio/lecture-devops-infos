@@ -11,14 +11,15 @@ __SUBMISSION DEADLINE:__ before the end of the day at which the classroom discus
 
 * language: German or English
 * format: Markdown (or reStructuredText)
-* for each statement create a separate file named `notes_statement-${ITEM-NUMBER}_${STUDENT-ID}.md`
-  (`ITEM-NUMBER` format: two digits - add leading `0` if necessary, e.g. `7` --> `07`) 
-* copy the given template `research-notes_template.md`, follow its structure, replace each
-  variable (e.g. `${MY_VARIABLE}`) 
+* put the research notes in a separate file for each statement
+* name the files based on the following scheme `notes_statement-${STATEMENT-NUMBER}_${STUDENT-ID}.md`
+  (`STATEMENT-NUMBER` format: two digits - add leading `0` if necessary, e.g. `7` --> `07`)
+* publish your notes in the same repository that also contains the list of statements (store the files right
+  next to the list) 
+* *[optional]* use the given template `notes_template.md` (located in the respective research repository) to
+  structure your notes 
 * relevant links can either be added inline or in the dedicated section
 * write bullet points (notes) not a novel
-* store and publish your notes in the same repository that also contains the list of statements (put the files right
-  next to the list) 
 
 
 #### Content
