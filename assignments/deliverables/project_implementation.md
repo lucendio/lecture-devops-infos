@@ -14,13 +14,14 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * every line of code and documentation is stored and tracked in an accessible Git repository
 * hand in (a) link(s) to the repository/repositories
 * each code base contains a `README.md` which includes an onboarding section
+* starting from scratch each step taken towards the final state of the overall infrastructure setup must be
+  comprehensible (to ensure fair evaluation/grading)
 * every relevant (terminal) command has to be made transparent & verifiable, e.g. in (script) file(s) a/o documentation
-* each step taken towards the final setup must be comprehensible (to ensure fair evaluation/grading)
 
 
 #### Technical
 
-* follow the *Infrastructure-as-Code* paradigm
+* follow the *Infrastructure-as-Code* paradigm, meaning: write code rather than words that explain your steps
 * cloud-, self- or locally hosted
 * the host system for the application and any other service must be at least
   [POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
@@ -28,12 +29,12 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * all relevant services (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
 * the application and each service provisioned by yourself must be served via _HTTP**S**_ (HTTP over TLS)
 * CI is only triggered through a change in the VCS
-* CD to the *production* environment must involve a manual approval/release process
+* deploying to the *production* environment must involve a manual review/approval/release process
 * application must run 100% redundant (scaled horizontally with a replication factor of at least *2*)
-* when deploying a new version, the app must continue to be reachable; this depends on the deployment
-  strategy that has been chosen
+* when deploying a new version, the app must continue to be reachable (zero-downtime deployment); this
+  depends on the deployment strategy that has been chosen
 * for the sake of simplicity, the persistence layer of the application can be considered ephemeral, but
-  the backing services representing that layer still have to be taken into account
+  the backing services representing that layer still have to be part of the overall setup
 
 
 #### Content
@@ -46,5 +47,7 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 
 #### Additional notes
 
+* making the deliverable comprehensive means, one must be able to reproduce the entire setup solely by having the
+  repositories content available, so that at the end the entire setup is as functional as intended
 * it's not necessary to implement any exporter logic into the application code in order to get some monitoring 
   working; there are other aspects of your infrastructure to collect metrics on

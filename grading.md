@@ -52,23 +52,26 @@ _Weight: **100%**_
 * a maximum of *one (1)* point can be received for every criterion, unless defined otherwise (e.g. `[n]`)  
 * criteria may depend on one another
 * unmet criterion does *not* cause point deduction
+* only written content is taken into account in the grading process, not what is demonstrated during review
+  session
 * if the overall score received for this assignment reaches below 50%, one can take a
   [retry exam](./assignments/retry-exam.md) to still pass the course
 
 *Criteria:* 
 
+* convincingly participate in review session
 * resource allocation is automated
 * resource allocation is reproducible
 * installation & configuration of all services are automated
 * installation & configuration of all services are reproducible
 * idempotent provisioning
 * each service exists and is operational
-* every service can be reached via HTTPS
+* each service can be reached via HTTPS
 * FQDNs are configured for all services, resolve to each of them and serve them properly 
-* *application* runs with a replication factor of *2* (at least)
+* *application* runs with a replication factor of at least *2*
 * zero-downtime deployment strategy
 * overall setup implements all environments
-* the *application* in each environment uses a different backing service (database) instance
+* the *application* in each environment uses a different instance of its backing service (database)
 * CI/CD pipeline functions properly
 * CI/CD pipeline consists of at least 3 stages
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an

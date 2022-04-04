@@ -14,8 +14,8 @@ __Requirements:__ successful participation in the [Research & Discussion](./rese
 
 #### Process
 
-1. hand in a [concept](./deliverables/project_concept.md) before the given deadline has ended (sometime within
-   the first half of the semester)
+1. hand in a [concept](./deliverables/project_concept.md) before the given deadline (sometime within the first half of
+   the semester)
 2. receive initial feedback and sanity-check in written form via email
 3. check in last commit before the end of day at the date of _code freeze_
 4. present your implementation in a review session at the end of the semester
@@ -50,8 +50,8 @@ __Components:__
 Except for the given [application](https://github.com/lucendio/lecture-devops-app) and its dependencies, you are free
 to choose any available technology to implement the project, as long as all requirements are being met.  
 
-*NOTE: for more details and specifications of the deliverable(s), please refer the corresponding document(s) 
-[here](./deliverables)*
+*NOTE: for more details and specifications of the deliverable(s) and their requirements, please refer the
+corresponding document(s) [here](./deliverables)*
 
 
 #### The application

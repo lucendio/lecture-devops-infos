@@ -40,10 +40,6 @@ Please refer to the [FAQ section: Where do I even start?](./faq.md#1-where-do-i-
 
 ### External resources/repositories
 
-* [to-be-deployed workload/application](https://github.com/lucendio/lecture-devops-app)
-    * single-page web application
-    * server implementation: JavaScript (NodeJS)
-    * backing service (database): MongoDB
 * [showcase](https://gitlab.beuth-hochschule.de/gjahn/mmi-devops-showcase)
 * [code examples](https://github.com/lucendio/lecture-devops-code)
     * Tutorials (descriptions & solutions)
@@ -56,3 +52,7 @@ Please refer to the [FAQ section: Where do I even start?](./faq.md#1-where-do-i-
       * Vagrant + VirtualBox
       * Ansible
       * ...
+* [pre-defined workload/application](https://github.com/lucendio/lecture-devops-app)
+    * single-page web application
+    * server implementation: JavaScript (NodeJS)
+    * backing service (database): MongoDB

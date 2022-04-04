@@ -22,9 +22,9 @@ __SUBMISSION DEADLINE:__ before the end of day on the predefined date
 * explain your decisions
 * briefly describe the technology stack you opted for
 
-Think of the audience for this concept as one of your fellow classmates who you are trying to convince to join you to
-help with the implementation part. Or, your team lead, who you are trying to convince to let you work one something else
-for the upcoming weeks. 
+Think of the audience for this concept as one of your fellow classmates who you are trying to convince to join you in
+helping with the implementation part. Or, your team lead, who you are trying to convince to let you work one something
+else for the upcoming weeks. 
 
 The following questions might give you some inspiration. *(Only to be seen as an INCOMPLETE list of suggestions, and not
 as headlines)*
@@ -37,6 +37,6 @@ as headlines)*
 * What are the names of your target environments?
 * How do you set up all your services? Which of them do you actually need to set up?
   If some of them don't need to be set up, why?
-* What is the difference between your environments?
+* What are the differences between your environments, if any?
 * Would some graphic(s) better illustrate your architectural design?
 * What about the persistence layer (database)?

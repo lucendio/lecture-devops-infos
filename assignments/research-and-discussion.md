@@ -14,7 +14,7 @@ __Deliverable:__ [research notes](./deliverables/research_notes.md)
 1. pick 2 statements from the list
 2. do research around those statements and take notes
 3. share your results with everyone, state your opinion on the matter and maybe start a discussion on its legitimacy
-4. publish your notes 
+4. publish your notes
 
 *Please note that the purpose of this work is merely to qualify yourself for being entitled to hand in the
 [project work](./project.md).*

@@ -16,5 +16,5 @@ walk your own path.
 * [Making some decisions](./decisions.md)
 * [Example stacks](./examples.md)
 * [A guided path](./path.md)
-* [] Concept template
+* TODO: Concept template
 * [Some random tips](./tips.md)
