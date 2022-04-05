@@ -143,7 +143,8 @@ Please refer to the [official documentation](https://docs.github.com/en/actions/
 
 #### 12. How to choose the application for the project assignment?
 
-Based on the conditions mentioned in TODO, there are basically three paths: 
+Based on the [conditions](./assignments/project.md#application-conditions) mentioned in the project assignment,
+there are basically three paths: 
 
 1. pick one of the many open source SaaS solutions others have already built
 2. use the pre-defined [TODO app](https://github.com/lucendio/lecture-devops-app)
