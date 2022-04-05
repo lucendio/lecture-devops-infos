@@ -9,8 +9,8 @@ The first step would be to get an overview of what [this repository](./README.md
 a coffee and click your way through the [lists of link collections on *DevOps*](./links.md#devops) to grasp the
 scope of this subject and therewith of this course. Most of the [link collections](./links.md#devops) not only
 provide a comprehensive lists of technologies but also refer to books, blogs and other knowledgeable resources, too.
-Then, a next step would be to try and get [the application](https://github.com/lucendio/lecture-devops-app) running
-on your workstation, that you are going to deploy as part of the [*project*](./assignments/project.md) assignment.
+Then, a next step would be to search and decide on an application that you are going to deploy as part of the
+[*project*](./assignments/project.md) assignment, and try to get it running on your workstation.
 
 You might also find [this roadmap](https://roadmap.sh/devops) useful. It shows you a possible learning path. Towards
 the end, you may postpone the monitoring bits until the end and instead have a look at cloud-related things first.
@@ -139,3 +139,26 @@ Please refer to the [official documentation](https://docs.github.com/en/actions/
    some kind of resource utilization meters in the main area of the page
 5. obtain the *Kubeconfig File* (top right) and store the content on your workstation under `~/.kube/config`
    or in whatever location your `KUBECONFIG` environment variable points to
+
+
+#### 12. How to choose the application for the project assignment?
+
+Based on the conditions mentioned in TODO, there are basically three paths: 
+
+1. pick one of the many open source SaaS solutions others have already built
+2. use the pre-defined [TODO app](https://github.com/lucendio/lecture-devops-app)
+3. choose your own application, or one that you have built in previous semesters or other courses - as long as it
+   adheres to the rules
+
+One way to access your options is to ask yourself: which technology am I most familiar with? Because, you probably
+don't want to spend much time on learning about yet another package manager or figure out you to deliver this thing.
+In that light, option (1) and (2) have a good chance of being sufficiently documented when it comes to building, testing
+and deploying - it's probably more true for option (2).
+
+Here is a small recommendations you might want to check out, if you are going with option (1). More can be found,
+for example, in the [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) list.
+
+* [HedgeDoc](https://github.com/hedgedoc/hedgedoc)
+* [OwnCloud](https://github.com/owncloud/core)
+* [Documize](https://github.com/documize/community)
+* [Kutt](https://github.com/thedevs-network/kutt)

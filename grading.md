@@ -81,8 +81,6 @@ _Weight: **100%**_
   [implementation](./assignments/deliverables/project_implementation.md#formal)) are met and the
   [process](./assignments/project.md#process) has been followed
 * at least one service - aside from the *application* - was provisioned by yourself
-* a [Pull Request](https://github.com/lucendio/lecture-devops-app/pulls) was submitted, that adds
-  another *meaningful* test to the application
 * [3] overall quality and impression, e.g.:
   - engagement
   - applied new knowledge

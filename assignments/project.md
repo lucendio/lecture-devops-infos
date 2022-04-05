@@ -2,39 +2,35 @@ Project Work
 ============
 
 
-__Description:__ Deploy and run the [given application](https://github.com/lucendio/lecture-devops-app) in a
-cloud or cloud-simulated environment. Allocate the underlying infrastructure resources. Provision all the services 
-required for the application to function properly and to deploy it as example workload in multiple environments.
-Automate these processes in a reasonable manner.
+__Description:__ Deploy and run an application in a cloud or cloud-simulated environment. Allocate the underlying
+infrastructure resources. Provision all the services required for the application to function properly and to be
+successfully deployed as example workload in multiple environments. Automate these processes in a reasonable manner.
 
 __Deliverables:__ [concept](./deliverables/project_concept.md) & [implementation](./deliverables/project_implementation.md)
 
 __Requirements:__ successful participation in the [Research & Discussion](./research-and-discussion.md) assignment
 
-
-#### Process
-
-1. hand in a [concept](./deliverables/project_concept.md) before the given deadline (sometime within the first half of
-   the semester)
-2. receive initial feedback and sanity-check in written form via email
-3. check in last commit before the end of day at the date of _code freeze_
-4. present your implementation in a review session at the end of the semester
-
-Eventually, you'll end up with two repositories:
-
-(1) a fork of the [application](https://github.com/lucendio/lecture-devops-app) that you are going to deploy
-    in this assignment (NOTE: __clone or fork__, don't copy & paste code, and __rebase regularly__ to upstream)
-
-(2) the source code that defines your infrastructure, its documentation, and the
-    [concept](./deliverables/project_concept.md)
-
 *Please note, that it's not required to successfully & completely finish the implementation in order to pass (grade: 4.0)
 the course.*
 
 
-#### Rules
+#### Process
 
-* teams (≤ 2 people) are allowed, but not required
+1. write a [concept](./deliverables/project_concept.md) and hand in an initial version  before the given
+   deadline (sometime within the first half of the semester, for more specifics refer to the onboarding slides)
+2. receive initial feedback and sanity-check in written form via email
+3. check in last commit of the [implementation](./deliverables/project_implementation.md) before the end of day
+   at the date of _code freeze_
+4. present your implementation in a review session at the end of the semester
+
+Eventually, you'll end up with two repositories:
+
+(1) a fork of the application that you [chose](./../faq.md#12-how-to-choose-the-application-for-the-project-assignment)
+    to deploy in this assignment (NOTE: *fork* as in __`git clone`__, don't copy content of another repository;
+    __rebase regularly__ to upstream)
+
+(2) the source code that defines your infrastructure, its documentation, and the
+    [concept](./deliverables/project_concept.md)
 
 
 #### Specifications
@@ -47,30 +43,36 @@ __Components:__
 * Target environments (test, production)
 * Monitoring
 
-Except for the given [application](https://github.com/lucendio/lecture-devops-app) and its dependencies, you are free
-to choose any available technology to implement the project, as long as all requirements are being met.  
+You are free to choose any available technology to implement the project, as long as all requirements are being met.  
 
 *NOTE: for more details and specifications of the deliverable(s) and their requirements, please refer the
 corresponding document(s) [here](./deliverables)*
 
 
-#### The application
+__Application conditions:__
 
-* fork the [source code](https://github.com/lucendio/lecture-devops-app)
-* contribute at least one Pull-Request that adds a new & *meaningful* test (server or client)
-* adjust the forked source code in any way you feel necessary in order to integrate with your implementation
-* if you add something that might be worth sharing and could be useful for others, you are more than welcome to create
-  a Pull-Request against [upstream](https://github.com/lucendio/lecture-devops-app)
-* [`README`](https://github.com/lucendio/lecture-devops-app/blob/master/README.md) files are usually a good starting
-  point to familiarize yourself with the code base
+* the host system or runtime environment of the application or any other service must be 
+  [POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
+  (e.g. Linux, BSD, macOS)
+* the source code of the application is part of the deliverable, and thus must not be proprietary or
+  confidential in any way 
+* the application must depend on at least one backing service (e.g. database to persist data, an email server
+  to send out notifications, etc.)
 
 
 #### Review session
 
 * it's going to be a 1:1 
-* demonstrate the entire deployment process  by introducing an actual change to the code base of the
-  [given application](https://github.com/lucendio/lecture-devops-app)
+* demonstrate the entire deployment process by introducing an actual change to the application source code
 * verify the existence of every service
+
+
+#### Teams
+
+* it's allowed to work in a team (≤ 2 people), but not required
+* register the team before the deadline mentioned in the onboarding slides has exceeded 
+* the workload of a team is expected to be the pre-defined workload of a single person
+  multiplied by the amount of team members
 
 
 #### Additional information

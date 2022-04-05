@@ -16,16 +16,14 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * each code base contains a `README.md` which includes an onboarding section
 * starting from scratch each step taken towards the final state of the overall infrastructure setup must be
   comprehensible (to ensure fair evaluation/grading)
-* every relevant (terminal) command has to be made transparent & verifiable, e.g. in (script) file(s) a/o documentation
+* every relevant (terminal) command has to be made transparent & verifiable, e.g. in documentation a/o dedicated files
+  (e.g. pipeline code, shell script, `Makefile`)
 
 
 #### Technical
 
 * follow the *Infrastructure-as-Code* paradigm, meaning: write code rather than words that explain your steps
 * cloud-, self- or locally hosted
-* the host system for the application and any other service must be at least
-  [POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
-  (e.g. Linux, BSD, macOS)
 * all relevant services (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
 * the application and each service provisioned by yourself must be served via _HTTP**S**_ (HTTP over TLS)
 * CI is only triggered through a change in the VCS
@@ -34,7 +32,8 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * when deploying a new version, the app must continue to be reachable (zero-downtime deployment); this
   depends on the deployment strategy that has been chosen
 * for the sake of simplicity, the persistence layer of the application can be considered ephemeral, but
-  the backing services representing that layer still have to be part of the overall setup
+  the backing services representing that layer still have to be part of the overall setup, and thus of
+  the infrastructure and automation code
 
 
 #### Content

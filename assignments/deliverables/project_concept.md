@@ -13,6 +13,8 @@ __SUBMISSION DEADLINE:__ before the end of day on the predefined date
 * written in Markdown (or reStructuredText)
 * file(s) are stored and tracked in an accessible Git repository
 * hand in a deep link to the file(s) located in that repository
+* changes to the technology stack after handing in the initial version
+  are only permitted after consultation
 
 
 #### Content

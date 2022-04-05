@@ -9,6 +9,8 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
 
 * if a technology is new to you, start with the "Getting Started / Quickstart" section or at the beginning of the
   documentation; not some Stackoverflow thread or a blog article
+* to prevent side effects and undesired states that are usually hard to reproduce, it is recommended to not install
+  any service that is part of your project architecture directly into your local host system of your workstation
 * on public clouds, it can help you to save some credits, when you are able to *allocate* and *configure* your
   infrastructure from scratch in an automated fashion on demand (e.g. tear down everything after a day of development
   work and next day bring everything back up)
@@ -22,9 +24,8 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
 
 * even though the application requires a persistence layer, it can be considered *ephemeral*; meaning data doesn't have
   to persist across restarts or re-deployments
-* the [application repository](https://github.com/lucendio/lecture-devops-app) defines all its dependencies; for more
-  details, please refer to the [README](https://github.com/lucendio/lecture-devops-app/blob/master/app/README.md)
-* no need to touch/change the application code of the deployable workload itself
+* usually there is no need to touch/change the actual source code logic of the application, instead additional files
+  might need to be added, for example, to define the *pipeline*
 
 
 #### CI/CD
