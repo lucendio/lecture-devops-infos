@@ -42,11 +42,13 @@ app called [UTM](https://mac.getutm.app/).
 
 #### 5. Where do I get some infrastructure to play with, to do the tutorials with, or even for the assignment?
 
-Essentially, you have 3 different kind of options:
+Essentially, you have 3 different options:
 
 a) your workstation has enough resources (CPU, memory) to host one or more virtual machines, which would enable you
    to mimic some *cloud resources* locally - as you know: the cloud is just a bunch of other people's computers
+
 b) have a look at the link section on [*cloud providers*](./links.md#providers)
+
 c) the university provides a Kubernetes cluster managed with Rancher (requires student account, and VPN access if you
    are not on-site)
 
