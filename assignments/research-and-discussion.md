@@ -9,7 +9,7 @@ your findings. Share and discuss your results during class.
 __Deliverable:__ [research notes](./deliverables/research_notes.md)
 
 
-#### Process
+### Process
 
 1. pick 2 statements from the list
 2. do research around those statements and take notes
@@ -20,13 +20,13 @@ __Deliverable:__ [research notes](./deliverables/research_notes.md)
 [project work](./project.md).*
 
 
-#### Rules
+### Rules
 
 * don't pick items from the list that are already taken
 * commit early and often
 
 
-#### Specifications
+### Specifications
 
 The closing date for choosing statements is announced at the beginning of the semester. The repository that is
 used to publish everybody's choices as well as all the research nodes, is unique in each semester. Please refer to

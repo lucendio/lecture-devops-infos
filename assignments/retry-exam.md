@@ -11,20 +11,20 @@ __Deliverable:__ *N/A*
 __Requirements:__ successful participation in the [Research & Discussion](./research-and-discussion.md) assignment
 
 
-#### Process
+### Process
 
 1. Request admission (via email) latest one week before the exam will take place
 2. Take the exam online at the given date and time (please refer to the *Onboarding* slides
    provided at the beginning of the semester)
 
 
-#### Rules
+### Rules
 
 * no resources are allowed to be consulted (e.g. slides, internet, notes) while taking the exam
 * duration: 30 minutes
 
 
-#### Specifications
+### Specifications
 
 * form: multiple choice
 * questions are based solely on the slides handed out during class

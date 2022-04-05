@@ -14,7 +14,7 @@ __Requirements:__ successful participation in the [Research & Discussion](./rese
 the course.*
 
 
-#### Process
+### Process
 
 1. write a [concept](./deliverables/project_concept.md) and hand in an initial version  before the given
    deadline (sometime within the first half of the semester, for more specifics refer to the onboarding slides)
@@ -33,9 +33,9 @@ Eventually, you'll end up with two repositories:
     [concept](./deliverables/project_concept.md)
 
 
-#### Specifications
+### Specifications
 
-__Components:__
+#### Components:
 
 * Application (+ backing service)
 * Version control system
@@ -49,7 +49,7 @@ You are free to choose any available technology to implement the project, as lon
 corresponding document(s) [here](./deliverables)*
 
 
-__Application conditions:__
+#### Application conditions:
 
 * the host system or runtime environment of the application or any other service must be 
   [POSIX-compliant](https://en.wikipedia.org/wiki/POSIX#POSIX-oriented_operating_systems)
@@ -60,14 +60,14 @@ __Application conditions:__
   to send out notifications, etc.)
 
 
-#### Review session
+### Review session
 
 * it's going to be a 1:1 
 * demonstrate the entire deployment process by introducing an actual change to the application source code
 * verify the existence of every service
 
 
-#### Teams
+### Teams
 
 * it's allowed to work in a team (≤ 2 people), but not required
 * register the team before the deadline mentioned in the onboarding slides has exceeded 
@@ -75,7 +75,7 @@ __Application conditions:__
   multiplied by the amount of team members
 
 
-#### Additional information
+### Additional information
 
 The following links may provide some guidance on how to approach the assigment. They can be helpful to structure your
 work, or even lead to one or two useful hints for the [implementation](./deliverables/project_implementation.md).
