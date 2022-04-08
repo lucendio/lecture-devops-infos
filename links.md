@@ -17,6 +17,7 @@ __*'Definition' (attempts):*__
 * [Wikipedia: DevOps](https://en.wikipedia.org/wiki/DevOps)
 * [the agile admin on 'What is DevOps?'](https://theagileadmin.com/what-is-devops)
 * [Amazon on 'What is DevOps?'](https://aws.amazon.com/devops/what-is-devops)
+* [What is DevOps? REALLY understand it | DevOps vs SRE](https://www.youtube.com/watch?v=0yWAtQ6wYNM) by *Nana* [video]
 
 __*Tutorials:*__
 
@@ -269,11 +270,6 @@ __*Local:*__
 
 * [Minishift (for v3.x)](https://github.com/minishift/minishift)
 * [CodeReady Containers (for v4.x)](https://github.com/code-ready/crc)
-
-
-### RKE / Rancher v2
-
-
 
 
 ## Monitoring & Observability
