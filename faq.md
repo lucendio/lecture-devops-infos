@@ -32,7 +32,7 @@ or get yourself a virtual machine running Linux on your workstation. One way to 
 (directly from their websites or through [Chocolatey](https://chocolatey.org/) - the Windows package manager).
 
 
-#### 4. My workstation runs on RM architecture (e.g. Apple Silicon). So, Virtualbox is not supported. Which other hypervisors are supported?
+#### 4. My workstation runs on ARM architecture (e.g. Apple Silicon). So, Virtualbox is not supported. Which other hypervisors are supported?
 
 When looking at [providers](https://www.vagrantup.com/docs/providers) that are officially supported by Vagrant, then 
 there would only be one option: [VMware](https://www.vmware.com/products/fusion.html). But it's proprietary and not free

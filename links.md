@@ -146,6 +146,10 @@ __*Tools:*__
 * [How to Docker on Windows 10 (w/o Docker Desktop - yes, you don't want the Desktop Edition)](https://dev.to/bowmanjd/install-docker-on-windows-wsl-without-docker-desktop-34m9)
 * [Docker anti-patterns](https://codefresh.io/containers/docker-anti-patterns/)
 
+__*Tutorials:*__
+
+* [Intro to Containers](https://www.youtube.com/playlist?list=PL7bmigfV0EqQt5_pBPQ8tsZjI1w68-e0H) (contains portion of VMware advertising) [video playlist]
+
 __*Tools:*__
 
 * Virtual Machine
@@ -228,6 +232,7 @@ __*Tutorials:*__
 * [A Guide to the Kubernetes Networking Model](https://sookocheff.com/post/kubernetes/understanding-kubernetes-networking-model/)
 * [etcd: distributed consensus algorithm - raft](http://thesecretlivesofdata.com/raft/) (interactive)
 * [Kubernetes The Hard Way](https://github.com/kelseyhightower/kubernetes-the-hard-way) (provision K8s by hand, step-by-step)
+* [Intro to Kubernetes](https://www.youtube.com/playlist?list=PL7bmigfV0EqQw4WnD0wF-SRBYttCFeBbF) (contains portion of VMware advertising) [video playlist]
 
 __*Documentation:*__
 
@@ -280,6 +285,7 @@ __*Knowledge:*__
 * [Monitoring and Observability](https://medium.com/@copyconstruct/monitoring-and-observability-8417d1952e1c), by Cindy Sridharan &
   corresponding [Learning Notes](https://github.com/keyvanakbary/learning-notes/blob/master/books/distributed-systems-observability.md)
 * Prometheus Docs: [Pull](https://prometheus.io/blog/2016/07/23/pull-does-not-scale-or-does-it/) vs. [Push](https://prometheus.io/docs/practices/pushing/)
+* [Observability: Superpowers for Developers](https://changelog.com/podcast/356) by Christine Yen [talk]
 
 __*Tools:*__
 
