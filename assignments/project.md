@@ -60,9 +60,10 @@ corresponding document(s) [here](./deliverables)*
   to send out notifications, etc.)
 
 
-### Review session
+### Review
 
-* it's going to be a 1:1 
+* it's going to be a remote 1:1 session
+* time slots are assigned in advance through a self-service online poll  
 * demonstrate the entire deployment process by introducing an actual change to the application source code
 * verify the existence of every service
 
