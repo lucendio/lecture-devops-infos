@@ -1,0 +1,3 @@
+goldmark:
+  renderer:
+    hardWraps: false

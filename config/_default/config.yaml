@@ -1,0 +1,49 @@
+baseURL: 'https://devops-lecture.as-code.link/'
+title: 'DevOps Lecture'
+
+theme: 'book'
+
+params:
+  # Theme configuration
+  BookTheme: 'auto'
+  BookSection: '*'
+  BookRepo: 'https://github.com/lucendio/lecture-devops-infos'
+  BookDateFormat: '1970-01-01'
+  BookSearch: true
+  BookComments: false
+  BookServiceWorker: false
+
+sitemap:
+  changefreq: 'weekly'
+  priority: 0.5
+  filename: 'sitemap.xml'
+
+disableKinds: [ 'taxonomy', 'taxonomyTerm' ]
+
+# DOCS: https://gohugo.io/content-management/urls/#permalinks
+permalinks: {}
+
+timeZone: 'Europe/Berlin'
+
+googleAnalytics: false
+
+themesDir:                  './src/themes'
+#cacheDir:                   ':resourceDir'
+resourceDir:                './.local/cache'
+
+publishDir:                 './.local/tmp/artifact'
+
+enableRobotsTXT:            true
+
+noChmod:                    true
+noTimes:                    false
+titleCaseStyle:             'Chicago'
+enableEmoji:                true
+enableGitInfo:              true
+
+# NOTE: prevent site from exposing the software used to generate it
+disableHugoGeneratorInject: true
+
+defaultContentLanguage:     'en'
+
+disableLiveReload:          true

@@ -1,0 +1,60 @@
+name: 'Publish to GitHub Pages'
+
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch: {}
+
+concurrency:
+  group: 'main'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: '[Deps] Pull in theme: hugo-book'
+        uses: actions/checkout@v3
+        with:
+          repository: 'alex-shpak/hugo-book'
+          ref: 'v9'
+          path: './src/themes/book'
+
+
+      - name: '[Deps] Set up Hugo in runtime context'
+        uses: peaceiris/actions-hugo@v2
+        with:
+          # TODO: obtain version from config/_default/module.json
+          hugo-version: '0.102.3'
+          extended: true
+
+      - name: 'Build site with Hugo'
+        run: |
+          hugo \
+            --config ./config \
+            --environment prod \
+            --destination ./.local/build \
+            --minify
+
+      - name: 'Upload build result as github-pages artifact'
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './.local/build'
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [ 'build' ]
+    permissions:
+      pages: 'write'
+      id-token: 'write'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 'Deploy to GitHub Pages'
+        id: deployment
+        uses: actions/deploy-pages@v1

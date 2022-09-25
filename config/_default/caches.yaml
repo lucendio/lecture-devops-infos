@@ -1,0 +1,12 @@
+assets:
+  dir: :resourceDir/assets
+getcsv:
+  dir: :resourceDir/csv
+getjson:
+  dir: :resourceDir/json
+getresource:
+  dir: :resourceDir/res
+images:
+  dir: :resourceDir/img
+modules:
+  dir: :resourceDir/modules
