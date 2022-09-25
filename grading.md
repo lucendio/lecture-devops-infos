@@ -60,10 +60,10 @@ _Weight: **100%**_
 *Criteria:* 
 
 * convincingly participate in review session
-* resource allocation is automated
-* resource allocation is reproducible
-* installation & configuration of all services are automated
+* allocation of all infrastructure pieces is reproducible
+* allocation of all infrastructure pieces is automated
 * installation & configuration of all services are reproducible
+* installation & configuration of all services are automated
 * idempotent provisioning
 * each service exists and is operational
 * each service can be reached via HTTPS
@@ -71,7 +71,7 @@ _Weight: **100%**_
 * *application* runs with a replication factor of at least *2*
 * zero-downtime deployment strategy
 * overall setup implements all environments
-* the *application* in each environment uses a different instance of its backing service (database)
+* the *application* in each environment uses a different instance of its backing service (e.g. database)
 * CI/CD pipeline functions properly
 * CI/CD pipeline consists of at least 3 stages
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an

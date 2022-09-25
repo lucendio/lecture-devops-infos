@@ -121,7 +121,7 @@ Which steps would the app need to go through?
   is going to be deployed in; usually, one would first need some kind of computer (e.g. virtual machine) or
   compute context (e.g. container runtime) to then configure the environment and deploy a service into it
   
-* only explain technologies to an extend that helps to better understand your specific solution, otherwise refer to
+* only explain technologies to an extent that helps to better understand your specific solution, otherwise refer to
   parts of the documentation; commonly or taught (during class) knowledge can already be assumed
 
 

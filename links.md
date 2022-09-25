@@ -28,6 +28,7 @@ __*Tutorials:*__
 #### Real-world stories, learnings & best practices
 
 * [DevOps Disasters 3.1](https://media.ccc.de/v/rc3-49321-devops_disasters_3_1) [video]
+* [What does good DevOps look like?](https://changelog.com/shipit/28) from podcast called *Ship it* [audio]
 
 
 ## Basic knowledge 
@@ -213,7 +214,8 @@ __*Tutorials:*__
 __*Tutorials:*__
 
 * [What is Object Storage?](https://www.youtube.com/watch?v=FLp88DzvtUk) (contains portion of IBM advertising) [video]
-* [Block Storage vs. File Storage](https://www.youtube.com/watch?v=5EqAXnNm0FE) (contains portion of IBM advertising) [video]
+* [Block, File and Object Storage Compared](https://www.youtube.com/watch?v=KduoinBNru4) [video]
+* [Block vs. File Storage](Block vs. File Storage) (contains portion of IBM advertising) [video]
 * [File storage, block storage, or object storage?](https://www.redhat.com/en/topics/data-storage/file-block-object-storage) [article]
 
 __*Documentation:*__
