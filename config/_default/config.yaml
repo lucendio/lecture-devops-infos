@@ -1,17 +1,7 @@
 baseURL: 'https://devops-lecture.as-code.link/'
-title: 'DevOps Lecture'
+title: 'Lecture 🤖 DevOps'
 
 theme: 'book'
-
-params:
-  # Theme configuration
-  BookTheme: 'auto'
-  BookSection: '*'
-  BookRepo: 'https://github.com/lucendio/lecture-devops-infos'
-  BookDateFormat: '1970-01-01'
-  BookSearch: true
-  BookComments: false
-  BookServiceWorker: false
 
 sitemap:
   changefreq: 'weekly'
