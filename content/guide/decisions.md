@@ -5,7 +5,7 @@ Making some decisions
 This document should help you to make some decisions regarding your technology stack.
 
 If you rather want to keep some freedom of choice and find more inspiration, take a
-look at [these examples](./examples.md)
+look at [these examples]({{< ref "/guide/examples" >}})
 
 In general, you should base your choice on where your interests lie. That said, it's always good
 to know the limitations of all the different possibilities. Please read on, if you want lo learn
@@ -27,8 +27,8 @@ and it surely doesn't make things less complicated.
 
 Not having a public IP might feel like a limitation, but it's actually only the case when it comes
 to valid (as in *trusted* or not *self-signed*) TLS certificates. Good thing that it's not explicitly
-required - neither in the [grading criteria](./../grading.md#implementation) nor in the
-[assignment](./../assignments/project.md) (also see the [tips](./tips.md#tls) for more information).
+required - neither in the [grading criteria]({{< ref "/grading#implementation" >}}) nor in the
+[assignment]({{< ref "/assignments/project-work" >}}) (also see the [tips]({{< ref "/guide/tips#tls" >}}) for more information).
 
 
 ### Kubernetes or not?
@@ -40,7 +40,7 @@ While it already provides a variety of features out of the box, like horizontal 
 at the same time, it's complex and hides (or rather *abstracts*) some mechanisms from you, that you otherwise
 would need to do *by hand*, but at the same time would understand them better.
 
-Available [*cloud provides*](./../links.md#providers) may already offer a turnkey-ready managed Kubernetes
+Available [*cloud provides*]({{ ref "/links#providers" }}) may already offer a turnkey-ready managed Kubernetes
 cluster. Or, you can provision it yourself, for example, with a couple of virtual machines (spun up locally
 or allocated in the cloud) and [Kubespray](https://github.com/kubernetes-sigs/kubespray). The university also
 hosts a Kubernetes cluster, that you are free to use.

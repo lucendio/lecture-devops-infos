@@ -1,3 +1,9 @@
+---
+title: 'Retry Exam'
+weight: 3
+---
+
+
 Retry Exam
 ==========
 
@@ -8,7 +14,8 @@ the opportunity to take a retry exam.
 
 __Deliverable:__ *N/A*
 
-__Requirements:__ successful participation in the [Research & Discussion](./research-and-discussion.md) assignment
+__Requirements:__ successful participation in the [Research & Discussion]({{< ref "/assignments/research-and-discussion" >}})
+assignment
 
 
 ### Process

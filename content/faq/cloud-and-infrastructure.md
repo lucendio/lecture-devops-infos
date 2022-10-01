@@ -1,65 +1,32 @@
-Frequently asked questions
-==========================
+---
+title: 'Cloud & Infrastructure'
+---
 
 
-#### 1. Where do I even start?
-
-The first step would be to get an overview of what [this repository](./README.md#table-of-contents) and the
-[external resources](./README.md#external-resources) provide you with. As a second step, you might want to grab
-a coffee and click your way through the [lists of link collections on *DevOps*](./links.md#devops) to grasp the
-scope of this subject and therewith of this course. Most of the [link collections](./links.md#devops) not only
-provide a comprehensive lists of technologies but also refer to books, blogs and other knowledgeable resources, too.
-Then, a next step would be to search and decide on an application that you are going to deploy as part of the
-[*project*](./assignments/project.md) assignment, and try to get it running on your workstation.
-
-You might also find [this roadmap](https://roadmap.sh/devops) useful. It shows you a possible learning path. Towards
-the end, you may postpone the monitoring bits until the end and instead have a look at cloud-related things first.
-Another learning path can be found in the [guide](./guide/path.md).
+FAQ - Cloud & Infrastructure
+============================
 
 
-#### 2. I have no clue about DevOps. How am I supposed to write this concept?
-
-Don't worry. It's just an initial step to get you start digging into things related to DevOps. After handing in the
-(first version of the) concept you'll receive individual feedback, which you can then use to iterate over your design
-and implementation. So, nothing is set in store. You can change things along the way - after some consultation first.
-
-
-#### 3. My workstation runs Microsoft Windows. From where do I get a Unix-like context to work in?
-
-You may either want to try the [*Windows Subsystem for Linux*](https://docs.microsoft.com/en-us/windows/wsl/install)
-or get yourself a virtual machine running Linux on your workstation. One way to archive this is to install
-[VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads)
-(directly from their websites or through [Chocolatey](https://chocolatey.org/) - the Windows package manager).
-
-
-#### 4. My workstation runs on ARM architecture (e.g. Apple Silicon). So, Virtualbox is not supported. Which other hypervisors are supported?
-
-When looking at [providers](https://www.vagrantup.com/docs/providers) that are officially supported by Vagrant, then 
-there would only be one option: [VMware](https://www.vmware.com/products/fusion.html). But it's proprietary and not free
-of charge. Outside of Vagrant, another option would be [QEMU](https://formulae.brew.sh/formula/qemu), or the GUI-based
-app called [UTM](https://mac.getutm.app/).
-
-
-#### 5. Where do I get some infrastructure to play with, to do the tutorials with, or even for the assignment?
+## Where do I get some infrastructure to play with, to do the tutorials with, or even for the assignment?
 
 Essentially, you have 3 different options:
 
 a) your workstation has enough resources (CPU, memory) to host one or more virtual machines, which would enable you
    to mimic some *cloud resources* locally - as you know: the cloud is just a bunch of other people's computers
 
-b) have a look at the link section on [*cloud providers*](./links.md#providers)
+b) have a look at the link section on [*cloud providers*]({{< ref "/links#providers" >}})
 
 c) the university provides a Kubernetes cluster managed with Rancher (requires student account, and VPN access if you
    are not on-site)
 
 
-#### 6. Which cloud provider should I use?
+## Which cloud provider should I use?
 
-As mentioned before, there is a variety of common [*cloud providers*](./links.md#providers) you can choose from.
+As mentioned before, there is a variety of common [*cloud providers*]({{< ref "/links#providers" >}}) you can choose from.
 While all of them provide similar concepts which are sometimes named differently, they may have some limitations:
 
-* AWS Academy (formerly called *Educate*), e.g. (see [PDF](./.assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf)
-  for a complete list):
+* AWS Academy (formerly called *Educate*), e.g. see
+  [PDF](/assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) for a complete list:
   * limit the amount or size of machines (EC2 instances) that you are allowed to spin up
   * no IAM
   * no NAT gateway creation
@@ -69,7 +36,7 @@ While all of them provide similar concepts which are sometimes named differently
 * DigitalOcean: no known limitation, except the amount of credits
 
 
-#### 7. How do I get access to AWS and unlock [AWS Academy](https://aws.amazon.com/training/awsacademy/) credits?
+## How do I get access to AWS and unlock AWS Academy[^1] credits?
 
 1. Add your email address to the provided list
 2. When receiving the invitation email (subject: *Course Invitation* from *instructure.com*), follow the link to join
@@ -90,16 +57,18 @@ While all of them provide similar concepts which are sometimes named differently
 Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in order
 to configure the CLI to use the credentials.
 
+[^1]: [Official website](https://aws.amazon.com/training/awsacademy/) of the *AWS Academy*
 
-#### 8. Which AWS services are supported with the AWS Academy program?
 
-Please refer to [this document](./.assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) in order to find
+## Which AWS services are supported with the AWS Academy program?
+
+Please refer to [this document](/assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) in order to find
 out which services are available in an AWS Academy account. Alternatively, you may find these information in mentioned
 in *6.8*. Furthermore, please be aware that all services are located in the `us-east-1` or `us-west-2` regions, hence
 hosted outside of the european jurisdiction (no GDPR etc.).
 
 
-#### 9. Which public DNS provider offers free domain registration and allows automated record creation?
+## Which public DNS provider offers free domain registration and allows automated record creation? {id="dns-provider-free-and-automation"}
 
 A non-exhaustive list of public DNS providers:
 
@@ -124,14 +93,11 @@ __*Example (AWS + Freenom):*__
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with Terraform
 
 
-#### 10. Which software is installed on Github Action runners?
+## How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster?
 
-Please refer to the [official documentation](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#preinstalled-software).
-
-
-#### 11. How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster?
-
-*NOTE: did you already enter your university email address in the respective account list?*
+{{< hint info >}}
+*__NOTE:__ did you already enter your university email address in the respective account list?*
+{{< /hint >}}
 
 1. *(optional)* [login to the VPN](https://doku.bht-berlin.de/zugang/vpn)
 2. log in to the [cluster management web console](https://rancher.ris.beuth-hochschule.de)
@@ -141,27 +107,3 @@ Please refer to the [official documentation](https://docs.github.com/en/actions/
    some kind of resource utilization meters in the main area of the page
 5. obtain the *Kubeconfig File* (top right) and store the content on your workstation under `~/.kube/config`
    or in whatever location your `KUBECONFIG` environment variable points to
-
-
-#### 12. How to choose the application for the project assignment?
-
-Based on the [conditions](./assignments/project.md#application-conditions) mentioned in the project assignment,
-there are basically three paths: 
-
-1. pick one of the many open source SaaS solutions others have already built
-2. use the pre-defined [TODO app](https://github.com/lucendio/lecture-devops-app)
-3. choose your own application, or one that you have built in previous semesters or other courses - as long as it
-   adheres to the rules
-
-One way to access your options is to ask yourself: which technology am I most familiar with? Because, you probably
-don't want to spend much time on learning about yet another package manager or figure out you to deliver this thing.
-In that light, option (1) and (2) have a good chance of being sufficiently documented when it comes to building, testing
-and deploying - it's probably more true for option (2).
-
-Here is a small recommendations you might want to check out, if you are going with option (1). More can be found,
-for example, in the [Awesome-Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) list.
-
-* [HedgeDoc](https://github.com/hedgedoc/hedgedoc)
-* [OwnCloud](https://github.com/owncloud/core)
-* [Documize](https://github.com/documize/community)
-* [Kutt](https://github.com/thedevs-network/kutt)

@@ -1,5 +1,11 @@
-Deliverable: Research & discussion nodes
-========================================
+---
+title: 'Research Nodes'
+weight: 1
+---
+
+
+Deliverable: Research Nodes
+===========================
 
 
 __SUBMISSION DEADLINE:__ before the end of the day at which the classroom discussion takes place

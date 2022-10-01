@@ -1,15 +1,20 @@
+---
+bookFlatSection: false
+
+title: 'Glossary'
+weight: 9
+---
+
+
 Glossary
 ========
 
+{{< hint info >}}
+Either abbreviation or definition are optional; terms, marked with a __`*`__, tent to be more opinionated rather
+than generally accepted
+{{< /hint >}}
 
 *Format: `TERM(*) [ABBREVIATION]: DEFINITION`*
-
-*NOTE: either abbreviation or definition are optional; terms, marked with a __`*`__, tent to be more opinionated rather
-       than generally accepted*
-
-
-
-### General
 
 __environment*__ [env]: a *single installation* (or instance) of an application/service, all its *backing services*
     and, at least to some extend, the infrastructure that is hosting all of it. Some resources/services might me shared

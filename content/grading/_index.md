@@ -1,18 +1,28 @@
+---
+bookFlatSection: true
+bookCollapseSection: false
+
+title: 'Grading'
+weight: 3
+---
+
+
 Grading
 =======
-
 
 This document explains which parts of the assignments that are being taken during this course will be part of
 your overall score.
 
+{{< hint danger >}}
 In order to pass the course, one is required to obtain at least _**50%**_ of the overall achievable score.
+{{< /hint >}}
 
 
-#### Research
+## Research
 
 _Weight: **0%**_
 
-*Purpose:* be permitted to hand in the [project work](./assignments/project-work.md) assignment 
+*Purpose:* be permitted to hand in the [project work]({{< ref "/assignments/project-work" >}}) assignment 
 
 *Criteria:*
 
@@ -20,11 +30,11 @@ _Weight: **0%**_
 * research notes are published
 
 
-#### Concept
+## Concept
 
 _Weight: **0%**_
 
-*Purpose:* be entitled to receive a score for the [implementation](./assignments/deliverables/project_implementation.md)
+*Purpose:* be entitled to receive a score for the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
  
 *Notes:* meant as a tool to ...
 
@@ -39,7 +49,7 @@ _Weight: **0%**_
 * reflects actual implementation
 
 
-#### Implementation
+## Implementation
 
 _Weight: **100%**_
 
@@ -55,9 +65,9 @@ _Weight: **100%**_
 * only written content is taken into account in the grading process, not what is demonstrated during review
   session
 * if the overall score received for this assignment reaches below 50%, one can take a
-  [retry exam](./assignments/retry-exam.md) to still pass the course
+  [retry exam]({{< ref "/assignments/retry-exam" >}}) to still pass the course
 
-*Criteria:* 
+*Criteria:*
 
 * convincingly participate in review session
 * allocation of all infrastructure pieces is reproducible
@@ -68,7 +78,7 @@ _Weight: **100%**_
 * each service exists and is operational
 * each service can be reached via HTTPS
 * FQDNs are configured for all services, resolve to each of them and serve them properly 
-* *application* runs with a replication factor of at least *2*
+* the *application* runs with a replication factor of at least *2*
 * zero-downtime deployment strategy
 * overall setup implements all environments
 * the *application* in each environment uses a different instance of its backing service (e.g. database)
@@ -77,11 +87,11 @@ _Weight: **100%**_
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
   explicit/controlled manner
 * concept/documentation matches implementation
-* all formal requirements ([concept](./assignments/deliverables/project_concept.md#formal) & 
-  [implementation](./assignments/deliverables/project_implementation.md#formal)) are met and the
-  [process](./assignments/project.md#process) has been followed
+* all formal requirements ([concept]({{< ref "/assignments/deliverables/project-concept#formal" >}}) & 
+  [implementation]({{< ref "/assignments/deliverables/project-implementation#formal" >}})) are met and the
+  [process]({{< ref "/assignments/project-work#process" >}}) has been followed
 * at least one service - aside from the *application* - was provisioned by yourself
-* [3] overall quality and impression, e.g.:
+* `[3]` overall quality and impression, e.g.:
   - engagement
   - applied new knowledge
   - reasonable documentation
@@ -89,7 +99,7 @@ _Weight: **100%**_
   - ...
 
 
-#### Retry exam
+## Retry exam
 
 _Weight: **100%**_
 

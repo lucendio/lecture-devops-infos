@@ -1,11 +1,25 @@
+---
+bookFlatSection: true
+bookCollapseSection: true
+
+title: 'Lessons'
+weight: 1
+---
+
+
 Course plan
 ===========
 
 
 The following topics are touched throughout the course. Depending on the circumstances, like the
-length of the semester or student feedback, the actual agenda may vary. 
-
-*NOTE: the order of topics below does not necessarily reflect the order in which they are being discussed*
+length of the semester or student feedback, the actual agenda may vary. This list should be
+understood more as a list of possibilities/choices rather than a TODO or check list.
+ 
+{{< hint >}}
+*__NOTE:__ the order of topics below does not necessarily reflect the order in which they are
+being discussed*
+{{< /hint >}}
+ 
 
 | Topic                                 | Objectives                       | Technologies           | Tutorial         |
 |---------------------------------------|----------------------------------|------------------------|------------------|

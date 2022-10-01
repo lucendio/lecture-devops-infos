@@ -1,3 +1,12 @@
+---
+bookFlatSection: true
+bookCollapseSection: true
+
+title: 'Guide'
+weight: 5
+---
+
+
 Guidance & Tips
 ===============
 
@@ -12,9 +21,9 @@ walk your own path.
 
 ### Table of Contents
 
-* [Introduction](./intro.md)
-* [Making some decisions](./decisions.md)
-* [Example stacks](./examples.md)
-* [A guided path](./path.md)
+* [Introduction]({{< ref "/guide/intro" >}})
+* [Making some decisions]({{< ref "/guide/decisions" >}})
+* [Example stacks]({{< ref "/guide/examples" >}})
+* [A guided path]({{< ref "/guide/path" >}})
 * TODO: Concept template
-* [Some random tips](./tips.md)
+* [Some random tips]({{< ref "/guide/tips" >}})

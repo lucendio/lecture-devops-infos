@@ -15,9 +15,9 @@ Based on an average of 20 weeks (starting with the course *onboarding* and concl
 | Week  | TODOs                                                                                                         |
 | ----- |-------------------------------------------------------------------------------------------------------------- |
 | `01`  | Go through the provided materials and note down questions                                                     |
-| `02`  | Familiarize yourself with the [scope](./../links.md#devops) of this course and its topics                     | 
-| `03`  | Refresh [linux](./../links.md#unixlinux-basics) and [git](./../links.md#git) skills                           |
-| `04`  | [Choose](./../faq.md#12-how-to-choose-the-application-for-the-project-assignment) & fork an app, that will be used as *deployable workload* and get it to work locally  |
+| `02`  | Familiarize yourself with the [scope]({{< ref "/links#devops" >}}) of this course and its topics                     | 
+| `03`  | Refresh [linux]({{< ref "/links#unixlinux-basics" >}}) and [git]({{< ref "/links#git" >}}) skills                           |
+| `04`  | [Choose]({{< ref "/faq/assignments#app-for-project" >}}) & fork an app, that will be used as *deployable workload* and get it to work locally  |
 | `05`  | Revisit the *12-Factor-App*; install a container runtime on your workstation, start some containers and try to also build some container images  |
 | `06`  | Install a hypervisor on your workstation; start a virtual machine; connect via terminal to a shell inside that machine; find out which process manager is being used and try to stop and start some of the processes running in there  |
 | `07`  | Revisit the agile-based software development life cycle; start to note down your first thoughts about your project implementation; allocate some cloud resources (e.g. machines, networks, storage, managed services)  |
@@ -70,16 +70,16 @@ Which steps would the app need to go through?
 
 #### (1) Preparation
 
-* [does your workstation provide the right working environment](./../faq.md#3-my-workstation-runs-microsoft-windows-where-do-i-get-a-unix-like-context-from-to-work-in)? 
+* [does your workstation provide the right working environment]({{< ref "/faq#unix-on-windows-workstation" >}})? 
 
 * if you have little to no experience working with POSIX-based systems a/o using the terminal, take a look at the 
-  [tutorial](./../links.md#basic-knowledge) and spent some time making yourself familiar with these technologies
+  [tutorial]({{< ref "links#basic-knowledge">}}) and spent some time making yourself familiar with these technologies
 
-* [choose an application](./../faq.md#12-how-to-choose-the-application-for-the-project-assignment) and try to get it
+* [choose an application]({{< ref "/faq/assignments#app-for-project">}}) and try to get it
   to work locally
 
 * think about where you want to host your infrastructure (and thus the application) 
-  * is one of the [available cloud providers](./../links.md#providers) an option?
+  * is one of the [available cloud providers]({{< ref "/links#providers" >}}) an option?
   * does your own workstation have enough resources (to host one or more services a/o virtual machines)?
   * if none of these options work for you, please get in touch
   * (or if you are uncertain about this whole part)
@@ -97,7 +97,7 @@ Which steps would the app need to go through?
   * Monitoring: Prometheus + Grafana, EFK Stack
 
 * all the fundamental technologies should be understood (in principle) before the initial version of the 
-  [concept](./../assignments/deliverables/project_concept.md) is due
+  [concept]({{< ref "/assignments/deliverables/project-concept">}}) is due
 
 
 #### (2) Writing the concept
@@ -128,9 +128,9 @@ Which steps would the app need to go through?
 #### (3) Implementation
 
 * use the repository that already contains your concept and add all the infrastructure code that is not required to
-  sit next to the source code of [your application](./../faq.md#12-how-to-choose-the-application-for-the-project-assignment)  
+  sit next to the source code of [your application]({{< ref "/faq/assignments#app-for-project">}})  
 
-* fork the repository of the application you [chose](./../faq.md#12-how-to-choose-the-application-for-the-project-assignment)
+* fork the repository of the application you [chose]({{< ref "/faq/assignments#app-for-project">}})
   so that you are able to introduce changes necessary to integrate it with the rest of your setup
 
 

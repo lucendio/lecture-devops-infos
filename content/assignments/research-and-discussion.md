@@ -1,3 +1,9 @@
+---
+title: 'Research & Discussion'
+weight: 1
+---
+
+
 Research & Discussion
 =====================
 
@@ -6,7 +12,7 @@ __Description:__ Research a few chosen statements originating from
 [*'(A few) Ops Lessons We All Learn The Hard Way'*](https://www.netmeister.org/blog/ops-lessons.html) and take notes of
 your findings. Share and discuss your results during class.
 
-__Deliverable:__ [research notes](./deliverables/research_notes.md)
+__Deliverable:__ [research notes]({{< ref "/assignments/deliverables/research-notes" >}})
 
 
 ### Process
@@ -17,7 +23,7 @@ __Deliverable:__ [research notes](./deliverables/research_notes.md)
 4. publish your notes
 
 *Please note that the purpose of this work is merely to qualify yourself for being entitled to hand in the
-[project work](./project.md).*
+[project work]({{< ref "/assignments/project-work" >}}).*
 
 
 ### Rules
