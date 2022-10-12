@@ -1,125 +1,223 @@
-Example technology stacks
-=========================
+---
+title: 'Examples'
+---
+
+
+Example stacks
+==============
+
 
 The subsequent collection of examples describes - in a very vague manner - possible technology stacks and even relations
-between some of them. It's just meant to be an inspiration and starting point of research when designing and developing
+between some of them. It's just meant to be an inspiration and starting point of research when choosing technologies for
 you *project*.
+
+For more details about specific technologies mentioned below, please refer to the
+[software list]({{< ref "/guide/software" >}}).
 
 *Please note, that none of the examples are mutual exclusive. Certain items across these examples may yield other
 reasonable or even more suitable combination(s).*
 
-__*Setup categories:*__
-a) *local* (your own computer)
-b) *remote* (any other computer; aka 'cloud')
-c) *hybrid* (local + remote)
+
+{{< hint info >}}
+__Categories:__
+
+*local* : your own computer
+
+*remote* : any other computer; aka *'The Cloud'*
+
+*hybrid* : *local* & *remote*
+{{< /hint >}}
 
 
-##### 1a – virtual machines *[local]*
+### 1a – virtual machines *[local]*
 
-* Virtualbox (+Vagrant) -> *application*    *[runtime environment]*
-* Packer (+Ansible)                         *[automation]*
-* Gitea                                     *[VCS]*
-* Jenkins                                   *[CI/CD]*
-* HAProxy                                   *[proxy/vhost/load-balancer]*
-* ELK                                       *[logging]*
-
-
-##### 1b – Containers *[local]*
-
-* (Virtualbox + Vagrant)    
-* Ansible                   *[automation]*
-* Docker -> *application*   *[runtime environment]*
-* Gitea                     *[VCS]*
-* Concourse                 *[CI/CD]*
-* Nginx                     *[proxy/vhost/load-balancer]*
-* Monit                     *[metrics]*
+```
+|  Technology                                         |  Purpose(s)                   |
+|=====================================================|===============================|
+|  <application>                                      |                               |
+|  Gitea                                              |  VCS                          |
+|  Jenkins                                            |  CI/CD                        |
+|  HAProxy                                            |  proxy, vhost, load balancer  |
+|  ELK                                                |  logging                      |
+|   * Virtualbox + Vagrant                            |  runtime environment          |
+|   * Packer + Ansible                                |  automation                   |
++=====================================================+===============================+
+```
 
 
-##### 1c – Orchestration *[local]*
+### 1b – Containers *[local]*
 
-* (Virtualbox + Vagrant)
-* Ansible (+Kubespray)                      *[automation]*
-* Kubernetes (+Docker) -> *application*     *[runtime environment]*
-* Helm                                      *[automation]*
-* Gitlab                                    *[VCS,CI/CD]*
-* Prometheus + Grafana                      *[metrics]*
-
-
-##### 1d – Orchestration *[remote]* (university)
-
-* Gitlab                                    *[VCS,CI/CD,Registry]*
-* Kubernetes (+Docker) -> *application*     *[runtime environment]*
-* Helm                                      *[automation]*
-* EFK                                       *[logging]*
+```
+|  Technology                                         |  Purpose(s)                   |
+|=====================================================|===============================|
+|  <application>                                      |                               |
+|  Gitea                                              |  VCS                          |
+|  Concourse                                          |  CI/CD                        |
+|  Nginx                                              |  proxy, vhost, load balancer  |
+|  Monit                                              |  metrics                      |
+|   * Docker                                          |  runtime environment          |
+|   * Ansible                                         |  automation                   |
++=====================================================+===============================+
+```
 
 
-##### 2a – Cloud services + Monitoring VM *[remote]*
+### 1c – Orchestration *[local]*
 
-* Bitbucket                                *[VCS, CI/CD]*
-* Heroku (+Terraform) -> *application*     *[runtime environment,automation,proxy,load balancer]*
-* EFK                                      *[logging]*
-  + DigitalOcean            
-  + Terraform
-  * Ansible
-
-
-##### 2b – Multi-Cloud: managed *[remote]*
-
-* Github                                *[VCS]*
-* Github actions                        *[CI/CD]*
-* AWS (+Terraform) -> *application*     *[runtime environment,automation,proxy,load balancer]*
-* Splunk                                *[logging]*
-
-
-##### 2c – Local + Cloud *[hybrid]*
-
-* Github                            *[VCS]*
-* Jenkins                           *[CI/CD]*
-  + Virtualbox + Vagrant or Docker
-  + Ansible
-* DigitalOcean                      *[runtime environment]*
-    * *application*
-    * HAProxy                       *[proxy/load-balancer]*
-    * ELK                           *[logging]*
-+ Terraform                         *[automation]*
-* Ansible                           *[automation]*
+```
+|  Technology                                         |  Purpose(s)                   |
+|=====================================================|===============================|
+|  Kubernetes                                         |  proxy, vhost, load balancer  |
+|   * Virtualbox + Vagrant                            |  runtime environment          |
+|   * Ansible + Kubespray                             |  automation                   |
++-----------------------------------------------------+-------------------------------+
+|  <application>                                      |                               |
+|  GitLab                                             |  VCS, CI/CD, artifact host    |
+|  Prometheus & Grafan                                |  metrics                      |
+|   * Helm                                            |  automation                   |
++=====================================================+===============================+
+```
 
 
-##### 3a - Cloud Orchestration: managed *[remote]*
+### 1d – Orchestration *[remote]* (university)
 
-* Bitbucket                 *[VCS]*
-* Terraform                 *[automation]*
-* GKE -> *application*      *[runtime environment,proxy,load balancer]*
-* Helm                      *[automation]*
-* Jenkins + K8s Plugin      *[CI/CD]*
-* Stackdriver               *[logging]*
-
-
-##### 3b - Cloud Orchestration: DIY *[remote]*
-
-* Github                            *[VCS]*
-* Terraform                         *[automation]*
-* DigitalOcean
-    * Ansible (+Kubespray)          *[automation]*
-* Kubernetes -> *application*       *[runtime environment,proxy,load balancer]*
-* Helm                              *[automation]*
-* Jenkins + K8s Plugin              *[CI/CD]*
-* EFK                               *[logging]*
+```
+|  Technology                    |  Purpose(s)                                        |
+|================================|====================================================|
+|  Kubernetes                    |  runtime environment, proxy, vhost, load balancer  |
++--------------------------------+----------------------------------------------------+
+|  <application>                 |                                                    |
+|  GitLab                        |  VCS, CI/CD, artifact host                         |
+|  EFK                           |  logging                                           |
+|   * Kustomize                  |  automation                                        |
++================================+====================================================+
+```
 
 
-##### 4 – All in One *[local or remote]*
+### 2a – Cloud services + Monitoring VM *[remote]*
 
-* OpenShift:
-    * HAProxy                   *[proxy,load balancer]*
-    * Container Registry
-    * Kubernetes                *[runtime environment]*
-      + Gitea                   *[VCS]*
-    * Jenkins                   *[CI/CD]*
-    * EFK                       *[logging]*
-    * Prometheus + Grafana      *[metrics]*
+```
+|  Technology                           |  Purpose(s)                                 |
+|=======================================|=============================================|
+|  Bitbucket                            |  VCS, CI/CD, artifact host                  |
++---------------------------------------+---------------------------------------------+
+|  <application>                        |                                             |
+|   * Heroku                            |  runtime environment, vhost, load balancer  |
+|   * Terraform                         |  automation                                 |
++---------------------------------------+---------------------------------------------+
+|  EFK                                  |  logging                                    |
+|   * DigitalOcean                      |  runtime environment                        |
+|   * Terraform                         |  automation                                 |
+|   * Ansible                           |  automation                                 |
++=======================================+=============================================+
+```
 
 
-##### 5 – Jenkins X 
+### 2b – Multi-Cloud: managed *[remote]*
 
-* Github                                *[VCS]*
-* AWS -> Jenkins X -> *application*     *[CI/CD,runtime environment,proxy,load balancer]*
+```
+|  Technology                    |  Purpose(s)                                        |
+|================================|====================================================|
+|  Github                        |  VCS                                               |
++--------------------------------+----------------------------------------------------+
+|  Github Actions                |  CI/CD, artifact host                              |
++--------------------------------+----------------------------------------------------+
+|  <application>                 |                                                    |
+|   * AWS                        |  runtime environment, proxy, vhost, load balancer  |
+|   * Terraform                  |  automation                                        |
++--------------------------------+----------------------------------------------------+
+|  Splunk                        |  logging                                           |
++================================+====================================================+
+```
+
+
+### 2c – Local + Cloud *[hybrid]*
+
+```
+|  Technology                                          |  Purpose(s)                  |
+|======================================================|==============================|
+|  Github                                              |  VCS                         |
++------------------------------------------------------+------------------------------+
+|  Jenkins                                             |  CI/CD                       |
+|   * Virtualbox + Vagrant or Docker                   |  runtime environment         |
+|   * Ansible                                          |  automation                  |
++------------------------------------------------------+------------------------------+
+|  <application>                                       |                              |
+|  HAProxy                                             |  proxy, vhost,load-balancer  |
+|  ELK                                                 |  logging                     |
+|   * DigitalOcean                                     |  runtime environment         |
+|   * Terraform                                        |  automation                  |
+|   * Ansible                                          |  automation                  |
++------------------------------------------------------+------------------------------+
+```
+
+
+### 3a - Cloud Orchestration: managed *[remote]*
+
+```
+|  Technology                    |  Purpose(s)                                        |
+|================================|====================================================|
+|  Bitbucket                     |  VCS, artifact host                                |
++--------------------------------+----------------------------------------------------+
+|  GKE                           |  runtime environment, proxy, vhost, load balancer  |
+|   * Terraform                  |  automation                                        |
++--------------------------------+----------------------------------------------------+
+|  <application>                 |                                                    |
+|  Jenkins + K8s Plugin          |  CI/CD                                             |
+|   * Helm                       |  automation                                        |
++--------------------------------+----------------------------------------------------+
+|  Stackdriver                   |  logging                                           |
++--------------------------------+----------------------------------------------------+
+```
+
+
+### 3b - Cloud Orchestration: DIY *[remote]*
+
+```
+|  Technology                                         |  Purpose(s)                   |
+|=====================================================|===============================|
+|  Github                                             |  VCS                          |
++-----------------------------------------------------+-------------------------------+
+|  Kubernetes                                         |  proxy, vhost, load balancer  |
+|   * DigitalOcean                                    |  runtime environment          |
+|   * Terraform                                       |  automation                   |
+|   * Ansible + Kubespray                             |  automation                   |
++-----------------------------------------------------+-------------------------------+
+|  <application>                                      |                               |
+|  Jenkins + K8s Plugin                               |  CI/CD                        |
+|  EFK                                                |  logging                      |
+|   * Helm                                            |  automation                   |
++-----------------------------------------------------+-------------------------------+
+```
+
+
+### 4 – All in One *[local]* or *[remote]*
+
+```
+|  Technology                                                 |  Purpose(s)           |
+|=============================================================|=======================|
+|  OpenShift, includes:                                       |                       |
+|    Kubernetes                                               |  runtime environment  |
+|    HAProxy                                                  |  proxy,load balancer  |
+|    Container Registry                                       |  artifact host        |
+|    Jenkins                                                  |  CI/CD                |
+|    EFK                                                      |  logging              |
+|    Prometheus + Grafana                                     |  metrics              |
++-------------------------------------------------------------+-----------------------+
+|  <application>                                              |                       |
+|  Gitea                                                      |  VCS                  |
+|   * Helm                                                    |  automation           |
++-------------------------------------------------------------+-----------------------+
+```
+
+
+### 5 – Jenkins X 
+
+```
+|  Technology     |  Purpose(s)                                                       |
+|=================|===================================================================|
+|  Github         |  VCS                                                              |
++-----------------+-------------------------------------------------------------------+
+|  Jenkins X      |  CI/CD, automation, proxy, load balancer, metrics, artifact host  |
+|   * AWS         |  runtime environment                                              |
++-----------------+-------------------------------------------------------------------+
+```
