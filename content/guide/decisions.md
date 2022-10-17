@@ -1,4 +1,9 @@
-Making some decisions
+---
+title: 'Decisions'
+---
+
+
+Taking some decisions
 =====================
 
 
@@ -12,7 +17,7 @@ to know the limitations of all the different possibilities. Please read on, if y
 more about those limitations and get some fruit for thought to make your decisions.
 
 
-### Remote or local?
+## Remote or local?
 
 Everything you do on your local workstation gives you full control over the entire stack. This is
 valuable when trying to figure out why things are not working.
@@ -31,7 +36,7 @@ required - neither in the [grading criteria]({{< ref "/grading#implementation" >
 [assignment]({{< ref "/assignments/project-work" >}}) (also see the [tips]({{< ref "/guide/tips#tls" >}}) for more information).
 
 
-### Kubernetes or not?
+## Kubernetes or not?
 
 Kubernetes is the new kid on the block and has slowly evolved into a de facto industry standard. So,
 chances are that you eventually bump into it one way or another over the course of your career.
@@ -40,7 +45,7 @@ While it already provides a variety of features out of the box, like horizontal 
 at the same time, it's complex and hides (or rather *abstracts*) some mechanisms from you, that you otherwise
 would need to do *by hand*, but at the same time would understand them better.
 
-Available [*cloud provides*]({{ ref "/links#providers" }}) may already offer a turnkey-ready managed Kubernetes
+Available [*cloud provides*]({{ ref "/links#cloud-providers" }}) may already offer a turnkey-ready managed Kubernetes
 cluster. Or, you can provision it yourself, for example, with a couple of virtual machines (spun up locally
 or allocated in the cloud) and [Kubespray](https://github.com/kubernetes-sigs/kubespray). The university also
 hosts a Kubernetes cluster, that you are free to use.
@@ -51,12 +56,12 @@ self-provisioned or managed clusters on the public cloud usually allow administr
 cluster. 
 
 
-### Public cloud provider or university resources?
+## Public cloud provider or university resources?
 
-The university resources are limited to Gitlab and a Kubernetes cluster. While this might be everything you
+The university resources are limited to GitLab and a Kubernetes cluster. While this might be everything you
 need to implement the project, both have some limitations:
 
-* Gitlab: no administrative access to the [runners](https://docs.gitlab.com/runner/); but can [add any other
+* GitLab: no administrative access to the [runners](https://docs.gitlab.com/runner/); but can [add any other
   machine (workstation or virtual cloud instance) as a runner](https://docs.gitlab.com/runner/register/) to you project
 * Kubernetes: [namespaced resources](https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/#not-all-objects-are-in-a-namespace) 
   as mentioned above

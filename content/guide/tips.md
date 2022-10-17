@@ -1,3 +1,8 @@
+---
+title: 'Tips'
+---
+
+
 Tips
 ====
 
@@ -5,7 +10,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
 *project* assignment. Chances are that some might already mentioned or covered somewhere else in this repository.
 
 
-#### Workflow
+## Workflow
 
 * if a technology is new to you, start with the "Getting Started / Quickstart" section or at the beginning of the
   documentation; not some Stackoverflow thread or a blog article
@@ -20,7 +25,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
 * commit message matter - a lot
 
 
-#### Deployable workload / application
+## Deployable workload / application
 
 * even though the application requires a persistence layer, it can be considered *ephemeral*; meaning data doesn't have
   to persist across restarts or re-deployments
@@ -28,7 +33,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
   might need to be added, for example, to define the *pipeline*
 
 
-#### CI/CD
+## CI/CD
 
 * a change in VCS can be, for example, a modification in the source code or pushing a new tag
 * triggering the pipeline explicitly (or controlled) usually refers to a merge commit to a release branch, to the creation
@@ -36,7 +41,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
   continuous delivery) TODO: mainline is somehow guarded, so that nobody can accidentally deploy to production
 
 
-#### DNS
+## DNS
 
 * FQDNs are typically provided through DNS
     * simulated locally: (a) by editing the `/etc/hosts` file or (b) by running a local DNS service (e.g. `dnsmasq`)
@@ -49,13 +54,13 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
   `myapp.tld:80`)
 
 
-#### Architecture / Design
+## Architecture / Design
 
 * in order to distribute incoming traffic across multiple instances of an application and to enable zero-downtime
   deployment a load balancer can be placed *in front* of them
 
 
-### TLS 
+## TLS 
 
 * to implement TLS for local (non-public) services, self-signed certificates are a valid solution (keep in mind, that
   other services might need to have the certificate installed, when communicating between each other)

@@ -1,14 +1,22 @@
+---
+title: 'Path'
+---
+
+
 A guided path *(WIP)*
 =====================
-
 
 *Please note, that the following outlines do not claim to be exhaustive.*
 
 
-### 20 weeks to go - a rough timeline to help you structure the work ahead
+## 20 weeks to go - a rough timeline to help you structure the work ahead
 
-*__DISCLAIMER__: This is no one-size-fits-all but merely an incomplete suggestion. It may or may not be helpful 
-on your journey through the course, and it's probably not (fully) in sync with the course road map.*
+{{< hint warning >}}
+__DISCLAIMER__:
+
+This is no one-size-fits-all but merely an incomplete suggestion. It may or may not be helpful 
+on your journey through the course, and it's probably not (fully) in sync with the course road map.
+{{< /hint >}}
 
 Based on an average of 20 weeks (starting with the course *onboarding* and concluding with *review*).
 
@@ -36,9 +44,9 @@ Based on an average of 20 weeks (starting with the course *onboarding* and concl
 | `20`  | Double-check the grading criteria and see if they are met; plan and trial run the review presentation         |
 
 
-### A possible approach
+## A possible approach
 
-#### (0) Thinking out loud
+### (0) Thinking out loud
 
 1. What do you already know about app deployment, automation and infrastructure (from your
    previous courses & projects a/o from you work place)?
@@ -68,7 +76,7 @@ Which steps would the app need to go through?
    can be managed services?
 
 
-#### (1) Preparation
+### (1) Preparation
 
 * [does your workstation provide the right working environment]({{< ref "/faq#unix-on-windows-workstation" >}})? 
 
@@ -79,7 +87,7 @@ Which steps would the app need to go through?
   to work locally
 
 * think about where you want to host your infrastructure (and thus the application) 
-  * is one of the [available cloud providers]({{< ref "/links#providers" >}}) an option?
+  * is one of the [available cloud providers]({{< ref "/links#cloud-providers" >}}) an option?
   * does your own workstation have enough resources (to host one or more services a/o virtual machines)?
   * if none of these options work for you, please get in touch
   * (or if you are uncertain about this whole part)
@@ -93,14 +101,14 @@ Which steps would the app need to go through?
       * Terraform, if you want to host (parts of) your project on a public cloud
       * Vagrant, if you want to run things locally (verify that the available resources of your workstation are sufficient)
     * configuration-as-code: Ansible, Chef, Salt
-  * CI/CD: Gitlab, Github Actions, Jenkins, Concourse
+  * CI/CD: GitLab, Github Actions, Jenkins, Concourse
   * Monitoring: Prometheus + Grafana, EFK Stack
 
 * all the fundamental technologies should be understood (in principle) before the initial version of the 
   [concept]({{< ref "/assignments/deliverables/project-concept">}}) is due
 
 
-#### (2) Writing the concept
+### (2) Writing the concept
 
 * essential pieces: VCS, CI/CD, infrastructure hosting some services incl. the application itself,
   backing services (database, monitoring)
@@ -125,7 +133,7 @@ Which steps would the app need to go through?
   parts of the documentation; commonly or taught (during class) knowledge can already be assumed
 
 
-#### (3) Implementation
+### (3) Implementation
 
 * use the repository that already contains your concept and add all the infrastructure code that is not required to
   sit next to the source code of [your application]({{< ref "/faq/assignments#app-for-project">}})  
@@ -134,7 +142,7 @@ Which steps would the app need to go through?
   so that you are able to introduce changes necessary to integrate it with the rest of your setup
 
 
-#### (4) Deliverables
+### (4) Deliverables
 
 * make sure that each part of your infrastructure configuration is either defined and described by 'code', or if not,
   then at least document the steps you have taken in detail (e.g. configuring DNS in a provider's web console, 

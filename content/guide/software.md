@@ -68,7 +68,8 @@ software.
 
 * [Terraform](https://www.terraform.io/intro)
 * [Pulumi](https://www.pulumi.com/docs/guides/)
-
+* [Google Cloud CLI](https://cloud.google.com/sdk/docs/install)
+* [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
 
 ## Configuration Management
 
