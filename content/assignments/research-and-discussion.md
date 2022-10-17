@@ -15,24 +15,26 @@ your findings. Share and discuss your results during class.
 __Deliverable:__ [research notes]({{< ref "/assignments/deliverables/research-notes" >}})
 
 
-### Process
+## Process
 
 1. pick 2 statements from the list
 2. do research around those statements and take notes
 3. share your results with everyone, state your opinion on the matter and maybe start a discussion on its legitimacy
 4. publish your notes
 
-*Please note that the purpose of this work is merely to qualify yourself for being entitled to hand in the
-[project work]({{< ref "/assignments/project-work" >}}).*
+{{< hint warning >}}
+Please note that the purpose of this work is merely to qualify yourself for being entitled to hand in the
+[project work]({{< ref "/assignments/project-work" >}}).
+{{< /hint >}}
 
 
-### Rules
+## Rules
 
 * don't pick items from the list that are already taken
 * commit early and often
 
 
-### Specifications
+## Specifications
 
 The closing date for choosing statements is announced at the beginning of the semester. The repository that is
 used to publish everybody's choices as well as all the research nodes, is unique in each semester. Please refer to

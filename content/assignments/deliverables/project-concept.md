@@ -8,12 +8,12 @@ Deliverable: Project Concept
 ============================
 
 
-__SUBMISSION DEADLINE:__ before the end of day on the predefined date
+__SUBMISSION DEADLINE:__ before the end of day on the [predefined date]({{< ref "/dates" >}})
 
 
-### Requirements
+## Requirements
 
-#### Formal
+### Formal
 
 * language: German or English
 * written in Markdown (or reStructuredText)
@@ -23,14 +23,14 @@ __SUBMISSION DEADLINE:__ before the end of day on the predefined date
   are only permitted after consultation
 
 
-#### Content
+### Content
 
 * describe the life cycle of the application (e.g. automation steps)
 * outline architecture of the infrastructure and how it's going to be provisioned
 * explain your decisions
 * briefly describe the technology stack you opted for
 
-Think of the audience for this concept as one of your fellow classmates who you are trying to convince to join you in
+Think of the audience for this concept as one of your classmates who you are trying to convince to join you in
 helping with the implementation part. Or, your team lead, who you are trying to convince to let you work one something
 else for the upcoming weeks. 
 

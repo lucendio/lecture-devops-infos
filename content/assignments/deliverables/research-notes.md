@@ -11,9 +11,9 @@ Deliverable: Research Nodes
 __SUBMISSION DEADLINE:__ before the end of the day at which the classroom discussion takes place
 
 
-### Requirements
+## Requirements
 
-#### Formal
+### Formal
 
 * language: German or English
 * format: Markdown (or reStructuredText)
@@ -28,7 +28,7 @@ __SUBMISSION DEADLINE:__ before the end of the day at which the classroom discus
 * write bullet points (notes) not a novel
 
 
-#### Content
+### Content
 
 * What is the message/meaning/advice behind the statement?
 * Put the statement in some context

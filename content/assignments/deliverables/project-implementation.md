@@ -9,12 +9,11 @@ Deliverable: Project Implementation
 
 
 __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled for the review session.
-    Default; may deviate and superseded by information stated in other lecture material.
 
 
-### Requirements
+## Requirements
 
-#### Formal
+### Formal
 
 * language: German or English
 * every line of code and documentation is stored and tracked in an accessible Git repository
@@ -26,7 +25,7 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
   (e.g. pipeline code, shell script, `Makefile`)
 
 
-#### Technical
+### Technical
 
 * follow the *Infrastructure-as-Code* paradigm, meaning: write code rather than words that explain your steps
 * cloud-, self- or locally hosted
@@ -42,7 +41,7 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
   the infrastructure and automation code
 
 
-#### Content
+### Content
 
 * the application is put through at least 3 stages (build, test, deploy) by at least 1 pipeline (CI/CD)
 * at least one service (e.g. VCS, Monitoring) other than the application has to be provisioned by yourself (no
@@ -50,7 +49,7 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * automate allocation and configuration of all required infrastructure resources and services
 
 
-#### Additional notes
+### Additional notes
 
 * making the deliverable comprehensive means, one must be able to reproduce the entire setup solely by having the
   repositories content available, so that at the end the entire setup is as functional as intended
