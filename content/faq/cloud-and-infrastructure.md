@@ -14,7 +14,7 @@ Essentially, you have 3 different options:
 a) your workstation has enough resources (CPU, memory) to host one or more virtual machines, which would enable you
    to mimic some *cloud resources* locally - as you know: the cloud is just a bunch of other people's computers
 
-b) have a look at the link section on [*cloud providers*]({{< ref "/links#providers" >}})
+b) have a look at the link section on [*cloud providers*]({{< ref "/links#cloud-providers" >}})
 
 c) the university provides a Kubernetes cluster managed with Rancher (requires student account, and VPN access if you
    are not on-site)
@@ -22,7 +22,7 @@ c) the university provides a Kubernetes cluster managed with Rancher (requires s
 
 ## Which cloud provider should I use?
 
-As mentioned before, there is a variety of common [*cloud providers*]({{< ref "/links#providers" >}}) you can choose from.
+As mentioned before, there is a variety of common [*cloud providers*]({{< ref "/links#cloud-providers" >}}) you can choose from.
 While all of them provide similar concepts which are sometimes named differently, they may have some limitations:
 
 * AWS Academy (formerly called *Educate*), e.g. see
@@ -36,7 +36,7 @@ While all of them provide similar concepts which are sometimes named differently
 * DigitalOcean: no known limitation, except the amount of credits
 
 
-## How do I get access to AWS and unlock AWS Academy[^1] credits?
+## How do I get access to AWS and unlock AWS Academy[^1] credits? {id="how-to-get-access-to-aws-and-unlock-aws-academy"}
 
 1. Add your email address to the provided list
 2. When receiving the invitation email (subject: *Course Invitation* from *instructure.com*), follow the link to join
@@ -93,10 +93,10 @@ __*Example (AWS + Freenom):*__
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with Terraform
 
 
-## How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster?
+## How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster? {id="kubeconfig-of-edu-cluster"}
 
-{{< hint info >}}
-*__NOTE:__ did you already enter your university email address in the respective account list?*
+{{< hint warning >}}
+Did you already enter your university email address in the respective account list?
 {{< /hint >}}
 
 1. *(optional)* [login to the VPN](https://doku.bht-berlin.de/zugang/vpn)

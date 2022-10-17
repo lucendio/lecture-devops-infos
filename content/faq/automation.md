@@ -4,7 +4,7 @@ title: 'Automation'
 
 
 FAQ - Automation
-============================
+================
 
 
 ## Which software is installed on Github Action runners?
