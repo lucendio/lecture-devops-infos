@@ -275,4 +275,4 @@ dpkg -L curl
 
 The result, 97 lines of code in a
 [`exporter.sh` script](https://docs.ansible.com/ansible/latest/collections/community/general/docker_container_module.html)
-might tdo the trick.
+might do the trick.

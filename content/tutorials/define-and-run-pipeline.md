@@ -117,7 +117,7 @@ in case of 'yaml invalid' errors, check the `CI/CD > Editor` for a more detailed
 [`build` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/cc6647dda647a1fe2c0e23f303d6db25c97bdfb0/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L16)
 
 {{< hint warning >}}
-For container images, please note the docker-in-docker dilemma (see [Useful links]({{< relref "##useful-links" >}}))
+For container images, please note the docker-in-docker dilemma (see [Useful links]({{< relref "#useful-links" >}}))
 {{< /hint >}}
 
 ... tests the code/artifact - see stage:

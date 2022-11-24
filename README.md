@@ -7,7 +7,7 @@ Lecture: DevOps (information)
 ## Contribute
 
 Feel free to fix typos, correct mistakes or suggest changes to improve the experience
-of the website.
+of the website or the lecture.
 
 #### Dependencies
 
