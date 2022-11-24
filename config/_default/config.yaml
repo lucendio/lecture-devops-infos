@@ -11,9 +11,8 @@ sitemap:
 disableKinds: [ 'taxonomy', 'taxonomyTerm' ]
 
 # DOCS: https://gohugo.io/content-management/urls/#permalinks
-permalinks: {}
-
-timeZone: 'Europe/Berlin'
+permalinks:
+  dates: '/:section/archive/:filename'
 
 googleAnalytics: false
 

@@ -1,0 +1,52 @@
+{{ define "main" }}
+    <article class="markdown">
+        {{ $headline := printf "Important dates and deadlines: %s" .Title }}
+        <h1 id="{{ anchorize $headline }}"> {{ $headline }}</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range .Params.events }}
+                <tr>
+                    <td>
+                        {{ if .date }}
+                            {{ time.Format "02.01.2006" .date }}
+                        {{ end }}
+                        {{ if .dates }}
+                            {{ time.Format "02.01.2006" (index (first 1 .dates) 0) }}
+                            -
+                            {{ time.Format "02.01.2006" (index (last 1 .dates) 0) }}
+                        {{ end }}
+                    </td>
+                    <td>
+                        {{ if .time }}
+                            {{ .time }}
+                        {{ end }}
+                        {{ if .window }}
+                            {{ .window.from }} - {{ .window.until }}
+                        {{ end }}
+                    </td>
+                    <td>
+                        {{ if .link }}<a href="{{ ref $.Page .link }}">{{ end }}
+                        {{ .name }}
+                        {{ if .link }}</a>{{ end }}
+                    </td>
+                </tr>
+                {{ end}}
+            </tbody>
+        </table>
+
+        <p>
+        {{ with .OutputFormats.Get "calendar" }}
+            <a class="book-btn subscribe" href="{{ .RelPermalink }}">🔔 Subscribe (.isc)</a>
+        {{ end }}
+        </p>
+
+  </article>
+{{ end }}

@@ -1,0 +1,86 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+
+PRODID:{{ (urls.Parse $.Site.BaseURL).Host }}
+X-WR-CALNAME:DevOps - {{ .Title }}
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+
+
+BEGIN:VTIMEZONE
+TZID:{{ $.Site.Params.timeZone }}
+
+BEGIN:STANDARD
+DTSTART:19701028T030000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=10
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+
+BEGIN:DAYLIGHT
+DTSTART:19700325T020000
+RRULE:FREQ=YEARLY;BYDAY=-1SU;BYMONTH=3
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+
+END:VTIMEZONE
+
+
+{{ range .Params.events }}
+
+BEGIN:VEVENT
+
+UID:{{ sha1 .name }}
+DTSTAMP:{{ $.Page.Date | time.Format "20060102T150405" }}
+CREATED:{{ $.Page.PublishDate | time.Format "20060102T150405" }}
+LAST-MODIFIED:{{ $.Page.Lastmod | time.Format "20060102T150405" }}
+DTSTART;TZID=
+    {{- $.Site.Params.timeZone -}}
+    :
+    {{-
+        printf "%sT%s:00" (index (default (slice .date) .dates) 0) (default .time .window.from)
+        | time.Format "20060102T150405"
+    }}
+DTEND;TZID=
+    {{-
+        $.Site.Params.timeZone
+    -}}
+    :
+    {{-
+        printf "%sT%s:00" (index (default (slice .date) .dates) 0) (default .time .window.until)
+        | time.Format "20060102T150405"
+    }}
+SEQUENCE:0
+{{- if .dates }}
+RRULE:FREQ=DAILY;COUNT={{ len .dates }}
+RDATE:VALUE-DATE:{{ delimit (apply .dates "time.Format" "20060102" ".") "," }}
+{{- end }}
+SUMMARY:{{ .name }}
+CATEGORIES:{{ .category }}
+{{- if .description }}
+DESCRIPTION:{{ .description | markdownify -}}
+{{- end -}}
+{{- if .link }}
+URL:{{ ref $.Page .link }}
+{{- end -}}
+{{- if .location }}
+LOCATION: {{ .location }}
+{{- end -}}
+
+{{- if or (eq .category "deadline") (eq .category "appointment") }}
+BEGIN:VALARM
+
+TRIGGER:{{ printf "-PT%dH" (cond (eq .category "appointment") 1 6 )}}
+ACTION:DISPLAY
+DESCRIPTION:DevOps: {{ .name }}
+
+END:VALARM
+{{- end }}
+
+END:VEVENT
+
+{{- end }}
+
+
+END:VCALENDAR
