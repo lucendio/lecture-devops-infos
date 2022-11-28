@@ -1,10 +1,10 @@
 ---
-title: 'Infrastructure resources'
+title: 'Cloud Infrastructure'
 ---
 
 
-Infrastructure Resources
-========================
+Cloud Infrastructure
+====================
 
 ## Main resources
 
