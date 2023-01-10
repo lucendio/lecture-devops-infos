@@ -104,6 +104,7 @@ software.
 * [Tekton](https://tekton.dev/docs/pipelines/) *(runs on top of Kubernetes)*
 * [GitHub Actions](https://docs.github.com/en/actions/using-workflows/about-workflows#create-an-example-workflow) *(SaaS)*
 * [CicleCI](https://circleci.com/docs/workflows/#workflows-configuration-examples) *(SaaS)*
+* [Dagger](https://dagger.io) *(portable CI/CD pipeline)*
 
 
 ## Container Orchestration
@@ -121,6 +122,7 @@ software.
 * [Minikube](https://kubernetes.io/de/docs/setup/minikube/)
 * [MicroK8s](https://microk8s.io/#install-microk8s)
 * [kind](https://kind.sigs.k8s.io/)
+* [k0s](https://docs.k0sproject.io/stable/install/)
 * [Minishift (for OpenShift v3.x)](https://github.com/minishift/minishift)
 * [CodeReady Containers (for OpenShift v4.x)](https://www.okd.io/crc/) ([repo](https://github.com/code-ready/crc))
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
