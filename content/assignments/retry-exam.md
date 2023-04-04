@@ -14,8 +14,7 @@ the opportunity to take a retry exam.
 
 __Deliverable:__ *N/A*
 
-__Requirements:__ successful participation in the [Research & Discussion]({{< ref "/assignments/research-and-discussion" >}})
-assignment
+__Requirements:__ complete the [Tutorials]({{< ref "/assignments/tutorials" >}}) assignment
 
 
 ## Process

@@ -15,8 +15,7 @@ successfully deployed as example workload in multiple environments. Automate the
 __Deliverables:__ [concept]({{< ref "/assignments/deliverables/project-concept" >}}) &
                   [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
 
-__Requirements:__ successful participation in the [Research & Discussion]({{< relref "./research-and-discussion" >}})
-                  assignment
+__Requirements:__ complete the [Tutorials]({{< ref "/assignments/tutorials" >}}) assignment
 
 {{< hint warning >}}
 Please note, that it's not required to successfully & completely finish the implementation in order to pass

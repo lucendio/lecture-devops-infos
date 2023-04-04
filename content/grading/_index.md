@@ -18,7 +18,7 @@ In order to pass the course, one is required to obtain at least _**50%**_ of the
 {{< /hint >}}
 
 
-## Research
+## Tutorials
 
 _Weight: **0%**_
 
@@ -26,8 +26,8 @@ _Weight: **0%**_
 
 *Criteria:*
 
-* actively participated and shared findings during discussion 
-* research notes are published
+* all solutions have been demonstrated during class
+* the [deliverable]({{< ref "/assignments/deliverables/tutorial-solutions" >}} was handed as requested 
 
 
 ## Concept
@@ -69,6 +69,7 @@ _Weight: **100%**_
 
 *Criteria:*
 
+* `[5]` the required amount of tutorials were completed and demonstrated
 * convincingly participate in review session
 * allocation of all infrastructure pieces is reproducible
 * allocation of all infrastructure pieces is automated
