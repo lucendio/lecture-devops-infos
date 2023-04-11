@@ -69,7 +69,6 @@ _Weight: **100%**_
 
 *Criteria:*
 
-* `[5]` the required amount of tutorials were completed and demonstrated
 * convincingly participate in review session
 * allocation of all infrastructure pieces is reproducible
 * allocation of all infrastructure pieces is automated
