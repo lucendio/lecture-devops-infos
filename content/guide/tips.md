@@ -49,6 +49,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
       (see [FAQ]({{< ref "/faq/cloud-and-infrastructure#dns-provider-free-and-automation">}}))
       that runs *name servers* (requires to control a *domain*)
     * service: [nip.io](https://nip.io/) provides *wildcard DNS for any IP address*
+      ([private ones](https://en.wikipedia.org/wiki/Private_network), too)
 * to access the same application but deployed in different environments, typically they get assign distinct FQDNs,
   instead of, for example, different ports (e.g. `dev.myapp.tld`, `prod.myapp.tld` instead of `myapp.tld:8080`, 
   `myapp.tld:80`)
@@ -66,3 +67,12 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
   other services might need to have the certificate installed, when communicating between each other)
 * [Let's Encrypt](https://letsencrypt.org/docs/) issues certificates free of charge for public domains (e.g. used by
   [*cert-manager*](https://github.com/jetstack/cert-manager) on K8s)
+
+
+## Documentation
+
+* don't invest time in describing what a bunch of code does; the code, especially declarative one, is usually pretty
+  much self-explanatory
+* document your architecture and process design (e.g. in which case a certain pipeline is triggered), or how different
+  tools interact with each other
+* update your concept to reflect the latest state of your implementation
