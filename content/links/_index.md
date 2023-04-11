@@ -36,6 +36,11 @@ Links
 * [Command_Line Heroes](https://www.redhat.com/en/command-line-heroes)
 
 
+## Exercises
+
+* [SadServers - troubleshoot a broken Linux server](https://sadservers.com)
+
+
 ## Link collections (so-called *awesome* lists)
 
 {{< hint info >}}
@@ -129,6 +134,7 @@ Please get in touch to receive invite and credits; credit card information are n
 * [Google: GCP for Education](https://edu.google.com/programs/students/benefits/)
 * [Microsoft: Azure](https://azure.microsoft.com/en-us/free/students/)
 * [Amazon: Amazon Web Services](https://aws.amazon.com/education/awseducate/)
+* [fly.io](https://fly.io) ([free tier](https://fly.io/docs/about/pricing/#free-allowances); [note on credit cards](https://community.fly.io/t/is-it-possible-to-use-fly-io-with-no-credit-card-if-youre-a-student/3134))
 * [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 
 
