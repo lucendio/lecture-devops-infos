@@ -34,4 +34,6 @@ __Requirements:__ complete the [Tutorials]({{< ref "/assignments/tutorials" >}})
 * form: multiple choice
 * questions are based solely on the slides handed out during class
 * ca. 20 random questions out of a set of 400
-* maximum reachable score: __60%__
+* maximum reachable score:
+  * __100%__ (project assignment completed)
+  * __60%__ (project assignment omitted)

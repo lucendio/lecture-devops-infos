@@ -107,8 +107,8 @@ _Weight: **100%**_
 
 *Notes:*
 
-* it's only possible to reach a maximum score of __60%__ (grade: `3,3`) even if all questions have been
-  answered correctly
+* if the project assignment was omitted, it's only possible to reach a maximum score of __60%__ (grade: `3,3`) even
+  when all questions have been answered correctly
 
 *Criteria:* 
 
