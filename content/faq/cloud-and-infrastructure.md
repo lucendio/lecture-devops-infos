@@ -79,21 +79,28 @@ A non-exhaustive list of public DNS providers:
 | [INWX](https://www.inwx.de/en)                   | NO                     | [URL](https://www.inwx.de/en/offer/api)                                      |  X                 |
 | [AWS Route 53](https://aws.amazon.com/route53/)  | NO                     | [URL](https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome.html)  |  X                 |
 | [GCP Cloud DNS](https://cloud.google.com/dns)    | NO                     | [URL](https://cloud.google.com/dns/docs/apis)                                |  X                 |
-| [Freenom](https://freenom.com)                   | YES                    | [URL](https://www.freenom.com/en/freenom-api.html)                           |  -                 |
+| [FreeDNS](https://freedns.afraid.org/)           | YES                    | [URL](https://freedns.afraid.org)                                            |  -                 |
 
-For local deployment/hosting, [nip.io](https://nip.io) can be used to mimic FQDNs. 
+Also, [nip.io](https://nip.io) can be used to mimic FQDNs in case of private (local) or public IP-based deployment/hosting 
 
-Keep in mind that each part of your infrastructure configuration 
+Keep in mind that each part of your infrastructure configuration must be reproducible. So, it's recommended to utilize
+APIs, if they exist, to automate setting DNS records, regardless
 
-__*Example (AWS + Freenom):*__
+__*Example without DNS delegation (DigitalOcean + Namecheap):*__
 
-1. Register a domain (e.g. `domain.tld`) on Freenom by using its API (after signing up)
+1. Register a domain (e.g. `domain.tld`) on Namecheap by using its web console (after signing up)
+2. Create records, e.g. `sub.doamin.tld` on Namecheap with Terraform
+
+
+__*Example with DNS delegation (AWS + Name.com):*__
+
+1. Register a domain (e.g. `domain.tld`) on Name.com by using its API (after signing up)
 2. Create a *Hosted Zone* for that domain on AWS Route 53 with Terraform
-3. Set the name servers defined by the *Hosted Zone* as custom name servers of your domain via Freenom API
+3. Set the name servers defined by the *Hosted Zone* as custom name servers of your domain via Name.com API
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with Terraform
 
 
-## How to obtain the `.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster? {id="kubeconfig-of-edu-cluster"}
+## How to obtain the `~/.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster? {id="kubeconfig-of-edu-cluster"}
 
 {{< hint warning >}}
 Did you already enter your university email address in the respective account list?
