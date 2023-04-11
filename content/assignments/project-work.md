@@ -94,6 +94,7 @@ work, or even lead to one or two useful hints for the [implementation]({{< ref "
 Whether you are new to this whole field of DevOps or already have some experience, chances are high you'll get something
 out of it.
 
+* [App suggestions]({{< ref "/faq/assignments#app-for-project" >}})
 * [A guided path]({{< ref "/guide/path" >}})
 * [Making decisions]({{< ref "/guide/decisions" >}})
 * [Technical tips]({{< ref "/guide/tips" >}})

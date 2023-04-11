@@ -13,10 +13,10 @@ FAQ - Assignments
 Based on the [conditions]({{< ref "/assignments/project-work#application-conditions" >}}) mentioned in the project
 assignment, there are basically three paths: 
 
-1. pick one of the many open source SaaS solutions others have already built
+1. pick one of the many open source SaaS solutions others have already built (see recommendations below)
 2. use the pre-defined [TODO app](https://github.com/lucendio/lecture-devops-app)
-3. choose your own application, or one that you have built in previous semesters or other courses - as long as it
-   adheres to the rules
+3. choose an application that you already built and/or anyone that is referred to in a tutorial of your favorite
+   framework - as long as it adheres to the rules
 
 One way to access your options is to ask yourself: which technology am I most familiar with? Because, you probably
 don't want to spend much time on learning about yet another package manager or figure out you to deliver this thing.
