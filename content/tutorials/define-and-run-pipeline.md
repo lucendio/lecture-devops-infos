@@ -35,7 +35,7 @@ Define and run a pipeline
 
     {{< hint info >}}
 In cases, where code repository and automation platform are not one and the same, it might be
-required to tell the automation platform where the repository actually is located. (e.g. create a new
+required to tell the automation platform where the repository is actually located. (e.g. create a new
 item in Jenkins and add the Github URL)
     {{< /hint >}}
 
@@ -57,7 +57,7 @@ section in the pipeline definition.
 
     {{< hint info >}}
 The solution does not contain any tests or even a test framework, but there are other ways to
-verify whether code works or not. Starting the app and check its response might suffice.*
+verify whether code works or not. Starting the app and check its response might suffice.
     {{< /hint >}}
 
 4. Verify via browser that the artifact is actually published
@@ -103,7 +103,7 @@ Under `CI/CD > Pipelines`, you should see a pipeline execution with the status *
 the stage cycles in order to get to the log of a job execution. 
 
 {{< hint >}}
-The log of the job should show the top-level content of the repository.
+The logs of the job should show the top-level content of the repository.
 {{< /hint >}}
 
 {{< hint warning >}}
