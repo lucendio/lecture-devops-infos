@@ -34,11 +34,14 @@ Build a container image and start a container
 *Source code can be found
 [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/01_build-container-image-and-start-container).*
 
+Note, that even though the commands below user `podman`, the solution is equally valid if replaced with `docker`.
+
+
 ### (1) Building and running a Node server isolated in a container
 
 ```bash
-docker build --file ./Containerfile --tag my-container-image:1.0.0 ./
-docker run --publish 3000:80 --name my-container my-container-image:1.0.0
+podman build --file ./Containerfile --tag my-container-image:1.0.0 ./
+podman run --publish 3000:80 --name my-container my-container-image:1.0.0
 ```
 
 {{< hint warning >}}
@@ -46,8 +49,8 @@ You may want to detach from the container shell by adding `--detach` to the comm
 in case you already ran the command before, you may need to stop and remove the container:
 
 ```bash
-docker stop my-container
-docker rm my-container
+podman stop my-container
+podman rm my-container
 ```
 {{< /hint >}}
 
@@ -56,12 +59,12 @@ To verify that the container is actually running
 1. check the HTTP interface; either by opening up the URL in your browser or by using the command line:
 
     ```bash
-    curl http://${DOCKER_HOST_IP}:3000
+    curl http://${PODMAN_HOST_IP}:3000
     ```
     *Response:* `[...] Hello World! [...]`
 
     {{< hint info >}}
-Depending on *where* the container runtime actually has spawned the container, `DOCKER_HOST_IP` might be
+Depending on *where* the container runtime actually has spawned the container, `PODMAN_HOST_IP` might be
 an IP of a virtual machine running on your host system, or, if Linux is the host system, the value is probably
 `127.0.0.1` aka. `localhost`.
     {{< /hint >}}
@@ -69,12 +72,12 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
 2.  use the container management tool
 
     ```bash
-    docker ps 
+    podman ps 
     ```
     *Result:*
     ```
-    CONTAINER ID   IMAGE                      COMMAND                  CREATED         STATUS         PORTS                  NAMES
-    754f855f1aed   my-container-image:1.0.0   "/docker-entrypoint.…"   3 minutes ago   Up 3 minutes   0.0.0.0:3000->80/tcp   my-container
+    CONTAINER ID  IMAGE                               COMMAND               CREATED        STATUS            PORTS                 NAMES
+    8fb77582c6e5  localhost/my-container-image:1.0.0  nginx -g daemon o...  3 seconds ago  Up 3 seconds ago  0.0.0.0:3000->80/tcp  my-container
     ```
 
 
@@ -83,7 +86,7 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
 1. Verify credentials
 
     ```bash
-    docker run \
+    podman run \
         --mount type=bind,source=${HOME}/.aws,destination=/root/.aws,readonly \
         --interactive \
         --tty \
@@ -96,7 +99,7 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
 
     Start a container:
     ```bash
-    docker run \
+    podman run \
         --name aws-container \
         --mount type=bind,source=${HOME}/.aws,destination=/root/.aws,readonly \
         --detach \
@@ -107,7 +110,7 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
     
     Allocate a shell in the container:
     ```bash
-    docker exec \
+    podman exec \
         --interactive \
         --tty \
         aws-container \
@@ -126,7 +129,7 @@ again after you are done: `aws s3api delete-bucket --bucket ${BUCKET_NAME}`__
 
     Remove the container:
     ```bash
-    docker rm --force aws-container
+    podman rm --force aws-container
     ```
 
 {{< hint >}}
