@@ -39,15 +39,19 @@ Install tool chain
       gcloud auth login ${BHT_EMAIL} --no-launch-browser 
       ```
 
-2. Install a container runtime of your choice (e.g. Podman, Docker)
 
-    * depending on your host system, you might want to run containers in a virtual machine
-
-
-3. Install a virtualization software (aka Hypervisor) [compatible with Vagrant and that is not named Docker)](https://www.vagrantup.com/docs/providers)
+2. Install a virtualization software (aka Hypervisor) [compatible with Vagrant and that is not named Docker)](https://www.vagrantup.com/docs/providers)
 
     * [VirtualBox](https://www.virtualbox.org/wiki/Downloads) is recommended, because it is supported across all major
       operating systems (on x86)
+
+
+3. Install a container runtime of your choice (e.g. Podman, Docker)
+   
+    * in case the operating system of your workstation is not Linux-based you might want to run containers in a virtua
+      machine (see 2.) , otherwise just use the package manager to install the necessary software
+    * a more convenient but also rather black-boxy approach are bundled solutions like
+      [Podman Desktop](https://podman-desktop.io/docs/Installation) or [Docker Desktop](https://docs.docker.com/desktop/)
 
 
 4. Install the [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli)
