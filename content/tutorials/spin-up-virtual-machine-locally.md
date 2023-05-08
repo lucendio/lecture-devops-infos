@@ -16,8 +16,12 @@ Spin up a virtual machine locally
 ## Prerequisites
 
 * *Vagrant* is available on the local system
-* a [supported hypervisor](https://www.vagrantup.com/docs/providers) is installed (e.g. VirtualBox)
-* [QEMU](https://www.qemu.org/download/) or [UTM](https://mac.getutm.app/)
+* a [supported hypervisor](https://www.vagrantup.com/docs/providers) (e.g. VirtualBox) is installed
+
+{{< hint warning >}}
+Virtualbox is not available on ARM-based macos (e.g. M1 or M2). So, if Vagrant doesn't support another provider on
+mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https://mac.getutm.app/) 
+{{< /hint >}}
 
 
 ## Tasks
@@ -174,10 +178,17 @@ __⚡ Context: *host/workstation*__
 ssh -p 2222 {{ CHOOSE_A_USERNAME }}@0.0.0.0
 ```
 
+{{< hint warning >}}
+If you can't establish an SSH connect, you may need to __delete the disk image and the datasource ISO__, before
+beginning from the start again.
+{{< /hint >}}
+
 
 ### (2) Create a virtual machine that runs Nginx inside
 
+{{< hint info >}}
 Download the disk image again to reset the state of the machine.
+{{< /hint >}}
 
 Then, extend the cloud-init configuration file
 
@@ -208,8 +219,8 @@ qemu-system-x86_64 \
   -smp 2 \
   -m 4G \
   -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:80 \
-  -hda ./ubuntu-20.04-server-cloudimg-amd64.img \
-  -cdrom ./cloud-config.iso
+  -hda ./ubuntu-22.04-server-cloudimg-amd64.img \
+  -cdrom ./datasource.iso
 ```
 
 Connect via SSH to the machine like before. Then, install Nginx
