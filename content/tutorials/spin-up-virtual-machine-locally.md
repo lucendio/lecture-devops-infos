@@ -66,14 +66,13 @@ vagrant destroy
 
 *A more comprehensive example of a `Vagrantfile` can be found
 [here](https://github.com/lucendio/lecture-devops-code/blob/master/scenarios/ansible/environments/local/Vagrantfile).
-Or take a look into the one you just generated (`./Vagrantfile`) with the `init` sub-command for more
-information.
+Or take a look into the one you just generated (`./Vagrantfile`) with the `init` sub-command.
 
 
 ### (2) Create a virtual machine that runs Nginx inside
 
 Provision a virtual machine, install Nginx and configure port forwarding for `8080` (host) to `80` (virtual machine).
-For more details, please refer to the [source](https://github.com/lucendio/lecture-devops-code/blob/master/tutorials/02_spin-up-virtual-mcachine-locally/vagrant/Vagrantfile).
+For more details, please refer to the [documentation](https://developer.hashicorp.com/vagrant/docs/networking/forwarded_ports).
 
 __⚡ Context: *host/workstation*__
 ```bash
