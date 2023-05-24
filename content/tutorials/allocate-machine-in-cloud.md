@@ -146,10 +146,12 @@ chmod 600 ./.ssh/operator*
   * it's recommended to [create a service account](https://cloud.google.com/docs/authentication/production#create_service_account)
     instead of authenticating your personal account through the `gcloud` CLI (for this tutorial, the role
     *Compute Engine > Compute Admin* must be assigned to the service account 
+  * for authentication methods and generating a `KEYFILE_JSON` please refer to the
+    [Terraform provider documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#authentication-configuration)
 
 ```bash
 terraform init \
-  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEY_FILE_PATH }}'
+  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}'
 ```
 
 ### (3) Write configuration code in order to create a machine
@@ -160,7 +162,7 @@ terraform init \
 ```bash
 terraform apply \
   -var 'sshPublicKeyPath=./.ssh/operator.pub' \
-  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEY_FILE_PATH }}'
+  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}'
 ```
 
 You may want to *output* the public IP of that machine:
@@ -199,5 +201,5 @@ Result:
 __⚡ Context: *workstation*__
 ```bash
 terraform destroy \
-  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEY_FILE_PATH }}'
+  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}'
 ```
