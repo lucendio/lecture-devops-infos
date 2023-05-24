@@ -151,6 +151,7 @@ chmod 600 ./.ssh/operator*
 
 ```bash
 terraform init \
+  -var 'projectID={{ YOUR_PROJECT_ID }}' \
   -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}'
 ```
 
@@ -161,8 +162,9 @@ terraform init \
 
 ```bash
 terraform apply \
-  -var 'sshPublicKeyPath=./.ssh/operator.pub' \
-  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}'
+  -var 'projectID={{ YOUR_PROJECT_ID }}' \
+  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}' \
+  -var 'sshPublicKeyPath=./.ssh/operator.pub'
 ```
 
 You may want to *output* the public IP of that machine:
@@ -201,5 +203,7 @@ Result:
 __⚡ Context: *workstation*__
 ```bash
 terraform destroy \
-  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}'
+  -var 'projectID={{ YOUR_PROJECT_ID }}' \
+  -var 'gcpCredentialsFilePath={{ REPLACE_WITH_KEYFILE_JSON_PATH }}' \
+  -var 'sshPublicKeyPath=./.ssh/operator.pub'
 ```
