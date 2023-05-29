@@ -16,7 +16,7 @@ Automate web-server installation and apply configuration to a machine
 ## Prerequisites
 
 * Ansible is installed ([on Windows, it's only supported to run in WSL](https://docs.ansible.com/ansible/latest/user_guide/windows_faq.html#can-ansible-run-on-windows))
-* a running virtual machine with SSH access - either locally (Vagrant) or in the cloud
+* a running virtual machine with SSH access - either locally or in the cloud
 
 
 ## Tasks
@@ -25,7 +25,7 @@ Automate web-server installation and apply configuration to a machine
    configuration of Nginx. Required steps:
     * install Nginx (probably via OS package manager)
     * create a custom landing page (static file somewhere in the filesystem)
-    * configure Nginx so that it knows where that file resides and how to serve it (You can either
+    * configure Nginx so that it knows where that file resides and how to serve it (you can either
       create your own *vhost* by defining a
       [`server` directive](https://docs.nginx.com/nginx/admin-guide/web-server/web-server/#setting-up-virtual-servers)
       to serve your custom landing page, or you override the existing default page)
@@ -67,10 +67,10 @@ vagrant up
   defining host information and variables
 * [playbook](https://github.com/lucendio/lecture-devops-code/blob/master/tutorials/04_automate-webserver-configuration/playbook.yaml),
   installing Nginx and adjusting its configuration
-* *[optional]* placing Nginx-specific code in a role
+* *[optional]* placing Nginx-specific code in a [role](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html)
 
 
-### (4) Apply the configuration using the Ansible tool chain
+### (4) Apply the configuration by using the Ansible tool chain
 
 ```bash
 ansible-playbook -i ./inventory ./playbook.yml
