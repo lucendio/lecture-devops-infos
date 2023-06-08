@@ -25,11 +25,12 @@ c) the university provides a Kubernetes cluster managed with Rancher (requires s
 As mentioned before, there is a variety of common [*cloud providers*]({{< ref "/links#cloud-providers" >}}) you can choose from.
 While all of them provide similar concepts which are sometimes named differently, they may have some limitations:
 
-* AWS Academy (formerly called *Educate*), e.g. see
-  [PDF](/assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) for a complete list:
-  * limit the amount or size of machines (EC2 instances) that you are allowed to spin up
+* AWS Academy (formerly called *Educate*); see
+  [PDF](/assets/AWS-Academy-Learner-Lab_Services_20230518.pdff) for a complete list of available services and limits, e.g.
+  * amount and size of machines (EC2 instances) that you are allowed to spin up
   * no IAM
   * no NAT gateway creation
+  * ...  
 * Google Cloud Platform for Education: no known limitation, except the amount of credits & a mandatory google
   account (can be created with the university email address)
 * Azure for Students: no known limitation, except the amount of credits
