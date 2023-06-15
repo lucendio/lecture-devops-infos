@@ -8,7 +8,7 @@ Deliverable: Project Concept
 ============================
 
 
-__SUBMISSION DEADLINE:__ before the end of day on the [predefined date]({{< ref "/dates" >}})
+__SUBMISSION DEADLINE:__ before the end of day on the [predefined date]({{< link-to-dates-of-current-semester >}})
 
 
 ## Requirements

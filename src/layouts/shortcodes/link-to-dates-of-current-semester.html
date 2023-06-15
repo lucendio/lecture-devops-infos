@@ -1,0 +1,4 @@
+{{ $section := "dates" }}
+{{ $orderedDatesPages := sort (where .Site.RegularPages "Section" $section) "Weight" "desc" }}
+{{ $currentDates := index $orderedDatesPages 0}}
+{{ $currentDates.RelPermalink }}

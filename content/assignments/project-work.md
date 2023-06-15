@@ -25,7 +25,7 @@ Please note, that it's not required to successfully & completely finish the impl
 
 ## Process
 
-1. write a [concept]({{< ref "/assignments/deliverables/project-concept" >}}) and hand in an initial version  before the given
+1. write a [concept]({{< ref "/assignments/deliverables/project-concept" >}}) and hand in an initial version before the given
    deadline (sometime within the first half of the semester, for more specifics refer to the onboarding slides)
 2. receive initial feedback and sanity-check in written form via email
 3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before the end

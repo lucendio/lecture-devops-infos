@@ -7,11 +7,13 @@ cascade:
     outputs:
       - 'HTML'
       - 'Calendar'
-    weight: 1
  
 bookFlatSection: false
 bookCollapseSection: true
 
 title: 'Dates'
 weight: 6
+
+_build:
+  render: 'never'
 ---
