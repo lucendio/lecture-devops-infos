@@ -1,0 +1,4 @@
+{{ $filePath := (path.Join $.Page.File.Dir (.Get 0)) }}
+{{ $page := .Site.GetPage $filePath }}
+
+{{ $page.Title }}
