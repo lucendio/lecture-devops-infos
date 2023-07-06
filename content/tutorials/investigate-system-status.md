@@ -35,7 +35,7 @@ Investigate system status
 
 ## Solution
 
-*Please note that this solution is based on an Ubuntu 20.04 system. Source code can be found
+*Please note that this solution is based on an Ubuntu 22.04 system. Source code can be found
 [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/11_investigate-system-status).*
 
 
