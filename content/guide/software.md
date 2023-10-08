@@ -49,10 +49,11 @@ software.
 ## Virtualization
 
 * [VirtualBox](https://www.virtualbox.org/) *(Hypervisor for AMD64/Intel64)*
-* [Vagrant]() *(Configuration-as-Code abstraction for Type-2 Hypervisors)*
+* [Vagrant](https://developer.hashicorp.com/vagrant/docs) *(Configuration-as-Code abstraction for Type-2 Hypervisors)*
 * [QEMU](https://www.qemu.org/docs/master/system/qemu-manpage.html) *(Hardware Emulation)*
 * [Packer](https://www.packer.io/docs) *(build virtual machine images)*
 * [UTM](https://mac.getutm.app/) *(macOS-only)*
+* [Lima](https://lima-vm.io/) *(Linux virtual machines on macOS and Linux)*
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/) *(Windows-only)*
 
 
@@ -168,7 +169,11 @@ software.
 * [Grafana](https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/) *(visualize metrics)*
 * [Checkmk (CRE)](https://docs.checkmk.com/latest/en/intro_setup.html) *(aggregate, store, visualize & notify)*
 * [Netdata](https://learn.netdata.cloud/guides/step-by-step/step-00) *(aggregate, store, visualize & notify)*
-* [](https://graphite.readthedocs.io/en/latest/overview.html) *(time-series database, visualize metrics)*
+* [Graphite](https://graphite.readthedocs.io/en/latest/overview.html) *(time-series database, visualize metrics)*
+
+### Observability
+
+* [OpenTelemetry](https://opentelemetry.io/ecosystem/vendors/) *(a spec combining metrics, logs, and traces)*
 
 
 #### Clients
