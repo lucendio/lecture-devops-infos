@@ -36,9 +36,10 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * application must run 100% redundant (scaled horizontally with a replication factor of at least *2*)
 * when deploying a new version, the app must continue to be reachable (zero-downtime deployment); this
   depends on the deployment strategy that has been chosen
-* for the sake of simplicity, the persistence layer of the application can be considered ephemeral, but
-  the backing services representing that layer still have to be part of the overall setup, and thus of
-  the infrastructure and automation code
+* for the sake of simplicity, the state of the application's persistence layer can be considered
+  ephemeral/transient, which means data may get lost when services representing said layer get restarted,
+  nevertheless they still have to be part of the overall setup, and thus of the infrastructure and
+  automation code
 
 
 ### Content
@@ -52,6 +53,6 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 ### Additional notes
 
 * making the deliverable comprehensive means, one must be able to reproduce the entire setup solely by having the
-  repositories content available, so that at the end the entire setup is as functional as intended
+  repositories content available, so that at the end the entire setup is functional as intended
 * it's not necessary to implement any exporter logic into the application code in order to get some monitoring 
   working; there are other aspects of your infrastructure to collect metrics on
