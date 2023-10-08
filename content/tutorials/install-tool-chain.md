@@ -54,7 +54,7 @@ Install tool chain
       [Podman Desktop](https://podman-desktop.io/docs/Installation) or [Docker Desktop](https://docs.docker.com/desktop/)
 
 
-4. Install the [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+4. Install the [OpenTofu](https://opentofu.org/docs/cli/) / [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) CLI
 
     * since it's a static binary, there are no prerequisites and you can pick the latest version
 

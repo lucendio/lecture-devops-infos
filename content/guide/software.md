@@ -66,7 +66,7 @@ software.
 
 ## Infrastructure as Code
 
-* [Terraform](https://www.terraform.io/intro)
+* [OpenTofu](https://opentofu.org/docs/intro/core-workflow) / [Terraform](https://www.terraform.io/intro)
 * [Pulumi](https://www.pulumi.com/docs/guides/)
 * [Google Cloud CLI](https://cloud.google.com/sdk/docs/install)
 * [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html)
@@ -84,7 +84,7 @@ software.
 
 * [Jsonnet](https://jsonnet.org/learning/tutorial.html)
 * [CUE](https://cuelang.org/docs/)
-* [HCL](https://www.terraform.io/language/syntax/configuration)
+* [OpenTofu Language](https://opentofu.org/docs/language/) / [HCL](https://www.terraform.io/language/syntax/configuration)
 * [Dhall](https://dhall-lang.org/)
 
 

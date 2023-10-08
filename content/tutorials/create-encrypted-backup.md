@@ -17,7 +17,7 @@ Create an encrypted backup
 
 ## Prerequisites
 
-* [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed locally
+* [OpenTofu](https://opentofu.org/docs/cli/) / [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed locally
 * credentials for a [supported](https://registry.terraform.io/browse/providers)
   cloud platform
 * tool that supports cryptographical operations (symmetric a/o asymmetric en- & decryption)

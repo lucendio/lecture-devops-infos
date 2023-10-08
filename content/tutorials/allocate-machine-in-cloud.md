@@ -15,7 +15,7 @@ Allocate a virtual machine in the cloud
 
 ## Prerequisites
 
-* [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed locally
+* [OpenTofu](https://opentofu.org/docs/cli/) / [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed locally
 * credentials for a [supported](https://registry.terraform.io/browse/providers)
   cloud platform
 * *[optional]* additional requirements depending on the chosen *cloud provider*

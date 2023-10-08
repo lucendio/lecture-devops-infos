@@ -8,13 +8,14 @@ Infrastructure allocation
 
 ## Main resources
 
-* [What is Terraform?](https://www.terraform.io/intro) 📖
-* [Learn Terraform](https://learn.hashicorp.com/terraform) by *HashiCorp* 📖
-* [Teh Purpose of Terraform State](https://www.terraform.io/language/state/purpose#purpose-of-terraform-state) 📖
+* What is [OpenTofu](https://opentofu.org/docs/intro/) / [Terraform?](https://www.terraform.io/intro) 📖
+* Learn [OpenTofu](https://opentofu.org/docs/intro) / [Terraform](https://learn.hashicorp.com/terraform) (by *HashiCorp*) 📖
+* [The Purpose of Terraform State](https://www.terraform.io/language/state/purpose#purpose-of-terraform-state) 📖
 
 
 ## Curated Videos
 
+* [Install and use OpenTofu](https://www.youtube.com/watch?v=a-lGAp9vWaQ) by *Mathis Van Eetvelde* 🎬
 * [Terraform explained in 15 mins | Terraform Tutorial for Beginners](https://www.youtube.com/watch?v=l5k1ai_GBDE) by *Nana* 🎬
 * [Terraform Tutorial](https://www.youtube.com/playlist?list=PL8HowI-L-3_9bkocmR3JahQ4Y-Pbqs2Nt) by *Will Brock* 🎬 *[playlist]*
 

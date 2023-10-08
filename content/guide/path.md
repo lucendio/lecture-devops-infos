@@ -98,7 +98,7 @@ Which steps would the app need to go through?
     * container engines: Podman, Docker, LXC 
   * automation: 
     * infrastructure-as-code:
-      * Terraform, if you want to host (parts of) your project on a public cloud
+      * OpenTofu/Terraform, if you want to host (parts of) your project on a public cloud
       * Vagrant, if you want to run things locally (verify that the available resources of your workstation are sufficient)
     * configuration-as-code: Ansible, Chef, Salt
   * CI/CD: GitLab, Github Actions, Jenkins, Concourse

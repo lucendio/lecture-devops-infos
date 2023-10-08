@@ -20,7 +20,7 @@ you discover all the provided materials and explains how this course is organize
 * some experience with Version Control Systems (e.g. [Git](https://git-scm.com/doc))
 
 {{< hint info >}}
-Experience from previous semester shows that working on a Windows machine
+Experience from previous semesters show that working on a Windows machine
 might become tedious and could even result in [data loss](https://github.com/lucendio/lecture-devops-app/commit/b1a4614b35f9c892e5bf08fc0792283ba360d493).
 For possible solutions, please refer to the [FAQ]({{< ref "/faq#unix-on-windows-workstation" >}})
 {{< /hint >}}
