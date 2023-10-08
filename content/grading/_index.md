@@ -78,10 +78,10 @@ _Weight: **100%**_
 * each service exists and is operational
 * each service can be reached via HTTPS
 * FQDNs are configured for all services, resolve to each of them and serve them properly 
-* the *application* runs with a replication factor of at least *2*
+* *application* runs high available
 * zero-downtime deployment strategy
 * overall setup implements all environments
-* the *application* in each environment uses a different instance of its backing service (e.g. database)
+* the *application* in each environment uses a different instance of its backing services (e.g. database)
 * CI/CD pipeline functions properly
 * CI/CD pipeline consists of at least 3 stages
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
