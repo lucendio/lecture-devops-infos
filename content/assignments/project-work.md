@@ -8,9 +8,10 @@ Project Work
 ============
 
 
-__Description:__ Deploy and run an application in a cloud or cloud-simulated environment. Allocate the underlying
-infrastructure resources. Provision all the services required for the application to function properly and to be
-successfully deployed as example workload in multiple environments. Automate these processes in a reasonable manner.
+__Description:__ Implement the software life cycle for an application of your choosing in a cloud or cloud-simulated
+environment. Allocate the underlying infrastructure resources and provision all the services necessary to deploy and
+operate said application. Automate the life cycle in a reasonable manner by applying the techniques and practices
+taught over the cause of this module.
 
 __Deliverables:__ [concept]({{< ref "/assignments/deliverables/project-concept" >}}) &
                   [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
@@ -19,7 +20,7 @@ __Requirements:__ complete the [Tutorials]({{< ref "/assignments/tutorials" >}})
 
 {{< hint warning >}}
 Please note, that it's not required to successfully & completely finish the implementation in order to pass
-(grade: 4.0) the course.
+the course (grade: `4.0`).
 {{< /hint >}}
 
 
@@ -75,11 +76,11 @@ corresponding document(s) [here]({{< ref "/assignments/deliverables" >}})
 
 * it's going to be a remote 1:1 session
 * time slots are assigned in advance through a self-service online poll  
-* demonstrate the entire deployment process by introducing an actual change to the application source code
+* demonstrate the entire life cycle iteration by introducing an actual change to the application source code
 * verify the existence of every service
 
 
-## Teams
+## Teams[ws2324.md](..%2Fdates%2Fws2324.md)
 
 * it's allowed to work in a team (≤ 2 people), but not required
 * register the team before the deadline mentioned in the onboarding slides has exceeded 
