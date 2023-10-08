@@ -24,6 +24,10 @@ __SUBMISSION DEADLINE:__ before the end of the day of the last lecture
 
 * a folder per tutorial named after the tutorial
 * each folder contains:
-  * the code implementing every required task
-  * a `./log` file of the latest run
-* documentation is optional
+  * all deliverables
+* documentation to provide context if necessary  
+
+
+### Remarks
+
+* example solutions are meant just as an inspiration not to copy/paste and hand in
