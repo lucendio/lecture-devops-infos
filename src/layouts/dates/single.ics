@@ -59,7 +59,7 @@ RDATE:VALUE-DATE:{{ delimit (apply .dates "time.Format" "20060102" ".") "," }}
 SUMMARY:{{ .name }}
 CATEGORIES:{{ .category }}
 {{- if .description }}
-DESCRIPTION:{{ .description | markdownify -}}
+{{ (dict "property" "description" "value" .description) | partial "ical-line-break.html" | markdownify -}}
 {{- end -}}
 {{- if .link }}
 URL:{{ ref $.Page .link }}
@@ -73,7 +73,7 @@ BEGIN:VALARM
 
 TRIGGER:{{ printf "-PT%dH" (cond (eq .category "appointment") 1 6 )}}
 ACTION:DISPLAY
-DESCRIPTION:DevOps: {{ .name }}
+{{ (dict "property" "description" "value" (fmt.Printf "DevOps - %s" .name)) | partial "ical-line-break.html" }}
 
 END:VALARM
 {{- end }}

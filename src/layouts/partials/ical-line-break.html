@@ -1,0 +1,8 @@
+{{/*
+REF: https://icalendar.org/iCalendar-RFC-5545/3-1-content-lines.html
+*/}}
+
+{{ $prefix := strings.ToUpper .property }}
+{{ $value := .value }}
+{{ $result := fmt.Printf "%s:%s" $prefix $value }}
+{{ return $result }}
