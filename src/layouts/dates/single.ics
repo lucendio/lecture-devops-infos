@@ -54,7 +54,7 @@ DTEND;TZID=
 SEQUENCE:0
 {{- if .dates }}
 RRULE:FREQ=DAILY;COUNT={{ len .dates }}
-RDATE:VALUE-DATE:{{ delimit (apply .dates "time.Format" "20060102" ".") "," }}
+RDATE;VALUE=DATE:{{ delimit (apply .dates "time.Format" "20060102" ".") "," }}
 {{- end }}
 SUMMARY:{{ .name }}
 CATEGORIES:{{ .category }}
