@@ -9,10 +9,13 @@ What is DevOps anyway? And what is it not?
 
 ## Main resources
 
-* [DevOps-Guide --> Getting Started Links](https://github.com/Tikam02/DevOps-Guide#getting-started-devops-links)
+* [SRE Workbook: How SRE Relates to DevOps](https://sre.google/workbook/how-sre-relates/) &
+  [Site Reliability Engineering](https://sre.google/sre-book/introduction/) by *Google*
+* [Infrastructure as Code, Part One](https://cratedb.com/blog/infrastructure-as-code-part-one) by *Emily Woods* 
 * [Roadmap](https://roadmap.sh/devops)
 * [DevOps Explained](https://www.youtube.com/playlist?list=PLOspHqNVtKAAm1dmyiR9WMmw1UBoOwZVj)[^1]
   by *IBM Technology* 🎬 *[playlist]*
+* [DevOps-Guide --> Getting Started Links](https://github.com/Tikam02/DevOps-Guide#getting-started-devops-links)
 
 [^1]: may contain portions of advertisement
 
