@@ -10,7 +10,13 @@ Define and run a pipeline
 ## Objectives
 
 * gain basic knowledge of how to use an automation platform
-* configure and trigger a CI/CD pipeline
+* configure and run a CI/CD pipeline
+
+
+## Prerequisites
+
+* `git` is installed on your workstation
+* access to the source code of an application
 
 
 ## Remarks
@@ -20,16 +26,11 @@ Define and run a pipeline
 * [Github Actions: Workflow syntax](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions)
 
 
-## Prerequisites
-
-* `git` is installed on your workstation
-
-
 ## Tasks
 
-0. Set up an empty Git repository (locally & remote) and add
-   * application code of your choosing
-   * other files/code required to build the application (e.g. container file)
+0. Set up a Git repository (locally & remote)
+
+   * fork the application code of your choosing
 
 1. Choose an automation platform 
 
@@ -43,11 +44,11 @@ item in Jenkins and add the Github URL)
 
     {{< hint >}}
 Following the approach of configuration-as-code, it is recommended to place the pipeline definition
-right 'next' to the source code it's supposed to process.
+right 'next' to the source code that it's supposed to process.
     {{< /hint >}}
 
-3. Configure at least three stages (build, test, release) which eventually would produce an artifact that is a 
-   container image and/or an archive bundle containing the executable source 
+3. Configure at least three stages (e.g. build, test, release) which eventually would produce an artifact
+   (e.g. executable, archive bundle, container image) 
 
     {{< hint >}}
 The build steps carried out in the pipeline are probably very similar if not even the same used to build
@@ -56,11 +57,19 @@ section in the pipeline definition.
     {{< /hint >}}
 
     {{< hint info >}}
-The solution does not contain any tests or even a test framework, but there are other ways to
-verify whether code works or not. Starting the app and check its response might suffice.
+If the code base of your chosen application does not contain any tests (e.g. unit tests) or even a test framework 
+consider other ways to verify whether code works or not. Starting the app and check its response might suffice.
     {{< /hint >}}
 
-4. Verify via browser that the artifact is actually published
+4. Develop a branch strategy that would allow to publish artifacts in a controlled manner (e.g. merging into a certain
+   branch or tagging a commit) but still always run tests 
+
+5. Verify via browser that the artifact is actually published, download it and start the application locally
+
+
+## Deliverables
+
+* source code of the pipeline
 
 
 ## Solution
@@ -73,14 +82,15 @@ can be found
 #### Useful links:
 * [GitLab: CI/CD](https://docs.gitlab.com/ee/ci/README.html)
 * [GitLab: Keyword reference](https://docs.gitlab.com/ee/ci/yaml/README.html)
-* [GitLab: Building container images](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html)
+* [GitLab: Workflow examples](https://docs.gitlab.com/ee/ci/yaml/workflow.html)
+* [GitLab: Publish a generic package by using CI/CD](https://docs.gitlab.com/ee/user/packages/generic_packages/#publish-a-generic-package-by-using-cicd)
 {{< /hint >}}
 
 
 ### (0) Preparations
 
-* create a new project
-* push the example code
+* fork the [application repository](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice) 
+* clone the source code to the local workspace
 * check CI/CD settings `Settings > CI/CD` to see if everything is in order
 
 
@@ -88,7 +98,7 @@ can be found
 
 `.gitlab-ci.yml`:
 ```yml
-test-job:
+hello-world-job:
   script:
       - 'ls -al ./'
 ```
@@ -113,29 +123,44 @@ in case of 'yaml invalid' errors, check the `CI/CD > Editor` for a more detailed
 
 ### (2) Write a pipeline that ...
 
-... builds an artifact (archived bundle a/o container image) - see stage:
-[`build` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/cc6647dda647a1fe2c0e23f303d6db25c97bdfb0/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L16)
-
-{{< hint warning >}}
-For container images, please note the docker-in-docker dilemma (see [Useful links]({{< relref "#useful-links" >}}))
-{{< /hint >}}
-
 ... tests the code/artifact - see stage:
-[`test` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/cc6647dda647a1fe2c0e23f303d6db25c97bdfb0/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L34)
+[`test` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L23:L28)
 
-Start a container based on the image produced during build stage, and either check from the outside
-if Nginx runs (see solution), or from the inside by
-[explicitly configure the image built during previous stage for the test job](https://docs.gitlab.com/ee/ci/yaml/README.html#image).
+... builds an artifact - see stage:
+[`build` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L31:L43)
 
 ... publishes the artifact(s) - see stage:
-[`publish` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/cc6647dda647a1fe2c0e23f303d6db25c97bdfb0/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L66)
+[`publish` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L46:L67)
 
 {{< hint >}}
-Use the GitLab-internal [Package](https://docs.gitlab.com/ee/user/packages/package_registry/) or 
-[Container Image](https://docs.gitlab.com/ee/user/packages/container_registry/) Registries.
+Use the GitLab-internal [Package](https://docs.gitlab.com/ee/user/packages/package_registry/) Registry.
 {{< /hint >}}
 
-### (3) Verify that the artifacts were published
 
-Under *Packages & Registries > [Package,Container] Registry* you should be able to see and even
+### (4) Implement a mechanism to control artifact publishing
+
+By utilizing `workflow` one can control when the pipeline itself would run, and `rules` define whether a single job will
+be executed. The [workflow](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L1:L12)
+makes sure, that the pipeline is triggered either by a commit to a branch or a change in a merge request.
+The [rule](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L49:L50)
+that checks the commit ref name prevents the artifact from being published when the branch name is something other than
+`stable`.
+
+### (5) Verify that the artifact was published
+
+Under *Packages & Registries > [Package] Registry* you should be able to see and even
 download the artifact.
+
+```bash
+./webservice 
+
+ ┌───────────────────────────────────────────────────┐ 
+ │                    webservice                     │ 
+ │                   Fiber v2.49.2                   │ 
+ │               http://127.0.0.1:3000               │ 
+ │                                                   │ 
+ │ Handlers ............. 7  Processes ........... 1 │ 
+ │ Prefork ....... Disabled  PID ............. ***** │ 
+ └───────────────────────────────────────────────────┘ 
+
+```
