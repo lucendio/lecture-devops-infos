@@ -21,8 +21,8 @@ you discover all the provided materials and explains how this course is organize
 
 {{< hint info >}}
 Experience from previous semesters show that working on a Windows machine
-might become tedious and could even result in [data loss](https://github.com/lucendio/lecture-devops-app/commit/b1a4614b35f9c892e5bf08fc0792283ba360d493).
-For possible solutions, please refer to the [FAQ]({{< ref "/faq#unix-on-windows-workstation" >}})
+might become tedious and could even result in [data loss](https://github.com/lucendio/lecture-devops-app/commit/b1a4614b35f9c892e5bf08fc0792283ba360d493). For possible
+solutions, please refer to the [FAQ]({{< ref "/faq#linux-on-windows-workstation" >}})
 {{< /hint >}}
 
 [^1]: there is a [section in the guide]({{< ref "/guide/prior-knowledge" >}}) to help you get up to speed, if you're
