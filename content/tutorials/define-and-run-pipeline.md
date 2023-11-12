@@ -121,7 +121,7 @@ in case of 'yaml invalid' errors, check the `CI/CD > Editor` for a more detailed
 {{< /hint >}}
 
 
-### (2) Write a pipeline that ...
+### (3) Write a pipeline that ...
 
 ... tests the code/artifact - see stage:
 [`test` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L23:L28)
