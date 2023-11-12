@@ -16,8 +16,9 @@ __SUBMISSION DEADLINE:__ before the end of the day of the last lecture
 ### Formal
 
 * language: German or English
-* hand in (a) link(s) to the repository
-* the repository may be not public in case some log files contain sensitive data 
+* use one repository for all tutorials
+* hand in the link to the repository
+* the repository may not be public in case some log files contain sensitive data 
 
 
 ### Content
@@ -25,9 +26,10 @@ __SUBMISSION DEADLINE:__ before the end of the day of the last lecture
 * a folder per tutorial named after the tutorial
 * each folder contains:
   * all deliverables
-* documentation to provide context if necessary  
+  * documentation to provide context if necessary  
 
 
 ### Remarks
 
-* example solutions are meant just as an inspiration not to copy/paste and hand in
+* details about deliverables can be found in every tutorial description
+* example solutions are meant just as an inspiration not to be copy/pasted and handed in

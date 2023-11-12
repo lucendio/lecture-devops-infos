@@ -9,7 +9,6 @@ Tutorials
 
 
 __Description:__ Do five [tutorials]({{< ref "/tutorials" >}}) and automate the execution of all steps along the way.
-Demonstrate your solutions during class.
 
 __Deliverable:__ [tutorial solutions]({{< ref "/assignments/deliverables/tutorial-solutions" >}})
 
@@ -19,7 +18,6 @@ __Deliverable:__ [tutorial solutions]({{< ref "/assignments/deliverables/tutoria
 1. pick 5 tutorials over the course of the semester
 2. complete each of them and automate the steps
 3. check in the source code
-4. demonstrate the solutions
 
 {{< hint warning >}}
 Please note that the purpose of this work is merely to qualify yourself for being entitled to hand in the
