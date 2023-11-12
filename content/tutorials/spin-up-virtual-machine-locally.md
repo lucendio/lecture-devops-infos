@@ -19,7 +19,7 @@ Spin up a virtual machine locally
 * a [supported hypervisor](https://www.vagrantup.com/docs/providers) (e.g. VirtualBox) is installed
 
 {{< hint warning >}}
-Virtualbox is not available on ARM-based macos (e.g. M1 or M2). So, if Vagrant doesn't support another provider on
+Virtualbox is not available on ARM-based macOS (e.g. M1 or M2). So, if Vagrant doesn't support another provider on
 mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https://mac.getutm.app/) 
 {{< /hint >}}
 
@@ -28,17 +28,24 @@ mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https:/
 
 1. Choose a reasonably up-to-date *box* (machine image) from the
    [Vagrant Cloud](https://app.vagrantup.com/boxes/search?order=desc&page=1&provider=virtualbox&sort=downloads)
-   or [upstream](https://cloud-images.ubuntu.com/), and launch a virtual machine based on that image. After the
-   instance has booted successfully, establish an SSH connection to that machine.   
-2. Install *Nginx* into a virtual machine, expose it to the host and confirm with your browser that
-   the default page is being served.
+   or [upstream](https://cloud-images.ubuntu.com/), and launch a virtual machine based on that image
+2. After the instance has booted successfully, establish an SSH connection to that machine
+3. Install the [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice) example app into a virtual machine,
+   expose it and confirm with your browser that the landing page is being served
+
+
+## Deliverables
+
+* `Vagrantfile` or equivalent code showing the configuration of the virtual machine 
+* code that shows the commands used to carry out the tasks
 
 
 ## Solution: Vagrant
 
 *Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/02_spin-up-virtual-mcachine-locally/vagrant)*
 
-### (1) Start a virtual machine with `vagrant` and connect via SSH
+
+### (1) Start a virtual machine with `vagrant`
 
 __⚡ Context: *host/workstation*__
 ```bash
@@ -48,8 +55,11 @@ vagrant init ubuntu/focal64 && vagrant up --provider virtualbox
 
 {{< hint >}}
 This way, the chosen image is downloaded implicitly, if it's not already available
-locally. To fetch the image manually: `vagrant box add ubuntu/focal64`.
+locally. To fetch the image manually: `vagrant box add ubuntu/jammy64`.
 {{< /hint >}}
+
+
+### (2) Connect via SSH to the virtual machine 
 
 __⚡ Context: *host/workstation*__
 ```bash
@@ -64,38 +74,77 @@ vagrant halt
 vagrant destroy
 ```
 
-*A more comprehensive example of a `Vagrantfile` can be found
+{{< hint >}}
+A more comprehensive example of a `Vagrantfile` can be found
 [here](https://github.com/lucendio/lecture-devops-code/blob/master/scenarios/ansible/environments/local/Vagrantfile).
 Or take a look into the one you just generated (`./Vagrantfile`) with the `init` sub-command.
+{{< /hint >}}
 
 
-### (2) Create a virtual machine that runs Nginx inside
+### (3) Create a virtual machine that runs the *webservice* inside
 
-Provision a virtual machine, install Nginx and configure port forwarding for `8080` (host) to `80` (virtual machine).
-For more details, please refer to the [documentation](https://developer.hashicorp.com/vagrant/docs/networking/forwarded_ports).
+Configure port forwarding for `8080` (host) to `3000` (virtual machine) and start the machine. For more details,
+please refer to the [documentation](https://developer.hashicorp.com/vagrant/docs/networking/forwarded_ports).
 
 __⚡ Context: *host/workstation*__
 ```bash
-cd ./webserver
 vagrant up
 ```
 
-Verify that Nginx is running and returns its default page
+Build the *webservice* for Linux.
 
 __⚡ Context: *host/workstation*__
 ```bash
-curl -s http://localhost:8080 | grep nginx
+GOOS=linux GOARCH=amd64 go build -o ./webservice ./*.go
+```
+
+Copy the artifact into the virtual machine, either by (a) using the `synced_folder` mechanism (see `Vagrantfile`), or
+(b) by using SSH (see `private_network` in `Vagrantfile` to find out the IP address of the machine).
+
+__⚡ Context: *host/workstation*__
+```bash
+scp -i .vagrant/machines/default/virtualbox/private_key ./webservice vagrant@10.0.42.23:~/webservice
+```
+
+{{< hint warning >}}
+Vagrant generates a new SSH key pair when creating a new machine. THe `scp` command utilizes the same key-based
+authentication mechanism already known from `ssh`.
+{{< /hint >}}
+
+Start the webservice from within the virtual machine after connecting to it via SSH.
+
+__⚡ Context: *host/workstation*__
+```bash
+vagrant ssh
+# OR
+ssh -i .vagrant/machines/default/virtualbox/private_key vagrant@10.0.42.23:~/webservice
+```
+
+__⚡ Context: *guest/vm*__
+```bash
+chmod +x ./webservice
+./webservice
+```
+
+Verify that the *webservice* is indeed accessible form the *outside*.
+
+__⚡ Context: *host/workstation*__
+```bash
+curl -s http://localhost:8080
+# OR
+curl -s http://10.0.42.23:3000
 ```
 
 Result:
 ```
-<title>Welcome to nginx!</title>
-...
+Hello, World!
 ```
+
 
 ## Solution: QEMU
 
 *Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/02_spin-up-virtual-mcachine-locally/qemu)*
+
 
 ### (1) Start a virtual machine with `qemu` and connect via SSH
 
@@ -173,6 +222,9 @@ qemu-system-x86_64 \
 To stop the machine press `Ctrl+C`
 {{< /hint >}}
 
+
+### (2) Connect via SSH to the virtual machine 
+
 Open up another terminal session and connect via SSH to the machine
 
 __⚡ Context: *host/workstation*__
@@ -186,33 +238,10 @@ beginning from the start again.
 {{< /hint >}}
 
 
-### (2) Create a virtual machine that runs Nginx inside
+### (3) Install and run the *webservice* inside a virtual machine
 
-{{< hint info >}}
-Download the disk image again to reset the state of the machine.
-{{< /hint >}}
-
-Then, extend the cloud-init configuration file
-
-__⚡ Context: *host/workstation*__
-```bash
-cat <<EOF >> ./cloud-init/user-data
-
-write_files:
-  - path: '/etc/systemd/resolved.conf.d/qemu-enable-dns.conf'
-    content: |
-      [Resolve]
-      DNS=9.9.9.9
-      FallbackDNS=8.8.8.8
-
-runcmd:
-  - [ systemctl, restart, systemd-resolved ]
-EOF
-```
-
-Delete the existing datasource image (see 3.1) and rebuild it again to include the adjusted configuration file.
-
-Start the machine with QEMU
+Stop and start the machine again, but this time with slightly different parameters (notice the additional port
+forwarding?).
 
 __⚡ Context: *host/workstation*__
 ```bash
@@ -220,28 +249,46 @@ qemu-system-x86_64 \
   -machine type=q35 \
   -smp 2 \
   -m 4G \
-  -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:80 \
+  -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:3000 \
   -hda ./ubuntu-22.04-server-cloudimg-amd64.img \
-  -cdrom ./datasource.iso
+  -c
 ```
 
-Connect via SSH to the machine like before. Then, install Nginx
-
-__⚡ Context: *guest/vm*__
-```bash
-sudo apt update
-sudo apt install -y nginx
-```
-
-Verify that Nginx runs and is returning its default page
+Build the *webservice* for Linux.
 
 __⚡ Context: *host/workstation*__
 ```bash
-curl -s http://localhost:8080 | grep nginx
+GOOS=linux GOARCH=amd64 go build -o ./webservice ./*.go
+```
+
+Copy the artifact into the virtual machine by using SSH.
+
+__⚡ Context: *host/workstation*__
+```bash
+scp -p 2222 ./webservice {{ CHOOSE_A_USERNAME }}@0.0.0.0:~/webservice
+```
+
+Start the *webservice* from within the virtual machine after connecting to it via SSH
+
+__⚡ Context: *host/workstation*__
+```bash
+ssh -p 2222 {{ CHOOSE_A_USERNAME }}@0.0.0.0
+```
+
+__⚡ Context: *guest/vm*__
+```bash
+chmod +x ./webservice
+./webservice
+```
+
+Verify that the *webservice* is indeed accessible form the *outside*.
+
+__⚡ Context: *host/workstation*__
+```bash
+curl -s http://localhost:8080
 ```
 
 Result:
-```html
-<title>Welcome to nginx!</title>
-...
+```
+Hello, World!
 ```
