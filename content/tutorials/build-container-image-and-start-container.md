@@ -15,18 +15,34 @@ Build a container image and start a container
 
 ## Prerequisites
 
-* container engine is installed (e.g. Docker, Podman)
-* valid AWS credentials that are configured in `~/.aws`
+* container engine is installed (e.g. Podman)
+* valid AWS credentials located in `~/.aws`
+
+{{< hint >}}
+On non Linux-based systems, [installing Podman](https://podman.io/docs/installation) comes with a virtual machine under
+the hood, see the `podman machine` command. In case a graphical user interface is preferred, take a look at
+[podman desktop](https://podman-desktop.io/downloads). Thirdly, while the actual engine is running on a virtual machine
+(guest), the *"remote client"* `podman` can be invoked on the workstation (host). For more details, please refer to
+the respective [tutorial(s)](https://docs.podman.io/en/latest/Tutorials.html).
+{{< /hint >}}
 
 
 ## Tasks
 
 1. Build a container image based on a 
-   [Containerfile](https://www.mankier.com/5/Containerfile)
-   (e.g. `Dockerfile`). Start a container based on that image and expose the Nginx server
-   in a way so that you are able to retrieve the landing page in your browser.   
+   [Containerfile](https://github.com/containers/common/blob/main/docs/Containerfile.5.md)
+   (formerly known as `Dockerfile`) and include the
+   [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice)
+2. Start a container based on that image and expose the included service to the *"outside"*
+   in a way so that you are able to retrieve the landing page in your browser.  
 2. Open up a shell in a container that contains the AWS cli. Mount your credentials into the
-   container and verify that you are able to create resources.
+   container and verify that you are able to create resources
+
+
+## Deliverables
+
+* `Containerfile` showing how contents and configuration of the container image
+* code that shows the commands used to carry out the tasks
 
 
 ## Solution
@@ -34,14 +50,36 @@ Build a container image and start a container
 *Source code can be found
 [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/01_build-container-image-and-start-container).*
 
-Note, that even though the commands below user `podman`, the solution is equally valid if replaced with `docker`.
 
+### (1) Build a container image with the static binary inside
 
-### (1) Building and running a Node server isolated in a container
+{{< hint info >}}
+ARM or x86? Check the system on which the container engine is running and set `GOARCH` accordingly
+{{< /hint >}}
 
 ```bash
-podman build --file ./Containerfile --tag my-container-image:1.0.0 ./
-podman run --publish 3000:80 --name my-container my-container-image:1.0.0
+git clone ssh://git@gitlab.bht-berlin.de/fb6-wp11-devops/webservice
+cd ./webservice
+GOARCH=amd64 GOOS=linux go build -o ./artifact.bin ./*.go
+```
+
+Describe the contents of the container image by writing a `Containerfile`
+
+{{< hint info >}}
+There are at least two options: (1) build on the host and just put the result inside the
+image, or (2) use a [multi-stage build](https://docs.docker.com/build/building/multi-stage/)
+{{< /hint >}}
+
+and then build the image:
+
+```bash
+podman build --file ./Containerfile --tag my-webservice:1.0.0 ./
+```
+
+
+### (2) Start a container based on this container image
+```bash
+podman run --publish 8080:3000 --name my-container my-webservice:1.0.0
 ```
 
 {{< hint warning >}}
@@ -56,32 +94,37 @@ podman rm my-container
 
 To verify that the container is actually running
 
-1. check the HTTP interface; either by opening up the URL in your browser or by using the command line:
+1. check the HTTP interface, either by open up the URL in your browser or by using the command line:
 
     ```bash
-    curl http://${PODMAN_HOST_IP}:3000
+    curl http://${PODMAN_HOST_IP}:8080
     ```
-    *Response:* `[...] Hello World! [...]`
-
+    Result:
+    ```
+    Hello, World!
+    ```
+    
     {{< hint info >}}
-Depending on *where* the container runtime actually has spawned the container, `PODMAN_HOST_IP` might be
-an IP of a virtual machine running on your host system, or, if Linux is the host system, the value is probably
+Depending on *where* the container engine actually runs, `PODMAN_HOST_IP` might be an IP of a virtual
+machine running on your host system, or, if Linux is the host system, the value is probably
 `127.0.0.1` aka. `localhost`.
     {{< /hint >}}
 
-2.  use the container management tool
+
+2. use the container management tool
 
     ```bash
     podman ps 
     ```
-    *Result:*
+
+   Result:
     ```
-    CONTAINER ID  IMAGE                               COMMAND               CREATED        STATUS            PORTS                 NAMES
-    8fb77582c6e5  localhost/my-container-image:1.0.0  nginx -g daemon o...  3 seconds ago  Up 3 seconds ago  0.0.0.0:3000->80/tcp  my-container
+    CONTAINER ID  IMAGE                          COMMAND          CREATED        STATUS            PORTS                   NAMES
+    b6da3afc59ef  localhost/my-webservice:1.0.0  /bin/webservice  2 minutes ago  Up 2 minutes ago  0.0.0.0:8080->3000/tcp  my-container
     ```
 
 
-### (2) Creating AWS resources from within a container
+### (3) Create AWS resources from within a container
 
 1. Verify credentials
 
@@ -91,7 +134,7 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
         --interactive \
         --tty \
         --rm \
-        docker.io/amazon/aws-cli \
+        public.ecr.aws/aws-cli/aws-cli \
         sts get-caller-identity
     ```
 
@@ -104,11 +147,13 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
         --mount type=bind,source=${HOME}/.aws,destination=/root/.aws,readonly \
         --detach \
         --entrypoint sh \
-        docker.io/amazon/aws-cli \
+        public.ecr.aws/aws-cli/aws-cli \
         -c 'while true; do sleep 3600; done'
     ```
     
     Allocate a shell in the container:
+
+    __⚡ Context: *host/workstation*__
     ```bash
     podman exec \
         --interactive \
@@ -118,6 +163,8 @@ an IP of a virtual machine running on your host system, or, if Linux is the host
     ```
     
     Actually create the bucket:
+
+    __⚡ Context: *guest/container*__
     ```bash
     aws s3api create-bucket --bucket my-globally-unique-bucket-name
     ```
@@ -128,11 +175,13 @@ again after you are done: `aws s3api delete-bucket --bucket ${BUCKET_NAME}`__
     {{< /hint >}}
 
     Remove the container:
+
+    __⚡ Context: *host/workstation*__
     ```bash
     podman rm --force aws-container
     ```
 
 {{< hint >}}
 More information and examples can be found in the
-[official AWS CLI user guide](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-docker.html).
+[official AWS CLI user guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-docker.html#cliv2-docker-install).
 {{< /hint >}}
