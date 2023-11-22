@@ -60,8 +60,16 @@ ARM or x86? Check the system on which the container engine is running and set `G
 ```bash
 git clone ssh://git@gitlab.bht-berlin.de/fb6-wp11-devops/webservice
 cd ./webservice
-GOARCH=amd64 GOOS=linux go build -o ./artifact.bin ./*.go
+GOARCH=amd64 GOOS=linux CGO_ENABLED=0 go build -o ./artifact.bin ./*.go
 ```
+
+{{< hint danger >}}
+Notice the `CGO_ENABLED=0` above? If starting `FROM scratch` when building the image, a static binary is required
+because an empty file system does even contain dynamic libraries. Whereas, if a Linux file system 
+(e.g. `FROM public.ecr.aws/lts/ubuntu:22.04`) marks the foundation, said dynamic libraries are part of the file system
+already. When cross-compiling i.e. build for a target context that is not the same the build runs on, it always produces
+a static binary. Please refer to [this](https://mt165.co.uk/blog/static-link-go/) blog post for more details. 
+{{< /hint >}}
 
 Describe the contents of the container image by writing a `Containerfile`
 
