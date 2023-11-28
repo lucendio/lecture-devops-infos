@@ -80,7 +80,7 @@ or use the code residing in
 
     ```bash
     mkdir -p ./.ssh
-    ssh-keygen -t rsa -b 4096 -C "operator" -N "" -f ./.ssh/operator
+    ssh-keygen -t ed25519 -a 230 -C "operator" -N "" -f ./.ssh/operator
     chmod 600 ./.ssh/operator*
     ```
 
