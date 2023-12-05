@@ -50,7 +50,7 @@ Eventually, you'll end up with two repositories:
 * Application (+ backing service)
 * Version control system
 * Automation system
-* Target environments (test, production)
+* Target environments (*non-production* and *production*)
 * Monitoring
 
 You are free to choose any available technology to implement the project, as long as all requirements are being met.  
