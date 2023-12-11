@@ -34,6 +34,11 @@ Investigate system status
     * choose 3 different metrics
 
 
+## Deliverables
+
+* source code of the executable exporter service
+
+
 ## Solution
 
 *Please note that this solution is based on an Ubuntu 22.04 system. Source code can be found

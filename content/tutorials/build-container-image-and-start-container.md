@@ -41,8 +41,8 @@ the respective [tutorial(s)](https://docs.podman.io/en/latest/Tutorials.html).
 
 ## Deliverables
 
-* `Containerfile` showing how contents and configuration of the container image
-* code that shows the commands used to carry out the tasks
+* `Containerfile` showing contents and default configuration of the container image
+* `terminal.log` file showing the commands and their output used to carry out the tasks
 
 
 ## Solution

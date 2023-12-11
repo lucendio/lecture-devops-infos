@@ -39,6 +39,12 @@ Create an encrypted backup
     * verify the data
 
 
+## Deliverables
+
+* source code
+* `terminal.log` file showing the commands and their output used to carry out the tasks
+
+
 ## Solution
 
 *Please note that this solution is based on AWS S3 buckets. Source code can be found

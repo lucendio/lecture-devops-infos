@@ -16,7 +16,7 @@ Build & publish a container image from CI/CD
 ## Prerequisites
 
 * Tutorial: [Define & run a pipeline]({{< relref "./define-and-run-pipeline" >}})
-* Tutorial: [Build a container image & start a container]({{< relref "./build-container-image-and-start-container" >}})  
+* Tutorial: [Build a container image & start a container]({{< relref "./build-container-image-and-start-container" >}})
 
 
 ## Remarks

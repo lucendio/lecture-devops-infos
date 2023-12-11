@@ -40,6 +40,12 @@ Become familiar with Kubernetes
 __For more tutorials, please refer to the [official documentation](https://kubernetes.io/docs/tasks/).__
 
 
+## Deliverables
+
+* source code
+* `terminal.log` file showing the commands and their output used to carry out the tasks
+
+
 ## Solution: Edu cluster
 
 *Please note that this solution is loosely based on a set of tasks written in 

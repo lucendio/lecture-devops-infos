@@ -42,6 +42,12 @@ Deploy Kubernetes objects with Helm
 2. Use Sops to encrypt sensitive values and re-deploy using Helm to verify that the decryption during runtime works 
 
 
+## Deliverables
+
+* source code
+* `terminal.log` file showing the commands and their output used to carry out the tasks
+
+
 ## Solution
 
 *Please note that this solution makes use of solutions from previous tutorials and

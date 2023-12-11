@@ -37,7 +37,7 @@ mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https:/
 ## Deliverables
 
 * `Vagrantfile` or equivalent code showing the configuration of the virtual machine 
-* code that shows the commands used to carry out the tasks
+* `terminal.log` file showing the commands and their output used to carry out the tasks
 
 
 ## Solution: Vagrant

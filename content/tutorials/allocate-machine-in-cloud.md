@@ -47,8 +47,8 @@ Allocate a virtual machine in the cloud
 
 ## Deliverables
 
-* OpenTofu code
-* a single `./terminal.log` file containing all command invocations and their output
+* source code
+* `terminal.log` file showing the commands and their output used to carry out the tasks
 
 
 ## Solution: AWS

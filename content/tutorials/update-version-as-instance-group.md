@@ -27,6 +27,12 @@ __Approach B - machines as instances:__
 * 3-4 running machines (min. 512B MB memory, 0.5 CPU), accessible via SSH
 
 
+## Deliverables
+
+* source code
+* `terminal.log` file showing the commands and their output used to carry out the tasks
+
+
 ## Tasks
 
 0. Ensure that all machines exist and are accessible by Configuration Management tool
