@@ -29,8 +29,9 @@ Investigate system status
     * list processes running at the moment
     * check which ports are currently open
     * search for installed packages
-2. Write a small program in the language of your choice that exposes metrics in a 
+2. Write a small program (exporter) in the language of your choice that exposes metrics in a 
    Prometheus-compatible format
+    * choose 3 different metrics
 
 
 ## Solution
