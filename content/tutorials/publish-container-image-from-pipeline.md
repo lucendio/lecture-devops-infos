@@ -95,7 +95,8 @@ If available, use the GitLab-internal
 [Container Image Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
 {{< /hint >}}
 
-At the end of the job, remove the newly container image from the local container image cache of the CI/CD agent. 
+At the end of the job, remove the newly created container image from the local container image cache
+of the CI/CD agent. 
 
 
 ### (3) Verify the result
@@ -103,7 +104,7 @@ At the end of the job, remove the newly container image from the local container
 In GitLab, navigate to *Project --> Packages and registries --> Container Registry --> Repository*, which should
 list the tag(s) published by the pipeline.
 
-Pull the container image 
+Pull the container image from your workspace
 
 ```bash
 podman pull ${FULLY_QUALIFIED_CONTAINER_IMAGE_NAME}
