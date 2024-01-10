@@ -102,11 +102,11 @@ __Categories:__
 +---------------------------------------+---------------------------------------------+
 |  <application>                        |                                             |
 |   * Heroku                            |  runtime environment, vhost, load balancer  |
-|   * Terraform                         |  automation                                 |
+|   * OpenTofu                          |  automation                                 |
 +---------------------------------------+---------------------------------------------+
 |  EFK                                  |  logging                                    |
 |   * DigitalOcean                      |  runtime environment                        |
-|   * Terraform                         |  automation                                 |
+|   * OpenTofu                          |  automation                                 |
 |   * Ansible                           |  automation                                 |
 +=======================================+=============================================+
 ```
@@ -123,7 +123,7 @@ __Categories:__
 +--------------------------------+----------------------------------------------------+
 |  <application>                 |                                                    |
 |   * AWS                        |  runtime environment, proxy, vhost, load balancer  |
-|   * Terraform                  |  automation                                        |
+|   * OpenTofu                   |  automation                                        |
 +--------------------------------+----------------------------------------------------+
 |  Splunk                        |  logging                                           |
 +================================+====================================================+
@@ -145,7 +145,7 @@ __Categories:__
 |  HAProxy                                             |  proxy, vhost,load-balancer  |
 |  ELK                                                 |  logging                     |
 |   * DigitalOcean                                     |  runtime environment         |
-|   * Terraform                                        |  automation                  |
+|   * OpenTofu                                         |  automation                  |
 |   * Ansible                                          |  automation                  |
 +------------------------------------------------------+------------------------------+
 ```
@@ -159,7 +159,7 @@ __Categories:__
 |  Bitbucket                     |  VCS, artifact host                                |
 +--------------------------------+----------------------------------------------------+
 |  GKE                           |  runtime environment, proxy, vhost, load balancer  |
-|   * Terraform                  |  automation                                        |
+|   * OpenTofu                   |  automation                                        |
 +--------------------------------+----------------------------------------------------+
 |  <application>                 |                                                    |
 |  Jenkins + K8s Plugin          |  CI/CD                                             |
@@ -179,7 +179,7 @@ __Categories:__
 +-----------------------------------------------------+-------------------------------+
 |  Kubernetes                                         |  proxy, vhost, load balancer  |
 |   * DigitalOcean                                    |  runtime environment          |
-|   * Terraform                                       |  automation                   |
+|   * OpenTofo                                        |  automation                   |
 |   * Ansible + Kubespray                             |  automation                   |
 +-----------------------------------------------------+-------------------------------+
 |  <application>                                      |                               |
