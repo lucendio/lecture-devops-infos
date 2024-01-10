@@ -58,6 +58,10 @@ can be found
 
 ### (0) Preparations {id="0-prep-edu-cluster"}
 
+{{< hint info >}}
+📖 [__Upstream documentation__ (german)](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#nutzung-des-clusters-mit-kubectl)
+{{< /hint >}}
+
 1. [login and obtain the *Kubeconfig File*]({{< ref "/faq/cloud-and-infrastructure#kubeconfig-of-edu-cluster">}})
 2. navigate to *Projects/Namespaces*, click on *Add Namespace* (right) in the area where the project is named after
    this module; give the namespace a meaningful & unique name (e.g. university/student account ID)
