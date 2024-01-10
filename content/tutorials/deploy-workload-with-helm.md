@@ -16,30 +16,30 @@ Deploy Kubernetes objects with Helm
 
 ## Prerequisites
 
-* a reachable Kubernetes cluster
-* working credentials to authenticate against the cluster
-* `kubectl` is installed on your workstation to interact with the cluster
+* Tutorial: [{{< page-title "./update-version-as-instance-group" >}}]({{< relref "./update-version-as-instance-group" >}})
+* Tutorial: [{{< page-title "./become-familiar-with-kubernetes" >}}]({{< relref "./become-familiar-with-kubernetes" >}}) 
 * [Helm](https://helm.sh/docs/intro/install/) is installed on your workstation
 * [SOPS](https://github.com/mozilla/sops#download) is installed on your workstation (and optionally [GPG](https://www.gnupg.org/download/))
-* [Sops/Helm plugin](https://github.com/jkroepke/helm-secrets) is installed 
+* [Helm plugin to integrate SOPS](https://github.com/jkroepke/helm-secrets) is installed on your workstation
 
 
-## Guidance
+## Remarks
 
 * [Chart template guide](https://helm.sh/docs/chart_template_guide/getting_started/) 📖
 
 
 ## Tasks
 
-0. Combine the effort of previous tutorials and create a Helm chart
-    * [{{< page-title "./update-version-as-instance-group" >}}]({{< relref "./update-version-as-instance-group" >}})
-    * [{{< page-title "./become-familiar-with-kubernetes" >}}]({{< relref "./become-familiar-with-kubernetes" >}})
 1. Write a chart from scratch including
     * meta files such as `Chart.yaml`
     * `./templates` based on static Kubernetes object files
     * `./templates/_helpers.tpl` (functions, available in templates)
-    * `values.yaml` and `secrets.yaml`
-2. Use Sops to encrypt sensitive values and re-deploy using Helm to verify that the decryption during runtime works 
+    * default `values.yaml`
+2. From outside the chart, override defaults with another `values.yaml` file 
+3. Define possible sensitive values in a `secrets.yaml` and use Sops to encrypt
+   these values; redeploy using Helm to verify that decryption during runtime
+   works 
+4. *[optional]* Enable TLS and ensure database state persists across redeployment
 
 
 ## Deliverables
@@ -51,38 +51,12 @@ Deploy Kubernetes objects with Helm
 ## Solution
 
 *Please note that this solution makes use of solutions from previous tutorials and
-thus result in a Helm chart for [CodiMD](https://github.com/hackmdio/codimd#documentation).
+thus results in a Helm chart for the [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice).
 Source code can be found
 [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/09_deploy-workload-with-helm).*
 
-{{< hint warning >}}
-The solution below assumes a [Minikube]({{< relref "./become-familiar-with-kubernetes#solution-minikube" >}})
-cluster. If you want to instead deploy on the
-[education cluster]({{< ref "/tutorials/become-familiar-with-kubernetes#solution-edu-cluster" >}}), the following
-adjustments need to be made:
-* adjust the `Ingress` (e.g. `host`, `secretName`)
-* disable persistence (since it's not yet supported) 
-{{< /hint >}}
 
-### (0) Preparations
-
-Pick a containerized application which you are going to write a Helm chart for.
-
-Verify that `kubectl` is configured correctly. The following command should list all the different
-Kubernetes objects that are available via *kube-api*.
-
-```bash
-kubectl api-resources
-```
-
-{{< hint info >}}
-Additionally, ensure that the CLIs `helm`, `sops` and `pgp` are available. Either try
-your local package manager or just download them from their respective release pages,
-make them executable and put them in a directory listed in `$PATH`.
-{{< /hint >}}
-
-
-### (1) Create a chart using an iterative method   
+### (1) Create a chart using an iterative approach   
 
 Create a folder and add each file manually, or run `helm create {{ CHART_NAME }}` to generate a
 boilerplate. The latter may require you to remove a couple of files again.
@@ -91,22 +65,30 @@ boilerplate. The latter may require you to remove a couple of files again.
    
     a) Create meta files, such as `Chart.yaml`
 
-    b) Put static Kubernetes object files in `./templates`
+    b) Put static Kubernetes object files from previous tutorial in `./templates`
       * Deployments
       * Services
       * Ingress
 
     c) Deploy
+      
+      Note that if the `context` of your `.kube/config` doesn't define a `namespace`, use the
+      `--namespace` option of the command below to define the target namespace for the Helm release.
       ```bash
       helm install {{ RELEASE_NAME }} ./chart
       ```
 
 2. Parameterization
 
-    a) Refactor the object files by moving out certain data into a `values.yaml`, e.g.:
+    a) Refactor the object files by moving out certain data points into a `values.yaml`, e.g.:
       * image repository and tag
       * replication factor
       * usernames and passwords
+   
+      {{< hint info >}}
+As a rule of thumb, data points that might be subject to change when deploying different releases
+are usually the ones worth getting parameterized 
+      {{< /hint >}}
 
     b) Deploy again
       ```bash
@@ -120,72 +102,81 @@ boilerplate. The latter may require you to remove a couple of files again.
       * parameters (move into a `./values.yaml` outside of the chart)
       * sensitive information (move into a `./secrets.yaml` outside of the chart)
 
-    b) Generate a self-signed TLS key pair and add it to `./secrets.yaml`
-      ```bash
-      export SUB_DOMAIN=$(minikube ip | tr . -)
-      openssl req -new -nodes -x509 -days 365 -newkey rsa:4096 -sha512 -keyout tls.key -out tls.crt -subj "/CN=pad.{{ SUB_DOMAIN }}.nip.io"
-      ```
-    c) Deploy again
+    b) Deploy again
       ```bash
       helm upgrade --install \
           --values=./values.yaml \
           --values=./secrets.yaml \
-          --set "image.tag=2.4.2" --set "fqdn=pad.{{ SUB_DOMAIN }}.nip.io" \
+          --set "image.tag=scratch" \
           {{ RELEASE_NAME }} ./chart
       ```
-   
-    {{< hint info >}}
-Up to this point, the Pods resulting from the Deployment should end up in a CrashLoopBackoff.
-Can you find out why?
-    {{< /hint >}}
 
-4. Add chart dependencies
+4. Add a chart dependency
 
-    a) [PostgreSQL](https://github.com/bitnami/charts/tree/master/bitnami/postgresql)
+    a) Add the [Redis](https://github.com/bitnami/charts/tree/master/bitnami/redis) chart
+       to the list of `dependencies` in `Chart.yaml` to become a sub-chart, and install it:
       ```bash
-      helm repo add bitnami https://charts.bitnami.com/bitnami
       cd ./chart && helm dependency build
       ```
 
-    b) Adjust `./values.yaml`, `./secrets.yaml` and `./chart/values.yaml` by adding [sub-chart values](https://github.com/bitnami/charts/tree/master/bitnami/postgresql/README>md)
+    b) Adjust `./values.yaml`, `./secrets.yaml` and `./chart/values.yaml` by adding
+       [sub-chart values](https://github.com/bitnami/charts/tree/main/bitnami/redis#parameters)
 
-    c) Deploy again
+    c) Set necessary environment variables in the pod template by using Helm values, e.g. `DB_HOST`
+
+    d) Create a secret of type `Opaque` holding the database password. Either make sure the value
+       set for `redis.auth.password` is also used in that secret, or reference the secret name 
+       in `redis.auth.existingSecret` and the data key in `redis.auth.existingSecretPasswordKey`
+       (refer to the
+       [documentation](https://github.com/bitnami/charts/tree/main/bitnami/redis#redis-common-configuration-parameters)
+       for more details)
+
+    e) Add a volume list of the *PodSpec* referring to the secret name holding the database password.
+       and add an item to the list of `volumeMounts` in order to mount the password as a file into the
+       container. Lastly, set the environment variable `DB_PASSWORD` to the respective file path.
+
+      {{< hint info >}}
+Note that the keys in the secret's `data` attribute are used as file names within the `mountPath` directory. 
+      {{< /hint >}}
+
+    f) Deploy again
       ```bash
       helm upgrade \
           --values=./values.yaml \
           --values=./secrets.yaml \
-          --set "fqdn=pad.{{ SUB_DOMAIN }}.nip.io" \
           {{ RELEASE_NAME }} ./chart
       ```
 
-    {{< hint info >}}
-See the `./chart` folder in the current directory or find some inspiration in the
-official chart of [`codimd`](https://github.com/hackmdio/codimd-helm/tree/master/charts/codimd)
-    {{< /hint >}}
 
+### (3) Encrypt your secrets
 
-### (2) Encrypt your secrets
-
-1. Generate a key pair (in case you don't already have a GPG key-pair)
+1. Generate a pair of keys (in case you don't already have a GPG key pair)
 
 ```bash
-# INFO: will ask you to initially set a passphrase
 gpg --batch --gen-key ./gpg-key.conf
 ```
 
-2. Install the Helm-Sops plugin
+2. Install the helm-secrets plugin
 
 ```bash
-SKIP_SOPS_INSTALL=true helm plugin install https://github.com/jkroepke/helm-secrets --version v3.4.0
+export SKIP_SOPS_INSTALL=true
+helm plugin install https://github.com/jkroepke/helm-secrets --version v4.5.1
 ```
 
 3. Encrypt `secrets.yaml`
 
 ```bash
-cp secrets.yaml secrets-backup.yaml 
+cp secrets.yaml secrets.yaml.dec 
 export SOPS_PGP_FP=$(gpg --with-colons --fingerprint Operator | grep fpr | awk -F ':' '{print $10}')
-helm secrets dec secrets.yaml
+helm secrets encrypt secrets.yaml
 ```
+
+{{< hint info >}}
+Instead of using variables like `SOPS_PGP_FP` to configure SOPS, you may choose to create a 
+[`.sops.yaml`](https://github.com/getsops/sops#212using-sopsyaml-conf-to-select-kms-pgp-and-age-for-new-files)
+file at the top-level of you workspace.
+{{< /hint >}}
+
 
 4. Redeploy to see if Helm decrypts the secrets during runtime
 
@@ -194,6 +185,20 @@ helm secrets \
     upgrade \
     --values=./values.yaml \
     --values=./secrets.yaml \
-    --set "fqdn=pad.{{ SUB_DOMAIN }}.nip.io" 
     {{ RELEASE_NAME }} ./chart
 ```
+
+5. Cleaning up
+
+```bash
+helm uninstall {{ RELEASE_NAME }}
+```
+
+
+### (4) Enable TLS and Data persistence
+
+Both features are covered in the upstream documentation
+([TLS](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-service-ingress),
+[Storage](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-volumes-persistener-speicher-f%C3%BCr-deployments-und-pods)).
+You just have to integrate the respective attributes and objects into you chart(s) and make them
+configurable via Helm values if needed.
