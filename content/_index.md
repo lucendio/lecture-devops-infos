@@ -51,14 +51,15 @@ Or maybe you are already overwhelmed? No worries, try [How to learn DevOps](http
 
 ## External resources/repositories
 
+* [Education Kubernetes Cluster Documentation](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster) 📖
 * [showcase](https://gitlab.bht-berlin.de/fb6-wp11-devops/showcase)
 * [code examples](https://github.com/lucendio/lecture-devops-code)
   * comprehensive examples
     * Jenkins running in Containers (Server & Agent)
     * ...
   * snippets for different technologies, such as:
-    * Terraform + DigitalOcean
-    * Terraform + AWS
+    * OpenTofu + DigitalOcean
+    * OpenTofu + AWS
     * Vagrant + VirtualBox
     * Ansible
     * ...
