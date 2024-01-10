@@ -47,7 +47,8 @@ While all of them provide similar concepts which are sometimes named differently
 4. Once you logged the first time on [AWS Academy Instructure](https://awsacademy.instructure.com/login/canvas),
    navigate to *Courses* --> *AWS Academy Learner Lab - Foundation Services* --> *Modules* (in the course context) --> 
    *Learner Lab - Foundational Services* to accept the Terms of Service and then press *Start Lab* (top right)
-5. Take a look at the *Readme* (top right) for further information, e.g. available Services or restrictions
+5. Take a look at the *Readme* (top right) for further information, e.g. for available *Service usage and other
+   restrictions*
 6. To access the AWS management console (GUI), click on *AWS* right next to the green status indicator (top left)
 7. To obtain your credentials, follow the same navigation path from (4.) followed by *AWS Details* (top right) --> AWS
    CLI: *Show* button
@@ -56,7 +57,7 @@ While all of them provide similar concepts which are sometimes named differently
    and run it every 4 hours since a session only lasts so long.
 
 Follow the [official documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) in order
-to configure the CLI to use the credentials.
+to configure the CLI so that is uses the credentials.
 
 [^1]: [Official website](https://aws.amazon.com/training/awsacademy/) of the *AWS Academy*
 
@@ -107,11 +108,13 @@ __*Example with DNS delegation (AWS + Name.com):*__
 Did you already enter your university email address in the respective account list?
 {{< /hint >}}
 
+📖 [__Upstream documentation__ (german)](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#nutzung-des-clusters-mit-kubectl)
+
 1. *(optional)* [login to the VPN](https://doku.bht-berlin.de/zugang/vpn)
 2. log in to the [cluster management web console](https://rancher.ris.bht-berlin.de)
    with your university account 
-3. click on *edu-cluster* in the list of clusters
-4. click on *cluster* in the main navigation bar (top left next to *edu-cluster*) - you should see
+3. open the menu at the top left and click on *edu-cluster* in the list of clusters - you should see
    some kind of resource utilization meters in the main area of the page
-5. obtain the *Kubeconfig File* (top right) and store the content on your workstation under `~/.kube/config`
-   or in whatever location your `KUBECONFIG` environment variable points to
+4. obtain the *KubeConfig* (top right, between the shell and the magnifier icons) and store the
+   content in a file on your workstation under `~/.kube/config` or in whatever location your
+   `KUBECONFIG` environment variable points to
