@@ -139,8 +139,21 @@ share some variable values (e.g. `node_exporter_web_telemetry_path` and
 on your own or [reuse one of the many existing ones](https://grafana.com/grafana/dashboards/?search=node+exporter).
 
 For this solution we are going for the latter. Just choose one and copy the ID (right bottom). Add a new item
-to the list of `grafana_dashboards` and define attributes for the ID and the data source name. Finally, re-apply
-the Ansible playbook.
+to the list of `grafana_dashboards` and define attributes for the ID and the data source name.
+
+{{< hint info >}}
+For the role to function properly, make sure the Python packages called `jmespath` is installed on the
+control node.
+
+```bash
+pip install jmespath
+# ORE
+pip install \
+    --requirement ./requirements.txt
+```
+{{< /hint >}}
+
+Finally, re-apply the Ansible playbook.
 
 Open up Grafana's web console, log in if you defined credentials in the `visualizer` play, and navigate to
 *Home > Dashboards > ${DASHBOARD_NAME}*
