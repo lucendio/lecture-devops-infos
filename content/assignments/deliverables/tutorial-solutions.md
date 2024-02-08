@@ -31,5 +31,5 @@ __SUBMISSION DEADLINE:__ before the end of the day of the last lecture
 
 ### Remarks
 
+* ‼️ example solutions are meant just as an inspiration not to be copy/pasted and handed in ‼️
 * details about deliverables can be found in every tutorial description
-* example solutions are meant just as an inspiration not to be copy/pasted and handed in
