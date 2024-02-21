@@ -7,7 +7,19 @@ Hey, there! 👋
 ==============
 
 
-## What's all this about?
+{{< hint danger >}}
+## ++++ BREAKING ++++
+
+All upcoming deadlines have been put on hold as long as services and infrastructure are not available.
+Depending on how long it takes the timeframe will be extended for a maximum of 2 weeks starting
+on the day when readiness of operation has been restored. New dates will be communicated promptly
+after that.
+
+*changed 2024-02-21*
+{{< /hint >}}
+
+
+## What's this about?
 
 This repository is the main entry point for the *DevOps* course. It's supposed to help
 you discover all the provided materials and explains how this course is organized.
