@@ -10,12 +10,12 @@ Hey, there! 👋
 {{< hint danger >}}
 ## ++++ BREAKING ++++
 
-All upcoming deadlines have been put on hold as long as services and infrastructure are not available.
-Depending on how long it takes the timeframe will be extended for a maximum of 2 weeks starting
-on the day when readiness of operation has been restored. New dates will be communicated promptly
-after that.
+All upcoming deadlines have been put on hold as long as services and infrastructure are unavailable.
+The timeframe will be extended for 2 weeks starting on the day when all required services are operational
+again. New binding [dates]({{< ref "/dates/ws2324" >}}) will be communicated promptly after that. Review
+time slots may need to be adjusted accordingly.
 
-*changed 2024-02-21*
+*updated 2024-02-28*
 {{< /hint >}}
 
 
