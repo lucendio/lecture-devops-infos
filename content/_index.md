@@ -10,12 +10,12 @@ Hey, there! 👋
 {{< hint danger >}}
 ## ++++ BREAKING ++++
 
-All upcoming deadlines have been put on hold as long as services and infrastructure are unavailable.
-The timeframe will be extended for 2 weeks starting on the day when all required services are operational
-again. New binding [dates]({{< ref "/dates/ws2324" >}}) will be communicated promptly after that. Review
-time slots may need to be adjusted accordingly.
+*(for participants of the winter semester 23/24 only)*
 
-*updated 2024-02-28*
+Services are operational again and new [dates]({{< ref "/dates/ws2324" >}}) have been set. Review
+time slots may now be chosen. Further details can be found in the *News Feed*.
+
+*updated 2024-03-24*
 {{< /hint >}}
 
 
