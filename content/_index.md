@@ -12,7 +12,7 @@ Hey, there! 👋
 
 *(for participants of the winter semester 23/24 only)*
 
-Services are operational again and new [dates]({{< ref "/dates/ws2324" >}}) have been set. Review
+Services are operational again and new [dates]({{< ref "/dates/archive/ws2324" >}}) have been set. Review
 time slots may now be chosen. Further details can be found in the *News Feed*.
 
 *updated 2024-03-24*
