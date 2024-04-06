@@ -118,3 +118,24 @@ Did you already enter your university email address in the respective account li
 4. obtain the *KubeConfig* (top right, between the shell and the magnifier icons) and store the
    content in a file on your workstation under `~/.kube/config` or in whatever location your
    `KUBECONFIG` environment variable points to
+
+
+## Which registry supports pushing container images? 
+
+The following registries are hosted offerings:
+
+* [GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/) [public, private]
+* [Github Container Registry (ghcr.io)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry) [public, private]
+* [Quay](https://quay.io) *by Read Hat* [public, private]
+* [canister](https://canister.io/) [private]
+* [public.ecr.aws](https://public.ecr.aws) *by Amazon AWS* [public, private]
+* [docker.io](https://hub.docker.com/) [public, private]
+* [gcr.io](https://console.cloud.google.com/gcr/images/google-containers/GLOBAL) *by Google Cloud Platform* [public, private]
+* [Azure Container Registry (ACR)](https://azure.microsoft.com/en-us/products/container-registry/) *by Microsoft* [private]
+
+But it's also possible to host a registry yourself:
+
+* [Project Quay](https://www.projectquay.io/)
+* [Harbor](https://goharbor.io/)
+* [Nexus](https://www.sonatype.com/products/sonatype-nexus-oss)
+* [Docker Registry](https://hub.docker.com/_/registry)
