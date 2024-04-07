@@ -8,7 +8,8 @@ Deliverable: Tutorial Solutions
 ===============================
 
 
-__SUBMISSION DEADLINE:__ before the end of the day of the last lecture
+__SUBMISSION DEADLINE:__ at the end of the last work day of the last week within the lecture period, or at the end of
+                         the week (sunday 23:59) the tutorial was part of the lecture topic
 
 
 ## Requirements
@@ -26,7 +27,7 @@ __SUBMISSION DEADLINE:__ before the end of the day of the last lecture
 * a folder per tutorial named after the tutorial
 * each folder contains:
   * all deliverables
-  * documentation to provide context if necessary  
+  * documentation if necessary for reviewing 
 
 
 ### Remarks

@@ -20,14 +20,17 @@ In order to pass the course, one is required to obtain at least _**50%**_ of the
 
 ## Tutorials
 
-_Weight: **0%**_
+_Weight: **0% - 45%**_
 
-*Purpose:* be permitted to hand in the [project work]({{< ref "/assignments/project-work" >}}) assignment 
+*Purpose:* 
+
+* be permitted to hand in the [project work]({{< ref "/assignments/project-work" >}}) assignment,
+* collect up to 45% of the grade, which may function as backup in case some implementation criteria
+  are not met
 
 *Criteria:*
 
-* all solutions have been demonstrated during class
-* the [deliverable]({{< ref "/assignments/deliverables/tutorial-solutions" >}} was handed as requested 
+* the [deliverable]({{< ref "/assignments/deliverables/tutorial-solutions" >}}) was handed as requested 
 
 
 ## Concept
