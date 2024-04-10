@@ -44,7 +44,7 @@ __provision*__: combines the processes of allocating & configuring. While alloca
 
 ```
 |-------------------------------------- Infra-as-Code / Configuration Management --------------------------------------|
-|-------- e.g. Terraform, Vagrant ---------|--------------------------- e.g. Ansible, Helm ----------------------------|
+|-------- e.g. OpenTofu, Vagrant ----------|--------------------------- e.g. Ansible, Helm ----------------------------|
 |--- Resources (Hardware a/o Software) ----|----- System, Platform, Software ------|---- Application(s)/Service(s) ----|
 |--------------- allocate -----------------|-------------- configure --------------|-------------- deploy -------------|
 |------------------------------------- provision ----------------------------------|

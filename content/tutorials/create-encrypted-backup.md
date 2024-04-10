@@ -26,7 +26,7 @@ Create an encrypted backup
 
 ## Tasks
 
-1. Use Terraform to allocate some remote Object Storage (e.g. AWS S3 bucket)
+1. Use OpenTofu OR AWS CLI to allocate some remote Object Storage (e.g. AWS S3 bucket)
 2. Create an encrypted off-site backup,
     * compress a folder of your choice (represent the backup artifact)
     * choose a crypto suite
@@ -56,7 +56,7 @@ Create an encrypted backup
 Ensure that the tool chain is installed:
 
 * AWS CLI (directly on host or as container image) 
-* Terraform
+* OpenTofu
 * [OpenSSL](https://www.openssl.org/) (alt. [LibreSSL](https://www.libressl.org)) a/o [GnuPG](https://gnupg.org/) (alt. [Sequoia-PGP](https://sequoia-pgp.org/))
 
 
@@ -182,7 +182,7 @@ Use `openssl` for symmetric (A) or `gpg` for asymmetric (B) encryption
 3. Upload the backup to a bucket
 
     ```bash
-    export BUCKET_NAME=$(terraform output -raw 'advancedBucketName')
+    export BUCKET_NAME=$(tofu output -raw 'advancedBucketName')
     aws s3 cp ./backup.tar.gz.enc s3://${BUCKET_NAME}
     aws s3 ls s3://${BUCKET_NAME}
     rm ./backup.tar.gz.enc
@@ -231,6 +231,6 @@ Use `openssl` for symmetric (A) or `gpg` for asymmetric (B) decryption
 5. Don't forget to clean up at the end
 
     ```bash
-    terraform destroy -auto-approve
+    tofu destroy -auto-approve
     rm -r ./backup.tar.gz.enc ./backup.tar.gz ./backup
     ```
