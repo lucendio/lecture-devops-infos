@@ -55,26 +55,91 @@ Create an encrypted backup
 
 Ensure that the tool chain is installed:
 
-* AWS CLI
+* AWS CLI (directly on host or as container image) 
 * Terraform
 * [OpenSSL](https://www.openssl.org/) (alt. [LibreSSL](https://www.libressl.org)) a/o [GnuPG](https://gnupg.org/) (alt. [Sequoia-PGP](https://sequoia-pgp.org/))
 
 
 ### (1) Allocate external Object Storage
 
-Use Terraform to create an S3 bucket.
+#### A - Declarative with the as-Code approach
+
+Use OpenTofu to create an S3 bucket.
 
 {{< hint >}}
-Please refer to tutorials like [*Allocate a virtual machine in the cloud*]({{< relref "./allocate-machine-in-cloud" >}})
-for details on how to manage infrastructure resources with Terraform. Alternatively, you may create a bucket with the
-AWS CLI.
+Please refer to tutorials like [*{{< page-title "./allocate-virtual-machine-in-cloud" >}}*]({{< relref "./allocate-virtual-machine-in-cloud" >}})
+for details on how to manage infrastructure resources with OpenTofu. The resource you are looking for is called
+`aws_s3_bucket`.
 {{< /hint >}}
 
-
-Verify that the bucket exists:
+Verify that the bucket exists by running the following command outside or - as shown below - within a container.
 ```
 aws s3 ls
 ```
+
+#### B - Interactive via command-line interface in a container
+
+1. Verify credentials
+
+    ```bash
+    podman run \
+        --mount type=bind,source=${HOME}/.aws,destination=/root/.aws,readonly \
+        --interactive \
+        --tty \
+        --rm \
+        public.ecr.aws/aws-cli/aws-cli \
+        sts get-caller-identity
+    ```
+
+2. Create a bucket
+
+    Start a container:
+    ```bash
+    podman run \
+        --name aws-container \
+        --mount type=bind,source=${HOME}/.aws,destination=/root/.aws,readonly \
+        --detach \
+        --entrypoint sh \
+        public.ecr.aws/aws-cli/aws-cli \
+        -c 'while true; do sleep 3600; done'
+    ```
+    
+    Allocate a shell in the container:
+
+    __⚡ Context: *host/workstation*__
+    ```bash
+    podman exec \
+        --interactive \
+        --tty \
+        aws-container \
+        /bin/bash
+    ```
+    
+    Actually create the bucket:
+
+    __⚡ Context: *guest/container*__
+    ```bash
+    aws s3api create-bucket --bucket my-globally-unique-bucket-name
+    ```
+
+    {{< hint info >}}
+Check afterwards if the bucket actually exists: `s3 ls`. __Don't forget to delete the bucket
+again after you are done: `aws s3api delete-bucket --bucket ${BUCKET_NAME}`__
+    {{< /hint >}}
+
+    Remove the container:
+
+    __⚡ Context: *host/workstation*__
+    ```bash
+    podman rm --force aws-container
+    ```
+
+{{< hint >}}
+More information and examples can be found in the
+[official AWS CLI user guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-docker.html#cliv2-docker-install).
+{{< /hint >}}
+
+
 
 
 ### (2) Create a backup, encrypt it and store it remotely
