@@ -1,9 +1,9 @@
 ---
-title: 'Become familiar with Kubernetes'
+title: 'Deploy app on Kubernetes'
 ---
 
-Become familiar with Kubernetes
-===============================
+Deploy an app on Kubernetes and make it accessible to the outside
+=================================================================
 
 
 ## Objectives
@@ -53,7 +53,7 @@ __For more tutorials, please refer to the [official documentation](https://kuber
 *Please note that this solution is loosely based on a set of tasks written in 
 the [official documentation](https://kubernetes.io/docs/tasks/). Source code
 can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/08_become-familiar-with-kubernetes/edu-cluster).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/deploy-app-on-kubernetes/edu-cluster).*
 
 
 ### (0) Preparations {id="0-prep-edu-cluster"}
@@ -265,7 +265,7 @@ which will then delete all associated objects.
 *Please note that this solution is loosely based on a set of tasks written in 
 the [official documentation](https://kubernetes.io/docs/tasks/). Source code
 can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/08_become-familiar-with-kubernetes/minikube).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/deploy-app-on-kubernetes/minikube).*
 
 
 ### (0) Preparations {id="0-prep-minikube"}

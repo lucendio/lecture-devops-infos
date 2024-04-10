@@ -16,9 +16,9 @@ Provision Kubernetes
 
 ## Prerequisites
 
-* Tutorial: [{{< page-title "./allocate-machine-in-cloud" >}}]({{< relref "./allocate-machine-in-cloud" >}})
+* Tutorial: [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
 * Tutorial: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
-* Tutorial: [{{< page-title "./become-familiar-with-kubernetes" >}}]({{< relref "./become-familiar-with-kubernetes" >}})
+* Tutorial: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}})
 
 ## Tasks
 
@@ -45,7 +45,7 @@ Provision Kubernetes
 
 *Please note that this solution makes use of [Kubespray](https://github.com/kubernetes-sigs/kubespray)
 and AWS. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/10_provision-kubernetes).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/provision-kubernetes).*
 
 
 ### (0) Preparations
@@ -91,7 +91,7 @@ chmod 600 ./.ssh/operator*
 tofu init
 ```
 {{< hint >}}
-Please refer to tutorials like [*Allocate a virtual machine in the cloud*]({{< relref "./allocate-machine-in-cloud" >}})
+Please refer to tutorials like [*Allocate a virtual machine in the cloud*]({{< relref "./allocate-virtual-machine-in-cloud" >}})
 for details on how to manage infrastructure resources with OpenTofu.
 {{< /hint >}}
 

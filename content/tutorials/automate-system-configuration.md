@@ -3,8 +3,8 @@ title: 'Automate system configuration'
 ---
 
 
-Automate service installation and apply configuration to a machine
-==================================================================
+Automate system configuration and software installation
+=======================================================
 
 
 ## Objectives
@@ -19,7 +19,7 @@ Automate service installation and apply configuration to a machine
 * Configuration Management tool is installed (e.g. Ansible, but note [on Windows, it's only supported to run in WSL](https://docs.ansible.com/ansible/latest/user_guide/windows_faq.html#can-ansible-run-on-windows))
 * virtual machine with SSH access - either locally or in the cloud (see tutorials 
   [Spin up a virtual machine locally]({{< relref "./spin-up-virtual-machine-locally" >}})
-  or [Allocate a virtual machine in the cloud]({{< relref "./allocate-machine-in-cloud" >}}))
+  or [Allocate a virtual machine in the cloud]({{< relref "./allocate-virtual-machine-in-cloud" >}}))
 
 
 ## Tasks
@@ -40,12 +40,12 @@ Automate service installation and apply configuration to a machine
 
 *Please note that this solution uses [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/)
 and a [local machine]({{< relref "./spin-up-virtual-machine-locally" >}}). Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/04_automate-system-configuration).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/automate-system-configuration).*
 
 
 ### (0) Preparations
 
-* create an SSH key pair, if necessary (see [this]({{< relref "./allocate-machine-in-cloud" >}}) tutorial for more
+* create an SSH key pair, if necessary (see [this]({{< relref "./allocate-virtual-machine-in-cloud" >}}) tutorial for more
   details)
 * spin up a virtual machine, if not already running
 * create and customize `ansible.cfg` if needed, e.g.:

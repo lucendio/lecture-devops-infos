@@ -1,9 +1,9 @@
 ---
-title: 'Deploy Kubernetes objects with Helm'
+title: 'Manage Kubernetes objects with Helm'
 ---
 
 
-Deploy Kubernetes objects with Helm
+Manage Kubernetes objects with Helm
 ===================================
 
 
@@ -17,7 +17,7 @@ Deploy Kubernetes objects with Helm
 ## Prerequisites
 
 * Tutorial: [{{< page-title "./update-version-as-instance-group" >}}]({{< relref "./update-version-as-instance-group" >}})
-* Tutorial: [{{< page-title "./become-familiar-with-kubernetes" >}}]({{< relref "./become-familiar-with-kubernetes" >}}) 
+* Tutorial: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}}) 
 * [Helm](https://helm.sh/docs/intro/install/) is installed on your workstation
 * [SOPS](https://github.com/mozilla/sops#download) is installed on your workstation (and optionally [GPG](https://www.gnupg.org/download/))
 * [Helm plugin to integrate SOPS](https://github.com/jkroepke/helm-secrets) is installed on your workstation
@@ -52,7 +52,7 @@ Deploy Kubernetes objects with Helm
 ## Solution: Edu cluster {id="solution-edu-cluster"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/09_deploy-workload-with-helm/edu-cluster).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/manage-kubernetes-objects-with-helm/edu-cluster).*
 
 
 ### (1) Create a chart using an iterative approach   
@@ -210,12 +210,12 @@ configurable via Helm values if needed.
 ## Solution: Minikube {id="solution-minikube"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/09_deploy-workload-with-helm/edu-cluster/minikube).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/manage-kubernetes-objects-with-helm/edu-cluster/minikube).*
 
 
 ### (0) Preparations
 
-Please refer to the [*Preparations* section of the previous tutorial]({{< relref "./become-familiar-with-kubernetes#0-prep-minikube" >}}).
+Please refer to the [*Preparations* section of the previous tutorial]({{< relref "./deploy-app-on-kubernetes#0-prep-minikube" >}}).
 
 
 ### (1) Create a chart using an iterative approach   

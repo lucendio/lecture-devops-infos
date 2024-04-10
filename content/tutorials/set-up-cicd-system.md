@@ -1,5 +1,5 @@
 --- 
-title: 'Install & set up a CI/CD system'
+title: 'Set up CI/CD system'
 ---
 
 
@@ -46,7 +46,7 @@ on [Docker & JcaC](https://www.digitalocean.com/community/tutorials/how-to-autom
 
 *Please note that this solution is based on a local approach utilizing Vagrant and
 reusing an Ansible Role. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/06_set-up-cicd-system)*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/set-up-cicd-system)*
 
 
 ### (0) Preparations
@@ -56,7 +56,7 @@ tutorials and take your pick - local (Vagrant) or remote (AWS).
 
 Please note, that the
 [`Vagrantfile`](https://github.com/lucendio/lecture-devops-code/blob/master/tutorials/06_set-up-cicd-system/Vagrantfile)
-in [this folder](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/06_set-up-cicd-system)
+in [this folder](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/set-up-cicd-system)
 requires an additional plugin to be installed:
 
 ```bash

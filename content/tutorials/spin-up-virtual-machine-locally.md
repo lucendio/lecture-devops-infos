@@ -1,5 +1,5 @@
 ---
-title: 'Spin up a virtual machine locally'
+title: 'Spin up virtual machine locally'
 ---
 
 
@@ -42,7 +42,7 @@ mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https:/
 
 ## Solution: Vagrant
 
-*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/02_spin-up-virtual-mcachine-locally/vagrant)*
+*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/spin-up-virtual-machine-locally/vagrant)*
 
 
 ### (1) Start a virtual machine with `vagrant`
@@ -143,7 +143,7 @@ Hello, World!
 
 ## Solution: QEMU
 
-*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/02_spin-up-virtual-mcachine-locally/qemu)*
+*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/spin-up-virtual-machine-locally/qemu)*
 
 
 ### (1) Start a virtual machine with `qemu` and connect via SSH

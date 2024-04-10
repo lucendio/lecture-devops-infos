@@ -76,7 +76,7 @@ consider other ways to verify whether code works or not. Starting the app and ch
 
 *Please note that this solution utilizes the automation platform GitLab. Source code
 can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/05_define-and-run-pipeline).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/define-and-run-pipeline).*
 
 {{< hint info >}}
 #### Useful links:

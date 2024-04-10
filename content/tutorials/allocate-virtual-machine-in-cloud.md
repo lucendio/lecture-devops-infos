@@ -1,5 +1,5 @@
 ---
-title: 'Allocate a virtual machine in the cloud'
+title: 'Allocate virtual machine in cloud'
 
 TODO:
   - solution with Pulumi
@@ -54,7 +54,7 @@ Allocate a virtual machine in the cloud
 ## Solution: AWS
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/03_allocate-machine-in-cloud/aws).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/allocate-virtual-machine-in-cloud/aws).*
 
 
 ### (2) Set up cloud provider and initialize the OpenTofu root module
@@ -162,7 +162,7 @@ tofu destroy
 ## Solution: GCP
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/03_allocate-machine-in-cloud/gcp).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/allocate-virtual-machine-in-cloud/gcp).*
 
 
 ### (2) Set up cloud provider and initialize the OpenTofu root module

@@ -1,5 +1,5 @@
 ---
-title: 'Collect, store, and visualize metrics'
+title: 'Collect & visualize metrics'
 ---
 
 
@@ -17,9 +17,9 @@ Expose, collect, store, and visualize metrics
 ## Prerequisites
 
 * Tutorial: [{{< page-title "./spin-up-virtual-machine-locally" >}}]({{< relref "./spin-up-virtual-machine-locally" >}})
-  or [{{< page-title "./allocate-machine-in-cloud" >}}]({{< relref "./allocate-machine-in-cloud" >}})
+  or [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
 * Tutorial: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
-  or [{{< page-title "./deploy-workload-with-helm" >}}]({{< relref "./deploy-workload-with-helm" >}})
+  or [{{< page-title "./deploy-workload-with-helm" >}}]({{< relref "./manage-kubernetes-objects-with-helm" >}})
 
 
 ## Remarks

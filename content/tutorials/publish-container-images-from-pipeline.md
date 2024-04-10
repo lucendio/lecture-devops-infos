@@ -1,10 +1,10 @@
 ---
-title: 'Publish a container image from CI/CD'
+title: 'Publish container images from pipeline'
 ---
 
 
-Build & publish a container image from CI/CD
-============================================
+Build & publish a container image from CI/CD pipeline
+=====================================================
 
 
 ## Objectives
@@ -15,8 +15,8 @@ Build & publish a container image from CI/CD
 
 ## Prerequisites
 
-* Tutorial: [Define & run a pipeline]({{< relref "./define-and-run-pipeline" >}})
-* Tutorial: [Build a container image & start a container]({{< relref "./build-container-image-and-start-container" >}})
+* Tutorial: [{{< page-title "./define-and-run-pipeline" >}}]({{< relref "./define-and-run-pipeline" >}})
+* Tutorial: [{{< page-title "./build-images-and-start-containers" >}}]({{< relref "./build-images-and-start-containers" >}})
 
 
 ## Remarks
@@ -48,7 +48,7 @@ Depending on the CI/CD agent, you may face the docker-in-docker dilemma (see las
 
 *Please note that this solution utilizes the automation platform GitLab. Source code
 can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/publish-container-image-from-pipeline).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/publish-container-images-from-pipeline).*
 
 
 ### (0) Preparations

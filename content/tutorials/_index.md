@@ -51,31 +51,30 @@ and resources.
 flowchart TB
     1[Learn Git workflows]
     2[Define & run a Pipeline]
-    3[Spin up a virtual machine locally]
-    4[Build images and start containers]
+    3[Spin up virtual machine locally]
+    4[Build images & start containers]
     5[
         Allocate virtual
-        machine in the cloud
+        machine in cloud
     ]
     6[
         Automate system configuration
-        & software installation
     ]
-    7[Setup CI/CD system]
+    7[Set up CI/CD system]
     8[
         Update version as instance group
         behind load balancer
     ]
     9[
-        Build & publish container
-        images in pipeline
+        Publish container
+        images from pipeline
     ]
     10[Provision Kubernetes]
     11[Deploy an application on Kubernetes]
     12[Manage Kubernetes objects with Helm]
-    13[Collect, store and visualize metrics]
+    13[Collect and visualize metrics]
     14[Investigate system & write exporter]
-    15[Enable persistent state on Kubernetes]
+    15[Persist state on Kubernetes]
     16[Create encrypted backup]
     
     1 --> 2

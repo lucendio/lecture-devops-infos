@@ -1,5 +1,5 @@
 ---
-title: 'Create an encrypted backup'
+title: 'Create encrypted backup'
 ---
 
 
@@ -48,7 +48,7 @@ Create an encrypted backup
 ## Solution
 
 *Please note that this solution is based on AWS S3 buckets. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/12_create-encrypted-backup).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/create-encrypted-backup).*
 
 
 ### (0) Preparations

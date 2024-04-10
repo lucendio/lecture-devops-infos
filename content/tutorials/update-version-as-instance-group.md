@@ -1,10 +1,10 @@
 ---
-title: 'Deploy a new version as an instance group'
+title: 'Update version as instance group'
 ---
 
 
-Deploy a new version as an instance group
-=========================================
+Deploy a new version as an instance group behind a load balancer
+================================================================
 
 
 ## Objectives
@@ -63,7 +63,7 @@ machine, but make sure that only the LB is exposed to the "outside world".
 builds on top of the tutorial about
 [automating system configuration]({{< relref "./automate-system-configuration" >}}).
 Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/07_update-version-as-instance-group/local).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/update-version-as-instance-group/local).*
 
 
 ### (0) Preparations
