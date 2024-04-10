@@ -9,7 +9,7 @@ Deliverable: Tutorial Solutions
 
 
 __SUBMISSION DEADLINE:__ at the end of the last work day of the last week within the lecture period, or at the end of
-                         the week (sunday 23:59) the tutorial was part of the lecture topic
+                         following week (sunday 23:59) when the tutorial was part of the lecture topic
 
 
 ## Requirements
