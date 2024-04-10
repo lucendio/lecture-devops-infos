@@ -198,11 +198,10 @@ helm uninstall {{ RELEASE_NAME }}
 ```
 
 
-### (4) Enable TLS and Data persistence
+### (4) Enable TLS
 
-Both features are covered in the upstream documentation
+The feature is covered in the upstream documentation
 ([TLS](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-service-ingress),
-[Storage](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-volumes-persistener-speicher-f%C3%BCr-deployments-und-pods)).
 You just have to integrate the respective attributes and objects into you chart(s) and make them
 configurable via Helm values if needed.
 
@@ -361,10 +360,7 @@ helm uninstall {{ RELEASE_NAME }}
 ```
 
 
-### (4) Enable TLS and Data persistence
-
-Minikube may already have [*Persistent Volumes* enabled](https://minikube.sigs.k8s.io/docs/handbook/persistent_volumes/) 
-whereas TLS requires some additional work.
+### (4) Enable TLS
 
 1. Generate a self-signed TLS key pair and add it to `./secrets.yaml`
 
