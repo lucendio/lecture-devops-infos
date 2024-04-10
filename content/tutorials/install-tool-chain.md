@@ -27,6 +27,25 @@ application will be deployed on - Linux is going to be that platform. Therefore,
 as your work environment - or at least a POSIX-compliant system. If the host system of your workstation is not
 already Linux-based continue reading to find out about possible solutions. 
 
+#### OS / Technology compatibility:
+
+| Technology/OS   | Windows  | macOS (x86) | macOS (ARM) | Linux  |
+|-----------------|:--------:|:-----------:|:-----------:|:------:|
+| VirtualBox      |    ✅    |      ✅     |     🚫      |   ✅   |
+| QEMU            |    🚫    |      ✅     |     ✅      |   ✅   |
+| UTM             |    🚫    |      🚫     |     ✅      |   🚫   |
+| Lima            |    🚫    |      ✅     |     ✅      |   ✅   |
+| Vagrant         |    ✅    |      ✅     |     🚫      |   ✅   |
+| OpenTofu        |    ✅    |      ✅     |     ✅      |   ✅   |
+| Podman          |    ✅    |      ✅     |     ✅      |   ✅   |
+| Ansible         |    🚫    |      ✅     |     ✅      |   ✅   |
+| Minikube        |    ✅    |      ✅     |     ✅      |   ✅   |
+| `kubectl`       |    ✅    |      ✅     |     ✅      |   ✅   |
+| Helm            |    ✅    |      ✅     |     ✅      |   ✅   |
+| `gcloud`, `aws` |    ✅    |      ✅     |     ✅      |   ✅   |
+| Go (webservice) |    ✅    |      ✅     |     ✅      |   ✅   |
+
+
 ### Windows (Architecture: x86)
 
 [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) may work for some tools, but for others like *VirtualBox* or
@@ -40,6 +59,7 @@ past semesters show that using a hypervisor like *VirtualBox* directly is the cl
 It's already POSIX-compliant, so usually most of the tools work just fine. Even if the hardware is already ARM-based
 (Apple Silicon, M* SoC), pre-build binaries should be available. See FAQ:
 [My workstation runs on ARM architecture]({{< ref "/faq#linux-on-macos-workstation">}}) for more details.
+
 
 
 ## Tasks
