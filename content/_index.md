@@ -7,18 +7,6 @@ Hey, there! 👋
 ==============
 
 
-{{< hint danger >}}
-## ++++ BREAKING ++++
-
-*(for participants of the winter semester 23/24 only)*
-
-Services are operational again and new [dates]({{< ref "/dates/archive/ws2324" >}}) have been set. Review
-time slots may now be chosen. Further details can be found in the *News Feed*.
-
-*updated 2024-03-24*
-{{< /hint >}}
-
-
 ## What's this about?
 
 This repository is the main entry point for the *DevOps* course. It's supposed to help
@@ -65,6 +53,7 @@ Or maybe you are already overwhelmed? No worries, try [How to learn DevOps](http
 
 * [Education Kubernetes Cluster Documentation](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster) 📖
 * [showcase](https://gitlab.bht-berlin.de/fb6-wp11-devops/showcase)
+* [Tutorial solutions](https://github.com/lucendio/lecture-devops-code/tutorials)
 * [code examples](https://github.com/lucendio/lecture-devops-code)
   * comprehensive examples
     * Jenkins running in Containers (Server & Agent)
