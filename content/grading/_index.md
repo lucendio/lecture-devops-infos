@@ -89,6 +89,7 @@ _Weight: **100%**_
 * CI/CD pipeline consists of at least 3 stages
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
   explicit/controlled manner
+* *application* changes successfully propagate through all environment carried out by CI/CD
 * concept/documentation matches implementation
 * all formal requirements ([concept]({{< ref "/assignments/deliverables/project-concept#formal" >}}) & 
   [implementation]({{< ref "/assignments/deliverables/project-implementation#formal" >}})) are met and the
