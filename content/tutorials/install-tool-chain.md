@@ -83,7 +83,7 @@ Install the following
 ## Solution
 
 {{< hint info >}}
-If you feel adventures, you may want to take a look at the [software list](({{< ref "/guide/software">}})
+If you feel adventures, you may want to take a look at the [software list]({{< ref "/guide/software">}})
 and diverge from the software mentioned below.
 {{< /hint >}}
 
