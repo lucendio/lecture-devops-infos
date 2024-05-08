@@ -80,7 +80,7 @@ corresponding document(s) [here]({{< ref "/assignments/deliverables" >}})
 * verify the existence of every service
 
 
-## Teams[ws2324.md](..%2Fdates%2Fws2324.md)
+## Teams
 
 * it's allowed to work in a team (≤ 2 people), but not required
 * register the team before the deadline mentioned in the onboarding slides has exceeded 
