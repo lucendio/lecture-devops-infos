@@ -30,7 +30,7 @@ _Weight: **0% - 45%**_
 
 *Criteria:*
 
-* the [deliverable]({{< ref "/assignments/deliverables/tutorial-solutions" >}}) was handed as requested 
+* the [deliverable]({{< ref "/assignments/deliverables/tutorial-solutions" >}}) was handed in as requested 
 
 
 ## Concept
