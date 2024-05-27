@@ -24,6 +24,11 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * every relevant (terminal) command has to be made transparent & verifiable, e.g. in documentation a/o dedicated files
   (e.g. pipeline code, shell script, `Makefile`)
 
+{{< hint warning >}}
+Please note, that the minimal permissions required to view source code of *internal* or *private* projects on
+GitLab is the [__reporter__ role](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).
+{{< /hint >}}
+
 
 ### Technical
 
