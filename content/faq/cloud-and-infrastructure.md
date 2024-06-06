@@ -91,15 +91,15 @@ APIs, if they exist, to automate setting DNS records, regardless
 __*Example without DNS delegation (DigitalOcean + Namecheap):*__
 
 1. Register a domain (e.g. `domain.tld`) on Namecheap by using its web console (after signing up)
-2. Create records, e.g. `sub.doamin.tld` on Namecheap with Terraform
+2. Create records, e.g. `sub.doamin.tld` on Namecheap with OpenTofu
 
 
 __*Example with DNS delegation (AWS + Name.com):*__
 
 1. Register a domain (e.g. `domain.tld`) on Name.com by using its API (after signing up)
-2. Create a *Hosted Zone* for that domain on AWS Route 53 with Terraform
+2. Create a *Hosted Zone* for that domain on AWS Route 53 with OpenTofu
 3. Set the name servers defined by the *Hosted Zone* as custom name servers of your domain via Name.com API
-4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with Terraform
+4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with OpenTofu
 
 
 ## How to obtain the `~/.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster? {id="kubeconfig-of-edu-cluster"}
