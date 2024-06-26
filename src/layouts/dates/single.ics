@@ -31,7 +31,7 @@ END:VTIMEZONE
 
 BEGIN:VEVENT
 
-UID:{{ sha1 .name }}
+UID:{{ delimit ( slice .name (index (default (slice .date) .dates) 0 ) ) "" | sha1 }}
 DTSTAMP:{{ $.Page.Date | time.Format "20060102T150405" }}
 CREATED:{{ $.Page.PublishDate | time.Format "20060102T150405" }}
 LAST-MODIFIED:{{ $.Page.Lastmod | time.Format "20060102T150405" }}
