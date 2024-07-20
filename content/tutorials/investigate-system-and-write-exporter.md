@@ -1,5 +1,5 @@
 ---
-title: 'Investigate system status'
+title: 'Investigate system status & write exporter'
 ---
 
 
@@ -42,7 +42,7 @@ Investigate system status
 ## Solution
 
 *Please note that this solution is based on an Ubuntu 22.04 system. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/investigate-system-and-write-exporters).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/investigate-system-and-write-exporter).*
 
 
 ### (0) Preparations
@@ -280,5 +280,5 @@ dpkg -L curl
 
 
 The result, 97 lines of code in a
-[`exporter.sh` script](https://docs.ansible.com/ansible/latest/collections/community/general/docker_container_module.html)
+[`exporter.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/tutorials/investigate-system-and-write-exporter/exporter.sh)
 might do the trick.
