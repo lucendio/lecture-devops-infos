@@ -41,7 +41,7 @@ Enable and utilize persistence on Kubernetes to store state
 ## Solution: Edu cluster {id="solution-edu-cluster"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/manage-kubernetes-objects-with-helm/edu-cluster).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/persist-state-on-kubernetes/edu-cluster).*
 
 TODO
 
@@ -59,7 +59,7 @@ configurable via Helm values if needed.
 ## Solution: Minikube {id="solution-minikube"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/manage-kubernetes-objects-with-helm/edu-cluster/minikube).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/persist-state-on-kubernetes/minikube).*
 
 TODO
 
