@@ -29,9 +29,12 @@ the course (grade: `4.0`).
 1. write a [concept]({{< ref "/assignments/deliverables/project-concept" >}}) and hand in an initial version before the given
    deadline (sometime within the first half of the semester, for more specifics refer to the onboarding slides)
 2. receive initial feedback and sanity-check in written form via email
-3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before the end
-   of day at the date of *code freeze*
-4. present your implementation in a review session at the end of the semester
+3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
+   the end of day at the date of *code freeze*
+4. hand in (a) link(s) to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
+   via email right after *code freeze* 
+5. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
+   session
 
 Eventually, you'll end up with two repositories:
 
