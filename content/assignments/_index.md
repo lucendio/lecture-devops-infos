@@ -26,3 +26,9 @@ result will count.*
 
 Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) assignment, you are free to take a
 *[retry exam]({{< ref "/assignments/retry-exam" >}})* in order to still pass the course.
+
+
+## Additional hints
+
+The minimal permissions required to view source code of *internal* or *private* projects on
+GitLab is the [__reporter__ role](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).

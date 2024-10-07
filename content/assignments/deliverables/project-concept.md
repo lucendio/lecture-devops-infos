@@ -22,11 +22,6 @@ __SUBMISSION DEADLINE:__ before the end of day on the [predefined date]({{< link
 * changes to the technology stack after handing in the initial version
   are only permitted after consultation
 
-{{< hint warning >}}
-Please note, that the minimal permissions required to view source code of *internal* or *private* projects on
-GitLab is the [__reporter__ role](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).
-{{< /hint >}}
-
 
 ### Content
 

@@ -21,13 +21,8 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * each code base contains a `README.md` which includes an onboarding section
 * starting from scratch each step taken towards the final state of the overall infrastructure setup must be
   comprehensible (to ensure fair evaluation/grading)
-* every relevant (terminal) command has to be made transparent & verifiable, e.g. in documentation a/o dedicated files
-  (e.g. pipeline code, shell script, `Makefile`)
-
-{{< hint warning >}}
-Please note, that the minimal permissions required to view source code of *internal* or *private* projects on
-GitLab is the [__reporter__ role](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).
-{{< /hint >}}
+* every relevant (terminal) command has to be made transparent & verifiable, e.g. in documentation a/o dedicated
+  files (e.g. pipeline code, shell script, `Makefile`, etc.)
 
 
 ### Technical
