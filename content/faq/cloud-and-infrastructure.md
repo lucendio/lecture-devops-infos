@@ -102,24 +102,6 @@ __*Example with DNS delegation (AWS + Name.com):*__
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with OpenTofu
 
 
-## How to obtain the `~/.kube/config` (`KUBECONFIG`) file necessary to access the university's Kubernetes cluster? {id="kubeconfig-of-edu-cluster"}
-
-{{< hint warning >}}
-Did you already enter your university email address in the respective account list?
-{{< /hint >}}
-
-📖 [__Upstream documentation__ (german)](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#nutzung-des-clusters-mit-kubectl)
-
-1. *(optional)* [login to the VPN](https://doku.bht-berlin.de/zugang/vpn)
-2. log in to the [cluster management web console](https://rancher.ris.bht-berlin.de)
-   with your university account 
-3. open the menu at the top left and click on *edu-cluster* in the list of clusters - you should see
-   some kind of resource utilization meters in the main area of the page
-4. obtain the *KubeConfig* (top right, between the shell and the magnifier icons) and store the
-   content in a file on your workstation under `~/.kube/config` or in whatever location your
-   `KUBECONFIG` environment variable points to
-
-
 ## Which registry supports pushing container images? 
 
 The following registries are hosted offerings:
