@@ -28,6 +28,25 @@ Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) ass
 *[retry exam]({{< ref "/assignments/retry-exam" >}})* in order to still pass the course.
 
 
+## Using 3rd-party resources
+
+If handing in (a single line of) code or text other than written on your own, a reference to the original
+source must be provided in-place; e.g. 
+
+* deep link to the respective section of a web page
+* a link to a video including the respective time code
+* the entire prompt (input & output history) if tools based on *machine learning* (commonly known
+  as *artificial intelligence*, such as *large language models* etc.)
+
+The latter must also be provided, if code or text was actually written by yourself but originates from using such tools.
+
+{{< hint warning >}}
+Generally speaking, it must be made obvious to the reader, which line(s) - or sentences in case of concept or
+documentation text - are affected by sources mentioned above, otherwise the deliverable __will be classified as
+fraud attempt and reported__.
+{{< /hint >}}
+
+
 ## Additional hints
 
 The minimal permissions required to view source code of *internal* or *private* projects on
