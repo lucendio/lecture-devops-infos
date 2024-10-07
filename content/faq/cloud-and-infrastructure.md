@@ -74,14 +74,14 @@ hosted outside of the european jurisdiction (no GDPR etc.).
 
 A non-exhaustive list of public DNS providers:
 
-| Name                                             | Free Domain            | API                                                                          | Terraform provider |
-|--------------------------------------------------|:----------------------:|------------------------------------------------------------------------------|:------------------:|
-| [Namecheap](https://www.namecheap.com)           | YES (via Github Edu)   | [URL](https://www.namecheap.com/support/api/intro/)                          |  X                 |
-| [Name.com](https://www.name.com)                 | YES (via Github Edu)   | [URL](https://www.name.com/api-docs)                                         |  -                 |
-| [INWX](https://www.inwx.de/en)                   | NO                     | [URL](https://www.inwx.de/en/offer/api)                                      |  X                 |
-| [AWS Route 53](https://aws.amazon.com/route53/)  | NO                     | [URL](https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome.html)  |  X                 |
-| [GCP Cloud DNS](https://cloud.google.com/dns)    | NO                     | [URL](https://cloud.google.com/dns/docs/apis)                                |  X                 |
-| [FreeDNS](https://freedns.afraid.org/)           | YES                    | [URL](https://freedns.afraid.org)                                            |  -                 |
+| Name                                             |                         Free Domain                          | API                                                                           | Terraform provider |
+|--------------------------------------------------|:------------------------------------------------------------:|-------------------------------------------------------------------------------|:------------------:|
+| [Namecheap](https://www.namecheap.com)           |  YES (via [Github Edu](https://education.github.com/pack))   | [URL](https://www.namecheap.com/support/api/intro/)                           |  X                 |
+| [Name.com](https://www.name.com)                 | YES (via [Github Edu](https://education.github.com/pack))    | [URL](https://www.name.com/api-docs)                                          |  -                 |
+| [INWX](https://www.inwx.de/en)                   |                              NO                              | [URL](https://www.inwx.de/en/offer/api)                                       |  X                 |
+| [AWS Route 53](https://aws.amazon.com/route53/)  |                              NO                              | [URL](https://docs.aws.amazon.com/Route53/latest/APIReference/Welcome.html)   |  X                 |
+| [GCP Cloud DNS](https://cloud.google.com/dns)    |                              NO                              | [URL](https://cloud.google.com/dns/docs/apis)                                 |  X                 |
+| [FreeDNS](https://freedns.afraid.org/)           |                             YES                              | [URL](https://freedns.afraid.org)                                             |  -                 |
 
 Also, [nip.io](https://nip.io) can be used to mimic FQDNs in case of private (local) or public IP-based deployment/hosting 
 
