@@ -107,7 +107,7 @@ scp -i .vagrant/machines/default/virtualbox/private_key ./webservice vagrant@10.
 ```
 
 {{< hint warning >}}
-Vagrant generates a new SSH key pair when creating a new machine. THe `scp` command utilizes the same key-based
+Vagrant generates a new SSH key pair when creating a new machine. The `scp` command utilizes the same key-based
 authentication mechanism already known from `ssh`.
 {{< /hint >}}
 
@@ -139,6 +139,12 @@ Result:
 ```
 Hello, World!
 ```
+
+{{< hint warning >}}
+Depending on the default values of the configuration built into the `webservice` binary,
+environment variables like `HOST` or `PORT` may need to be set in order to fix e.g. the 
+*Connection reset by peer* error.
+{{< /hint >}}
 
 
 ## Solution: QEMU
@@ -229,7 +235,7 @@ Open up another terminal session and connect via SSH to the machine
 
 __⚡ Context: *host/workstation*__
 ```bash
-ssh -p 2222 {{ CHOOSE_A_USERNAME }}@0.0.0.0
+ssh -p 2222 {{ CHOOSE_A_USERNAME }}@127.0.0.1
 ```
 
 {{< hint warning >}}
@@ -251,7 +257,7 @@ qemu-system-x86_64 \
   -m 4G \
   -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:3000 \
   -hda ./ubuntu-22.04-server-cloudimg-amd64.img \
-  -c
+  -cdrom ./datasource.iso
 ```
 
 Build the *webservice* for Linux.
@@ -261,18 +267,18 @@ __⚡ Context: *host/workstation*__
 GOOS=linux GOARCH=amd64 go build -o ./webservice ./*.go
 ```
 
-Copy the artifact into the virtual machine by using SSH.
+Copy the artifact into the virtual machine via SSH.
 
 __⚡ Context: *host/workstation*__
 ```bash
-scp -p 2222 ./webservice {{ CHOOSE_A_USERNAME }}@0.0.0.0:~/webservice
+scp -P 2222 ./webservice {{ CHOOSE_A_USERNAME }}@127.0.0.1:~/webservice
 ```
 
 Start the *webservice* from within the virtual machine after connecting to it via SSH
 
 __⚡ Context: *host/workstation*__
 ```bash
-ssh -p 2222 {{ CHOOSE_A_USERNAME }}@0.0.0.0
+ssh -p 2222 {{ CHOOSE_A_USERNAME }}@127.0.0.1
 ```
 
 __⚡ Context: *guest/vm*__
@@ -292,3 +298,9 @@ Result:
 ```
 Hello, World!
 ```
+
+{{< hint warning >}}
+Depending on the default values of the configuration built into the `webservice` binary,
+environment variables like `HOST` or `PORT` may need to be set in order to fix e.g. the 
+*Connection reset by peer* error.
+{{< /hint >}}
