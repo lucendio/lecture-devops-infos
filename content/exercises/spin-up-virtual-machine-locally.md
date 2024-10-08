@@ -42,7 +42,7 @@ mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https:/
 
 ## Solution: Vagrant
 
-*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/spin-up-virtual-machine-locally/vagrant)*
+*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/spin-up-virtual-machine-locally/vagrant)*
 
 
 ### (1) Start a virtual machine with `vagrant`
@@ -149,7 +149,7 @@ environment variables like `HOST` or `PORT` may need to be set in order to fix e
 
 ## Solution: QEMU
 
-*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/spin-up-virtual-machine-locally/qemu)*
+*Source code can be found [here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/spin-up-virtual-machine-locally/qemu)*
 
 
 ### (1) Start a virtual machine with `qemu` and connect via SSH

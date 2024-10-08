@@ -42,7 +42,7 @@ Or maybe you are already overwhelmed? No worries, try [How to learn DevOps](http
 * [X] [Description of each deliverable]({{< ref "/assignments/deliverables" >}}) 
 * [X] [Grading]({{< ref "/grading" >}})
 * [X] [A Guide]({{< ref "/guide" >}})
-* [X] [Tutorials]({{< ref "/tutorials">}})
+* [X] [Exercises]({{< ref "/exercises">}})
 * [X] [FAQ]({{< ref "/faq" >}})
 * [X] [Links]({{< ref "/links" >}})
 * [X] [Glossary]({{< ref "/glossary" >}})

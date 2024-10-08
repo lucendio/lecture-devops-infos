@@ -48,7 +48,7 @@ Create an encrypted backup
 ## Solution
 
 *Please note that this solution is based on AWS S3 buckets. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/create-encrypted-backup).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/create-encrypted-backup).*
 
 
 ### (0) Preparations
@@ -67,7 +67,7 @@ Ensure that the tool chain is installed:
 Use OpenTofu to create an S3 bucket.
 
 {{< hint >}}
-Please refer to tutorials like [*{{< page-title "./allocate-virtual-machine-in-cloud" >}}*]({{< relref "./allocate-virtual-machine-in-cloud" >}})
+Please refer to exercises like [*{{< page-title "./allocate-virtual-machine-in-cloud" >}}*]({{< relref "./allocate-virtual-machine-in-cloud" >}})
 for details on how to manage infrastructure resources with OpenTofu. The resource you are looking for is called
 `aws_s3_bucket`.
 {{< /hint >}}

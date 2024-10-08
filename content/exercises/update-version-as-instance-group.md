@@ -17,7 +17,7 @@ Deploy a new version as an instance group behind a load balancer
 
 ## Prerequisites
 
-* Tutorial: [Automate service installation and apply configuration to a machine]({{< relref "./automate-system-configuration" >}})
+* Exercise: [Automate service installation and apply configuration to a machine]({{< relref "./automate-system-configuration" >}})
 
 
 ## Remarks
@@ -60,15 +60,15 @@ machine, but make sure that only the LB is exposed to the "outside world".
 ## Solution: local {id="solution-local"}
 
 *Please note that this solution is based on a local approach utilizing Vagrant and
-builds on top of the tutorial about
+builds on top of the exercise about
 [automating system configuration]({{< relref "./automate-system-configuration" >}}).
 Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/update-version-as-instance-group/local).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/update-version-as-instance-group/local).*
 
 
 ### (0) Preparations
 
-Refer to the solution of [this]({{< relref "./automate-system-configuration" >}}) tutorial to learn
+Refer to the solution of [this]({{< relref "./automate-system-configuration" >}}) exercise to learn
 more about how to set up one or more machines locally with *Vagrant*.
 
 {{< hint info >}}
@@ -76,11 +76,11 @@ You may need to adjust the `ansible_host` variable throughout the `./inventory` 
 hostname(s)/IP(s) of the machine(s).
 {{< /hint >}}
 
-Re-using the *Ansible role* from the tutorial mentioned in [Prerequisites](#prerequisites) can be accomplished
+Re-using the *Ansible role* from the exercise mentioned in [Prerequisites](#prerequisites) can be accomplished
 in different ways:
 
 * copy & paste the role into a `./roles` subdirectory and add `roles_path = ./roles` to `ansible.cfg`
-* symlink `./roles/webservice` to the respective role directory of the tutorial solution mentioned
+* symlink `./roles/webservice` to the respective role directory of the exercise solution mentioned
    in [Prerequisites](#prerequisites)
 * append the destination path mentioned in (b) to the `roles_path` value, e.g.
   ```

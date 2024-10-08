@@ -9,7 +9,7 @@ Install tool chain
 
 ## Objectives
 
-* successfully install the tools used in the upcoming tutorials
+* successfully install the tools used in upcoming exercises
 * verify that your credentials of your AWS Academy account (or Google Cloud Platform) work
 
 

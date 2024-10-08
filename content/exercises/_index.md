@@ -2,15 +2,15 @@
 bookFlatSection: true
 bookCollapseSection: true
 
-title: 'Tutorials'
+title: 'Exercises'
 weight: 4
 ---
 
 
-Tutorials 💡
+Exercises 💡
 ============
 
-These tutorials are intended to be small and __voluntary__ hands-on exercises that might be
+These exercises are intended to be small and __voluntary__ hands-on exercises that might be
 worked on during class. Ideally, every lecture topic (weekly) comes with one or more
 corresponding exercises.
 
@@ -18,18 +18,18 @@ Performing these tasks should help you to get familiar with technologies you
 might be going to use in your [project assignment]({{< ref "/assignments/project-work" >}}).
 
 {{< hint >}}
-There is also a tutorial on [how to install the tool chain]({{< relref "./install-tool-chain">}}).
+There is also an exercise on [how to install the tool chain]({{< relref "./install-tool-chain">}}).
 {{< /hint >}}
 
-The tutorials vary a bit in their workload but still cover a limited scope. Solutions may only
+The exercises vary a bit in their workload but still cover a limited scope. Solutions may only
 utilize the basics of the technologies that are involved, while their capabilities would reach
 far beyond that.
 
-For more comprehensive tutorials either refer to the
+For more comprehensive exercises either refer to the
 [link collection]({{< ref "/links" >}}), their corresponding [lesson]({{< ref "/lessons" >}}) or 
 the web search engine of your least distrust.
 
-Each tutorial contains:
+Each exercise contains:
 
 * a description, including prerequisites, tasks and objectives(s)
 * at least one possible solution, including the steps to reproduce, and, it needed, any kind of *assets*
@@ -37,9 +37,9 @@ Each tutorial contains:
 
 ## Skill Tree
 
-The diagram below shows how tutorials are build on one another or at least how they are thematically related.
-This may help you to determine which tutorials to choose when completing the
-[assignment]({{< ref "/assignments/tutorials" >}}). There are different directions you can go. For example, if you decide
+The diagram below shows how exercises are build on one another or at least how they are thematically related.
+This may help you to determine which exercises to choose when completing the
+[assignment]({{< ref "/assignments/exercises" >}}). There are different directions you can go. For example, if you decide
 to include containers in to you project stack. Or when you want to follow the path of exploring cloud provider offerings
 and resources.
 

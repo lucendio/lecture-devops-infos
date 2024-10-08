@@ -76,7 +76,7 @@ consider other ways to verify whether code works or not. Starting the app and ch
 
 *Please note that this solution utilizes the automation platform GitLab. Source code
 can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/define-and-run-pipeline).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/define-and-run-pipeline).*
 
 {{< hint info >}}
 #### Useful links:
@@ -124,13 +124,13 @@ in case of 'yaml invalid' errors, check the `CI/CD > Editor` for a more detailed
 ### (3) Write a pipeline that ...
 
 ... tests the code/artifact - see stage:
-[`test` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L23:L28)
+[`test` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/911cb6dab66674aa71789568494a27dc58108491/exercises/define-and-run-pipeline/.gitlab-ci.yml#L23:L28)
 
 ... builds an artifact - see stage:
-[`build` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L31:L43)
+[`build` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/911cb6dab66674aa71789568494a27dc58108491/exercises/define-and-run-pipeline/.gitlab-ci.yml#L31:L43)
 
 ... publishes the artifact(s) - see stage:
-[`publish` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L46:L67)
+[`publish` in `.gitlab-ci.yml`](https://github.com/lucendio/lecture-devops-code/blob/911cb6dab66674aa71789568494a27dc58108491/exercises/define-and-run-pipeline/.gitlab-ci.yml#L46:L67)
 
 {{< hint >}}
 Use the GitLab-internal [Package](https://docs.gitlab.com/ee/user/packages/package_registry/) Registry.
@@ -140,9 +140,9 @@ Use the GitLab-internal [Package](https://docs.gitlab.com/ee/user/packages/packa
 ### (4) Implement a mechanism to control artifact publishing
 
 By utilizing `workflow` one can control when the pipeline itself would run, and `rules` define whether a single job will
-be executed. The [workflow](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L1:L12)
+be executed. The [workflow](https://github.com/lucendio/lecture-devops-code/blob/911cb6dab66674aa71789568494a27dc58108491/exercises/define-and-run-pipeline/.gitlab-ci.yml#L1:L12)
 makes sure, that the pipeline is triggered either by a commit to a branch or a change in a merge request.
-The [rule](https://github.com/lucendio/lecture-devops-code/blob/fa968d5f32fc91649fddb30d8eda9147669a660b/tutorials/05_define-and-run-pipeline/.gitlab-ci.yml#L49:L50)
+The [rule](https://github.com/lucendio/lecture-devops-code/blob/911cb6dab66674aa71789568494a27dc58108491/exercises/define-and-run-pipeline/.gitlab-ci.yml#L49:L50)
 that checks the commit ref name prevents the artifact from being published when the branch name is something other than
 `stable`.
 

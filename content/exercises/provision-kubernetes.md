@@ -16,9 +16,9 @@ Provision Kubernetes
 
 ## Prerequisites
 
-* Tutorial: [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
-* Tutorial: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
-* Tutorial: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}})
+* Exercise: [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
+* Exercise: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
+* Exercise: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}})
 
 ## Tasks
 
@@ -28,7 +28,7 @@ Provision Kubernetes
 2. Install Kubernetes on top
 3. Verify whether Kubernetes has been installed successfully
     * configure `KUBECONFIG` and run `kubectl` to verify
-    * apply a *Deployment* (e.g. from previous tutorials)
+    * apply a *Deployment* (e.g. from previous exercises)
       associated to a *Service* that is configured with the `type: NodePort`
     * find out on which node (in case of multiple ones) the workload is scheduled
     * find out the port to which the *Service* is bound to
@@ -45,7 +45,7 @@ Provision Kubernetes
 
 *Please note that this solution makes use of [Kubespray](https://github.com/kubernetes-sigs/kubespray)
 and AWS. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/provision-kubernetes).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/provision-kubernetes).*
 
 
 ### (0) Preparations
@@ -91,7 +91,7 @@ chmod 600 ./.ssh/operator*
 tofu init
 ```
 {{< hint >}}
-Please refer to tutorials like [*Allocate a virtual machine in the cloud*]({{< relref "./allocate-virtual-machine-in-cloud" >}})
+Please refer to exercises like [*Allocate a virtual machine in the cloud*]({{< relref "./allocate-virtual-machine-in-cloud" >}})
 for details on how to manage infrastructure resources with OpenTofu.
 {{< /hint >}}
 

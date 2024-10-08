@@ -48,7 +48,7 @@ the respective [tutorial(s)](https://docs.podman.io/en/latest/Tutorials.html).
 ## Solution
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/build-images-and-start-containers).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/build-images-and-start-containers).*
 
 
 ### (1) Build a container image with the static binary inside

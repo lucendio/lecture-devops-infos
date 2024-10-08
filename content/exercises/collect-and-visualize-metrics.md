@@ -16,9 +16,9 @@ Expose, collect, store, and visualize metrics
 
 ## Prerequisites
 
-* Tutorial: [{{< page-title "./spin-up-virtual-machine-locally" >}}]({{< relref "./spin-up-virtual-machine-locally" >}})
+* Exercise: [{{< page-title "./spin-up-virtual-machine-locally" >}}]({{< relref "./spin-up-virtual-machine-locally" >}})
   or [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
-* Tutorial: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
+* Exercise: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
   or [{{< page-title "./deploy-workload-with-helm" >}}]({{< relref "./manage-kubernetes-objects-with-helm" >}})
 
 
@@ -50,12 +50,12 @@ Expose, collect, store, and visualize metrics
 
 *This approach utilizes a single local machine as platform and the system itself as subject for observation.
 Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/collect-and-visualize-metrics).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/collect-and-visualize-metrics).*
 
 
 ### (0 + 1) Preparations
 
-Allocate one or more machines - in the cloud or locally - according to previous tutorials. Make sure, they are
+Allocate one or more machines - in the cloud or locally - according to previous exercises. Make sure, they are
 accessible via SSH from an Ansible control node.
 
 For this solution, data about the system itself shall be collected. Luckily, the community already developed the
@@ -186,7 +186,7 @@ If changes don't appear,
 
 ### (6) Cleaning up
 
-Decommission al machines as described in previous tutorials.
+Decommission al machines as described in previous exercises.
 
 
 ## Solution: Helm {id="solution-helm"}

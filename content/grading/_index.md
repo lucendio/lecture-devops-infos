@@ -18,7 +18,7 @@ In order to pass the course, one is required to obtain at least _**50%**_ of the
 {{< /hint >}}
 
 
-## Tutorials
+## Exercises
 
 _Weight: **0% - 45%**_
 
@@ -30,7 +30,7 @@ _Weight: **0% - 45%**_
 
 *Criteria:*
 
-* the [deliverable]({{< ref "/assignments/deliverables/tutorial-solutions" >}}) was handed in as requested 
+* the [deliverable]({{< ref "/assignments/deliverables/exercise-solutions" >}}) was handed in as requested 
 
 
 ## Concept

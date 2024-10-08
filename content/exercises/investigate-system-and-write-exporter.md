@@ -17,7 +17,7 @@ Investigate system status
 
 ## Prerequisites
 
-* a running linux system (please refer to one of the previous tutorials)
+* a running linux system (please refer to one of the previous exercises)
 
 
 ## Tasks
@@ -42,7 +42,7 @@ Investigate system status
 ## Solution
 
 *Please note that this solution is based on an Ubuntu 22.04 system. Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/investigate-system-and-write-exporter).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/investigate-system-and-write-exporter).*
 
 
 ### (0) Preparations
@@ -280,5 +280,5 @@ dpkg -L curl
 
 
 The result, 97 lines of code in a
-[`exporter.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/tutorials/investigate-system-and-write-exporter/exporter.sh)
+[`exporter.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/exercises/investigate-system-and-write-exporter/exporter.sh)
 might do the trick.

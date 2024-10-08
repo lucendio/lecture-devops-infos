@@ -14,7 +14,7 @@ the opportunity to take a retry exam.
 
 __Deliverable:__ *N/A*
 
-__Requirements:__ complete the [Tutorials]({{< ref "/assignments/tutorials" >}}) assignment
+__Requirements:__ complete the [Exercises]({{< ref "/assignments/exercises" >}}) assignment
 
 
 ## Process

@@ -27,7 +27,7 @@ as substitution for all lectures given throughout this course.
 
 🎤 - [podcast]({{< ref "/links#podcasts" >}})
 
-💡 - tutorial
+💡 - exercise/tutorial
 
 🗣 - conversations, interactive discussion
 

@@ -16,8 +16,8 @@ Manage Kubernetes objects with Helm
 
 ## Prerequisites
 
-* Tutorial: [{{< page-title "./update-version-as-instance-group" >}}]({{< relref "./update-version-as-instance-group" >}})
-* Tutorial: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}}) 
+* Exercise: [{{< page-title "./update-version-as-instance-group" >}}]({{< relref "./update-version-as-instance-group" >}})
+* Exercise: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}}) 
 * [Helm](https://helm.sh/docs/intro/install/) is installed on your workstation
 * [SOPS](https://github.com/mozilla/sops#download) is installed on your workstation (and optionally [GPG](https://www.gnupg.org/download/))
 * [Helm plugin to integrate SOPS](https://github.com/jkroepke/helm-secrets) is installed on your workstation
@@ -52,7 +52,7 @@ Manage Kubernetes objects with Helm
 ## Solution: Edu cluster {id="solution-edu-cluster"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/manage-kubernetes-objects-with-helm/edu-cluster).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/manage-kubernetes-objects-with-helm/edu-cluster).*
 
 
 ### (1) Create a chart using an iterative approach   
@@ -64,7 +64,7 @@ boilerplate. The latter may require you to remove a couple of files again.
    
     a) Create meta files, such as `Chart.yaml`
 
-    b) Put static Kubernetes object files from previous tutorial in `./templates`
+    b) Put static Kubernetes object files from previous exercise in `./templates`
       * Deployments
       * Services
       * Ingress
@@ -209,12 +209,12 @@ configurable via Helm values if needed.
 ## Solution: Minikube {id="solution-minikube"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/manage-kubernetes-objects-with-helm/edu-cluster/minikube).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/manage-kubernetes-objects-with-helm/edu-cluster/minikube).*
 
 
 ### (0) Preparations
 
-Please refer to the [*Preparations* section of the previous tutorial]({{< relref "./deploy-app-on-kubernetes#0-prep-minikube" >}}).
+Please refer to the [*Preparations* section of the previous exercise]({{< relref "./deploy-app-on-kubernetes#0-prep-minikube" >}}).
 
 
 ### (1) Create a chart using an iterative approach   
@@ -226,7 +226,7 @@ boilerplate. The latter may require you to remove a couple of files again.
    
     a) Create meta files, such as `Chart.yaml`
 
-    b) Put static Kubernetes object files from previous tutorial in `./templates`
+    b) Put static Kubernetes object files from previous exercise in `./templates`
       * Deployments
       * Services
       * Ingress

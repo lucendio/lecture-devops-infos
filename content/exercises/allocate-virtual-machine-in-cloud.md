@@ -54,7 +54,7 @@ Allocate a virtual machine in the cloud
 ## Solution: AWS
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/allocate-virtual-machine-in-cloud/aws).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/allocate-virtual-machine-in-cloud/aws).*
 
 
 ### (2) Set up cloud provider and initialize the OpenTofu root module
@@ -162,7 +162,7 @@ tofu destroy
 ## Solution: GCP
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/allocate-virtual-machine-in-cloud/gcp).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/allocate-virtual-machine-in-cloud/gcp).*
 
 
 ### (2) Set up cloud provider and initialize the OpenTofu root module
@@ -174,7 +174,7 @@ tofu destroy
   * log in and add your coupon to [Google Cloud](https://console.cloud.google.com/education)
   * enable billing for [*Compute Engine*](https://console.cloud.google.com/compute) API
   * it's recommended to [create a service account](https://cloud.google.com/docs/authentication/production#create_service_account)
-    instead of authenticating your personal account through the `gcloud` CLI (for this tutorial, the role
+    instead of authenticating your personal account through the `gcloud` CLI (for this exercise, the role
     *Compute Engine > Compute Admin* must be assigned to the service account 
   * for authentication methods and generating a `KEYFILE_JSON` please refer to the
     [Terraform provider documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#authentication-configuration)

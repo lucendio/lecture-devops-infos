@@ -7,7 +7,7 @@ FAQ - Cloud & Infrastructure
 ============================
 
 
-## Where do I get some infrastructure to play with, to do the tutorials with, or even for the assignment?
+## Where do I get some infrastructure to play with, to do the exercises with, or even for the assignment?
 
 Essentially, you have 3 different options:
 

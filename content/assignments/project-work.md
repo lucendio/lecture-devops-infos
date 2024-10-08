@@ -16,7 +16,7 @@ taught over the cause of this module.
 __Deliverables:__ [concept]({{< ref "/assignments/deliverables/project-concept" >}}) &
                   [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
 
-__Requirements:__ complete the [Tutorials]({{< ref "/assignments/tutorials" >}}) assignment
+__Requirements:__ complete the [Exercises]({{< ref "/assignments/exercises" >}}) assignment
 
 {{< hint warning >}}
 Please note, that it's not required to successfully & completely finish the implementation in order to pass

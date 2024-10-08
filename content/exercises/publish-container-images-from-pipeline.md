@@ -15,8 +15,8 @@ Build & publish a container image from CI/CD pipeline
 
 ## Prerequisites
 
-* Tutorial: [{{< page-title "./define-and-run-pipeline" >}}]({{< relref "./define-and-run-pipeline" >}})
-* Tutorial: [{{< page-title "./build-images-and-start-containers" >}}]({{< relref "./build-images-and-start-containers" >}})
+* Exercise: [{{< page-title "./define-and-run-pipeline" >}}]({{< relref "./define-and-run-pipeline" >}})
+* Exercise: [{{< page-title "./build-images-and-start-containers" >}}]({{< relref "./build-images-and-start-containers" >}})
 
 
 ## Remarks
@@ -48,14 +48,14 @@ Depending on the CI/CD agent, you may face the docker-in-docker dilemma (see las
 
 *Please note that this solution utilizes the automation platform GitLab. Source code
 can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/tutorials/publish-container-images-from-pipeline).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/publish-container-images-from-pipeline).*
 
 
 ### (0) Preparations
 
 * fork and clone the [application repository](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice) 
   to the local workspace
-* if not already present, copy over `.gitlab-ci.yml` and `Containerfile` created in previous tutorials
+* if not already present, copy over `.gitlab-ci.yml` and `Containerfile` created in previous exercises
 
 
 ### (1) Adjust `Containerfile` if needed
