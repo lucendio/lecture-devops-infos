@@ -33,7 +33,7 @@ Depending on the CI/CD agent, you may face the docker-in-docker dilemma (see las
 ## Tasks
 
 1. Adjust the existing `Containerfile` if necessary
-2. Define pipeline job to build and publish a container image in a container image registry of your choosing
+2. Define pipeline jobs that build and publish a container image in a container image registry of your choosing
 3. Verify the result by pulling the image from the registry into the local workspace and start a container
    based on that image
 
