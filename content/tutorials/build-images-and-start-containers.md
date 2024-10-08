@@ -130,3 +130,11 @@ machine running on your host system, or, if Linux is the host system, the value 
     CONTAINER ID  IMAGE                          COMMAND          CREATED        STATUS            PORTS                   NAMES
     b6da3afc59ef  localhost/my-webservice:1.0.0  /bin/webservice  2 minutes ago  Up 2 minutes ago  0.0.0.0:8080->3000/tcp  my-container
     ```
+
+
+### (3) Execute a CLI through container
+
+Another use case of container images lies in its bundling nature, which makes a dependency tree
+easily portable and allows to execute arbitrary programs, like command-line interfaces (CLIs), in isolation.
+
+Invoke the AWS CLI executed in a container and confirm that it functions properly.
