@@ -251,7 +251,7 @@ is a virtual but globally unique host name with the format: `{{ SERVICE_NAME }}-
 kubectl apply -n {{ NS_NAME }} --filename ./ingress.yaml
 ```
 
-Finally, verify that the application is indeed accessible from your browser.
+Finally, verify that the application is indeed accessible from your browser (or `curl`).
 
 
 ### (4) Cleaning up
@@ -468,7 +468,7 @@ command `minikube ip`
 kubectl apply -n {{ NS_NAME }} --filename ./ingress.yaml
 ```
 
-Finally, verify that the application is indeed accessible from your browser.
+Finally, verify that the application is indeed accessible from your browser (or `curl`).
 
 
 ### (4) Cleaning up
