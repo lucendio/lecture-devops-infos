@@ -16,7 +16,7 @@ __Deliverable:__ [exercises solutions]({{< ref "/assignments/deliverables/exerci
 ## Process
 
 1. pick 6 exercises over the course of the semester
-2. complete each of them
+2. complete each of them successfully
 3. check in the source code
 
 {{< hint warning >}}
@@ -27,5 +27,5 @@ Please note that the purpose of this work is merely to qualify yourself for bein
 
 ## Rules
 
-* choose any exercises except the one about [installing the tool chain]({{< ref "/exercises/install-tool-chain" >}})
-  and about [learning Git workflows]({{< ref "/exercises/learn-git-workflows" >}})
+* choose any exercise except the one about [installing the tool chain]({{< ref "/exercises/install-tool-chain" >}})
+  and [learning Git workflows]({{< ref "/exercises/learn-git-workflows" >}})

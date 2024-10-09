@@ -10,7 +10,7 @@ Deliverable: Research Nodes
 ===========================
 
 
-__SUBMISSION DEADLINE:__ before the end of the day at which the classroom discussion takes place
+__SUBMISSION DEADLINE:__ before the end of the day at which the [classroom discussion takes place]({{< link-to-dates-of-current-semester >}})
 
 
 ## Requirements
