@@ -21,8 +21,9 @@ you discover all the provided materials and explains how this course is organize
 
 {{< hint info >}}
 Experience from previous semesters show that working on a Windows machine
-might become tedious and could even result in [data loss](https://github.com/lucendio/lecture-devops-app/commit/b1a4614b35f9c892e5bf08fc0792283ba360d493). For possible
-solutions, please refer to the [FAQ]({{< ref "/faq#linux-on-windows-workstation" >}})
+might become tedious and could even result in data loss (invoking `make` in path
+containing white spaces). For possible solutions, please refer to the
+[FAQ]({{< ref "/faq#linux-on-windows-workstation" >}})
 {{< /hint >}}
 
 [^1]: there is a [section in the guide]({{< ref "/guide/prior-knowledge" >}}) to help you get up to speed, if you're
@@ -64,7 +65,7 @@ Or maybe you are already overwhelmed? No worries, try [How to learn DevOps](http
     * Vagrant + VirtualBox
     * Ansible
     * ...
-* [pre-defined workload/application](https://github.com/lucendio/lecture-devops-app)
-  * single-page web application
-  * server implementation: JavaScript (NodeJS)
-  * backing service (database): MongoDB
+* [pre-defined workload/application](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice)
+  * simple web service exposing a RESTful-ish API via HTTP
+  * written in Go
+  * optional backing service (database): Redis

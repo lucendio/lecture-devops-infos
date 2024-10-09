@@ -14,7 +14,8 @@ Based on the [conditions]({{< ref "/assignments/project-work#application-conditi
 assignment, there are basically three paths: 
 
 1. pick one of the many open source SaaS solutions others have already built (see recommendations below)
-2. use the pre-defined [TODO app](https://github.com/lucendio/lecture-devops-app)
+2. use the [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice) you already know from the
+   exercise solutions
 3. choose an application that you already built and/or anyone that is referred to in a tutorial of your favorite
    framework - as long as it adheres to the rules
 
