@@ -8,7 +8,7 @@ Deliverable: Project Implementation
 ===================================
 
 
-__SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled for the review session.
+__SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of review sessions]({{< link-to-dates-of-current-semester >}})
 
 
 ## Requirements
@@ -16,12 +16,12 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 ### Formal
 
 * language: German or English
-* every line of code and documentation is stored and tracked in an accessible Git repository
+* every line of code and documentation is stored and tracked in an accessible version control system
 * hand in (a) link(s) to the repository/repositories
 * each code base contains a `README.md` which includes an onboarding section
 * starting from scratch each step taken towards the final state of the overall infrastructure setup must be
   comprehensible (to ensure fair evaluation/grading)
-* every relevant (terminal) command has to be made transparent & verifiable, e.g. in documentation a/o dedicated
+* every relevant (terminal) command must be made transparent & verifiable, e.g. in documentation a/o dedicated
   files (e.g. pipeline code, shell script, `Makefile`, etc.)
 
 
@@ -47,7 +47,7 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * the application is put through at least 3 stages (build, test, deploy) by at least 1 pipeline (CI/CD)
 * at least one service (e.g. VCS, Monitoring) other than the application has to be provisioned by yourself (no
   third-party as-a-service solution)
-* automate allocation and configuration of all required infrastructure resources and services
+* automate the allocation and configuration of all required infrastructure components
 
 
 ### Additional notes
@@ -55,4 +55,5 @@ __SUBMISSION DEADLINE:__ before the end of the day prior to the day scheduled fo
 * making the deliverable comprehensive means, one must be able to reproduce the entire setup solely by having the
   repositories content available, so that at the end the entire setup is functional as intended
 * it's not necessary to implement any exporter logic into the application code in order to get some monitoring 
-  working; there are other aspects of your infrastructure to collect metrics on
+  working; there are other components of your infrastructure to collect metrics from, if the chosen *application*
+  does not expose any

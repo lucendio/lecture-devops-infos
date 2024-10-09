@@ -21,16 +21,16 @@ Your grade is based on the outcome of the [*Project*]({{< ref "/assignments/proj
 in that assignment, you first have to finish the required amount of [*exercises*]({{< ref "/assignments/exercises" >}}).
 
 {{< hint info >}}
-Please note, that as soon as you have completed the *[Exercises]({{< ref "/assignments/exercises" >}})* assignment, by
-handing in your solutions, you are obliged to receive a grade for this course, or in other words: your attempt to take
-the exam started and the result will count.
+Please note, that as soon as you have completed the *[Exercises]({{< ref "/assignments/exercises" >}})* assignment - by
+handing in your solutions - you are obliged to receive a grade for this course, or in other words: your attempt to pass
+the course has started and grading is inevitable.
 {{< /hint >}}
 
 Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) assignment, you are free to take a
 *[retry exam]({{< ref "/assignments/retry-exam" >}})* in order to still pass the course.
 
 
-## Using 3rd-party resources
+## Indication of source
 
 If handing in (a single line of) code or text other than written on your own, a reference to the original
 source must be provided in-place; e.g. 

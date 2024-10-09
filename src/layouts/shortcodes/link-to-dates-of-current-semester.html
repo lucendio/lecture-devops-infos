@@ -1,4 +1,4 @@
 {{ $section := "dates" }}
-{{ $orderedDatesPages := sort (where .Site.RegularPages "Section" $section) "Weight" "desc" }}
+{{ $orderedDatesPages := sort (where .Site.RegularPages "Section" $section) "Weight" "asce" }}
 {{ $currentDates := index $orderedDatesPages 0}}
 {{ $currentDates.RelPermalink }}

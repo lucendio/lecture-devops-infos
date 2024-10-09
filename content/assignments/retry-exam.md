@@ -20,7 +20,7 @@ __Requirements:__ complete the [Exercises]({{< ref "/assignments/exercises" >}})
 ## Process
 
 1. Request admission (via email) latest one week before the exam will take place
-2. Take the exam online at the [given date and time]({{< ref "/dates" >}})
+2. Take the exam online at the [given date and time]({{< link-to-dates-of-current-semester >}})
 
 
 ## Rules
