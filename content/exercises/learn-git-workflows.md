@@ -7,6 +7,11 @@ Learn Git workflows
 ===================
 
 
+{{< hint warning >}}
+This exercise is excluded from possible assignment deliverables
+(see [rules]({{< ref "/assignments/exercises#rules" >}}))
+{{< /hint >}}
+
 ## Objectives
 
 * learn about commits, `HEAD`, (interactive) rebasing & merging, cherry-picking, pull & push remotes
@@ -23,7 +28,7 @@ Learn Git workflows
 
 {{< hint info >}}
 If you fancy an even more gamified & physics-based approach, you may want to give
-[Oh My Git](https://ohmygit.org/)
+[Oh My Git](https://ohmygit.org/) a try
 {{< /hint >}}
 
 ## Deliverables

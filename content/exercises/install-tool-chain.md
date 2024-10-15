@@ -7,6 +7,11 @@ Install tool chain
 ==================
 
 
+{{< hint warning >}}
+This exercise is excluded from possible assignment deliverables
+(see [rules]({{< ref "/assignments/exercises#rules" >}}))
+{{< /hint >}}
+
 ## Objectives
 
 * successfully install the tools used in upcoming exercises
