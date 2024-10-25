@@ -65,7 +65,7 @@ Or maybe you are already overwhelmed? No worries, try [How to learn DevOps](http
     * Vagrant + VirtualBox
     * Ansible
     * ...
-* [pre-defined workload/application](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice)
+* [*webservice* (example workload/application)](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice)
   * simple web service exposing a RESTful-ish API via HTTP
   * written in Go
   * optional backing service (database): Redis
