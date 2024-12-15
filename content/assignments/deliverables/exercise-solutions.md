@@ -9,8 +9,9 @@ Deliverable: Exercise Solutions
 
 
 __SUBMISSION DEADLINE:__ at the end of the [last week within the lecture period]({{< link-to-dates-of-current-semester >}}),
-                         or - in order to collect a fraction of the grade in advance - end of day *one* week after
-                         the exercise was part of the lecture topic
+                         or - in order to collect a fraction of the grade in advance - at end of the day on which the
+                         subsequent lecture is given (usually 8 days later) in relation to the lecture that exercise was
+                         part of (see *Activities* column of the [course plan]({{< ref "/lessons" >}}))
                          
 
 
@@ -30,6 +31,7 @@ __SUBMISSION DEADLINE:__ at the end of the [last week within the lecture period]
 * each solution folder contains:
   * all *deliverables* (see respective section in the exercise description)
   * documentation if necessary for reviewing 
+  * any other file necessary to complete the exercise
 
 
 ### Remarks
