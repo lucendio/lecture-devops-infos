@@ -8,7 +8,7 @@ sitemap:
   priority: 0.5
   filename: 'sitemap.xml'
 
-disableKinds: [ 'taxonomy', 'taxonomyTerm' ]
+disableKinds: [ 'taxonomy' ]
 
 # DOCS: https://gohugo.io/content-management/urls/#permalinks
 permalinks:
