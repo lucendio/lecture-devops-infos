@@ -12,7 +12,7 @@ between some of them. It's just meant to be an inspiration and starting point of
 you *project*.
 
 For more details about specific technologies mentioned below, please refer to the
-[software list]({{< ref "/guide/software" >}}).
+[tool chain]({{< ref "/tool-chain" >}} and [software list]({{< ref "/guide/software" >}}).
 
 *Please note, that none of the examples are mutual exclusive. Certain items across these examples may yield other
 reasonable or even more suitable combination(s).*

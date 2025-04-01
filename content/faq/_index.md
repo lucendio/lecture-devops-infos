@@ -3,7 +3,7 @@ bookFlatSection: false
 bookCollapseSection: true
 
 title: 'FAQ'
-weight: 8
+weight: 9
 ---
 
 
@@ -39,11 +39,3 @@ You may either want to try the [*Windows Subsystem for Linux*](https://docs.micr
 or get yourself a virtual machine running Linux on your workstation. One way to archive this is to install
 [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads)
 (directly from their websites or through [Chocolatey](https://chocolatey.org/) - the Windows package manager).
-
-
-## My workstation runs on ARM architecture (e.g. Apple Silicon). So, Virtualbox is not supported. What other options do I have?
-
-When looking at [providers](https://www.vagrantup.com/docs/providers) that are officially supported by Vagrant, then 
-there would only be one option: [VMware](https://www.vmware.com/products/fusion.html). But it's proprietary and not free
-of charge. Aside of Vagrant, another option would be [QEMU](https://formulae.brew.sh/formula/qemu), or the GUI-based
-app called [UTM](https://mac.getutm.app/).

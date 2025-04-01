@@ -18,7 +18,7 @@ Performing these tasks should help you to get familiar with technologies you
 might be going to use in your [project assignment]({{< ref "/assignments/project-work" >}}).
 
 {{< hint >}}
-There is also an exercise on [how to install the tool chain]({{< relref "./install-tool-chain">}}).
+There are also some information on a recommended [tool chain and its OS-compatibility]({{< relref "/tool-chain">}}).
 {{< /hint >}}
 
 The exercises vary a bit in their workload but still cover a limited scope. Solutions may only

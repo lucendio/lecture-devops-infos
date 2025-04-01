@@ -27,5 +27,4 @@ Please note that the purpose of this work is merely to qualify yourself for bein
 
 ## Rules
 
-* choose any exercise except the one about [installing the tool chain]({{< ref "/exercises/install-tool-chain" >}})
-  and [learning Git workflows]({{< ref "/exercises/learn-git-workflows" >}})
+* choose any exercise except the one about [learning Git workflows]({{< ref "/exercises/learn-git-workflows" >}})

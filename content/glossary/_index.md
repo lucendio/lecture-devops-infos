@@ -2,7 +2,7 @@
 bookFlatSection: false
 
 title: 'Glossary'
-weight: 9
+weight: 10
 ---
 
 

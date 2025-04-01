@@ -3,7 +3,7 @@ bookFlatSection: true
 bookCollapseSection: true
 
 title: 'Guide'
-weight: 5
+weight: 6
 ---
 
 

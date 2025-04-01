@@ -12,7 +12,7 @@ bookFlatSection: false
 bookCollapseSection: true
 
 title: 'Dates 🗓'
-weight: 6
+weight: 7
 
 _build:
   render: 'never'

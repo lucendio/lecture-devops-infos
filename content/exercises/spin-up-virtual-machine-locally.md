@@ -18,11 +18,6 @@ Spin up a virtual machine locally
 * *Vagrant* is available on the local system
 * a [supported hypervisor](https://www.vagrantup.com/docs/providers) (e.g. VirtualBox) is installed
 
-{{< hint warning >}}
-Virtualbox is not available on ARM-based macOS (e.g. M1 or M2). So, if Vagrant doesn't support another provider on
-mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https://mac.getutm.app/) 
-{{< /hint >}}
-
 
 ## Tasks
 
