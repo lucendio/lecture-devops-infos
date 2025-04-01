@@ -13,6 +13,7 @@ Twelve Factors
 
 ## Curated list of links
 
+* [Twelve Factor App Methodology Explained](https://www.youtube.com/watch?v=1OhmRmMsGdQ) by *KodeKloud* KodeKloud
 * [The Twelve Factor app: Best Practices for (Java) Deployment](https://www.youtube.com/watch?v=94PxlbuizCU) talk by *Joe Kutner* 🎬
 * [Building Microservices with the 12 Factor App Pattern](https://www.youtube.com/watch?v=2SxKKDXKrXQ) by *AWS* 🎬
 * [An illustrated guide to 12 Factor Apps](https://www.redhat.com/architect/12-factor-app) by *Red Hat* 📖

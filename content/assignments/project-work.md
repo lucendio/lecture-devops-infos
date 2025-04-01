@@ -31,7 +31,7 @@ the course (grade: `4.0`).
 2. receive initial feedback and sanity-check in written form via email
 3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
    end of day at the date of *code freeze*
-4. hand in (a) link(s) to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
+4. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
    via email right after *code freeze* 
 5. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
    session

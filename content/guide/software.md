@@ -52,7 +52,8 @@ software.
 * [Vagrant](https://developer.hashicorp.com/vagrant/docs) *(Configuration-as-Code abstraction for Type-2 Hypervisors)*
 * [QEMU](https://www.qemu.org/docs/master/system/qemu-manpage.html) *(Hardware Emulation)*
 * [Packer](https://www.packer.io/docs) *(build virtual machine images)*
-* [UTM](https://mac.getutm.app/) *(macOS-only)*
+* [UTM](https://mac.getutm.app) *(macOS-only)*
+* [OrbStack](https://orbstack.dev) *(like Docker-Desktop & WSL for macOS-only)*
 * [Lima](https://lima-vm.io/) *(Linux virtual machines on macOS and Linux)*
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/) *(Windows-only)*
 

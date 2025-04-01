@@ -78,7 +78,7 @@ _Weight: **100%**_
 * installation & configuration of all services are reproducible
 * installation & configuration of all services are automated
 * idempotent provisioning
-* each service exists and is operational
+* each service exists, is operational, and - if intended - is externally accessible
 * each service can be reached via HTTPS
 * FQDNs are configured for all services, resolve to each of them and serve them properly 
 * *application* runs high available
@@ -89,7 +89,7 @@ _Weight: **100%**_
 * CI/CD pipeline consists of at least 3 stages
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
   explicit/controlled manner
-* *application* changes successfully propagate through all environment carried out by CI/CD
+* *application* changes carried out by CI/CD successfully propagate through all environments
 * concept/documentation matches implementation
 * all formal requirements ([concept]({{< ref "/assignments/deliverables/project-concept#formal" >}}) & 
   [implementation]({{< ref "/assignments/deliverables/project-implementation#formal" >}})) are met and the

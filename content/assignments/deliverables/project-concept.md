@@ -19,8 +19,9 @@ __SUBMISSION DEADLINE:__ before the end of day on the [predefined date]({{< link
 * written in Markdown (or reStructuredText)
 * file(s) are stored and tracked in an accessible version control system
 * hand in a deep link to the file(s) located in that repository
-* changes to the technology stack after handing in the initial version
-  are only permitted after consultation
+* significant changes to the technology stack or other modification that might jeopardize the success
+  of the project made after (!) handing in the initial version are only permitted after consultation
+  (minor changes can be neglected)
 
 
 ### Content

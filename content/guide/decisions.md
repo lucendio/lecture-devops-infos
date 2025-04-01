@@ -3,7 +3,7 @@ title: 'Decisions'
 ---
 
 
-Taking some decisions
+Making some decisions
 =====================
 
 

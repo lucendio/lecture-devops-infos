@@ -9,9 +9,9 @@ Deliverable: Exercise Solutions
 
 
 __SUBMISSION DEADLINE:__ at the end of the [last week within the lecture period]({{< link-to-dates-of-current-semester >}}),
-                         or - in order to collect a fraction of the grade in advance - at end of the day on which the
-                         subsequent lecture is given (usually 8 days later) in relation to the lecture that exercise was
-                         part of (see *Activities* column of the [course plan]({{< ref "/lessons" >}}))
+                         or - in order to collect a fraction of the grade in advance - 9 days (end of day) after that 
+                         exercise got introduced or the related lecture was given (see *Activities* column of the
+                         [course plan]({{< ref "/lessons" >}}))
                          
 
 
@@ -36,8 +36,11 @@ __SUBMISSION DEADLINE:__ at the end of the [last week within the lecture period]
 
 ### Remarks
 
-* ‼️ example solutions are just meant as an inspiration not to be copy/pasted and handed in ‼️
+* ‼️ example solutions are just meant as an inspiration, or to unblock in case of being stuck,
+  or to better understand the task; it's not meant to be adopted or even copy/pasted and handed in ‼️
 * details about deliverables can be found in every exercise description
-* `terminal.log` refers to the entire terminal in- & output produced while carrying out
-  the exercises, which means: no manipulations; instead copy as-is (of course, cleansed of
+* `terminal.log` refers to the entire (!) terminal in- & output produced while carrying out
+  an exercise, nothing else; which means: no manipulations[^1] at all; only copy as-is (of course, cleansed of
   any encoding artifacts, e.g. ANSI color codes, or other gibberish making the logs not readable)
+
+[^1]: in other words: no censoring, no annotations, no added headlines, comments or newlines, etc.

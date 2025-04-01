@@ -131,7 +131,7 @@ Please get in touch to receive invite and credits; credit card information are n
 * [GitHub Student Developer Pack](https://education.github.com/pack)
     * DigitalOcean
     * Microsoft Azure
-* [Google: GCP for Education](https://edu.google.com/programs/students/benefits/)
+* [Google: GCP for Education](https://edu.google.com/programs/students/benefits/) (+ $200 from [GitLab collaboration](https://about.gitlab.com/blog/gke-gitlab-integration/#get-seamless-integration-with-gke-and-%24500-credit-for-your-project))
 * [Microsoft: Azure](https://azure.microsoft.com/en-us/free/students/)
 * [Amazon: Amazon Web Services](https://aws.amazon.com/education/awseducate/)
 * [fly.io](https://fly.io) ([free tier](https://fly.io/docs/about/pricing/#free-allowances); [note on credit cards](https://community.fly.io/t/is-it-possible-to-use-fly-io-with-no-credit-card-if-youre-a-student/3134))
