@@ -11,7 +11,7 @@ cascade:
 bookFlatSection: false
 bookCollapseSection: true
 
-title: 'Dates'
+title: 'Dates 🗓'
 weight: 6
 
 _build:
