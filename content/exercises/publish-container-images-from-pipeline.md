@@ -34,14 +34,15 @@ Depending on the CI/CD agent, you may face the docker-in-docker dilemma (see las
 
 1. Adjust the existing `Containerfile` if necessary
 2. Define pipeline jobs that build and publish a container image in a container image registry of your choosing
-3. Verify the result by pulling the image from the registry into the local workspace and start a container
-   based on that image
+3. Verify the result by pulling the image from the registry into the local workspace, start a container
+   based on that image and confirm that the included application is accessible from the *"outside""* via CLI
 
 
 ## Deliverables
 
 * source code of the pipeline
 * `Containerfile`
+* `terminal.log` file showing the commands and their output used to carry out the tasks
 
 
 ## Solution

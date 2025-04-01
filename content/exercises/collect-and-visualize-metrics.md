@@ -10,7 +10,7 @@ Expose, collect, store, and visualize metrics
 ## Objectives
 
 * find something to observe
-* set up an Observability stack
+* set up an Observability stack by using a declarative as-code approach
 * expose, collect, and visualize data
 
 
@@ -19,7 +19,7 @@ Expose, collect, store, and visualize metrics
 * Exercise: [{{< page-title "./spin-up-virtual-machine-locally" >}}]({{< relref "./spin-up-virtual-machine-locally" >}})
   or [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
 * Exercise: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
-  or [{{< page-title "./deploy-workload-with-helm" >}}]({{< relref "./manage-kubernetes-objects-with-helm" >}})
+  or [{{< page-title "./manage-kubernetes-objects-with-helm" >}}]({{< relref "./manage-kubernetes-objects-with-helm" >}})
 
 
 ## Remarks

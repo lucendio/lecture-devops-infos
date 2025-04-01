@@ -17,16 +17,16 @@ Create an encrypted backup
 
 ## Prerequisites
 
-* [OpenTofu](https://opentofu.org/docs/cli/) / [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli) installed locally
 * credentials for a [supported](https://registry.terraform.io/browse/providers)
   cloud platform
 * tool that supports cryptographical operations (symmetric a/o asymmetric en- & decryption)
-* *[optional]* additional requirements depending on the chosen *cloud provider*
+* additional requirements depending on the approach you choose (e.g. tools, *cloud provider*)
 
 
 ## Tasks
 
-1. Use OpenTofu OR AWS CLI to allocate some remote Object Storage (e.g. AWS S3 bucket)
+1. Use one of the approaches you learned about (declarative or imperative) to allocate some remote
+   Object Storage (e.g. AWS S3 bucket)
 2. Create an encrypted off-site backup,
     * compress a folder of your choice (represent the backup artifact)
     * choose a crypto suite

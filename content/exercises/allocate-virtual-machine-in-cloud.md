@@ -12,7 +12,7 @@ Allocate a virtual machine in the cloud
 
 ## Objectives
 
-* allocate a virtual machine in the *cloud*
+* allocate a virtual machine in the *cloud* using a declarative as-code approach
 * successfully connect to tha virtual machine via SSH
 
 
@@ -41,7 +41,7 @@ Allocate a virtual machine in the cloud
    allowed (may require additional OpenTofu resource)
 6. Use the private part of the previously generated SSH key and connect to the allocated machine
 7. Install the [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice) into the machine and confirm that
-   the default page is being served
+   it's accessible from the *"outside"* via CLI
 8. Delete all resource again
 
 

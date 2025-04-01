@@ -9,7 +9,7 @@ Deploy a new version as an instance group behind a load balancer
 
 ## Objectives
 
-* implement a deployment strategy
+* implement and automate a deployment strategy by using a declarative as-code approach
 * at least 3 instances of the service are running
 * the instance group is proxied by a load balancer
 * service is updated w/o downtime
@@ -38,7 +38,8 @@ Decide on one of the following designs:
 2. Deploy the service as an instance group containing 3 instances, and make the load balancer aware of
    these instances
 3. Implement one of the known deployment strategies by utilizing CM functionality
-4. Choose another version of the service and re-deploy to verify that the chosen strategy behaves as expected
+4. Choose another version of the service and re-deploy
+5. Verify that the chosen strategy behaves as expected by sending requests from the *"outside"* via CLI 
 
 {{< hint info >}}
 Depending on the type of artifact, dependencies may vary. If the artifact is a container image for example,

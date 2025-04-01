@@ -37,7 +37,7 @@ Deploy an app on Kubernetes and make it accessible to the outside
     * write a Service and Ingress configuration
     * apply the configurations
     * inspect the service
-    * verify that the application is accessible from you browser
+    * confirm that the application is accessible from the *"outside"* via CLI
 
 __For more exercises, please refer to the [official documentation](https://kubernetes.io/docs/tasks/).__
 
@@ -284,7 +284,7 @@ minikube start \
     --container-runtime=cri-o \
     --driver=virtualbox \
     --addons=ingress \
-    --profile=devops-tutorial
+    --profile=devops-exercise
 ```
 
 Verify that `kubectl` is configured correctly. The following command should list all the different

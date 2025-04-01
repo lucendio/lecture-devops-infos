@@ -11,6 +11,7 @@ Define and run a pipeline
 
 * gain basic knowledge of how to use an automation platform
 * configure and run a CI/CD pipeline
+* implement a workflow strategy to enable collaboration 
 
 
 ## Prerequisites
@@ -64,12 +65,16 @@ consider other ways to verify whether code works or not. Starting the app and ch
 4. Develop a branch strategy that would allow to publish artifacts in a controlled manner (e.g. merging into a certain
    branch or tagging a commit) but still always run tests 
 
-5. Verify via browser that the artifact is actually published, download it and start the application locally
+5. Verify via browser that the artifact is actually published
+
+6. Download the artifact, start the application locally and confirm that it's reachable via CLI
 
 
 ## Deliverables
 
 * source code of the pipeline
+* `terminal.log` file showing the commands and their output used to carry out the tasks
+* link to a successful pipeline invocation
 
 
 ## Solution

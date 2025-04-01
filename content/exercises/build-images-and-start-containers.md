@@ -9,6 +9,8 @@ Build a container image and start a container based on that image
 
 ## Objectives
 
+* learn about two conceptual distinct use cases for containers: [1] *ever running* (daemon)
+  and [2] *intentional terminate/conclude* (one-off)
 * successfully launch a container
 * verify that your credentials from your AWS Academy account work
 
@@ -31,12 +33,12 @@ the respective [tutorial(s)](https://docs.podman.io/en/latest/Tutorials.html).
 
 1. Build a container image based on a 
    [Containerfile](https://github.com/containers/common/blob/main/docs/Containerfile.5.md)
-   (formerly known as `Dockerfile`) and include the
+   (formerly known as [`Dockerfile`](https://docs.docker.com/reference/dockerfile/)) and include the
    [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice)
-2. Start a container based on that image and expose the included service to the *"outside"*
-   in a way so that you are able to retrieve the landing page in your browser.  
-2. Open up a shell in a container that contains the AWS cli. Mount your credentials into the
-   container and verify that you are able to create resources
+2. Start a container based on that image and expose the included service 
+   and confirm that it's accessible from the *"outside"* via CLI  
+2. Run a container for the purpose of invoking the AWS CLI. Mount your credentials into the
+   container and verify that you would be able to create resources
 
 
 ## Deliverables

@@ -31,7 +31,7 @@ mentioned platforms, try [QEMU](https://www.qemu.org/download/) or [UTM](https:/
    or [upstream](https://cloud-images.ubuntu.com/), and launch a virtual machine based on that image
 2. After the instance has booted successfully, establish an SSH connection to that machine
 3. Install the [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice) example app into a virtual machine,
-   expose it and confirm with your browser that the landing page is being served
+   expose it and confirm that it's accessible from the *outside* via CLI
 
 
 ## Deliverables

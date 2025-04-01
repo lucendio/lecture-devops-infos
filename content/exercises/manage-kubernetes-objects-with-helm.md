@@ -35,9 +35,10 @@ Manage Kubernetes objects with Helm
     * `./templates` based on static Kubernetes object files
     * `./templates/_helpers.tpl` (functions, available in templates)
     * default `values.yaml`
-    * add subchart(s) for backing service(s) if needed
+    * if the service supports backing service(s) (e.g. persistence layer), utilize upstream subchart(s)
+      instead of writing them yourself
 2. From outside the chart, override defaults with another `values.yaml` file 
-3. Define possible sensitive values in a `secrets.yaml` and use Sops to encrypt
+3. If required, define possible sensitive values in a `secrets.yaml` and use Sops to encrypt
    these values; redeploy using Helm to verify that decryption during runtime
    works 
 4. *[optional]* Enable TLS and ensure database state persists across redeployment
@@ -209,7 +210,7 @@ configurable via Helm values if needed.
 ## Solution: Minikube {id="solution-minikube"}
 
 *Source code can be found
-[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/manage-kubernetes-objects-with-helm/edu-cluster/minikube).*
+[here](https://github.com/lucendio/lecture-devops-code/tree/master/exercises/manage-kubernetes-objects-with-helm/minikube).*
 
 
 ### (0) Preparations

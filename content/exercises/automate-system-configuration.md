@@ -11,6 +11,7 @@ Automate system configuration and software installation
 
 * install an application and a supported backing service on a virtual machine
   in an automated fashion
+* use a declarative as-code approach
 * configure the application to use the backing service
 
 
@@ -26,6 +27,7 @@ Automate system configuration and software installation
 
 1. Write code for the chosen Configuration Management tool to automate the installation and
    configuration of the [webservice](https://gitlab.bht-berlin.de/fb6-wp11-devops/webservice)
+   including all software to persist its state
 2. Apply the configuration to the virtual machine
 3. Verify that the service works and is successfully using the backing service  
 
