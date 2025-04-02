@@ -211,8 +211,8 @@ Start the machine with QEMU
 __⚡ Context: *host/workstation*__
 ```bash
 qemu-system-x86_64 \
-  -machine type=q35 \
-  -smp 2 \
+  -machine type=pc \
+  -smp cpus=2 \
   -m 4G \
   -nic user,hostfwd=tcp::2222-:22 \
   -hda ./ubuntu-24.04-server-cloudimg-amd64.img \
@@ -247,8 +247,8 @@ forwarding?).
 __⚡ Context: *host/workstation*__
 ```bash
 qemu-system-x86_64 \
-  -machine type=q35 \
-  -smp 2 \
+  -machine type=pc \
+  -smp cpus=2 \
   -m 4G \
   -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:3000 \
   -hda ./ubuntu-24.04-server-cloudimg-amd64.img \
