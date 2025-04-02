@@ -16,7 +16,7 @@ Configuration Management
 
 ## Curated videos
 
-* [Ansible vs. Terraform: What's the difference?](https://www.youtube.com/watch?v=rx4Uh3jv1cA) by *IBM Technology* 🎬
+* [Ansible vs. OpenTofu: What's the difference?](https://www.youtube.com/watch?v=rx4Uh3jv1cA) by *IBM Technology* 🎬
 * [Chef vs Puppet vs Ansible vs Saltstack | Configuration Management Tools](https://www.youtube.com/watch?v=R8_veQiYBjI) by *Simplilearn* 🎬
 * [What is Ansible?](https://www.youtube.com/watch?v=fHO1X93e4WA) by *IBM Technology* 🎬
 * [Ansible Tutorial for Beginners](https://www.youtube.com/watch?v=1id6ERvfozo) by *Nana* 🎬

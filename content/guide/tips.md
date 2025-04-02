@@ -20,7 +20,7 @@ This is a rather unstructured list of tips, DOs and DON'Ts, mainly focused on te
   infrastructure from scratch in an automated fashion on demand (e.g. tear down everything after a day of development
   work and next day bring everything back up)
 * infrastructure provisioning can be triggered manually and doesn't have to be integrated into the automation service
-* when executing OpenTofu / Terraform keep in mind its state and where it is located/stored depending on where it's being 
+* when executing OpenTofu keep in mind its state and where it is located/stored depending on where it's being 
   invoked (e.g. local workstation vs. CI/CD)
 * commit message matter - a lot
 

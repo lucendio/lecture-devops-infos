@@ -18,9 +18,9 @@ Allocate a virtual machine in the cloud
 
 ## Prerequisites
 
-* [OpenTofu](https://opentofu.org/docs/intro/install/) / [Terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+* [OpenTofu](https://opentofu.org/docs/intro/install/)
   installed locally
-* credentials for a [supported](https://registry.terraform.io/browse/providers)
+* credentials for a [supported](https://search.opentofu.org/providers)
   cloud platform
 * additional dependencies depending on the chosen *cloud provider*
 
@@ -32,11 +32,11 @@ Allocate a virtual machine in the cloud
 2. Configure the credentials locally (procedure is different for each cloud provider)
 3. Generate an SSH key-pair & define an *OpenTofu* resource to manage the SSH key
 4. Define a *OpenTofu* resource to allocate a virtual machine - according to your provider, e.g.
-    * AWS: [`aws_instance`](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
-    * DigitalOcean: [`digitalocean_droplet`](https://registry.terraform.io/providers/digitalocean/digitalocean/latest/docs/resources/droplet)
-    * Hetzner: [`hetzner_server`](https://registry.terraform.io/providers/hetznercloud/hcloud/latest/docs/resources/server)
-    * GCP: [`google_compute_instance`](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_image)
-    * Azure: [`azurerm_virtual_machine`](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_machine)
+    * AWS: [`aws_instance`](https://search.opentofu.org/provider/terraform-providers/aws/latest/docs/resources/instance)
+    * DigitalOcean: [`digitalocean_droplet`](https://search.opentofu.org/provider/digitalocean/digitalocean/latest/docs/resources/droplet)
+    * Hetzner: [`hetzner_server`](https://search.opentofu.org/provider/hetznercloud/hcloud/latest/docs/resources/server)
+    * GCP: [`google_compute_instance`](https://search.opentofu.org/provider/hashicorp/google/latest/docs/resources/compute_instance)
+    * Azure: [`azurerm_virtual_machine`](https://search.opentofu.org/provider/hashicorp/azurerm/latest/docs/resources/virtual_machine)
 5. Ensure that the machine has a public IP assigned and incoming traffic to the SSH & an HTTP port are
    allowed (may require additional OpenTofu resource)
 6. Use the private part of the previously generated SSH key and connect to the allocated machine
@@ -60,7 +60,7 @@ Allocate a virtual machine in the cloud
 ### (2) Set up cloud provider and initialize the OpenTofu root module
 
 {{< hint info >}}
-At this point, the necessary cloud provider credentials (e.g. [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs))
+At this point, the necessary cloud provider credentials (e.g. [AWS](https://search.opentofu.org/provider/hashicorp/aws/latest))
 must have been already configured. For AWS,
 
 * set a *region* - in `provider.tf` or via environment `AWS_DEFAULT_REGION` (note that if AWS Academy Program account
@@ -91,11 +91,11 @@ with OpenTofu to later be able adding it to the machine.
 
 ### (4) Write configuration code in order to create a machine
 
-* in AWS terminology, a machines is called a [aws_instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
+* in AWS terminology, a machines is called a [aws_instance](https://search.opentofu.org/provider/hashicorp/aws/latest/docs/resources/instance)
 * determine the cheapest [instance type](https://aws.amazon.com/ec2/pricing/on-demand/)
 * find the right image via:
   * CLI: [`aws ec2 describe-images`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html)
-  * OpenTofu data source [aws_ami](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/ami)
+  * OpenTofu data source [aws_ami](https://search.opentofu.org/provider/hashicorp/aws/latest/docs/datasources/ami)
 
 ```bash
 tofu apply \
@@ -177,7 +177,7 @@ tofu destroy
     instead of authenticating your personal account through the `gcloud` CLI (for this exercise, the role
     *Compute Engine > Compute Admin* must be assigned to the service account 
   * for authentication methods and generating a `KEYFILE_JSON` please refer to the
-    [Terraform provider documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#authentication-configuration)
+    [provider documentation](https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference#authentication-configuration)
 
 ```bash
 tofu init \
@@ -199,11 +199,11 @@ Use *input* variables in order to later inject the public part of the SSH key in
 
 ### (4) Write configuration code in order to create a machine
 
-* in GCP terminology, a machines is called a [google_compute_instance](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance)
+* in GCP terminology, a machines is called a [google_compute_instance](https://search.opentofu.org/provider/hashicorp/google/latest/docs/resources/compute_instance)
 * determine the cheapest [machine type](https://cloud.google.com/compute/docs/machine-types)
 * find the right image via:
   * CLI: `gcloud compute images list` (log in if needed: `gcloud auth login --no-launch-browser`)
-  * OpenTofu data source [google_compute_image](https://registry.terraform.io/providers/hashicorp/google/latest/docs/data-sources/compute_image)
+  * OpenTofu data source [google_compute_image](https://search.opentofu.org/provider/hashicorp/google/latest/docs/datasources/compute_image)
 
 ```bash
 tofu apply \

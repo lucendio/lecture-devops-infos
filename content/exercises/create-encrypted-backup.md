@@ -17,7 +17,7 @@ Create an encrypted backup
 
 ## Prerequisites
 
-* credentials for a [supported](https://registry.terraform.io/browse/providers)
+* credentials for a [supported](https://search.opentofu.org/providers)
   cloud platform
 * tool that supports cryptographical operations (symmetric a/o asymmetric en- & decryption)
 * additional requirements depending on the approach you choose (e.g. tools, *cloud provider*)

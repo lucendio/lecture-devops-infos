@@ -10,7 +10,7 @@ weight: 4
 Exercises 💡
 ============
 
-These exercises are intended to be small and __voluntary__ hands-on exercises that might be
+These exercises are intended to be small and __voluntary__ hands-on activities that might be
 worked on during class. Ideally, every lecture topic (weekly) comes with one or more
 corresponding exercises.
 
