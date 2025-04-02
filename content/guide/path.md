@@ -82,7 +82,8 @@ Which steps would the app need to go through?
   [Windows host]({{< ref "/faq#linux-on-windows-workstation" >}}) or [macOS host]({{< ref "/faq#linux-on-macos-workstation" >}}) 
 
 * if you have little to no experience working with POSIX-based systems a/o using the terminal, take a look at the 
-  [exercise]({{< ref "links#basic-knowledge">}}) and spent some time making yourself familiar with these technologies
+  [prior knowledge]({{< ref "prior-knowledge">}}) page and spent some time making yourself familiar with these
+  technologies
 
 * [choose an application]({{< ref "/faq/assignments#app-for-project">}}) and try to get it
   to work locally

@@ -7,7 +7,7 @@ weight: 2
 Prior knowledge
 ===============
 
-## Classes / Courses / Lectures
+## Classes / Courses / Lectures {id="classes-courses-lectures"}
 
 * [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 

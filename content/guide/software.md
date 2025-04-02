@@ -52,8 +52,8 @@ software instead of as-a-service solutions or even proprietary software.
 * [Vagrant](https://developer.hashicorp.com/vagrant/docs) *(Configuration-as-Code abstraction for Type-2 Hypervisors)*
 * [QEMU](https://www.qemu.org/docs/master/system/qemu-manpage.html) *(Hardware Emulation)*
 * [Packer](https://www.packer.io/docs) *(build virtual machine images)*
-* [UTM](https://mac.getutm.app) *(macOS-only)*
-* [OrbStack](https://orbstack.dev) *(like Docker-Desktop & WSL for macOS-only)*
+* [UTM](https://mac.getutm.app/) *(macOS-only)*
+* https://orbstack.dev/
 * [Lima](https://lima-vm.io/) *(Linux virtual machines on macOS and Linux)*
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/) *(Windows-only)*
 
@@ -189,7 +189,7 @@ software instead of as-a-service solutions or even proprietary software.
 * [Kibana](https://www.elastic.co/guide/en/kibana/current/get-started.html) *(UI & Log querying; part of ELK or EFK stack)*
 * [Loki](https://grafana.com/oss/loki/) *(storage & indexing)*
 * [Graylog](https://www.graylog.org/products/open-source) *(aggregate, store & access)*
-* [Skywalking]() *(application performance monitor: tracing, metrics and logging)*
+* [Skywalking](https://skywalking.apache.org) *(application performance monitor: tracing, metrics and logging)*
 * [Jaeger](https://www.jaegertracing.io/docs/latest/getting-started/) *(distributed tracing system)*
 
 
