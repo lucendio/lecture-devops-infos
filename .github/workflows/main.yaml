@@ -40,7 +40,7 @@ jobs:
             --minify
 
       - name: 'Upload build result as github-pages artifact'
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3.0.1
         with:
           path: './.local/build'
 
