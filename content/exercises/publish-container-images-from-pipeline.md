@@ -76,8 +76,8 @@ Such change would make sense mainly if jobs are not already executed within a co
 
 ### (2) Define the pipeline job
 
-Since the container technology as we know them is based on Linux technologies, the `matrix` build is not needed in
-this case. The target platform is most likely either `amd64` or `arm64`.
+Since the container technology as we know it is based on Linux technologies, one of the two `matrix` build dimensions
+is not needed in this case. Keep the target architecture as the most likely platform is either `amd64` or `arm64`.
 
 Change the *upload* stage as follows:
 

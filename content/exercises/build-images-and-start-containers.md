@@ -56,7 +56,7 @@ the respective [tutorial(s)](https://docs.podman.io/en/latest/Tutorials.html).
 ### (1) Build a container image with the static binary inside
 
 {{< hint info >}}
-ARM or x86? Check the system on which the container engine is running and set `GOARCH` accordingly
+ARM or x86? Check the system architecture on which the container engine is running and set `GOARCH` accordingly
 {{< /hint >}}
 
 ```bash
