@@ -150,7 +150,7 @@ environment variables like `HOST` or `PORT` may need to be set in order to fix e
 ### (1) Start a virtual machine with `qemu` and connect via SSH
 
 Download a disk image containing an installed OS, e.g. [Ubuntu](https://cloud-images.ubuntu.com/releases/)
-and look for a file like `ubuntu-${VERSION-server-cloudimg-amd64.img`.
+and look for a file like `ubuntu-${VERSION}-server-cloudimg-amd64.img`.
 
 __⚡ Context: *host/workstation*__
 ```bash
