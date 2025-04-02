@@ -45,12 +45,12 @@ Spin up a virtual machine locally
 __⚡ Context: *host/workstation*__
 ```bash
 mkdir -p my-virtual-machine && cd "${_}"
-vagrant init ubuntu/focal64 && vagrant up --provider virtualbox
+vagrant init bento/ubuntu-24.04 && vagrant up --provider virtualbox
 ```
 
 {{< hint >}}
 This way, the chosen image is downloaded implicitly, if it's not already available
-locally. To fetch the image manually: `vagrant box add ubuntu/jammy64`.
+locally. To fetch the image manually: `vagrant box add bento/ubuntu-24.04`.
 {{< /hint >}}
 
 
@@ -154,7 +154,7 @@ and look for a file like `ubuntu-${VERSION-server-cloudimg-amd64.img`.
 
 __⚡ Context: *host/workstation*__
 ```bash
-curl --remote-name https://cloud-images.ubuntu.com/releases/jammy/release/ubuntu-22.04-server-cloudimg-amd64.img
+curl --remote-name https://cloud-images.ubuntu.com/releases/24.04/release/ubuntu-24.04-server-cloudimg-amd64.img
 ```
 
 Create two files that will be used to configure the machine via
@@ -215,7 +215,7 @@ qemu-system-x86_64 \
   -smp 2 \
   -m 4G \
   -nic user,hostfwd=tcp::2222-:22 \
-  -hda ./ubuntu-22.04-server-cloudimg-amd64.img \
+  -hda ./ubuntu-24.04-server-cloudimg-amd64.img \
   -cdrom ./datasource.iso
 ```
 
@@ -251,7 +251,7 @@ qemu-system-x86_64 \
   -smp 2 \
   -m 4G \
   -nic user,hostfwd=tcp::2222-:22,hostfwd=tcp::8080-:3000 \
-  -hda ./ubuntu-22.04-server-cloudimg-amd64.img \
+  -hda ./ubuntu-24.04-server-cloudimg-amd64.img \
   -cdrom ./datasource.iso
 ```
 
