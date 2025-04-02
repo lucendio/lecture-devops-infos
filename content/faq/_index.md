@@ -37,5 +37,5 @@ and implementation. So, nothing is set in store. You can change things along the
 
 You may either want to try the [*Windows Subsystem for Linux*](https://docs.microsoft.com/en-us/windows/wsl/install)
 or get yourself a virtual machine running Linux on your workstation. One way to archive this is to install
-[VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads)
-(directly from their websites or through [Chocolatey](https://chocolatey.org/) - the Windows package manager).
+[VirtualBox](https://www.virtualbox.org/wiki/Downloads) (directly from the website or through [Chocolatey](https://chocolatey.org/) - the Windows package manager).
+For more details, please refer to the [tool chain information]({{< ref "/tool-chain" >}})
