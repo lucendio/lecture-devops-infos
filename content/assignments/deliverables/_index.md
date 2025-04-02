@@ -1,5 +1,5 @@
 ---
 bookCollapseSection: true
 
-title: '🚀 Deliverables'
+title: 'Deliverables 🚀'
 ---
