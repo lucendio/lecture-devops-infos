@@ -31,17 +31,20 @@ Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) ass
 
 ## Indication of source
 
-If handing in (a single line of) code or text other than written on your own, a reference to the original
-source must be provided in-place; e.g. 
+Every line of code or text that is not a result of your own thought process (your own brainchild), requires a reference
+of origin provided in-place; e.g. 
 
 * deep link to the respective section of a web page
 * a link to a video including the respective time code
-* the entire prompt (input & output history) if tools based on *machine learning* (commonly known
-  as *artificial intelligence*, such as *large language models* etc.)
 
-The latter must also be provided, if code or text was actually written by yourself but originates from using such tools.
+If code or text was actually written by yourself but originates from utilizing tools based on *machine learning*
+(commonly known as *artificial intelligence*, such as *large language models* etc.) the entire uncensored prompt
+(input & output history) must be provided:
 
-{{< hint warning >}}
+* put the prompt history for each line of code (block) or sentence (or paragraph) in a separate text file
+* provide a reference to the file in-place right before the lin(s) in question
+
+{{< hint danger >}}
 Generally speaking, it must be made obvious to the reader, which line(s) - or sentences in case of concept or
 documentation text - are affected by sources mentioned above, otherwise the deliverable __will be classified as
 fraud attempt and reported__.
