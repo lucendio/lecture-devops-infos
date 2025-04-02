@@ -179,7 +179,7 @@ __Categories:__
 +-----------------------------------------------------+-------------------------------+
 |  Kubernetes                                         |  proxy, vhost, load balancer  |
 |   * DigitalOcean                                    |  runtime environment          |
-|   * OpenTofo                                        |  automation                   |
+|   * OpenTofu                                        |  automation                   |
 |   * Ansible + Kubespray                             |  automation                   |
 +-----------------------------------------------------+-------------------------------+
 |  <application>                                      |                               |

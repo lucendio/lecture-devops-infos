@@ -9,7 +9,7 @@ Hey, there! 👋
 
 ## What's this about?
 
-This repository is the main entry point for the *DevOps* course. It's supposed to help
+This website is the main entry point for the *DevOps* course. It's supposed to help
 you discover all the provided materials and explains how this course is organized.
 
 

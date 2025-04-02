@@ -6,9 +6,9 @@ title: 'Software'
 Software
 ========
 
-A list of software and a quick explanation of their purpose and what they could do for you. The 
-content is focused on open source software instead of as-a-service solutions or even proprietary
-software.
+Below you'll find a list of common software you might come across while learning about DevOps. The headlines and a
+quick explanation of their purpose may help find your way. Please note that the content is focused on open source
+software instead of as-a-service solutions or even proprietary software.
 
 {{< hint >}}
 *__NOTE:__ the list is not exhaustive*

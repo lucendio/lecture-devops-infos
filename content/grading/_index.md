@@ -10,8 +10,7 @@ weight: 3
 Grading
 =======
 
-This document explains which parts of the assignments that are being taken during this course will be part of
-your overall score.
+This document explains which parts of the assignments taken during this course will be part of your overall score.
 
 {{< hint danger >}}
 In order to pass the course, one is required to obtain at least _**50%**_ of the overall achievable score.
