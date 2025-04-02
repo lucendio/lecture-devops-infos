@@ -18,21 +18,6 @@ In order to pass the course, one is required to obtain at least _**50%**_ of the
 {{< /hint >}}
 
 
-## Exercises
-
-_Weight: **0% - 45%**_
-
-*Purpose:* 
-
-* be permitted to hand in the [project work]({{< ref "/assignments/project-work" >}}) assignment
-* collect up to 45% of the grade, which may function as backup in case some implementation criteria
-  are not met
-
-*Criteria:*
-
-* the [deliverable]({{< ref "/assignments/deliverables/exercise-solutions" >}}) was handed in as requested 
-
-
 ## Concept
 
 _Weight: **0%**_
@@ -113,8 +98,6 @@ _Weight: **100%**_
 
 * if the project assignment was omitted, it's only possible to reach a maximum score of __60%__ (grade: `3,3`) even
   when all questions have been answered correctly
-* any additional score collected from [exercise solutions](#exercises) will only be added, if the project implementation
-  handed in
 
 *Criteria:* 
 

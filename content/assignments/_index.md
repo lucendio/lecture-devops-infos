@@ -13,17 +13,16 @@ Assignments
 
 During this course, you are asked to do a couple of assignments in order to pass the course and receive a grade:
 
-* [Exercises]({{< ref "/assignments/exercises" >}})
 * [Project]({{< ref "/assignments/project-work" >}})
 * if necessary, a [retry exam]({{< ref "/assignments/retry-exam" >}}) (2nd attempt)
 
 Your grade is based on the outcome of the [*Project*]({{< ref "/assignments/project-work" >}}). To be permitted to hand
-in that assignment, you first have to finish the required amount of [*exercises*]({{< ref "/assignments/exercises" >}}).
+in that assignment, you first have to write a [*concept*]({{< ref "/assignments/deliverables/project-concept" >}}).
 
 {{< hint info >}}
-Please note, that as soon as you have completed the *[Exercises]({{< ref "/assignments/exercises" >}})* assignment - by
-handing in your solutions - you are obliged to receive a grade for this course, or in other words: your attempt to pass
-the course has started and grading is inevitable.
+Please note, that as soon as you have handed in a first version of the [*concept*]({{< ref "/assignments/deliverables/project-concept" >}}),
+you are obliged to receive a grade for this course, or in other words: your attempt to pass the course has started
+and grading is inevitable.
 {{< /hint >}}
 
 Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) assignment, you are free to take a

@@ -14,7 +14,7 @@ the opportunity to take a retry exam.
 
 __Deliverable:__ *N/A*
 
-__Requirements:__ complete the [Exercises]({{< ref "/assignments/exercises" >}}) assignment
+__Requirements:__ hand in the [project concept]({{< ref "/assignments/deliverables/project-concept" >}})
 
 
 ## Process

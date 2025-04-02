@@ -1,6 +1,9 @@
 ---
 title: 'Exercise Solutions'
 weight: 1
+
+bookHidden: true
+bookSearchExclude: true
 ---
 
 
