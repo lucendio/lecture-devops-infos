@@ -138,7 +138,7 @@ Please get in touch to receive invite and credits; credit card information are n
 * [Scaleway](https://www.scaleway.com) ([free tier](https://www.scaleway.com/en/pricing/virtual-instances/) but [payment method](https://www.scaleway.com/en/docs/billing/how-to/add-payment-method/) required)
 * [Oracle Cloud](https://www.oracle.com/cloud/) ($300 credit and [*Always Free* offers](https://www.oracle.com/cloud/free/) - see *Tier Type* filter)
 * [Civo](https://www.civo.com/) ([free credits for one month](https://www.civo.com/docs/faq#250-credit---how-do-i-get-it-and-how-does-it-work))
-* [Hetzner](https://www.hetzner.com/cloud) (no free tier)
+* [Hetzner](https://www.hetzner.com/cloud) (no free tier, but $20 credit through [referral link](https://hetznercoupon.com/))
 
 
 ## Kubernetes
