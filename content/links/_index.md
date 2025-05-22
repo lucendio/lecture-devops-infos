@@ -133,8 +133,10 @@ Please get in touch to receive invite and credits; credit card information are n
     * Microsoft Azure
 * [Google: GCP for Education](https://edu.google.com/programs/students/benefits/) (+ $200 from [GitLab collaboration](https://about.gitlab.com/blog/gke-gitlab-integration/#get-seamless-integration-with-gke-and-%24500-credit-for-your-project))
 * [Microsoft: Azure](https://azure.microsoft.com/en-us/free/students/)
-* [Amazon: Amazon Web Services](https://aws.amazon.com/education/awseducate/)
-* [fly.io](https://fly.io) ([free tier](https://fly.io/docs/about/pricing/#free-allowances); [note on credit cards](https://community.fly.io/t/is-it-possible-to-use-fly-io-with-no-credit-card-if-youre-a-student/3134))
+* [Amazon: Amazon Web Services](https://aws.amazon.com/training/awsacademy/)
+* [fly.io](https://fly.io) ([free tier](https://fly.io/docs/about/pricing/#free-allowances); [see note on credit cards](https://community.fly.io/t/is-it-possible-to-use-fly-io-with-no-credit-card-if-youre-a-student/3134))
+* [Scaleway](https://www.scaleway.com) ([free tier](https://www.scaleway.com/en/pricing/virtual-instances/) but [payment method](https://www.scaleway.com/en/docs/billing/how-to/add-payment-method/) required)
+* [Oracle Cloud](https://www.oracle.com/cloud/) ($300 credit and [*Always Free* offers](https://www.oracle.com/cloud/free/) - see *Tier Type* filter)
 * [Civo](https://www.civo.com/) ([free credits for one month](https://www.civo.com/docs/faq#250-credit---how-do-i-get-it-and-how-does-it-work))
 * [Hetzner](https://www.hetzner.com/cloud) (no free tier)
 
@@ -162,6 +164,7 @@ Please get in touch to receive invite and credits; credit card information are n
 
 * [Play with Kubernetes](https://labs.play-with-k8s.com)
 * [Killercoda](https://killercoda.com/kubernetes)
+* [KodeKloud](https://kodekloud.com/public-playgrounds)
 
 
 ### Maybe don't use Kubernetes after all

@@ -22,8 +22,9 @@ c) the university provides a Kubernetes cluster managed with Rancher (requires s
 
 ## Which cloud provider should I use?
 
-As mentioned before, there is a variety of common [*cloud providers*]({{< ref "/links#cloud-providers" >}}) you can choose from.
-While all of them provide similar concepts which are sometimes named differently, they may have some limitations:
+As mentioned before, there is a variety of common [*cloud providers*]({{< ref "/links#cloud-providers" >}}) you can choose
+from. Some of them even have free tier offerings. While all of them provide similar concepts which are sometimes named
+differently, they may have some limitations:
 
 * AWS Academy (formerly called *Educate*); see
   [PDF](/assets/AWS-Academy-Learner-Lab_Services_20230518.pdff) for a complete list of available services and limits, e.g.
@@ -31,8 +32,8 @@ While all of them provide similar concepts which are sometimes named differently
   * no IAM
   * no NAT gateway creation
   * ...  
-* Google Cloud Platform for Education: no known limitation, except the amount of credits & a mandatory Google
-  account (university email address required)
+* ~~Google Cloud Platform for Education: no known limitation, except the amount of credits & a mandatory Google
+  account (university email address required)~~
 * Azure for Students: no known limitation, except the amount of credits a mandatory Microsoft account (university
   email address required)
 * DigitalOcean: no known limitation, except the amount of credits
