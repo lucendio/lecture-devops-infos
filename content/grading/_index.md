@@ -78,7 +78,7 @@ _Weight: **100%**_
 * all formal requirements ([concept]({{< ref "/assignments/deliverables/project-concept#formal" >}}) & 
   [implementation]({{< ref "/assignments/deliverables/project-implementation#formal" >}})) are met and the
   [process]({{< ref "/assignments/project-work#process" >}}) has been followed
-* at least one service - aside from the *application* - was provisioned by yourself
+* at least one service - aside from the *application* - was provisioned by oneself
 * `[3]` overall quality and impression, e.g.:
   - engagement
   - applied new knowledge

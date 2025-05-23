@@ -45,7 +45,7 @@ While it already provides a variety of features out of the box, like horizontal 
 at the same time, it's complex and hides (or rather *abstracts*) some mechanisms from you, that you otherwise
 would need to do *by hand*, but at the same time would understand them better.
 
-Available [*cloud provides*]({{ ref "/links#cloud-providers" }}) may already offer a turnkey-ready managed Kubernetes
+Available [*cloud provides*]({{< ref "/links#cloud-providers" >}}) may already offer a turnkey-ready managed Kubernetes
 cluster. Or, you can provision it yourself, for example, with a couple of virtual machines (spun up locally
 or allocated in the cloud) and [Kubespray](https://github.com/kubernetes-sigs/kubespray). The university also
 hosts a Kubernetes cluster, that you are free to use.
