@@ -25,6 +25,12 @@ Container Orchestration
 * [Kubernetes: Eine Einführung in 120 Minuten](https://www.youtube.com/watch?v=1SaPfm96lY4) by *the native web GmbH* 🎬
 
 
+## Internal and external load-balancing in Kubernetes
+
+* [Kubernetes Services explained](https://www.youtube.com/watch?v=T4Z7visMM4E) by *TechWorld with Nana* 🎬
+* [Kubernetes Ingress in 5 mins](https://www.youtube.com/watch?v=NPFbYpb0I7w) by *IBM Technology* 🎬
+
+
 ## Additional resources
 
 * [Tutorials]({{< ref "/links#k8s-tutorials" >}})
