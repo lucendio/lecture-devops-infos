@@ -32,8 +32,8 @@ differently, they may have some limitations:
   * no IAM
   * no NAT gateway creation
   * ...  
-* ~~Google Cloud Platform for Education: no known limitation, except the amount of credits & a mandatory Google
-  account (university email address required)~~
+* Google Cloud Platform for Education: no known limitation, except the amount of credits & a mandatory Google
+  account (university email address required)
 * Azure for Students: no known limitation, except the amount of credits a mandatory Microsoft account (university
   email address required)
 * DigitalOcean: no known limitation, except the amount of credits
