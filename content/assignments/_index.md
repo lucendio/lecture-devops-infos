@@ -32,17 +32,34 @@ Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) ass
 ## Indication of source
 
 Every line of code or text that is not a result of your own thought process (your own brainchild), requires a reference
-of origin provided in-place; e.g. 
+of origin. One of two cases may apply:
 
-* deep link to the respective section of a web page
-* a link to a video including the respective time code
+#### (1) Copy & paste from a static source
 
-If code or text was actually written by yourself but originates from utilizing tools based on *machine learning*
-(commonly known as *artificial intelligence*, such as *large language models* etc.) the entire uncensored prompt
-(input & output history) must be provided:
+*Examples:* web page, video, book
 
-* put the prompt history for each line of code (block) or sentence (or paragraph) in a separate text file
-* provide a reference to the file in-place right before the lin(s) in question
+*Reference:* deep link (e.g. referring to the respective section of a web page or time code) or bibliographic citation
+
+*Location:* in-place, preceding the respective line(s) 
+
+
+#### (2) Inspired[^1] by AI-based[^2] interaction
+
+*Examples:* GPTs, coding agents, chatbots
+
+*Reference:* part(s) of the prompt history[^3] led to the respective line(s) 
+
+*Location:* Git commit message
+
+*Procedure:*
+* put your work and the AI-based content into different commits
+* indicate AI-based content by prefixing the commit title with `ai():` and optionally mention the tool, like `ai(sonnet):`
+* break down prompt history and the related content into separate commits
+* linking a prompt history is not permitted 
+
+[^1]: code or text was actually written by yourself but originates from utilizing said tools
+[^2]: based on *machine learning* (commonly known as *artificial intelligence*, such as *large language models* etc.)
+[^3]: human-readable format, uncensored
 
 {{< hint danger >}}
 Generally speaking, it must be made obvious to the reader, which line(s) - or sentences in case of concept or
