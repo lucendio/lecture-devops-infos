@@ -31,3 +31,8 @@ for example, in the [Awesome-Selfhosted](https://github.com/awesome-selfhosted/a
 * [OwnCloud](https://github.com/owncloud/core)
 * [Documize](https://github.com/documize/community)
 * [Kutt](https://github.com/thedevs-network/kutt)
+
+
+## Which permission are needed to view the source code of a *internal* or *private* GitLab projects?
+
+The [__reporter__ role](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions) is required.

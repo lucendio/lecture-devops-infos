@@ -49,9 +49,3 @@ Generally speaking, it must be made obvious to the reader, which line(s) - or se
 documentation text - are affected by sources mentioned above, otherwise the deliverable __will be classified as
 fraud attempt and reported__.
 {{< /hint >}}
-
-
-## Additional hints
-
-The minimal permissions required to view source code of *internal* or *private* projects on
-GitLab is the [__reporter__ role](https://docs.gitlab.com/ee/user/permissions.html#project-members-permissions).
