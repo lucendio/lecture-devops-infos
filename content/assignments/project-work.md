@@ -85,6 +85,10 @@ corresponding document(s) [here]({{< ref "/assignments/deliverables" >}})
   actual change to the application source code
 * verify the existence and operability of every service
 
+{{< hint warn >}}
+Initially chosen time slots can only be moved __after__ moderator consultation.
+{{< /hint >}}
+
 
 ## Teams
 
