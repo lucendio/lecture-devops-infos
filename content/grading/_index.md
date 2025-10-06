@@ -74,9 +74,9 @@ _Weight: **100%**_
 
 * convincingly participate in review session
 * allocation of all infrastructure pieces is reproducible
-* allocation of all infrastructure pieces is automated
+* allocation of all infrastructure pieces is implemented through code
 * installation & configuration of all services are reproducible
-* installation & configuration of all services are automated
+* installation & configuration of all services are implemented through code
 * idempotent provisioning
 * each service exists, is operational, and - if intended - is externally accessible
 * each service can be reached via HTTPS
@@ -89,6 +89,7 @@ _Weight: **100%**_
 * CI/CD pipeline consists of at least 3 stages
 * CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
   explicit/controlled manner
+* the *application* development life cycle is defined and matches implementation
 * *application* changes carried out by CI/CD successfully propagate through all environments
 * concept/documentation matches implementation
 * all formal requirements ([concept]({{< ref "/assignments/deliverables/project-concept#formal" >}}) & 
