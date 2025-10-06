@@ -34,7 +34,7 @@ the course (grade: `4.0`).
 3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
    the [*code freeze* deadline]({{< link-to-dates-of-current-semester >}})
 4. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
-   via email right after *code freeze* 
+   via email right after *code freeze*, but no later before the review session
 5. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
    session
 
