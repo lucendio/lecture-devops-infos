@@ -81,8 +81,9 @@ corresponding document(s) [here]({{< ref "/assignments/deliverables" >}})
 
 * it's going to be a remote 1:1 session
 * time slots are assigned in advance through a self-service online poll  
-* demonstrate the entire life cycle iteration by introducing an actual change to the application source code
-* verify the existence of every service
+* demonstrate the provisioning of the entire setup as well as the entire life cycle iteration by introducing an 
+  actual change to the application source code
+* verify the existence and operability of every service
 
 
 ## Teams
