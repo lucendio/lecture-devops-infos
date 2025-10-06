@@ -27,7 +27,7 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
 
 ### Technical
 
-* follow the *Infrastructure-as-Code* paradigm, meaning: write code rather than words that explain your steps
+* follow the *Infrastructure-as-Code* paradigm, meaning: write code rather than words explaining the necessary steps
 * cloud-, self- or locally hosted
 * all relevant services (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
 * the application and each service provisioned by yourself must be served via _HTTP**S**_ (HTTP over TLS)
@@ -40,6 +40,7 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
   ephemeral/transient, which means data may get lost when services representing said layer get restarted,
   nevertheless they still have to be part of the overall setup, and thus of the infrastructure and
   automation code
+* invite lecture to the project(s) and assign owner / administrative permissions
 
 
 ### Content
