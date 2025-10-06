@@ -36,7 +36,8 @@ More information can be found in the [assignments section]({{< ref "/assignments
 
 _Weight: **0%**_
 
-*Purpose:* be entitled to receive a score for the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
+*Purpose:* initiate the grading procedure (attempt to pass the course) and be entitled to receive a score for the
+[implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
  
 *Notes:* meant as a tool to ...
 
