@@ -29,7 +29,8 @@ the course (grade: `4.0`).
 
 1. write a [concept]({{< ref "/assignments/deliverables/project-concept" >}}) and hand in an initial version before the 
    given [deadline]({{< link-to-dates-of-current-semester >}})
-2. receive initial feedback and sanity-check in written form via email
+2. receive initial feedback and sanity-check in written form via email, if concept was self-written, meaning without
+   assistance of AI (see [*indication of source*]({{< ref "/assignments/#indication-of-source" >}}) for more details)
 3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
    the [*code freeze* deadline]({{< link-to-dates-of-current-semester >}})
 4. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
