@@ -27,7 +27,8 @@ from. Some of them even have free tier offerings. While all of them provide simi
 differently, they may have some limitations:
 
 * AWS Academy (formerly called *Educate*); see
-  [PDF](/assets/AWS-Academy-Learner-Lab_Services_20230518.pdff) for a complete list of available services and limits, e.g.
+  [this page](https://labs.vocareum.com/web/1673852/4758266.0/ASNLIB/public/docs/lang/en-us/README.html#services)
+  for a complete list of available services and limits, e.g.
   * amount and size of machines (EC2 instances) that you are allowed to spin up
   * no IAM
   * no NAT gateway creation
@@ -66,7 +67,9 @@ to configure the CLI so that is uses the credentials.
 
 ## Which AWS services are supported with the AWS Academy program?
 
-Please refer to [this document](/assets/AWS-Academy-Learner-Lab_Foundational-Services_20211002.pdf) in order to find
+Please refer to
+[this page](https://labs.vocareum.com/web/1673852/4758266.0/ASNLIB/public/docs/lang/en-us/README.html#services)
+in order to find
 out which services are available in an AWS Academy account. Alternatively, you may find these information in mentioned
 in *6.8*. Furthermore, please be aware that all services are located in the `us-east-1` or `us-west-2` regions, hence
 hosted outside of the european jurisdiction (no GDPR etc.).
