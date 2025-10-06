@@ -17,6 +17,21 @@ In order to pass the course, one is required to obtain at least _**50%**_ of the
 {{< /hint >}}
 
 
+## Topic Recaps
+
+_Weight: **2% each**_
+
+*Purpose:*
+
+* earn bonus score
+
+*Criteria:*
+
+* all questions of a test are answered correctly
+
+More information can be found in the [assignments section]({{< ref "/assignments/topic-recaps" >}}).
+
+
 ## Concept
 
 _Weight: **0%**_
