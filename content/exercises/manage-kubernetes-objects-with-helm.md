@@ -202,8 +202,8 @@ helm uninstall {{ RELEASE_NAME }}
 ### (4) Enable TLS
 
 The feature is covered in the upstream documentation
-([TLS](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-service-ingress),
-You just have to integrate the respective attributes and objects into you chart(s) and make them
+([TLS](https://docs.cluster.ris.bht-berlin.de/user/ingress/)) and may require additional permission upon request.
+If permitted, you just have to integrate the respective attributes and objects into you chart(s) and make them
 configurable via Helm values if needed.
 
 

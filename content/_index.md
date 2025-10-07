@@ -52,7 +52,7 @@ Or maybe you are already overwhelmed? No worries, try [How to learn DevOps](http
 
 ## External resources/repositories
 
-* [Education Kubernetes Cluster Documentation](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster) 📖
+* [Education Kubernetes Cluster Documentation](https://docs.cluster.ris.bht-berlin.de/) 📖
 * [showcase](https://gitlab.bht-berlin.de/fb6-wp11-devops/showcase)
 * [Tutorial solutions](https://github.com/lucendio/lecture-devops-code/tutorials)
 * [code examples](https://github.com/lucendio/lecture-devops-code)

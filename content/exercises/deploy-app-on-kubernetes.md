@@ -58,15 +58,9 @@ can be found
 
 ### (0) Preparations {id="0-prep-edu-cluster"}
 
-{{< hint info >}}
-📖 [__Upstream documentation__ (german)](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#nutzung-des-clusters-mit-kubectl)
-{{< /hint >}}
-
-1. [login and obtain the *Kubeconfig File*]({{< ref "/faq/cloud-and-infrastructure#kubeconfig-of-edu-cluster">}})
-2. navigate to *Projects/Namespaces*, click on *Add Namespace* (right) in the area where the project is named after
-   this module; give the namespace a meaningful & unique name (e.g. university/student account ID)
-3. [install `kubectl`](https://kubernetes.io/docs/tasks/tools/#kubectl) on your workstation, if it doesn't
-   exist already
+Assuming [prerequisites](#prerequisites) are meet and you can access the cluster with `kubectl`, the 
+Kubernetes *namespace* (`{{ NS_NAME }}`) for you to use moving forward, is named the same as the
+username of your university account. 
 
 {{< hint warning >}}
 Moving forward, either use `-n {{ NS_NAME }}` whenever namespaced objects are involved, or configure it as the
@@ -240,11 +234,10 @@ To eventually make the application available from outside the cluster, write an 
 pointing to the `Service` that you just created.
 
 {{< hint warning >}}
-The ingress controller of the education cluster runs on a single node (`141.64.89.201`)
-directly on the cluster. The respective DNS entry is an A record pointing to `*.lehre.ris.bht-berlin.de`, 
-which is why the ingress host must be set to `{{ SUB_DOMAIN }}.lehre.ris.bht-berlin.de`, where `SUB_DOMAIN`
-is a virtual but globally unique host name with the format: `{{ SERVICE_NAME }}-{{ NS_NAME }}`, e.g.
-`myservice-987456.lehre.ris.bht-berlin.de` (see [*Preparations* section]({{< relref "#0-prep-edu-cluster" >}}))
+All cluster users share the same DNS zone `project.ris.bht-berlin.de`, which is why the ingress *host* must be set
+to `{{ SUB_DOMAIN }}.project.ris.bht-berlin.de`, where `SUB_DOMAIN` is a virtual but globally unique host name with
+the format: `{{ SERVICE_NAME }}-{{ NS_NAME }}`, e.g. `myservice-abcd1234.project.ris.bht-berlin.de`
+(see [*Preparations* section]({{< relref "#0-prep-edu-cluster" >}}))
 {{< /hint >}}
 
 ```bash
@@ -256,8 +249,9 @@ Finally, verify that the application is indeed accessible from your browser (or 
 
 ### (4) Cleaning up
 
-Use the [cluster management web console](https://rancher.ris.beuth-hochschule.de) to delete your namespace,
-which will then delete all associated objects.
+```bash
+kubectl delete all --all
+```
 
 
 ## Solution: Minikube {id="solution-minikube"}

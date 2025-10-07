@@ -16,8 +16,7 @@ a) your workstation has enough resources (CPU, memory) to host one or more virtu
 
 b) have a look at the link section on [*cloud providers*]({{< ref "/links#cloud-providers" >}})
 
-c) the university provides a Kubernetes cluster managed with Rancher (requires student account, and VPN access if you
-   are not on-site)
+c) the university provides a Kubernetes cluster (requires student account, and VPN access)
 
 
 ## Which cloud provider should I use?
@@ -105,6 +104,18 @@ __*Example with DNS delegation (AWS + Name.com):*__
 2. Create a *Hosted Zone* for that domain on AWS Route 53 with OpenTofu
 3. Set the name servers defined by the *Hosted Zone* as custom name servers of your domain via Name.com API
 4. Create additional records, e.g. `sub.doamin.tld` in the *Hosted Zone* on AWS Route 53 with OpenTofu
+
+
+## How to configure `~/.kube/config` (`KUBECONFIG`) for `kubectl` in order to access the university's Kubernetes cluster? {id="kubeconfig-of-edu-cluster"}
+
+{{< hint warning >}}
+Did you already enter your university email address in the respective account list?
+{{< /hint >}}
+
+1. connect to the internal network via [VPN](https://doku.bht-berlin.de/zugang/vpn)
+2. [test](https://auth.cluster.ris.bht-berlin.de) whether your university account is permitted
+   to access the cluster
+3. follow the [cluster documentation](https://docs.cluster.ris.bht-berlin.de/user/kubectl/)
 
 
 ## Which registry supports pushing container images? 

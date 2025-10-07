@@ -49,8 +49,8 @@ TODO
 ### (1) Enable TLS and Data persistence
 
 Both features are covered in the upstream documentation
-([TLS](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-service-ingress),
-[Storage](https://gitlab.bht-berlin.de/ris/doku/-/wikis/educluster#ressourcen-volumes-persistener-speicher-f%C3%BCr-deployments-und-pods)).
+([TLS](https://docs.cluster.ris.bht-berlin.de/user/ingress/),
+[Storage](https://docs.cluster.ris.bht-berlin.de/user/storage/)).
 You just have to integrate the respective attributes and objects into you chart(s) and make them
 configurable via Helm values if needed.
 
