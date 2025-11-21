@@ -17,7 +17,7 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
 
 * language: German or English
 * every line of code and documentation is stored and tracked in an accessible version control system
-* hand in (a) link(s) to the repository/repositories
+* hand in (a) link(s) to the repository/repositories via email
 * each code base contains a `README.md` which includes an onboarding section
 * starting from scratch each step taken towards the final state of the overall infrastructure setup must be
   comprehensible (to ensure fair evaluation/grading)
