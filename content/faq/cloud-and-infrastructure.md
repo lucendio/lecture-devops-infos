@@ -113,7 +113,7 @@ Did you already enter your university email address in the respective account li
 {{< /hint >}}
 
 1. connect to the internal network via [VPN](https://doku.bht-berlin.de/zugang/vpn)
-2. [test](https://auth.cluster.ris.bht-berlin.de) whether your university account is permitted
+2. [test](https://auth.cluster.ris.bht-berlin.de/realms/cluster/account) whether your university account is permitted
    to access the cluster
 3. follow the [cluster documentation](https://docs.cluster.ris.bht-berlin.de/user/kubectl/)
 
