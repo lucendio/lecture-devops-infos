@@ -86,7 +86,7 @@ corresponding document(s) [here]({{< ref "/assignments/deliverables" >}})
 * verify the existence and operability of every service
 
 {{< hint warn >}}
-Initially chosen time slots can only be moved __after__ moderator consultation.
+Initially chosen time slots can only be changed or removed __after__ moderator consultation.
 {{< /hint >}}
 
 
