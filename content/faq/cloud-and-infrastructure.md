@@ -66,9 +66,8 @@ to configure the CLI so that is uses the credentials.
 
 ## Which AWS services are supported with the AWS Academy program?
 
-Please refer to
-[this page](https://labs.vocareum.com/web/1673852/4758266.0/ASNLIB/public/docs/lang/en-us/README.html#services)
-in order to find
+Please refer to the page *Service usage and other restrictions* on the right in the launched *Learner Lab*
+(Login -> *AWS Academy Learner Lab* -> *Modules* -> *Launch AWS Academy Learner Lab* ->  on the right) in order to find
 out which services are available in an AWS Academy account. Alternatively, you may find these information in mentioned
 in *6.8*. Furthermore, please be aware that all services are located in the `us-east-1` or `us-west-2` regions, hence
 hosted outside of the european jurisdiction (no GDPR etc.).
