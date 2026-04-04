@@ -85,6 +85,11 @@ corresponding document(s) [here]({{< ref "/assignments/deliverables" >}})
 * demonstrate the provisioning of the entire setup as well as the entire life cycle iteration by introducing an 
   actual change to the application source code
 * verify the existence and operability of every service
+* demonstrate that the larger part of the solution consists of your own work and efforts
+
+If the strong impression arises that no significant own contribution has been made to the solution
+or that the solution is not being understood by oneself, the submission will be rejected and the
+course has therefore not being passed.
 
 {{< hint warn >}}
 Initially chosen time slots can only be changed or removed __after__ moderator consultation.
