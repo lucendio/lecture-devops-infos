@@ -1,5 +1,5 @@
 ---
-title: 'WiSe 23/24'
+title: 'WiSe 2023'
 
 weight: 91
 

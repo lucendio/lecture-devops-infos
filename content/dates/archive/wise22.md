@@ -1,63 +1,56 @@
 ---
-title: 'WiSe 24/25'
+title: 'WiSe 2022'
 
-weight: 89
+weight: 93
 
 events:
-  - date: '2024-10-08'
-    week: 1
-    window:
-      from: '14:15'
-      until: '17:30'
-    name: 'First lecture'
-    category: 'info'
+  - date: '2022-10-30'
+    time: '16:00'
+    name: 'Choose research statements'
+    link: '/assignments/research-and-discussion#process'
+    category: 'deadline'
 
-  - date: '2024-11-12'
-    week: 6
-    time: '17:30'
+  - date: '2022-11-15'
+    time: '17:45'
+    name: 'Hand in research notes'
+    category: 'deadline'
+
+  - date: '2022-11-22'
+    time: '19:15'
     name: 'Final call for team registration'
     link: '/assignments/project-work#teams'
     category: 'deadline'
 
-  - date: '2024-11-19'
-    week: 7
+  - date: '2022-12-13'
     time: '23:59'
     name: 'Hand in initial concept version'
     link: '/assignments/deliverables/project-concept'
     category: 'deadline'
 
-  - date: '2024-11-26'
-    week: 8
+  - date: '2022-12-20'
     window:
       from: '16:00'
       until: '19:15'
-    name: 'Discuss concepts'
+    name: 'Research discussion + Discuss concepts'
+    description: |
+      Please note, research discussion was moved from 01.11.22
     category: 'info'
 
-  - date: '2025-01-14'
+  - date: '2023-01-24'
     window:
-      from: '14:15'
-      until: '17:30'
-    name: 'Guest lecture: DevSecOps 🌈'
+      from: '16:00'
+      until: '19:15'
+    name: 'Guest lecture'
     category: 'info'
 
-  - date: '2025-02-04'
+  - date: '2023-02-07'
     window:
-      from: '14:15'
-      until: '17:30'
+      from: '16:00'
+      until: '19:15'
     name: 'Last lecture'
     category: 'info'
 
-  - date: '2025-02-09'
-    time: '23:59'
-    name: 'Exercise solutions'
-    description: |
-      submit all 5 exercise solutions before end of day
-    link: '/assignments/deliverables/exercise-solutions'
-    category: 'deadline'
-
-  - date: '2025-03-07'
-    week: 21
+  - date: '2023-03-03'
     time: '23:59'
     name: 'Code freeze'
     description: |
@@ -66,11 +59,11 @@ events:
     category: 'deadline'
 
   - dates:
-      - '2025-03-08'
-      - '2025-03-09'
+      - '2023-03-04'
+      - '2023-03-05'
     window:
-      from: '11:00'
-      until: '18:00'
+      from: '14:00'
+      until: '20:00'
     name: 'Project Review'
     description: >
       save yourself a suitable time frame upfront
@@ -78,8 +71,7 @@ events:
     link: '/assignments/project-work#review'
     category: 'deadline'
 
-  - date: '2025-03-24'
-    week: 24
+  - date: '2023-03-27'
     window:
       from: '16:00'
       until: '16:30'

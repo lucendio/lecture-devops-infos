@@ -1,56 +1,57 @@
 ---
-title: 'WiSe 22/23'
+title: 'WiSe 2025'
 
-weight: 93
+weight: 87
 
 events:
-  - date: '2022-10-30'
-    time: '16:00'
-    name: 'Choose research statements'
-    link: '/assignments/research-and-discussion#process'
-    category: 'deadline'
+  - date: '2025-10-07'
+    week: 1
+    window:
+      from: '14:15'
+      until: '17:30'
+    name: 'First lecture'
+    category: 'info'
 
-  - date: '2022-11-15'
-    time: '17:45'
-    name: 'Hand in research notes'
-    category: 'deadline'
-
-  - date: '2022-11-22'
-    time: '19:15'
+  - date: '2025-11-11'
+    week: 6
+    time: '17:30'
     name: 'Final call for team registration'
     link: '/assignments/project-work#teams'
     category: 'deadline'
 
-  - date: '2022-12-13'
+  - date: '2025-11-18'
+    week: 7
     time: '23:59'
     name: 'Hand in initial concept version'
     link: '/assignments/deliverables/project-concept'
     category: 'deadline'
 
-  - date: '2022-12-20'
+  - date: '2025-11-25'
+    week: 8
     window:
-      from: '16:00'
-      until: '19:15'
-    name: 'Research discussion + Discuss concepts'
-    description: |
-      Please note, research discussion was moved from 01.11.22
+      from: '14:15'
+      until: '17:30'
+    name: 'Discuss concepts'
     category: 'info'
 
-  - date: '2023-01-24'
+  - date: '2026-01-20'
+    week: 14
     window:
-      from: '16:00'
-      until: '19:15'
-    name: 'Guest lecture'
+      from: '14:15'
+      until: '17:30'
+    name: 'Guest lecture: TBD'
     category: 'info'
 
-  - date: '2023-02-07'
+  - date: '2026-02-10'
+    week: 17    
     window:
-      from: '16:00'
-      until: '19:15'
+      from: '14:15'
+      until: '17:30'
     name: 'Last lecture'
     category: 'info'
 
-  - date: '2023-03-03'
+  - date: '2026-02-27'
+    week: 19
     time: '23:59'
     name: 'Code freeze'
     description: |
@@ -59,11 +60,12 @@ events:
     category: 'deadline'
 
   - dates:
-      - '2023-03-04'
-      - '2023-03-05'
+      - '2026-02-28'
+      - '2026-03-01'
+    week: 19
     window:
-      from: '14:00'
-      until: '20:00'
+      from: '11:00'
+      until: '18:00'
     name: 'Project Review'
     description: >
       save yourself a suitable time frame upfront
@@ -71,7 +73,8 @@ events:
     link: '/assignments/project-work#review'
     category: 'deadline'
 
-  - date: '2023-03-27'
+  - date: '2026-03-23'
+    week: 25
     window:
       from: '16:00'
       until: '16:30'

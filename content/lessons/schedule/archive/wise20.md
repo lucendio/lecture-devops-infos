@@ -1,10 +1,10 @@
 ---
-title: 'WiSe 20/21'
+title: 'WiSe 2020'
 weight: 97
 ---
 
 
-# Wintersemester 2020 / 2021
+# Wintersemester 2020
 
 | #   | Date    | Topic                                |
 |-----|---------|--------------------------------------|

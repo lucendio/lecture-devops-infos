@@ -1,10 +1,10 @@
 ---
-title: 'WiSe 25/26'
+title: 'WiSe 2024'
 
-weight: 87
+weight: 89
 
 events:
-  - date: '2025-10-07'
+  - date: '2024-10-08'
     week: 1
     window:
       from: '14:15'
@@ -12,46 +12,52 @@ events:
     name: 'First lecture'
     category: 'info'
 
-  - date: '2025-11-11'
+  - date: '2024-11-12'
     week: 6
     time: '17:30'
     name: 'Final call for team registration'
     link: '/assignments/project-work#teams'
     category: 'deadline'
 
-  - date: '2025-11-18'
+  - date: '2024-11-19'
     week: 7
     time: '23:59'
     name: 'Hand in initial concept version'
     link: '/assignments/deliverables/project-concept'
     category: 'deadline'
 
-  - date: '2025-11-25'
+  - date: '2024-11-26'
     week: 8
     window:
-      from: '14:15'
-      until: '17:30'
+      from: '16:00'
+      until: '19:15'
     name: 'Discuss concepts'
     category: 'info'
 
-  - date: '2026-01-20'
-    week: 14
+  - date: '2025-01-14'
     window:
       from: '14:15'
       until: '17:30'
-    name: 'Guest lecture: TBD'
+    name: 'Guest lecture: DevSecOps 🌈'
     category: 'info'
 
-  - date: '2026-02-10'
-    week: 17    
+  - date: '2025-02-04'
     window:
       from: '14:15'
       until: '17:30'
     name: 'Last lecture'
     category: 'info'
 
-  - date: '2026-02-27'
-    week: 19
+  - date: '2025-02-09'
+    time: '23:59'
+    name: 'Exercise solutions'
+    description: |
+      submit all 5 exercise solutions before end of day
+    link: '/assignments/deliverables/exercise-solutions'
+    category: 'deadline'
+
+  - date: '2025-03-07'
+    week: 21
     time: '23:59'
     name: 'Code freeze'
     description: |
@@ -60,9 +66,8 @@ events:
     category: 'deadline'
 
   - dates:
-      - '2026-02-28'
-      - '2026-03-01'
-    week: 19
+      - '2025-03-08'
+      - '2025-03-09'
     window:
       from: '11:00'
       until: '18:00'
@@ -73,8 +78,8 @@ events:
     link: '/assignments/project-work#review'
     category: 'deadline'
 
-  - date: '2026-03-23'
-    week: 25
+  - date: '2025-03-24'
+    week: 24
     window:
       from: '16:00'
       until: '16:30'

@@ -1,10 +1,10 @@
 ---
-title: 'WiSe 25/26'
+title: 'WiSe 2025'
 weight: 87
 ---
 
 
-# Wintersemester 2025 / 2026
+# Wintersemester 2025
 
 | #  | Date   | Topic                               |
 |----|--------|-------------------------------------|
