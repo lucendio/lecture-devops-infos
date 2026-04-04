@@ -16,7 +16,8 @@ a) your workstation has enough resources (CPU, memory) to host one or more virtu
 
 b) have a look at the link section on [*cloud providers*]({{< ref "/links#cloud-providers" >}})
 
-c) the university provides a Kubernetes cluster (requires student account, and VPN access)
+c) the university provides a Kubernetes cluster (requires student account and VPN access; has some limitations:
+   egress ports other than `80` and `443` are blocked, limited permissions - meaning no *cluster-admin* role)
 
 
 ## Which cloud provider should I use?
