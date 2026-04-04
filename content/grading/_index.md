@@ -87,8 +87,8 @@ _Weight: **100%**_
 * the *application* in each environment uses a different instance of its backing services (e.g. database)
 * CI/CD pipeline functions properly
 * CI/CD pipeline consists of at least 3 stages
-* CI/CD pipeline is triggered via VCS commit, and - in case of *production* environment - in an
-  explicit/controlled manner
+* CI/CD pipeline is triggered via code change, and - in case of *production* environment - explicitly
+  based on a double sign off principle
 * the *application* development life cycle is defined and matches implementation
 * *application* changes carried out by CI/CD successfully propagate through all environments
 * concept/documentation matches implementation
