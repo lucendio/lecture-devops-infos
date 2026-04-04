@@ -23,6 +23,7 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
   comprehensible (to ensure fair evaluation/grading)
 * every relevant (terminal) command must be made transparent & verifiable, e.g. in documentation a/o dedicated
   files (e.g. pipeline code, shell script, `Makefile`, etc.)
+* indications of sources have been provided in full [as required]({{< ref "./../#indication-of-source" >}})
 
 
 ### Technical

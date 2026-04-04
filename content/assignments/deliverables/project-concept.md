@@ -22,6 +22,7 @@ __SUBMISSION DEADLINE:__ before the end of day on the [predefined date]({{< link
 * significant changes to the technology stack or other modification that might jeopardize the success
   of the project made after (!) handing in the initial version are only permitted after consultation
   (minor changes can be neglected)
+* indications of sources have been provided in full [as required]({{< ref "./../#indication-of-source" >}})
 
 
 ### Content
