@@ -23,6 +23,7 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
   comprehensible (to ensure fair evaluation/grading)
 * every relevant (terminal) command must be made transparent & verifiable, e.g. in documentation a/o dedicated
   files (e.g. pipeline code, shell script, `Makefile`, etc.)
+* invite lecturer to the project(s) and assign owner / administrative permissions
 * indications of sources have been provided in full [as required]({{< ref "./../#indication-of-source" >}})
 
 
@@ -42,7 +43,6 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
   ephemeral/transient, which means data may get lost when services representing said layer get restarted,
   nevertheless they still have to be part of the overall setup, and thus of the infrastructure and
   automation code
-* invite lecturer to the project(s) and assign owner / administrative permissions
 
 
 ### Content
