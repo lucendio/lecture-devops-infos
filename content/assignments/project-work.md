@@ -31,11 +31,12 @@ the course (grade: `4.0`).
    given [deadline]({{< link-to-dates-of-current-semester >}})
 2. receive initial feedback and sanity-check in written form via email, if concept was self-written, meaning without
    assistance of AI (see [*indication of source*]({{< ref "/assignments/#indication-of-source" >}}) for more details)
-3. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
+3. choose a review slot early, but no later than 24 hours before [*code freeze*]({{< link-to-dates-of-current-semester >}})   
+4. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
    the [*code freeze* deadline]({{< link-to-dates-of-current-semester >}})
-4. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
-   via email right after *code freeze*, but no later before the review session
-5. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
+5. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
+   via email right after *code freeze*, but no later than before the review session
+6. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
    session
 
 Eventually, you'll end up with two repositories:
