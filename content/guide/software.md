@@ -53,7 +53,7 @@ software instead of as-a-service solutions or even proprietary software.
 * [QEMU](https://www.qemu.org/docs/master/system/qemu-manpage.html) *(Hardware Emulation)*
 * [Packer](https://www.packer.io/docs) *(build virtual machine images)*
 * [UTM](https://mac.getutm.app/) *(macOS-only)*
-* https://orbstack.dev/
+* [OrbStack](https://orbstack.dev/) *(macOS-only)*
 * [Lima](https://lima-vm.io/) *(Linux virtual machines on macOS and Linux)*
 * [Hyper-V](https://learn.microsoft.com/en-us/virtualization/hyper-v-on-windows/about/) *(Windows-only)*
 
