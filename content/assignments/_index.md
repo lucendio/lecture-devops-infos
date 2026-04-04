@@ -31,8 +31,8 @@ Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) ass
 
 ## Indication of source
 
-Every line of code or text that is not a result of your own thought process (your own brainchild), requires a reference
-of origin. One of two cases may apply:
+Every line of code or text that is not a result of your own thought process (your own brainchild), requires a
+__complete__ trace of origin. One of two cases may apply:
 
 #### (1) Copy & paste from a static source
 
@@ -47,15 +47,18 @@ of origin. One of two cases may apply:
 
 *Examples:* GPTs, coding agents, chatbots
 
-*Reference:* part(s) of the prompt history[^3] led to the respective line(s) 
+*Reference:* excerpts(s) of the prompt history[^3] that led to the respective line(s) 
 
 *Location:* Git commit message
 
 *Procedure:*
-* put your work and the AI-based content into different commits
-* indicate AI-based content by prefixing the commit title with `ai():` and optionally mention the tool, like `ai(sonnet):`
-* break down prompt history and the related content into separate commits
-* linking a prompt history is not permitted 
+* split your work and the AI-based content into different commits
+* break down prompt history and the related content into self-contained and comprehensible commits; group related changes 
+* indicate AI-based content by prefixing the commit title with `ai:` and optionally mention the tool, like `ai(sonnet):`
+* a commit message contains all parts emerged from the interaction with the AI (inputs, and if it's more that just the
+  commit diff, also outputs) leading to the respective changes 
+* provide the same indication of source to prompts that you did not write yourself 
+* linking a prompt history is not permitted
 
 [^1]: code or text was actually written by yourself but originates from utilizing said tools
 [^2]: based on *machine learning* (commonly known as *artificial intelligence*, such as *large language models* etc.)
