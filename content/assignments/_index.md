@@ -31,6 +31,11 @@ Should you not pass the [*Project*]({{< ref "/assignments/project-work" >}}) ass
 
 ## Indication of source
 
+{{< hint danger >}}
+AI usage is implied by default unless it has being renounced explicitly (in writing). Missing indication of
+source therefore automatically implies fraud attempt.
+{{< /hint >}}
+
 Every line of code or text that is not a result of your own thought process (your own brainchild), requires a
 __complete__ trace of origin. One of two cases may apply:
 
