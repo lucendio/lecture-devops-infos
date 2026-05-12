@@ -34,12 +34,12 @@ events:
     name: 'Discuss concepts'
     category: 'info'
 
-  - date: '2026-06-23'
-    week: 12
+  - date: '2026-07-07'
+    week: 14
     window:
       from: '14:15'
       until: '17:30'
-    name: 'Guest lecture: TBD'
+    name: 'Guest lecture: DevSecOps 🌈'
     category: 'info'
 
   - date: '2026-07-28'

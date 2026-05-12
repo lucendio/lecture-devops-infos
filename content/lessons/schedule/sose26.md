@@ -19,9 +19,9 @@ weight: 86
 | 08 | 02.06. | Infrastructure Allocation           |
 | 09 | 09.06. | Configuration Management            |
 | 10 | 16.06. | Deployment Strategies               |
-| 11 | 23.06. | Guest lecture: *TBD*                |
-| 12 | 30.06. | Container Orchestration             |
-| 13 | 07.07. | Advanced Kubernetes                 |
+| 11 | 23.06. | Container Orchestration             |
+| 12 | 30.06. | Advanced Kubernetes                 |
+| 13 | 07.07. | Guest lecture: *TBD*                |
 | 14 | 14.07. | Observability                       |
 | 15 | 21.07. | Persistence & Backups               |
 | 16 | 28.07. | DevSecOps                           |
