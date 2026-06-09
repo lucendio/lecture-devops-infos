@@ -17,7 +17,9 @@ Install and set up a CI/CD system
 ## Prerequisites
 
 * a Configuration Management Tool or Container Runtime is installed
-* *[optional]* a running virtual machine (min. 2 GB memory), accessible via SSH
+* *[optional]* Exercise: [Allocate a virtual machine in the cloud]({{< relref "./allocate-virtual-machine-in-cloud" >}}))
+  or [Spin up a virtual machine locally]({{< relref "./spin-up-virtual-machine-locally" >}}),
+  or generally speaking a virtual machine (min. 2 GB memory) with SSH access
 
 
 ## Tasks

@@ -17,7 +17,9 @@ Investigate system status
 
 ## Prerequisites
 
-* a running linux system (please refer to one of the previous exercises)
+* * Exercise: [Allocate a virtual machine in the cloud]({{< relref "./allocate-virtual-machine-in-cloud" >}}))
+    or [Spin up a virtual machine locally]({{< relref "./spin-up-virtual-machine-locally" >}}),
+    or generally speaking a running and accessible linux system
 
 
 ## Tasks

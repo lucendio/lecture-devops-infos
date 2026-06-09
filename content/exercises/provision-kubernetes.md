@@ -17,6 +17,7 @@ Provision Kubernetes
 ## Prerequisites
 
 * Exercise: [{{< page-title "./allocate-virtual-machine-in-cloud" >}}]({{< relref "./allocate-virtual-machine-in-cloud" >}})
+  or [Spin up a virtual machine locally]({{< relref "./spin-up-virtual-machine-locally" >}})
 * Exercise: [{{< page-title "./automate-system-configuration" >}}]({{< relref "./automate-system-configuration" >}})
 * Exercise: [{{< page-title "./deploy-app-on-kubernetes" >}}]({{< relref "./deploy-app-on-kubernetes" >}})
 

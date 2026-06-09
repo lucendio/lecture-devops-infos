@@ -22,7 +22,7 @@ Allocate a virtual machine in the cloud
   installed locally
 * credentials for a [supported](https://search.opentofu.org/providers)
   cloud platform
-* additional dependencies depending on the chosen *cloud provider*
+* additional software tools depending on the chosen *cloud provider*
 
 
 ## Tasks

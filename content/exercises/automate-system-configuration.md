@@ -18,9 +18,9 @@ Automate system configuration and software installation
 ## Prerequisites
 
 * Configuration Management tool is installed (e.g. Ansible, but note [on Windows, it's only supported to run in WSL](https://docs.ansible.com/ansible/latest/user_guide/windows_faq.html#can-ansible-run-on-windows))
-* virtual machine with SSH access - either locally or in the cloud (see exercises 
-  [Spin up a virtual machine locally]({{< relref "./spin-up-virtual-machine-locally" >}})
-  or [Allocate a virtual machine in the cloud]({{< relref "./allocate-virtual-machine-in-cloud" >}}))
+* Exercise: [Allocate a virtual machine in the cloud]({{< relref "./allocate-virtual-machine-in-cloud" >}}))
+  or [Spin up a virtual machine locally]({{< relref "./spin-up-virtual-machine-locally" >}}),
+  or generally speaking a virtual machine with SSH access
 
 
 ## Tasks
