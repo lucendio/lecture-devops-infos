@@ -102,6 +102,9 @@ Initially chosen time slots can only be changed or removed __after__ moderator c
 * register the team before [the deadline expires]({{< link-to-dates-of-current-semester >}})
 * the workload of a team is expected to be the pre-defined workload of a single person
   multiplied by the amount of team members
+* how to take on this amount of workload is individual to each team, hence it's recommended
+  to discuss ideas and approaches with the lecturer upfront, ideally before handing in
+  [the concept]({{< ref "/assignments/deliverables/project-concept" >}})
 
 
 ## Additional information
