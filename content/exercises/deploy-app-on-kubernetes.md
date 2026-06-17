@@ -96,7 +96,7 @@ No resources found in {{ NS_NAME }} namespace.
 Start a pod (*`POD_NAME` must be unique*):
 
 ```sh
-kubectl run {{ POD_NAME }} --image=registry.bht-berlin.de:443/fb6-wp11-devops/webservice
+kubectl run {{ POD_NAME }} --image=registry.bht-berlin.de:443/fb6-wp11-devops/artifacts/webservice
 ```
 
 The new pod should be listed now:
@@ -139,7 +139,7 @@ webservice---7*[{webservice}]
 
 ### (2) Define and deploy an application
 
-Write a `Deployment` configuration for `registry.bht-berlin.de:443/fb6-wp11-devops/webservice` with the 
+Write a `Deployment` configuration for `registry.bht-berlin.de:443/fb6-wp11-devops/artifacts/webservice` with the 
 following specifications and use `kubectl` to deploy it on the cluster.
 
 * replication of __3__
@@ -304,7 +304,7 @@ No resources found in {{ NS_NAME }} namespace.
 Start a pod (*`POD_NAME` must be unique*):
 
 ```bash
-kubectl run {{ POD_NAME }} --image=registry.bht-berlin.de:443/fb6-wp11-devops/webservice
+kubectl run {{ POD_NAME }} --image=registry.bht-berlin.de:443/fb6-wp11-devops/artifacts/webservice
 ```
 
 The new pod should be listed now:
@@ -359,7 +359,7 @@ kubectl create namespace {{ NS_NAME }}
 kubectl config set-context --current --namespace={{ NS_NAME }}
 ```
 
-Write a `Deployment` configuration for `registry.bht-berlin.de:443/fb6-wp11-devops/webservice` with the 
+Write a `Deployment` configuration for `registry.bht-berlin.de:443/fb6-wp11-devops/artifacts/webservice` with the 
 following specifications and use `kubectl` to deploy it on the cluster.
 
 * replication of __3__
