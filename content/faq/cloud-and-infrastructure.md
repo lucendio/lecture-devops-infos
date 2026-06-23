@@ -112,7 +112,7 @@ __*Example with DNS delegation (AWS + Name.com):*__
 Did you already enter your university email address in the respective account list?
 {{< /hint >}}
 
-1. connect to the internal network via [VPN](https://doku.bht-berlin.de/zugang/vpn)
+1. connect to the private network via [VPN](https://doku.bht-berlin.de/zugang/vpn)
 2. [test](https://auth.cluster.ris.bht-berlin.de/realms/cluster/account) whether your university account is permitted
    to access the cluster
 3. follow the [cluster documentation](https://docs.cluster.ris.bht-berlin.de/user/kubectl/)

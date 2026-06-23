@@ -128,7 +128,7 @@ software instead of as-a-service solutions or even proprietary software.
 * [Minishift (for OpenShift v3.x)](https://github.com/minishift/minishift)
 * [CodeReady Containers (for OpenShift v4.x)](https://www.okd.io/crc/) ([repo](https://github.com/code-ready/crc))
 * [Vagrant + Kubespray (Ansible)](https://github.com/kubernetes-sigs/kubespray#vagrant)
-* [K3S](https://docs.k3s.io/quick-start) (or [KD3](https://k3d.io/))
+* [K3S](https://docs.k3s.io/quick-start) (or [K3D](https://k3d.io/))
 
 
 ### Tooling {id="k8s-tooling"}
