@@ -91,7 +91,7 @@ If the strong impression arises that no significant own contribution has been ma
 or that the solution is not being understood by oneself, the submission will be rejected and the
 course has therefore not being passed.
 
-{{< hint warn >}}
+{{< hint warning >}}
 Initially chosen time slots can only be changed or removed __after__ moderator consultation.
 {{< /hint >}}
 
