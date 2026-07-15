@@ -281,6 +281,6 @@ dpkg -L curl
     * serve the string directly or from a file written to the filesystem beforehand
 
 
-The result, 97 lines of code in a
+The result, 104 lines of code in a
 [`exporter.sh` script](https://github.com/lucendio/lecture-devops-code/blob/master/exercises/investigate-system-and-write-exporter/exporter.sh)
 might do the trick.
