@@ -1,10 +1,10 @@
 ---
-title: 'WiSe 2025'
+title: 'WiSe 2026'
 
-weight: 87
+weight: 85
 
 events:
-  - date: '2025-10-07'
+  - date: '2026-10-05'
     week: 1
     window:
       from: '14:15'
@@ -12,21 +12,21 @@ events:
     name: 'First lecture'
     category: 'info'
 
-  - date: '2025-11-11'
+  - date: '2026-11-10'
     week: 6
     time: '17:30'
     name: 'Final call for team registration'
     link: '/assignments/project-work#teams'
     category: 'deadline'
 
-  - date: '2025-11-18'
+  - date: '2026-11-17'
     week: 7
     time: '23:59'
     name: 'Hand in initial concept version'
     link: '/assignments/deliverables/project-concept'
     category: 'deadline'
 
-  - date: '2025-11-25'
+  - date: '2026-11-24'
     week: 8
     window:
       from: '14:15'
@@ -34,7 +34,7 @@ events:
     name: 'Discuss concepts'
     category: 'info'
 
-  - date: '2026-01-20'
+  - date: '2027-01-19'
     week: 14
     window:
       from: '14:15'
@@ -42,16 +42,18 @@ events:
     name: 'Guest lecture: TBD'
     category: 'info'
 
-  - date: '2026-02-10'
+  - date: '2027-02-09'
     week: 17    
     window:
       from: '14:15'
       until: '17:30'
-    name: 'Last lecture'
-    category: 'info'
+    name: 'Project Progress Demo'
+    description: |
+      Present a proof-of-concept of the software development life cycle
+    category: 'deadline'
 
-  - date: '2026-02-27'
-    week: 19
+  - date: '2027-02-20'
+    week: 18
     time: '23:59'
     name: 'Code freeze'
     description: |
@@ -60,8 +62,8 @@ events:
     category: 'deadline'
 
   - dates:
-      - '2026-02-28'
-      - '2026-03-01'
+      - '2027-02-27'
+      - '2027-02-28'
     week: 19
     window:
       from: '11:00'
@@ -73,11 +75,11 @@ events:
     link: '/assignments/project-work#review'
     category: 'deadline'
 
-  - date: '2026-03-23'
-    week: 23
+  - date: '2027-03-15'
+    week: 22
     window:
-      from: '16:00'
-      until: '16:30'
+      from: '14:00'
+      until: '14:30'
     name: 'Retry Exam'
     link: '/assignments/retry-exam'
     description: >
