@@ -16,8 +16,7 @@ taught in this course.
 __Deliverables:__ [concept]({{< ref "/assignments/deliverables/project-concept" >}}) &
                   [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
 
-__Requirements:__ hand in an initial version of the [concept]({{< ref "/assignments/deliverables/project-concept" >}})
-                  before the [deadline expires]({{< link-to-dates-of-current-semester >}})
+__Requirements:__ don't exceed any [deadline]({{< link-to-dates-of-current-semester >}})
 
 {{< hint warning >}}
 Please note, that it's not required to completely finish the implementation in order to pass
@@ -31,12 +30,14 @@ the course (grade: `4.0`).
    given [deadline]({{< link-to-dates-of-current-semester >}})
 2. receive initial feedback and sanity-check in written form via email, if concept was self-written, meaning without
    assistance of AI (see [*indication of source*]({{< ref "/assignments/#indication-of-source" >}}) for more details)
-3. choose a review slot early, but no later than 24 hours before [*code freeze*]({{< link-to-dates-of-current-semester >}})   
-4. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
+3. do a 5min demo during class to show you progress (see [dates]({{< link-to-dates-of-current-semester >}}) for more
+   details)
+4. choose a review slot early, but no later than 24 hours before [*code freeze*]({{< link-to-dates-of-current-semester >}})   
+5. check in last commit of the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) before
    the [*code freeze* deadline]({{< link-to-dates-of-current-semester >}})
-5. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
+6. hand in the links to the [implementation]({{< ref "/assignments/deliverables/project-implementation" >}})
    via email right after *code freeze*, but no later than before the review session
-6. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
+7. present your [implementation]({{< ref "/assignments/deliverables/project-implementation" >}}) in a scheduled review
    session
 
 Eventually, you'll end up with two repositories:
