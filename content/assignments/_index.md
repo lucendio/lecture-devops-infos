@@ -59,15 +59,28 @@ __complete__ trace of origin. One of two cases may apply:
 *Procedure:*
 * split your work and the AI-based content into different commits
 * break down prompt history and the related content into self-contained and comprehensible commits; group related changes 
-* indicate AI-based content by prefixing the commit title with `ai:` and optionally mention the tool, like `ai(sonnet):`
+* indicate AI-based content by prefixing the commit title with `[ai]` and optionally mention the tool, like `[ai:sonnet]`
 * a commit message contains all parts emerged from the interaction with the AI (inputs, and if it's more that just the
   commit diff, also outputs) leading to the respective changes 
 * provide the same indication of source to prompts that you did not write yourself 
 * linking a prompt history is not permitted
 
+*Example workflow:*
+
+1. Prompt: generate a Kubernetes deployment for a simple Go-based web application backend
+2. *generating file(s)*
+3. ```
+   $ git commit 
+       -m '[ai] add deployment ...'
+       -m 'Prompt: generate a Kubernetes deployment for a simple Go-based web application backend'
+       -m 'Answer: ...'
+   ```
+4. *manually changing file(s)*
+5. `$ git commit -m 'Switch to rolling strategy in deployment to prevent downtime'`
+
 [^1]: code or text was actually written by yourself but originates from utilizing said tools
 [^2]: based on *machine learning* (commonly known as *artificial intelligence*, such as *large language models* etc.)
-[^3]: human-readable format, uncensored
+[^3]: human-readable format, uncensored (as-is, verbatim, not shortened, not summarized, no excerpts)
 
 {{< hint danger >}}
 Generally speaking, it must be made obvious to the reader, which line(s) - or sentences in case of concept or
