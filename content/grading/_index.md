@@ -80,16 +80,17 @@ _Weight: **100%**_
 * idempotent provisioning
 * each service exists, is operational, and - if intended - is externally accessible
 * each service can be reached via HTTPS
-* FQDNs are configured for all services, resolve to each of them and serve them properly 
+* FQDNs are configured for all services, resolve to each of them and serve them properly
 * *application* runs high available
 * zero-downtime deployment strategy
 * overall setup implements all environments
 * the *application* in each environment uses a different instance of its backing services (e.g. database)
 * CI/CD pipeline functions properly
 * CI/CD pipeline consists of at least 3 stages
-* CI/CD pipeline is triggered via code change, and - in case of *production* environment - explicitly
-  based on a double sign off principle
+* CI/CD pipeline is triggered via code changes - while respecting the semantics and requirements for different
+  environments
 * the *application* development life cycle is defined and matches implementation
+* the *application* development life cycle incorporates common coding and collaboration workflows
 * *application* changes carried out by CI/CD successfully propagate through all environments
 * concept/documentation matches implementation
 * all formal requirements ([concept]({{< ref "/assignments/deliverables/project-concept#formal" >}}) & 
@@ -114,6 +115,7 @@ _Weight: **100%**_
 
 * if the project assignment was omitted, it's only possible to reach a maximum score of __60%__ (grade: `3,3`) even
   when all questions have been answered correctly
+* the Topic Recap *bonus score* is only factored in, if the project assignment has not been omitted 
 
 *Criteria:* 
 

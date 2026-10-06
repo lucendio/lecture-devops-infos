@@ -34,8 +34,9 @@ __SUBMISSION DEADLINE:__ before the end of the day [prior to the first day of re
 * all relevant services (VCS, CI/CD, App, Monitoring) need to be accessible via FQDN
 * the application and each service provisioned by yourself must be served via _HTTP**S**_ (HTTP over TLS)
 * artifacts must be explicitly published 
-* CI is only triggered through a change in the VCS
-* deploying to the *production* environment must involve a manual review/approval/release process
+* CI is only triggered through changes in the VCS
+* best practices like contribution/collaboration workflows are part of a software development life cycle design
+* deploying to the *production* environment must involve a curated review/approval/release process
 * application must run 100% redundant (scaled horizontally with a replication factor of at least *2*)
 * when deploying a new version, the app must continue to be reachable (zero-downtime deployment); this
   depends on the deployment strategy that has been chosen
