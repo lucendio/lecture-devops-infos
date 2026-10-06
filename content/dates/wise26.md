@@ -17,7 +17,7 @@ events:
     time: '17:30'
     name: 'Final call for team registration'
     link: '/assignments/project-work#teams'
-    category: 'deadline'
+    category: 'appointment'
 
   - date: '2026-11-17'
     week: 7
@@ -49,7 +49,7 @@ events:
       until: '17:30'
     name: 'Project Progress Demo'
     description: |
-      Present a proof-of-concept of the software development life cycle
+      present a proof-of-concept of the software development life cycle
     category: 'deadline'
 
   - date: '2027-02-20'
@@ -73,7 +73,7 @@ events:
       save yourself a suitable time frame upfront
       (link can be found in the course header)
     link: '/assignments/project-work#review'
-    category: 'deadline'
+    category: 'appointment'
 
   - date: '2027-03-15'
     week: 22
