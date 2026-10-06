@@ -9,6 +9,7 @@
                     <th>Date</th>
                     <th>Time</th>
                     <th>Description</th>
+                    <th>Deadline?</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,6 +37,11 @@
                         {{ if .link }}<a href="{{ ref $.Page .link }}">{{ end }}
                         {{ .name }}
                         {{ if .link }}</a>{{ end }}
+                    </td>
+                    <td class="text-center">
+                        {{ if eq .category "deadline" }}
+                        🚨
+                        {{ end }}
                     </td>
                 </tr>
                 {{ end}}
