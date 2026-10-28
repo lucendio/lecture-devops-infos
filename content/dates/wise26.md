@@ -39,7 +39,7 @@ events:
     window:
       from: '14:15'
       until: '17:30'
-    name: 'Guest lecture: TBD'
+    name: 'Guest lecture: IT Regulatorik - Theorie und Praxis'
     category: 'info'
 
   - date: '2027-02-09'
@@ -50,6 +50,7 @@ events:
     name: 'Project Progress Demo'
     description: |
       present a proof-of-concept of the software development life cycle
+    link: '/assignments/project-work/#process'
     category: 'deadline'
 
   - date: '2027-02-20'
